@@ -1,0 +1,7 @@
+node_modules/
+temporary screenshots/
+.DS_Store
+.env
+# design reference screenshots (third-party site, large)
+desktop1.png
+desktop2.png
