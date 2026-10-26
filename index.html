@@ -203,9 +203,7 @@
   .icon-btn:hover { transform: scale(1.1); }
   .icon-btn:active { transform: scale(.92); }
 
-  .header__login, .header__cta, .lang { display: none; }
-  .header__login { align-items: center; gap: .8rem; font-size: 1.2rem; white-space: nowrap; }
-  .header__login svg { width: 1.5rem; height: 1.5rem; }
+  .header__cta, .lang { display: none; }
 
   .lang { position: relative; font-size: 1.2rem; }
   .lang__btn { display: flex; align-items: center; gap: .6rem; height: 3.4rem; letter-spacing: .08em; }
@@ -584,7 +582,7 @@
     body { font-size: 1.3rem; }
 
     .burger, .icon-btn--call, .menu { display: none; }
-    .header__nav, .header__login { display: flex; }
+    .header__nav { display: flex; }
     .header__cta { display: inline-flex; }
     .lang { display: block; }
     .mega { display: block; }
@@ -694,10 +692,6 @@
         <a role="link" aria-disabled="true" lang="el"><span>Ελληνικά</span><b>EL</b></a>
       </div>
     </div>
-    <a class="header__login u-link" role="link" aria-disabled="true" title="Partner area in progress">
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="5.5" r="3"/><path d="M2.5 14.5c.8-2.700 2.900-4 5.500-4s4.700 1.300 5.500 4"/></svg>
-      Partner login
-    </a>
     <a class="btn btn--solid btn--sm header__cta" href="#contact" data-label="Become a partner"><span>Become a partner</span></a>
     <a class="icon-btn icon-btn--call" href="tel:+48531472415" aria-label="Call +48 531 472 415">
       <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 2.5H3.9c-.8 0-1.4.7-1.4 1.5C2.9 11.300 8.700 17.100 16 17.500c.8 0 1.500-.6 1.500-1.400v-2.700l-3.700-1.500-1.600 1.900c-2.100-1-3.800-2.700-4.800-4.800l1.900-1.600z"/></svg>
@@ -757,7 +751,6 @@
     <a class="menu__link" href="#about" data-close><small>03</small>About us</a>
     <a class="menu__link" role="link" aria-disabled="true"><small>04</small>Blog</a>
     <a class="menu__link" href="#contact" data-close><small>05</small>Contacts</a>
-    <a class="menu__link" role="link" aria-disabled="true"><small>06</small>Partner login</a>
   </nav>
   <div class="menu__foot">
     <a class="btn btn--solid btn--block" href="#contact" data-close data-label="Become a partner"><span>Become a partner</span></a>
@@ -1301,7 +1294,6 @@
         <h3>Partners</h3>
         <a class="u-link" href="#contact">Wholesale enquiry</a>
         <a class="u-link" href="#benefits">Terms of cooperation</a>
-        <a class="u-link" role="link" aria-disabled="true">Partner login</a>
       </nav>
       <div class="footer__col">
         <h3>Contacts</h3>

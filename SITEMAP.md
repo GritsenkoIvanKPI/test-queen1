@@ -13,10 +13,9 @@ Each page links its translations with `<link rel="alternate" hreflang="…">`. T
 | 6 | About us | `/en/about/` |
 | 7 | Blog / article | `/en/blog/`, `/en/blog/{slug}/` |
 | 8 | Contacts + wholesale enquiry | `/en/contact/` |
-| — | Partner login (partner area: price list, lookbooks) | `/en/partners/` |
 
 ## Navigation
-- **Header (desktop):** Brands ▾ · About us · Blog · Contacts | logo | Language ▾ · Partner login · `Become a partner`
+- **Header (desktop):** Brands ▾ · About us · Blog · Contacts | logo | Language ▾ · `Become a partner`
 - **Brands mega menu:** all brands, each with *Brand page* and *Catalogue* links, plus "All brands" and the newest collection.
 - **Mobile menu:** same items; Brands opens as an accordion; languages and manager contacts at the bottom.
 - **Footer:** full list of brands, company pages, partner links, contacts, languages.
