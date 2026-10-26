@@ -93,8 +93,6 @@
   .lead { font-family: "Cormorant Garamond", serif; font-size: 2rem; line-height: 1.32; font-weight: 400; }
   .muted { color: var(--muted); }
   .eyebrow { display: inline-flex; align-items: center; gap: 1.2rem; font-size: 1.05rem; font-weight: 500; letter-spacing: .28em; text-transform: uppercase; color: var(--taupe); }
-  .eyebrow::before { content: ""; width: 2.8rem; height: .1rem; background: currentColor; }
-  .eyebrow--center::after { content: ""; width: 2.8rem; height: .1rem; background: currentColor; }
 
   /* ───────────── Links & buttons ───────────── */
   .u-link { position: relative; display: inline-block; }
@@ -109,21 +107,21 @@
 
   .btn {
     position: relative; display: inline-flex; align-items: center; justify-content: center; overflow: hidden;
-    min-height: 4.8rem; padding: 0 3.2rem; border: .1rem solid var(--ink); color: var(--ink);
+    min-height: 4.8rem; padding: 0 3.2rem; border: 0; color: var(--ink);
     font-size: 1.1rem; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; white-space: nowrap;
     transition: transform .45s var(--spring);
   }
   .btn::after {
-    content: attr(data-label); position: absolute; inset: -.1rem; display: flex; align-items: center; justify-content: center;
+    content: attr(data-label); position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
     background: var(--ink); color: var(--paper); transform: translateY(102%); transition: transform .6s var(--ease);
   }
   .btn:hover::after, .btn:focus-visible::after { transform: none; }
   .btn:active { transform: scale(.97); }
-  .btn--light { border-color: rgba(255, 254, 254, .7); color: var(--paper); }
+  .btn--light { background: rgba(255, 254, 254, .14); color: var(--paper); }
   .btn--light::after { background: var(--paper); color: var(--ink); }
   .btn--solid { background: var(--ink); color: var(--paper); }
   .btn--solid::after { background: var(--taupe); color: var(--paper); }
-  .btn--paper { background: var(--paper); border-color: var(--paper); color: var(--ink); }
+  .btn--paper { background: var(--paper); color: var(--ink); }
   .btn--paper::after { background: var(--taupe); color: var(--paper); }
   .btn--sm { min-height: 4rem; padding: 0 2.2rem; font-size: 1rem; }
   .btn--block { width: 100%; }
