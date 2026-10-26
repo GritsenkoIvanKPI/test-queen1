@@ -279,12 +279,12 @@
   .svc .text { font-size: 1.3rem; }
 
   /* CTA banner */
-  /* text panel + two looping portrait videos side by side — text never sits on the video */
-  .banner { display: grid; background: #2b2724; color: var(--white); }
-  .banner__body { display: grid; align-content: end; gap: 1.8rem; justify-items: start; padding: var(--s-5) var(--gutter); }
-  .banner__films { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .2rem; }
-  .film { position: relative; aspect-ratio: 3 / 4; overflow: hidden; background: #3a3430; }
-  .film video { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; }
+  /* full-width landscape video; on phones/tablets the text sits below it */
+  .banner { position: relative; display: grid; background: #2b2724; color: var(--white); isolation: isolate; }
+  .banner__media { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #3a3430; }
+  .banner__media video { width: 100%; height: 100%; object-fit: cover; }
+  .banner__shade { display: none; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20, 16, 14, .72) 0%, rgba(20, 16, 14, .45) 38%, rgba(20, 16, 14, 0) 70%); }
+  .banner__body { display: grid; gap: 1.8rem; justify-items: start; max-width: 56rem; padding: var(--s-5) var(--gutter); }
   .banner__body .label { color: rgba(255, 254, 252, .8); }
   .banner__body p { margin: 0; color: rgba(255, 254, 252, .85); }
   .banner__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.6rem 3.2rem; margin-top: .6rem; }
@@ -324,6 +324,10 @@
     .hero__actions { flex-direction: column; gap: 1.8rem; }
     .footer__col a { padding: .3rem 0; }
     .footer__bottom { flex-direction: column-reverse; gap: 1.6rem; padding: 2.6rem 0; }
+  }
+
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .banner__media { aspect-ratio: 16 / 9; }
   }
 
   /* ───────────── Large tablet: desktop-like split ───────────── */
@@ -388,8 +392,10 @@
     .brands-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     .brand--cta { padding: 4rem; }
 
-    .banner { grid-template-columns: 1fr 2fr; }
-    .banner__body { padding: var(--s-5) var(--gutter); }
+    .banner { display: flex; align-items: center; min-height: calc(100svh - var(--header)); }
+    .banner__media { position: absolute; inset: 0; z-index: -1; aspect-ratio: auto; }
+    .banner__shade { display: block; }
+    .banner__body { max-width: 52rem; }
 
     .footer__top { grid-template-columns: 5fr 7fr; gap: 10rem; }
   }
@@ -740,6 +746,12 @@
 
   <!-- 7. Call to action -->
   <section class="banner" aria-label="Become a partner">
+    <div class="banner__media">
+      <video class="banner__video" muted loop playsinline preload="none" poster="assets/video/eleonora-banner-poster.jpg" aria-label="Eleonora dresses filmed in Kraków">
+        <source src="assets/video/eleonora-banner.mp4" type="video/mp4">
+      </video>
+      <span class="banner__shade"></span>
+    </div>
     <div class="banner__body reveal">
       <span class="label">Wholesale partnership</span>
       <h2 class="h2">Bring our brands to your salon</h2>
@@ -748,10 +760,6 @@
         <a class="btn btn--light" href="#contacts" data-label="Request price list"><span>Request price list</span></a>
         <a class="link" href="tel:+48531472415">+48 531 472 415</a>
       </div>
-    </div>
-    <div class="banner__films">
-      <div class="film"><video muted loop playsinline preload="none" poster="assets/video/elle-765-poster.jpg" aria-label="Elle 765 in motion"><source src="assets/video/elle-765.mp4" type="video/mp4"></video></div>
-      <div class="film"><video muted loop playsinline preload="none" poster="assets/video/elle-818-poster.jpg" aria-label="Elle 818 in motion"><source src="assets/video/elle-818.mp4" type="video/mp4"></video></div>
     </div>
   </section>
 
@@ -935,7 +943,7 @@
   });
 
   /* Banner films: load and play only while on screen */
-  var films = document.querySelectorAll('.film video');
+  var films = document.querySelectorAll('.banner__video');
   if (!reduced && 'IntersectionObserver' in window) {
     var filmIO = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
