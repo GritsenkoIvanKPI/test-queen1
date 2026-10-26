@@ -12,574 +12,375 @@
 <link rel="alternate" hreflang="it" href="https://queen-dress.com/it/">
 <link rel="alternate" hreflang="el" href="https://queen-dress.com/el/">
 <link rel="alternate" hreflang="x-default" href="https://queen-dress.com/en/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23060606'/%3E%3Cg fill='none' stroke='%23fffefe' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 15l3-8 7 6 7-6 3 8'/%3E%3Ccircle cx='32' cy='37' r='15'/%3E%3Cpath d='M40 45l11 11'/%3E%3C/g%3E%3C/svg%3E">
-<script>document.documentElement.classList.add('js', 'is-loading');</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231a1816'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23f6f4f0'%3EQ%3C/text%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    corePlugins: { preflight: true },
-    theme: {
-      extend: {
-        colors: { paper: '#fffefe', ink: '#060606', line: '#e6e2dd', taupe: '#856d65', shell: '#f7f3ef', night: '#0e0c0b' },
-        fontFamily: { sans: ['Manrope', 'sans-serif'], display: ['"Cormorant Garamond"', 'serif'] }
-      }
-    }
-  };
-</script>
 <style>
   /* ───────────── Tokens ───────────── */
   :root {
-    --paper: #fffefe;
-    --ink: #060606;
-    --line: #e6e2dd;
-    --taupe: #856d65;
-    --taupe-soft: #c9b8af;
-    --shell: #f7f3ef;
-    --night: #0e0c0b;
-    --night-2: #171412;
-    --muted: #6b6460;
+    --bg: #f6f4f0;
+    --bg-2: #eeeae4;
+    --ink: #1a1816;
+    --muted: #77706a;
+    --line: #dcd6cf;
+    --accent: #856d65;
+    --white: #fffefc;
+
+    --serif: "Cormorant Garamond", Georgia, serif;
+    --sans: Manrope, system-ui, sans-serif;
 
     --ease: cubic-bezier(.22, 1, .36, 1);
-    --spring: cubic-bezier(.34, 1.56, .64, 1);
 
     --gutter: 2rem;
-    --header: 6.4rem;
+    --header: 6rem;
     --s-1: .8rem;
     --s-2: 1.6rem;
     --s-3: 2.4rem;
     --s-4: 4rem;
     --s-5: 6.4rem;
     --s-6: 9rem;
-
-    --shadow-elevated: 0 .2rem .6rem rgba(133, 109, 101, .06), 0 1.6rem 4rem rgba(133, 109, 101, .1);
-    --shadow-floating: 0 .3rem .8rem rgba(133, 109, 101, .08), 0 2rem 4.8rem rgba(133, 109, 101, .14), 0 5rem 10rem rgba(60, 40, 30, .1);
   }
 
   *, :after, :before { box-sizing: border-box; }
 
   /* 1rem = 10px on a 375px phone and on a 1440px desktop */
   html { font-size: clamp(10px, 2.6667vw, 11.5px); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-  html.no-smooth { scroll-behavior: auto; }
-  html.is-loading, html.menu-open { overflow: hidden; }
+  html.menu-open { overflow: hidden; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 1.4rem; font-weight: 400; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 
-  body, html { background: var(--paper); color: var(--ink); font-family: Manrope, sans-serif; font-weight: 400; }
-  body { font-size: 1.4rem; line-height: 1.7; min-height: 100vh; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-  /* grain */
-  body::after {
-    content: ""; position: fixed; inset: 0; z-index: 60; pointer-events: none; opacity: .04; mix-blend-mode: multiply;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  }
-
-  ::selection { background: var(--taupe); color: var(--paper); }
+  ::selection { background: var(--ink); color: var(--bg); }
   a, button { -webkit-tap-highlight-color: transparent; }
   button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
-  :focus-visible { outline: .1rem solid var(--taupe); outline-offset: .4rem; }
+  img { display: block; max-width: 100%; }
+  :focus-visible { outline: .1rem solid var(--ink); outline-offset: .4rem; }
   section[id] { scroll-margin-top: var(--header); }
   [aria-disabled="true"] { cursor: default; }
 
-  .skip {
-    position: fixed; left: var(--gutter); top: 1rem; z-index: 120; padding: 1rem 1.6rem; background: var(--ink); color: var(--paper); font-size: 1.3rem;
-    transform: translateY(-300%); transition: transform .4s var(--ease);
-  }
+  .skip { position: fixed; left: var(--gutter); top: 1rem; z-index: 120; padding: 1rem 1.6rem; background: var(--ink); color: var(--bg); font-size: 1.2rem; transform: translateY(-300%); transition: transform .4s var(--ease); }
   .skip:focus { transform: none; }
 
-  /* ───────────── Type ───────────── */
-  .display { font-variant-numeric: lining-nums; font-family: "Cormorant Garamond", serif; font-weight: 300; line-height: .98; letter-spacing: -.03em; text-transform: uppercase; }
-  .display em { font-style: italic; text-transform: none; letter-spacing: -.02em; color: var(--taupe); }
-  .h2 { font-size: 3.4rem; }
-  .lead { font-family: "Cormorant Garamond", serif; font-size: 2rem; line-height: 1.32; font-weight: 400; }
-  .muted { color: var(--muted); }
-  .eyebrow { display: inline-flex; align-items: center; gap: 1.2rem; font-size: 1.05rem; font-weight: 500; letter-spacing: .28em; text-transform: uppercase; color: var(--taupe); }
+  /* ───────────── Type ─────────────
+     Accent serif: logo, h1, h2 only. Everything else: Manrope. */
+  .h1, .h2 { margin: 0; font-family: var(--serif); font-weight: 400; letter-spacing: -.01em; }
+  .h1 { font-size: 3.4rem; line-height: 1.08; }
+  .h2 { font-size: 2.8rem; line-height: 1.15; }
+  .label { display: block; font-size: 1.05rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+  .h3 { margin: 0; font-size: 1.15rem; font-weight: 500; line-height: 1.5; letter-spacing: .14em; text-transform: uppercase; }
+  .text { margin: 0; color: var(--muted); }
 
   /* ───────────── Links & buttons ───────────── */
-  .u-link { position: relative; display: inline-block; }
-  .u-link::after {
-    content: ""; position: absolute; left: 0; right: 0; bottom: -.3rem; height: .1rem; background: currentColor;
-    transform: scaleX(0); transform-origin: right center; transition: transform .5s var(--ease);
-  }
-  .u-link:hover::after, .u-link:focus-visible::after, .u-link[aria-current]::after, .u-link[aria-expanded="true"]::after { transform: scaleX(1); transform-origin: left center; }
-  .u-link:active { opacity: .6; }
-  .u-link--on::after { transform: scaleX(1); }
-  .u-link--on:hover::after { transform: scaleX(.4); transform-origin: left center; }
+  .link { display: inline-block; padding-bottom: .3rem; border-bottom: .1rem solid currentColor; font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; transition: opacity .3s ease; }
+  .link:hover, .link:focus-visible { opacity: .55; }
+  .link:active { opacity: .35; }
+  .u-link { transition: opacity .3s ease; }
+  .u-link:hover, .u-link:focus-visible { opacity: .55; }
+  .u-link:active { opacity: .35; }
 
   .btn {
     position: relative; display: inline-flex; align-items: center; justify-content: center; overflow: hidden;
-    min-height: 4.8rem; padding: 0 3.2rem; border: 0; color: var(--ink);
-    font-size: 1.1rem; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; white-space: nowrap;
-    transition: transform .45s var(--spring);
+    min-height: 4.6rem; padding: 0 3rem; border: 0; background: var(--ink); color: var(--bg);
+    font-size: 1.05rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; white-space: nowrap;
+    transition: transform .4s var(--ease);
   }
-  .btn::after {
-    content: attr(data-label); position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-    background: var(--ink); color: var(--paper); transform: translateY(102%); transition: transform .6s var(--ease);
-  }
+  .btn::after { content: attr(data-label); position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--accent); color: var(--white); transform: translateY(101%); transition: transform .5s var(--ease); }
   .btn:hover::after, .btn:focus-visible::after { transform: none; }
-  .btn:active { transform: scale(.97); }
-  .btn--light { background: rgba(255, 254, 254, .14); color: var(--paper); }
-  .btn--light::after { background: var(--paper); color: var(--ink); }
-  .btn--solid { background: var(--ink); color: var(--paper); }
-  .btn--solid::after { background: var(--taupe); color: var(--paper); }
-  .btn--paper { background: var(--paper); color: var(--ink); }
-  .btn--paper::after { background: var(--taupe); color: var(--paper); }
-  .btn--sm { min-height: 4rem; padding: 0 2.2rem; font-size: 1rem; }
+  .btn:active { transform: scale(.98); }
+  .btn--light { background: var(--white); color: var(--ink); }
+  .btn--sm { min-height: 3.8rem; padding: 0 2rem; font-size: 1rem; }
   .btn--block { width: 100%; }
 
-  .arrow { width: 2.4rem; height: 1rem; flex: none; transition: transform .5s var(--ease); }
-  .text-cta { display: inline-flex; align-items: center; gap: 1.2rem; font-size: 1.1rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; }
-  .text-cta:hover .arrow, .text-cta:focus-visible .arrow { transform: translateX(.6rem); }
-  .text-cta:active { opacity: .6; }
-
-  /* ───────────── Preloader ───────────── */
-  .preloader { display: none; }
-  .js .preloader { display: block; position: fixed; inset: 0; z-index: 100; }
-  .preloader__veil, .preloader__panel { position: absolute; inset: 0; }
-  .preloader__veil { background: var(--taupe); transition: transform 1.1s var(--ease) .12s; }
-  .preloader__panel {
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    background:
-      radial-gradient(60rem 40rem at 20% 10%, rgba(201, 184, 175, .28), transparent 70%),
-      radial-gradient(50rem 40rem at 85% 90%, rgba(133, 109, 101, .14), transparent 70%),
-      var(--paper);
-    transition: transform 1.1s var(--ease);
-  }
-  .is-loaded .preloader__veil, .is-loaded .preloader__panel { transform: translateY(-101%); }
-  .preloader.is-gone { display: none; }
-  .preloader__mark { width: 6.4rem; height: 6.4rem; color: var(--ink); }
-  .preloader__mark .ring { transform-origin: 32px 37px; transform: scale(.6) rotate(-90deg); opacity: 0; animation: pl-ring 1.3s var(--ease) .15s forwards; }
-  .preloader__mark .tail { opacity: 0; transform: translate(-6px, -6px); animation: pl-in .7s var(--ease) .75s forwards; }
-  .preloader__mark .crown { opacity: 0; transform: translateY(6px); animation: pl-in .9s var(--spring) .95s forwards; }
-  .preloader__word { display: flex; margin-top: 2.4rem; padding-left: .42em; overflow: hidden; font-family: "Cormorant Garamond", serif; font-size: 4.4rem; font-weight: 400; line-height: 1.1; letter-spacing: .42em; }
-  .preloader__word span { display: block; transform: translateY(110%); animation: pl-rise .9s var(--ease) forwards; }
-  .preloader__word span:nth-child(1) { animation-delay: .35s; }
-  .preloader__word span:nth-child(2) { animation-delay: .43s; }
-  .preloader__word span:nth-child(3) { animation-delay: .51s; }
-  .preloader__word span:nth-child(4) { animation-delay: .59s; }
-  .preloader__word span:nth-child(5) { animation-delay: .67s; }
-  .preloader__sub { margin-top: .6rem; padding-left: .5em; font-size: 1rem; font-weight: 500; letter-spacing: .5em; text-transform: uppercase; color: var(--taupe); opacity: 0; animation: pl-fade .9s ease 1s forwards; }
-  .preloader__bar { position: relative; width: 18rem; height: .1rem; margin-top: 4rem; background: var(--line); overflow: hidden; }
-  .preloader__bar i { position: absolute; inset: 0; background: var(--ink); transform: scaleX(0); transform-origin: left center; animation: pl-bar 2s cubic-bezier(.65, 0, .35, 1) .2s forwards; }
-  .preloader__count { margin-top: 1.4rem; font-size: 1.1rem; letter-spacing: .24em; color: var(--muted); font-variant-numeric: tabular-nums; }
-  @keyframes pl-ring { to { transform: none; opacity: 1; } }
-  @keyframes pl-in { to { transform: none; opacity: 1; } }
-  @keyframes pl-rise { to { transform: none; } }
-  @keyframes pl-fade { to { opacity: 1; } }
-  @keyframes pl-bar { to { transform: scaleX(1); } }
-
   /* ───────────── Header ───────────── */
-  .header {
-    position: fixed; top: 0; left: 0; z-index: 20; width: 100%; height: var(--header);
-    display: flex; align-items: center; justify-content: space-between; padding: 0 var(--gutter);
-    background: var(--paper); border-bottom: .1rem solid var(--line);
-    transition: transform .7s var(--ease);
-  }
+  .header { position: fixed; top: 0; left: 0; z-index: 20; width: 100%; height: var(--header); display: flex; align-items: center; justify-content: space-between; padding: 0 var(--gutter); background: var(--bg); border-bottom: .1rem solid var(--line); transition: transform .6s var(--ease); }
   .header.is-hidden { transform: translateY(-101%); }
   .header__side { flex: 1 1 0; display: flex; align-items: center; min-width: 0; }
   .header__side--right { justify-content: flex-end; gap: 2.8rem; }
-  .header__nav { display: none; align-items: center; gap: 3.2rem; font-size: 1.2rem; white-space: nowrap; }
-  .nav-drop { display: inline-flex; align-items: center; gap: .7rem; }
+  .header__nav { display: none; align-items: center; gap: 3.2rem; font-size: 1.05rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; }
+  .nav-drop { display: inline-flex; align-items: center; gap: .6rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; transition: opacity .3s ease; }
+  .nav-drop:hover { opacity: .55; }
+  .nav-drop:active { opacity: .35; }
   .nav-drop svg { width: .8rem; height: .5rem; transition: transform .5s var(--ease); }
   .nav-drop[aria-expanded="true"] svg { transform: rotate(180deg); }
 
-  .logo { display: flex; flex-direction: column; align-items: center; flex: none; transition: transform .5s var(--spring); }
-  .logo:hover { transform: scale(1.03); }
-  .logo:active { transform: scale(.97); }
-  .logo__word { font-family: "Cormorant Garamond", serif; font-size: 2.6rem; font-weight: 500; line-height: 1; letter-spacing: .42em; padding-left: .42em; }
-  .logo__sub { margin-top: .5rem; font-size: .8rem; font-weight: 500; line-height: 1; letter-spacing: .46em; padding-left: .46em; text-transform: uppercase; color: var(--taupe); }
+  .logo { display: flex; flex-direction: column; align-items: center; flex: none; transition: opacity .3s ease; }
+  .logo:hover { opacity: .7; }
+  .logo:active { opacity: .5; }
+  .logo__word { font-family: var(--serif); font-size: 2.2rem; font-weight: 500; line-height: 1; letter-spacing: .38em; padding-left: .38em; }
+  .logo__sub { margin-top: .5rem; font-size: .75rem; font-weight: 500; line-height: 1; letter-spacing: .4em; padding-left: .4em; text-transform: uppercase; color: var(--muted); }
 
-  .burger { position: relative; width: 4.4rem; height: 4.4rem; margin-left: -1rem; transition: transform .4s var(--spring); }
-  .burger:active { transform: scale(.9); }
-  .burger i { position: absolute; left: 1rem; width: 2.4rem; height: .1rem; background: var(--ink); transition: transform .5s var(--ease); }
+  .burger { position: relative; width: 4.4rem; height: 4.4rem; margin-left: -1rem; }
+  .burger i { position: absolute; left: 1rem; width: 2.2rem; height: .1rem; background: var(--ink); transition: transform .5s var(--ease); }
   .burger i:first-child { top: 1.8rem; }
-  .burger i:last-child { top: 2.6rem; }
-  .burger:hover i:first-child { transform: translateX(.3rem); }
-  .burger:hover i:last-child { transform: translateX(-.3rem); }
-  .menu-open .burger i:first-child { transform: translateY(.4rem) rotate(45deg); }
-  .menu-open .burger i:last-child { transform: translateY(-.4rem) rotate(-45deg); }
+  .burger i:last-child { top: 2.5rem; }
+  .burger:active { opacity: .5; }
+  .menu-open .burger i:first-child { transform: translateY(.35rem) rotate(45deg); }
+  .menu-open .burger i:last-child { transform: translateY(-.35rem) rotate(-45deg); }
 
-  .icon-btn { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 4.4rem; margin-right: -1rem; transition: transform .4s var(--spring); }
-  .icon-btn svg { width: 2rem; height: 2rem; }
-  .icon-btn:hover { transform: scale(1.1); }
-  .icon-btn:active { transform: scale(.92); }
+  .icon-btn { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 4.4rem; margin-right: -1rem; transition: opacity .3s ease; }
+  .icon-btn svg { width: 1.8rem; height: 1.8rem; }
+  .icon-btn:hover { opacity: .55; }
+  .icon-btn:active { opacity: .35; }
 
   .header__cta, .lang { display: none; }
-
-  .lang { position: relative; font-size: 1.2rem; }
-  .lang__btn { display: flex; align-items: center; gap: .6rem; height: 3.4rem; letter-spacing: .08em; }
+  .lang { position: relative; font-size: 1.05rem; font-weight: 500; letter-spacing: .14em; }
+  .lang__btn { display: flex; align-items: center; gap: .6rem; height: 3.4rem; letter-spacing: .14em; }
   .lang__btn svg { width: .8rem; height: .5rem; transition: transform .5s var(--ease); }
   .lang:hover .lang__btn svg, .lang:focus-within .lang__btn svg { transform: rotate(180deg); }
-  .lang__btn:active { opacity: .6; }
-  .lang__list {
-    position: absolute; top: 100%; right: -2rem; min-width: 18rem; padding: 1rem 0;
-    background: var(--paper); border: .1rem solid var(--line); box-shadow: var(--shadow-elevated);
-    opacity: 0; transform: translateY(-.8rem); pointer-events: none;
-    transition: opacity .35s ease, transform .5s var(--ease);
-  }
+  .lang__btn:active { opacity: .5; }
+  .lang__list { position: absolute; top: 100%; right: -2rem; min-width: 17rem; padding: 1rem 0; background: var(--white); border: .1rem solid var(--line); opacity: 0; transform: translateY(-.6rem); pointer-events: none; transition: opacity .3s ease, transform .4s var(--ease); }
   .lang:hover .lang__list, .lang:focus-within .lang__list { opacity: 1; transform: none; pointer-events: auto; }
-  .lang__list a { display: flex; justify-content: space-between; gap: 2rem; padding: .7rem 2rem; color: var(--muted); transition: transform .4s var(--ease), opacity .3s ease; }
-  .lang__list a b { font-weight: 500; letter-spacing: .1em; color: var(--ink); }
-  .lang__list a:hover, .lang__list a:focus-visible { transform: translateX(.3rem); }
-  .lang__list a:active { opacity: .6; }
-  .lang__list a[aria-current] b { color: var(--taupe); }
+  .lang__list a { display: flex; justify-content: space-between; gap: 2rem; padding: .7rem 2rem; font-weight: 400; letter-spacing: .04em; color: var(--muted); transition: opacity .3s ease; }
+  .lang__list a b { font-weight: 500; letter-spacing: .14em; color: var(--ink); }
+  .lang__list a:hover, .lang__list a:focus-visible { opacity: .55; }
+  .lang__list a:active { opacity: .35; }
+  .lang__list a[aria-current] { color: var(--ink); }
 
   /* Brands mega menu (desktop) */
-  .mega {
-    position: fixed; left: 0; right: 0; top: var(--header); z-index: 19; display: none;
-    background:
-      radial-gradient(50rem 30rem at 100% 0%, rgba(201, 184, 175, .22), transparent 70%),
-      var(--paper);
-    border-bottom: .1rem solid var(--line); box-shadow: var(--shadow-floating);
-    opacity: 0; transform: translateY(-1.6rem); pointer-events: none;
-    transition: opacity .4s ease, transform .6s var(--ease);
-  }
+  .mega { position: fixed; left: 0; right: 0; top: var(--header); z-index: 19; display: none; background: var(--bg); border-bottom: .1rem solid var(--line); opacity: 0; transform: translateY(-1rem); pointer-events: none; transition: opacity .35s ease, transform .5s var(--ease); }
   .mega.is-open { opacity: 1; transform: none; pointer-events: auto; }
-  .mega__inner { display: grid; grid-template-columns: 3fr 6fr 3fr; gap: 6rem; padding: 4.8rem var(--gutter) 5.6rem; }
-  .mega__intro { display: grid; gap: 2rem; align-content: start; }
-  .mega__intro p { color: var(--muted); max-width: 30rem; }
-  .mega__list { display: grid; align-content: start; }
-  .mega__item { display: flex; align-items: baseline; justify-content: space-between; gap: 2rem; padding: 1.4rem 0; border-bottom: .1rem solid var(--line); }
-  .mega__name { font-family: "Cormorant Garamond", serif; font-size: 2.2rem; line-height: 1.1; font-weight: 400; transition: transform .5s var(--ease); }
-  .mega__name:hover, .mega__name:focus-visible { transform: translateX(.6rem); }
-  .mega__name:active { opacity: .6; }
-  .mega__cat { font-size: 1rem; letter-spacing: .2em; text-transform: uppercase; color: var(--taupe); }
-  .mega__feature { position: relative; display: block; overflow: hidden; aspect-ratio: 4 / 5; color: var(--paper); isolation: isolate; }
-  .mega__feature img { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; transition: transform 1.6s var(--ease); }
-  .mega__feature:hover img, .mega__feature:focus-visible img { transform: scale(1.06); }
-  .mega__feature:active { opacity: .85; }
-  .mega__feature-body { position: absolute; left: 2.4rem; right: 2.4rem; bottom: 2.4rem; display: grid; gap: .6rem; }
-  .mega__feature-body small { font-size: 1rem; letter-spacing: .24em; text-transform: uppercase; color: var(--taupe-soft); }
-  .mega__feature-body b { font-family: "Cormorant Garamond", serif; font-size: 2.6rem; line-height: 1; font-weight: 400; }
+  .mega__inner { display: grid; grid-template-columns: 3fr 5fr 3fr; gap: 6rem; padding: 4.4rem var(--gutter) 4.8rem; }
+  .mega__intro { display: grid; gap: 1.6rem; align-content: start; justify-items: start; }
+  .mega__intro p { margin: 0; color: var(--muted); max-width: 28rem; }
+  .mega__list { display: grid; align-content: start; margin: 0; padding: 0; list-style: none; border-top: .1rem solid var(--line); }
+  .mega__item { display: flex; align-items: baseline; justify-content: space-between; gap: 2rem; padding: 1.3rem 0; border-bottom: .1rem solid var(--line); }
+  .mega__name { font-size: 1.15rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; transition: opacity .3s ease; }
+  .mega__name:hover, .mega__name:focus-visible { opacity: .55; }
+  .mega__name:active { opacity: .35; }
+  .mega__cat { font-size: 1rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .mega__feature { display: grid; gap: 1.2rem; transition: opacity .3s ease; }
+  .mega__feature:hover { opacity: .85; }
+  .mega__feature:active { opacity: .7; }
+  .mega__feature img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .mega__feature span { font-size: 1.05rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; }
 
   /* Mobile menu */
-  .menu {
-    position: fixed; inset: var(--header) 0 0 0; z-index: 19; overflow-y: auto;
-    display: flex; flex-direction: column; padding: var(--s-4) var(--gutter) var(--s-3);
-    background:
-      radial-gradient(40rem 30rem at 100% 0%, rgba(201, 184, 175, .3), transparent 70%),
-      var(--paper);
-    transform: translateY(-105%); transition: transform .9s var(--ease);
-  }
-  .menu-open .menu { transform: none; }
-  .menu__nav { display: flex; flex-direction: column; }
-  .menu__link { display: flex; align-items: baseline; gap: 1.6rem; width: 100%; padding: .4rem 0; font-family: "Cormorant Garamond", serif; font-size: 2.8rem; line-height: 1.3; font-weight: 300; text-transform: uppercase; letter-spacing: -.02em; text-align: left; transition: transform .5s var(--ease), opacity .3s ease; }
-  .menu__link small { font-family: Manrope, sans-serif; font-size: 1rem; letter-spacing: .2em; color: var(--taupe); }
-  .menu__link:hover, .menu__link:focus-visible { transform: translateX(.8rem); }
+  .menu { position: fixed; inset: var(--header) 0 0 0; z-index: 19; overflow-y: auto; display: flex; flex-direction: column; padding: var(--s-3) var(--gutter); background: var(--bg); opacity: 0; pointer-events: none; transition: opacity .4s ease; }
+  .menu-open .menu { opacity: 1; pointer-events: auto; }
+  .menu__nav { display: flex; flex-direction: column; border-top: .1rem solid var(--line); }
+  .menu__link { display: flex; align-items: center; width: 100%; padding: 1.6rem 0; border-bottom: .1rem solid var(--line); font-size: 1.3rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; text-align: left; transition: opacity .3s ease; }
   .menu__link:active { opacity: .5; }
   .menu__link[aria-disabled="true"] { color: var(--muted); }
-  .menu__link svg { width: 1.2rem; height: .7rem; margin-left: auto; align-self: center; transition: transform .5s var(--ease); }
+  .menu__link svg { width: 1rem; height: .6rem; margin-left: auto; transition: transform .5s var(--ease); }
   .menu__link[aria-expanded="true"] svg { transform: rotate(180deg); }
-  .menu__sub { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .6s var(--ease); }
+  .menu__sub { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .5s var(--ease); }
   .menu__sub.is-open { grid-template-rows: 1fr; }
   .menu__sub > div { overflow: hidden; }
-  .menu__sub ul { display: grid; padding: .8rem 0 1.6rem 3.4rem; }
-  .menu__sub a { display: block; padding: .7rem 0; font-size: 1.5rem; transition: transform .5s var(--ease); }
-  .menu__sub a:hover, .menu__sub a:focus-visible { transform: translateX(.6rem); }
+  .menu__sub ul { display: grid; margin: 0; padding: .8rem 0 1.2rem; list-style: none; border-bottom: .1rem solid var(--line); }
+  .menu__sub a { display: block; padding: .8rem 0; font-size: 1.5rem; color: var(--muted); }
   .menu__sub a:active { opacity: .5; }
   .menu__foot { margin-top: auto; padding-top: var(--s-4); display: grid; gap: var(--s-3); font-size: 1.4rem; }
-  .menu__langs { display: flex; flex-wrap: wrap; gap: .4rem 2.4rem; font-size: 1.2rem; letter-spacing: .2em; }
+  .menu__langs { display: flex; flex-wrap: wrap; gap: .4rem 2.4rem; font-size: 1.1rem; letter-spacing: .14em; }
   .menu__langs a { padding: .6rem 0; color: var(--muted); }
   .menu__langs a[aria-current] { color: var(--ink); }
 
   /* ───────────── Hero ───────────── */
   main { padding-top: var(--header); }
-  .hero { position: relative; display: flex; flex-direction: column; height: calc(100svh - var(--header)); min-height: 58rem; overflow: hidden; background: var(--night); color: var(--paper); isolation: isolate; }
+  .hero { position: relative; display: flex; align-items: flex-end; justify-content: center; height: calc(100svh - var(--header)); min-height: 56rem; overflow: hidden; background: #2b2724; color: var(--white); isolation: isolate; }
   .hero__media { position: absolute; inset: 0; z-index: -1; }
-  .hero__media video { width: 100%; height: 100%; object-fit: cover; object-position: 62% center; transform: scale(1.12); transition: transform 2.4s var(--ease); }
-  .is-loaded .hero__media video, html:not(.js) .hero__media video { transform: none; }
-  .hero__inner { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2.4rem; padding: 0 var(--gutter); text-align: center; }
-  .hero__eyebrow { color: var(--taupe-soft); }
-  .hero__title { margin: 0; font-size: 4rem; text-shadow: 0 .2rem 3rem rgba(6, 6, 6, .55); }
-  .hero__title em { color: var(--paper); }
-  .hero__text { max-width: 46rem; color: rgba(255, 254, 254, .82); }
-  .hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.6rem 3.2rem; align-items: center; margin-top: .8rem; }
-  .hero__actions .text-cta { color: var(--paper); }
+  .hero__media video { width: 100%; height: 100%; object-fit: cover; object-position: 62% center; }
+  .hero__inner { display: grid; justify-items: center; gap: 1.8rem; padding: 0 var(--gutter) 7rem; text-align: center; }
+  .hero__inner .label { color: rgba(255, 254, 252, .8); }
+  .hero__text { max-width: 44rem; margin: 0; color: rgba(255, 254, 252, .85); }
+  .hero__actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1.6rem 3.2rem; margin-top: 1rem; }
 
-  .ticker { position: relative; overflow: hidden; border-top: .1rem solid rgba(255, 254, 254, .16); }
-  .ticker__track { display: flex; width: max-content; animation: ticker 38s linear infinite; }
-  .ticker__group { display: flex; align-items: center; flex: none; }
-  .ticker__item { display: flex; align-items: center; gap: 4rem; padding: 1.8rem 2rem; font-family: "Cormorant Garamond", serif; font-size: 1.8rem; letter-spacing: .28em; text-transform: uppercase; color: rgba(255, 254, 254, .78); white-space: nowrap; }
-  .ticker__item svg { width: .7rem; height: .7rem; color: var(--taupe-soft); }
-  @keyframes ticker { to { transform: translateX(-50%); } }
-
-  .line { display: block; overflow: hidden; padding-bottom: .14em; margin-bottom: -.14em; }
-  .line > span { display: block; }
-  .js .line > span { transform: translateY(115%); transition: transform 1.3s var(--ease); }
-  .js .fade-up { opacity: 0; transform: translateY(2rem); transition: opacity 1s ease, transform 1.2s var(--ease); }
-  .is-loaded .line > span, .is-loaded .fade-up { transform: none; opacity: 1; }
-  .is-loaded .hero .d1 > span, .is-loaded .hero .fade-up.d1 { transition-delay: .55s; }
-  .is-loaded .hero .d2 > span, .is-loaded .hero .fade-up.d2 { transition-delay: .68s; }
-  .is-loaded .hero .fade-up.d3 { transition-delay: .9s; }
-  .is-loaded .hero .fade-up.d4 { transition-delay: 1.05s; }
-  .is-loaded .hero .fade-up.d5 { transition-delay: 1.25s; }
+  .js .fade { opacity: 0; transform: translateY(1.4rem); transition: opacity 1.1s ease, transform 1.2s var(--ease); }
+  .is-ready .fade { opacity: 1; transform: none; }
+  .is-ready .fade.f2 { transition-delay: .12s; }
+  .is-ready .fade.f3 { transition-delay: .24s; }
+  .is-ready .fade.f4 { transition-delay: .36s; }
 
   /* ───────────── Scroll reveals ───────────── */
-  .js .reveal { opacity: 0; transform: translateY(3rem); transition: opacity 1s ease, transform 1.2s var(--ease); }
+  .js .reveal { opacity: 0; transform: translateY(2rem); transition: opacity 1s ease, transform 1.1s var(--ease); }
   .js .reveal.is-in { opacity: 1; transform: none; }
-  .js .reveal.d1 { transition-delay: .1s; }
-  .js .reveal.d2 { transition-delay: .2s; }
-  .js .reveal.d3 { transition-delay: .3s; }
-  .js .reveal.d4 { transition-delay: .4s; }
+  .js .reveal.d1 { transition-delay: .08s; }
+  .js .reveal.d2 { transition-delay: .16s; }
+  .js .reveal.d3 { transition-delay: .24s; }
 
-  /* ───────────── Sections ───────────── */
-  .section { position: relative; padding: var(--s-6) var(--gutter); }
-  .section__head { display: grid; gap: var(--s-2); margin-bottom: var(--s-4); }
-  .section__head--center { justify-items: center; text-align: center; }
-  .section__head--split { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--s-3); }
-  .section__head--split > div { display: grid; gap: var(--s-2); }
-  .section__intro { max-width: 44rem; color: var(--muted); }
-  .media-tint { position: absolute; inset: 0; }
+  /* ───────────── Layout ───────────── */
+  .section { padding: var(--s-6) var(--gutter); }
+  .head { display: grid; gap: 1.4rem; margin-bottom: var(--s-4); }
+  .head--center { justify-items: center; text-align: center; }
+  .head--center .text { max-width: 46rem; }
 
-  /* About the group */
-  .about__grid { display: grid; gap: var(--s-5); }
-  .about__visual { position: relative; padding-bottom: 6rem; }
-  .about__frame { position: relative; width: 82%; aspect-ratio: 3 / 4; overflow: hidden; background: var(--shell); }
-  .about__frame img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.08); transition: transform 2.2s var(--ease); }
-  .about__visual.is-in .about__frame img, html:not(.js) .about__frame img { transform: none; }
-  .about__float { position: absolute; right: 0; bottom: 0; width: 48%; padding: 1rem; background: var(--paper); box-shadow: var(--shadow-floating); }
-  .about__float div { position: relative; overflow: hidden; aspect-ratio: 4 / 3; }
-  .about__float img { width: 100%; height: 100%; object-fit: cover; }
-  .about__copy { display: grid; gap: var(--s-3); align-content: start; }
-  .about__copy .section__head { margin-bottom: 0; }
-  .about__text { max-width: 54rem; }
-  .stats { display: grid; grid-template-columns: 1fr 1fr; margin-top: var(--s-2); border-top: .1rem solid var(--line); }
-  .stat { display: grid; gap: .6rem; padding: 2.4rem 0; border-bottom: .1rem solid var(--line); }
-  .stat:nth-child(odd) { padding-right: 2rem; }
+  .photo { position: relative; display: block; overflow: hidden; background: var(--bg-2); }
+  .photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s var(--ease); }
+
+  /* Split: photo half + text half (full bleed) */
+  .split { display: grid; }
+  .split__media { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 .2rem; }
+  .split__media .photo { aspect-ratio: 2 / 3; }
+  .split__media--single { grid-template-columns: 1fr; }
+  .split__media--single .photo { aspect-ratio: 4 / 5; }
+  .split__body { display: grid; align-content: center; justify-items: start; gap: var(--s-3); padding: var(--s-5) var(--gutter); }
+  .split__body .text { max-width: 52rem; }
+
+  /* About */
+  .stats { display: grid; grid-template-columns: 1fr 1fr; width: 100%; margin: var(--s-1) 0 0; border-top: .1rem solid var(--line); }
+  .stat { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: .4rem; padding: 2rem 0; border-bottom: .1rem solid var(--line); }
   .stat:nth-child(even) { padding-left: 2rem; border-left: .1rem solid var(--line); }
-  .stat b { font-family: "Cormorant Garamond", serif; font-size: 4.4rem; line-height: 1; font-weight: 300; letter-spacing: -.03em; }
-  .stat b small { font-size: .5em; letter-spacing: 0; color: var(--taupe); }
-  .stat span { font-size: 1.2rem; line-height: 1.5; color: var(--muted); }
+  .stat dt { font-size: 1.2rem; line-height: 1.5; color: var(--muted); }
+  .stat dd { margin: 0; font-size: 2.4rem; font-weight: 300; line-height: 1.1; letter-spacing: -.01em; }
 
-  /* Brands index */
-  .brands { background:
-      radial-gradient(70rem 50rem at 0% 0%, rgba(255, 254, 254, .9), transparent 70%),
-      radial-gradient(60rem 50rem at 100% 100%, rgba(201, 184, 175, .22), transparent 70%),
-      var(--shell); }
-  .brands__grid { display: grid; gap: var(--s-4); }
-  .brand-list { border-top: .1rem solid var(--line); counter-reset: brand; }
-  .brand-row { position: relative; display: grid; grid-template-columns: 4rem 1fr auto; align-items: center; gap: .4rem 1.6rem; padding: 2.4rem 0; border-bottom: .1rem solid var(--line); }
-  .brand-row__num { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 1.6rem; color: var(--taupe); }
-  .brand-row__name { font-family: "Cormorant Garamond", serif; font-size: 2.7rem; line-height: 1; font-weight: 300; letter-spacing: -.01em; text-transform: uppercase; transition: transform .7s var(--ease); }
-  .brand-row__desc { grid-column: 2; font-size: 1.3rem; line-height: 1.55; color: var(--muted); }
-  .brand-row__go { grid-row: 1 / span 2; grid-column: 3; display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 4.4rem; border: .1rem solid var(--line); border-radius: 50%; transition: transform .6s var(--spring); }
-  .brand-row__go::before { content: ""; position: absolute; inset: 0; }
-  .brand-row__go svg { width: 1.6rem; height: .8rem; }
-  .brand-row:hover .brand-row__name, .brand-row:focus-within .brand-row__name { transform: translateX(1rem); }
-  .brand-row:hover .brand-row__go, .brand-row:focus-within .brand-row__go { transform: rotate(-45deg); }
-  .brand-row:active .brand-row__name { opacity: .6; }
-  .brand-row__tag { display: inline-block; margin-left: 1.2rem; vertical-align: middle; font-family: Manrope, sans-serif; font-size: .9rem; font-weight: 500; letter-spacing: .22em; color: var(--taupe); }
-
-  .brand-preview { display: none; }
-  .brand-preview__stage { position: relative; overflow: hidden; aspect-ratio: 4 / 5; background: var(--line); box-shadow: var(--shadow-floating); }
-  .brand-preview__img { position: absolute; inset: 0; opacity: 0; transform: scale(1.06); transition: opacity .8s ease, transform 1.4s var(--ease); }
-  .brand-preview__img.is-active { opacity: 1; transform: none; }
-  .brand-preview__img img { width: 100%; height: 100%; object-fit: cover; }
-  .brand-preview__cap { display: flex; justify-content: space-between; gap: 2rem; margin-top: 2rem; font-size: 1.1rem; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
-  .brand-preview__cap b { font-weight: 500; color: var(--ink); }
+  /* Brands grid */
+  .brands-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 .2rem; margin: 0 calc(var(--gutter) * -1); }
+  .brand { display: grid; align-content: start; gap: 1.2rem; padding-bottom: var(--s-3); transition: opacity .3s ease; }
+  .brand .photo { aspect-ratio: 2 / 3; }
+  .brand__cap { display: grid; gap: .3rem; padding: 0 1.2rem; }
+  .brand__desc { font-size: 1.25rem; line-height: 1.55; color: var(--muted); }
+  .brand:hover .photo img, .brand:focus-visible .photo img { transform: scale(1.04); }
+  .brand:active { opacity: .8; }
+  .brand--cta { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 1.6rem; aspect-ratio: 2 / 3; padding: 2rem; background: var(--bg-2); }
+  .brand--cta .text { font-size: 1.3rem; }
 
   /* Benefits */
-  .ben-list { display: grid; border-bottom: .1rem solid var(--line); }
-  .ben { display: grid; grid-template-columns: 4.4rem 1fr; gap: .6rem 1.2rem; padding: 2.6rem 0; border-top: .1rem solid var(--line); }
-  .ben__num { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 1.6rem; line-height: 1.4; color: var(--taupe); }
-  .ben__title { font-family: "Cormorant Garamond", serif; font-size: 2.2rem; line-height: 1.15; font-weight: 400; }
-  .ben__text { grid-column: 2; color: var(--muted); }
-
-  .terms { position: relative; display: grid; margin-top: var(--s-5); background: var(--night); color: var(--paper); box-shadow: var(--shadow-floating); isolation: isolate; overflow: hidden; }
-  .terms::before { content: ""; position: absolute; inset: 0; z-index: -1; background:
-      radial-gradient(50rem 30rem at 0% 0%, rgba(133, 109, 101, .34), transparent 70%),
-      radial-gradient(40rem 30rem at 100% 100%, rgba(201, 184, 175, .14), transparent 70%); }
-  .terms__head { display: grid; gap: 1.2rem; padding: 3.2rem 2.8rem; border-bottom: .1rem solid rgba(255, 254, 254, .12); }
-  .terms__head h3 { font-family: "Cormorant Garamond", serif; font-size: 2.8rem; line-height: 1.05; font-weight: 300; }
-  .terms__head p { font-size: 1.2rem; color: rgba(255, 254, 254, .6); }
-  .term { display: grid; gap: .8rem; align-content: start; padding: 2.8rem; border-bottom: .1rem solid rgba(255, 254, 254, .12); }
-  .term small { font-size: 1rem; letter-spacing: .24em; text-transform: uppercase; color: var(--taupe-soft); }
-  .term b { font-family: "Cormorant Garamond", serif; font-size: 3.6rem; line-height: 1; font-weight: 300; letter-spacing: -.02em; }
-  .term span { font-size: 1.25rem; line-height: 1.55; color: rgba(255, 254, 254, .66); }
+  .ben-grid { display: grid; gap: var(--s-3); margin-top: var(--s-1); }
+  .ben { display: grid; gap: .6rem; }
+  .ben .text { font-size: 1.3rem; }
+  .terms { display: grid; grid-template-columns: 1fr 1fr; margin: 0 var(--gutter); border-bottom: .1rem solid var(--line); }
+  .term { display: grid; gap: .6rem; align-content: start; padding: 2.8rem 1.6rem 2.8rem 0; }
+  .term:nth-child(even) { padding-left: 1.6rem; border-left: .1rem solid var(--line); }
+  .term:nth-child(n + 3) { border-top: .1rem solid var(--line); }
+  .term b { font-size: 2.2rem; font-weight: 300; line-height: 1.15; }
+  .term span:last-child { font-size: 1.2rem; line-height: 1.55; color: var(--muted); }
 
   /* Brand collections */
-  .tabs { position: relative; display: flex; gap: 2.8rem; margin: 0 calc(var(--gutter) * -1) var(--s-4); padding: 0 var(--gutter); overflow-x: auto; border-bottom: .1rem solid var(--line); scrollbar-width: none; }
+  .tabs { display: flex; gap: 2.8rem; margin: 0 calc(var(--gutter) * -1) var(--s-4); padding: 0 var(--gutter); overflow-x: auto; scrollbar-width: none; }
   .tabs::-webkit-scrollbar { display: none; }
-  .tab { position: relative; flex: none; padding: 1.4rem 0 1.8rem; font-size: 1.15rem; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); white-space: nowrap; transition: opacity .3s ease; }
-  .tab::after { content: ""; position: absolute; left: 0; right: 0; bottom: -.1rem; height: .1rem; background: var(--ink); transform: scaleX(0); transform-origin: left center; transition: transform .6s var(--ease); }
+  .tab { position: relative; flex: none; padding: 1rem 0; font-size: 1.05rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); white-space: nowrap; transition: color .3s ease; }
+  .tab::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: .1rem; background: var(--ink); transform: scaleX(0); transition: transform .5s var(--ease); }
   .tab:hover { color: var(--ink); }
-  .tab:hover::after { transform: scaleX(.3); }
   .tab:active { opacity: .6; }
   .tab[aria-selected="true"] { color: var(--ink); }
   .tab[aria-selected="true"]::after { transform: scaleX(1); }
 
-  .panel { display: grid; gap: var(--s-4); }
   .panel[hidden] { display: none; }
-  .panel.is-entering .panel__info, .panel.is-entering .model { animation: panel-in .9s var(--ease) both; }
-  .panel.is-entering .model:nth-child(2) { animation-delay: .08s; }
-  .panel.is-entering .model:nth-child(3) { animation-delay: .16s; }
-  @keyframes panel-in { from { opacity: 0; transform: translateY(2rem); } }
-  .panel__info { display: grid; gap: 2rem; align-content: start; }
-  .panel__brand { font-family: "Cormorant Garamond", serif; font-size: 4rem; line-height: 1; font-weight: 300; letter-spacing: -.02em; text-transform: uppercase; }
-  .panel__desc { color: var(--muted); max-width: 40rem; }
-  .panel__meta { display: grid; gap: 1rem; padding-top: 2rem; border-top: .1rem solid var(--line); }
-  .panel__meta small { font-size: 1rem; letter-spacing: .24em; text-transform: uppercase; color: var(--taupe); }
-  .chips { display: flex; flex-wrap: wrap; gap: .8rem; }
-  .chip { padding: .5rem 1.2rem; border: .1rem solid var(--line); font-size: 1.15rem; letter-spacing: .06em; font-variant-numeric: tabular-nums; }
-  .panel__links { display: flex; flex-wrap: wrap; gap: 1.6rem 3.2rem; align-items: center; margin-top: .8rem; }
+  .panel.is-entering { animation: panel-in .8s var(--ease) both; }
+  @keyframes panel-in { from { opacity: 0; transform: translateY(1.4rem); } }
+  .panel__info { display: grid; justify-items: center; gap: 1.4rem; max-width: 56rem; margin: 0 auto var(--s-4); text-align: center; }
+  .panel__models { margin: 0; font-size: 1.2rem; letter-spacing: .06em; color: var(--muted); }
+  .panel__models b { font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); margin-right: .8rem; }
+  .panel__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.2rem 3.2rem; }
 
-  .models { display: grid; grid-template-columns: repeat(3, 72%); gap: 1.4rem; margin: 0 calc(var(--gutter) * -1); padding: 0 var(--gutter) .4rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); scrollbar-width: none; }
+  .models { display: grid; grid-auto-flow: column; grid-auto-columns: 72%; gap: 0 .2rem; margin: 0 calc(var(--gutter) * -1); overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
   .models::-webkit-scrollbar { display: none; }
-  .model { position: relative; display: block; scroll-snap-align: start; }
-  .model__media { position: relative; display: block; overflow: hidden; aspect-ratio: 2 / 3; background: var(--shell); }
-  .model__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.6s var(--ease); }
-  .model__shade { opacity: .45; transition: opacity .8s ease; }
-  .model:hover .model__media img, .model:focus-visible .model__media img { transform: scale(1.06); }
-  .model:hover .model__shade { opacity: .2; }
-  .model:active .model__title { opacity: .6; }
-  .model__badge { position: absolute; top: 1.4rem; left: 1.4rem; padding: .4rem 1rem; background: var(--paper); color: var(--ink); font-size: .95rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; box-shadow: var(--shadow-elevated); }
-  .model__body { display: flex; align-items: baseline; justify-content: space-between; gap: 1.6rem; margin-top: 1.6rem; }
-  .model__title { font-variant-numeric: lining-nums; font-family: "Cormorant Garamond", serif; font-size: 2.2rem; line-height: 1.1; font-weight: 400; transition: opacity .3s ease; }
-  .model__kind { font-size: 1rem; letter-spacing: .22em; text-transform: uppercase; color: var(--taupe); white-space: nowrap; }
+  .model { display: grid; align-content: start; gap: 1.2rem; scroll-snap-align: start; }
+  .model .photo { aspect-ratio: 2 / 3; }
+  .model__cap { display: flex; justify-content: space-between; align-items: baseline; gap: 1.2rem; padding: 0 1.2rem; }
+  .model__cap span:last-child { font-size: 1rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+  .model:hover .photo img, .model:focus-visible .photo img { transform: scale(1.04); }
+  .model__new { position: absolute; top: 1.2rem; left: 1.2rem; padding: .3rem .9rem; background: var(--white); font-size: .95rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; }
 
-  /* Exclusive services */
-  .services { color: var(--paper); background:
-      radial-gradient(70rem 40rem at 100% 0%, rgba(133, 109, 101, .3), transparent 70%),
-      radial-gradient(50rem 40rem at 0% 100%, rgba(201, 184, 175, .1), transparent 70%),
-      var(--night); }
-  .services .display em { color: var(--taupe-soft); }
-  .services .section__intro { color: rgba(255, 254, 254, .62); }
-  .services .eyebrow { color: var(--taupe-soft); }
-  .services__grid { display: grid; gap: var(--s-4); }
-  .services__visual { position: relative; overflow: hidden; aspect-ratio: 4 / 5; background: var(--night-2); box-shadow: 0 2rem 6rem rgba(0, 0, 0, .4); }
-  .services__visual img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.08); transition: transform 2.2s var(--ease); }
-  .services__visual.is-in img, html:not(.js) .services__visual img { transform: none; }
-  .svc-list { display: grid; border-top: .1rem solid rgba(255, 254, 254, .14); }
-  .svc { display: grid; grid-template-columns: 4.4rem 1fr; gap: .8rem 1.2rem; padding: 2.8rem 0; border-bottom: .1rem solid rgba(255, 254, 254, .14); }
-  .svc__num { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 1.6rem; color: var(--taupe-soft); }
-  .svc__title { font-family: "Cormorant Garamond", serif; font-size: 2.4rem; line-height: 1.1; font-weight: 400; }
-  .svc__text { grid-column: 2; color: rgba(255, 254, 254, .62); }
+  /* Services */
+  .svc-list { display: grid; width: 100%; margin: var(--s-1) 0 0; padding: 0; list-style: none; border-top: .1rem solid var(--line); }
+  .svc { display: grid; gap: .6rem; padding: 2.2rem 0; border-bottom: .1rem solid var(--line); }
+  .svc .text { font-size: 1.3rem; }
 
   /* CTA banner */
-  .banner { position: relative; display: flex; align-items: flex-end; min-height: 54rem; padding: var(--s-4) var(--gutter); overflow: hidden; background: var(--night); color: var(--paper); isolation: isolate; }
+  .banner { position: relative; display: flex; align-items: flex-end; min-height: 56rem; padding: var(--s-5) var(--gutter); overflow: hidden; background: #2b2724; color: var(--white); isolation: isolate; }
   .banner__media { position: absolute; inset: 0; z-index: -1; }
-  .banner__media img { width: 100%; height: 100%; object-fit: cover; object-position: 74% center; transform: scale(1.1); transition: transform 2.6s var(--ease); }
-  .banner.is-in .banner__media img, html:not(.js) .banner__media img { transform: none; }
-  .js .banner.reveal { opacity: 1; transform: none; }
-  .banner__body { display: grid; gap: var(--s-3); justify-items: start; max-width: 60rem; }
-  .banner__eyebrow { color: var(--taupe-soft); }
-  .banner__title { font-size: 3.6rem; }
-  .banner__title em { color: var(--paper); }
-  .banner__text { max-width: 42rem; color: rgba(255, 254, 254, .8); }
-  .banner__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.6rem 3.2rem; }
-  .banner__actions .text-cta { color: var(--paper); }
+  .banner__media img { width: 100%; height: 100%; object-fit: cover; object-position: 74% center; }
+  .banner__body { display: grid; gap: 1.8rem; justify-items: start; max-width: 46rem; }
+  .banner__body .label { color: rgba(255, 254, 252, .8); }
+  .banner__body p { margin: 0; color: rgba(255, 254, 252, .85); }
+  .banner__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.6rem 3.2rem; margin-top: .6rem; }
 
   /* Contact */
   .contact__grid { display: grid; gap: var(--s-5); }
   .contact__info { display: grid; gap: var(--s-4); align-content: start; }
-  .contact__info .section__head { margin-bottom: 0; }
+  .contact__info .head { margin-bottom: 0; }
   .managers { display: grid; border-top: .1rem solid var(--line); }
-  .manager { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: .2rem 2rem; padding: 1.8rem 0; border-bottom: .1rem solid var(--line); }
-  .manager__name { font-family: "Cormorant Garamond", serif; font-size: 2.2rem; line-height: 1.1; }
-  .manager__market { grid-column: 1; font-size: 1.05rem; letter-spacing: .22em; text-transform: uppercase; color: var(--taupe); }
-  .manager__tel { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-variant-numeric: tabular-nums; white-space: nowrap; }
-  .contact__meta { display: grid; gap: 2.4rem; }
-  .contact__meta div { display: grid; gap: .4rem; }
-  .contact__meta small { font-size: 1rem; letter-spacing: .24em; text-transform: uppercase; color: var(--taupe); }
+  .manager { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0 2rem; padding: 1.6rem 0; border-bottom: .1rem solid var(--line); }
+  .manager__name { font-weight: 500; }
+  .manager__market { grid-column: 1; font-size: 1rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .manager__tel { grid-column: 2; grid-row: 1 / span 2; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .contact__meta { display: grid; gap: 2rem; }
+  .contact__meta div { display: grid; gap: .3rem; justify-items: start; }
 
-  .form { position: relative; display: grid; gap: 2.8rem; padding: 3.2rem 2.4rem; background: var(--paper); border: .1rem solid var(--line); box-shadow: var(--shadow-floating); }
-  .form__head { display: grid; gap: 1rem; }
-  .form__title { font-family: "Cormorant Garamond", serif; font-size: 3rem; line-height: 1.05; font-weight: 300; }
-  .form__title em { font-style: italic; color: var(--taupe); }
-  .form__sub { color: var(--muted); font-size: 1.3rem; }
-  .form__row { display: grid; gap: 2.8rem; }
-  .field { position: relative; display: grid; gap: .4rem; }
-  .field label { font-size: 1rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
-  .field input, .field select {
-    width: 100%; height: 4.4rem; padding: 0; border: 0; border-bottom: .1rem solid var(--line); border-radius: 0; background: transparent;
-    font: inherit; font-size: 1.5rem; color: var(--ink); outline: none; appearance: none;
-  }
-  .field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 5' fill='none' stroke='%23856d65'%3E%3Cpath d='M.5.5 4 4 7.5.5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right .4rem center; background-size: .9rem; cursor: pointer; }
-  .field::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: .1rem; background: var(--ink); transform: scaleX(0); transform-origin: left center; transition: transform .6s var(--ease); }
+  .form { position: relative; display: grid; gap: 2.6rem; align-content: start; }
+  .form .head { margin-bottom: 0; }
+  .form__row { display: grid; gap: 2.6rem; }
+  .field { position: relative; display: grid; gap: .2rem; }
+  .field label, .picks legend { font-size: 1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .field input, .field select { width: 100%; height: 4.2rem; padding: 0; border: 0; border-bottom: .1rem solid var(--line); border-radius: 0; background: transparent; font: inherit; font-size: 1.5rem; color: var(--ink); outline: none; appearance: none; }
+  .field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 5' fill='none' stroke='%2377706a'%3E%3Cpath d='M.5.5 4 4 7.5.5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right .4rem center; background-size: .9rem; cursor: pointer; }
+  .field::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: .1rem; background: var(--ink); transform: scaleX(0); transform-origin: left center; transition: transform .5s var(--ease); }
   .field:focus-within::after { transform: scaleX(1); }
-  .field input::placeholder { color: #b5aca6; }
-  .field input:user-invalid { border-bottom-color: #a4553f; }
-  .brand-picks { display: grid; gap: 1.2rem; }
-  .brand-picks legend { margin-bottom: 1.2rem; font-size: 1rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
+  .field input::placeholder { color: #b0a8a1; }
+  .picks { margin: 0; padding: 0; border: 0; }
+  .picks legend { margin-bottom: 1.2rem; padding: 0; }
+  .picks__list { display: flex; flex-wrap: wrap; gap: .8rem; }
   .pick { position: relative; display: inline-flex; }
   .pick input { position: absolute; opacity: 0; pointer-events: none; }
-  .pick span { display: inline-flex; align-items: center; min-height: 3.6rem; padding: 0 1.4rem; border: .1rem solid var(--line); font-size: 1.2rem; cursor: pointer; transition: transform .4s var(--spring), background-color .3s ease, color .3s ease, border-color .3s ease; }
-  .pick span:hover { border-color: var(--taupe); }
-  .pick span:active { transform: scale(.95); }
-  .pick input:checked + span { background: var(--ink); border-color: var(--ink); color: var(--paper); }
-  .pick input:focus-visible + span { outline: .1rem solid var(--taupe); outline-offset: .3rem; }
-  .consent { display: grid; grid-template-columns: 2rem 1fr; gap: 1.2rem; align-items: start; font-size: 1.2rem; line-height: 1.55; color: var(--muted); cursor: pointer; }
-  .consent input { appearance: none; width: 1.8rem; height: 1.8rem; margin: .1rem 0 0; border: .1rem solid var(--taupe); border-radius: 0; display: grid; place-content: center; cursor: pointer; transition: transform .4s var(--spring); }
-  .consent input::after { content: ""; width: .9rem; height: .9rem; background: var(--ink); transform: scale(0); transition: transform .4s var(--spring); }
+  .pick span { display: inline-flex; align-items: center; min-height: 3.4rem; padding: 0 1.4rem; border: .1rem solid var(--line); font-size: 1.2rem; cursor: pointer; transition: transform .3s var(--ease), background-color .3s ease, color .3s ease, border-color .3s ease; }
+  .pick span:hover { border-color: var(--ink); }
+  .pick span:active { transform: scale(.96); }
+  .pick input:checked + span { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+  .pick input:focus-visible + span { outline: .1rem solid var(--ink); outline-offset: .3rem; }
+  .consent { display: grid; grid-template-columns: 1.8rem 1fr; gap: 1.2rem; align-items: start; font-size: 1.2rem; line-height: 1.55; color: var(--muted); cursor: pointer; }
+  .consent input { appearance: none; width: 1.6rem; height: 1.6rem; margin: .2rem 0 0; border: .1rem solid var(--muted); border-radius: 0; display: grid; place-content: center; cursor: pointer; }
+  .consent input::after { content: ""; width: .8rem; height: .8rem; background: var(--ink); transform: scale(0); transition: transform .3s var(--ease); }
   .consent input:checked::after { transform: scale(1); }
-  .consent input:active { transform: scale(.9); }
-  .form__done { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.6rem; padding: 3.2rem; background: var(--paper); text-align: center; opacity: 0; pointer-events: none; transition: opacity .6s ease; }
+  .form__done { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.2rem; background: var(--bg); text-align: center; opacity: 0; pointer-events: none; transition: opacity .5s ease; }
   .form.is-sent .form__done { opacity: 1; pointer-events: auto; }
-  .form__done b { font-family: "Cormorant Garamond", serif; font-size: 3.2rem; line-height: 1.05; font-weight: 300; }
-  .form__done p { max-width: 32rem; color: var(--muted); }
+  .form__done p { max-width: 32rem; margin: 0; color: var(--muted); }
 
   /* Footer */
-  .footer { padding: var(--s-5) var(--gutter) 0; color: var(--paper); background:
-      radial-gradient(60rem 30rem at 50% 0%, rgba(133, 109, 101, .26), transparent 70%),
-      var(--night); }
+  .footer { padding: var(--s-5) var(--gutter) 0; background: var(--bg-2); }
   .footer__top { display: grid; gap: var(--s-4); padding-bottom: var(--s-4); }
-  .footer__brand { display: grid; gap: 2rem; justify-items: start; align-content: start; }
+  .footer__brand { display: grid; gap: 1.6rem; justify-items: start; align-content: start; }
   .footer .logo { align-items: flex-start; }
-  .footer .logo__word { font-size: 3rem; padding-left: 0; }
-  .footer .logo__sub { color: var(--taupe-soft); padding-left: 0; }
-  .footer__tagline { max-width: 30rem; font-family: "Cormorant Garamond", serif; font-style: italic; font-weight: 300; font-size: 1.9rem; line-height: 1.3; color: rgba(255, 254, 254, .7); }
+  .footer .logo__word, .footer .logo__sub { padding-left: 0; }
+  .footer__tagline { max-width: 28rem; margin: 0; font-size: 1.3rem; color: var(--muted); }
   .footer__cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4) var(--s-3); }
-  .footer__col { display: grid; gap: 1.4rem; align-content: start; font-size: 1.3rem; }
-  .footer__col h3 { margin-bottom: .4rem; font-size: 1rem; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; color: var(--taupe-soft); }
-  .footer__col a, .footer__col span { justify-self: start; color: rgba(255, 254, 254, .82); }
-  .footer__col span { color: rgba(255, 254, 254, .55); }
-  .footer__col a[aria-disabled="true"] { color: rgba(255, 254, 254, .5); }
-  .footer__langs { display: flex; flex-wrap: wrap; gap: 1rem 2.4rem; padding: 2.4rem 0; border-top: .1rem solid rgba(255, 254, 254, .12); font-size: 1.1rem; letter-spacing: .2em; }
-  .footer__langs a { color: rgba(255, 254, 254, .55); }
-  .footer__langs a[aria-current] { color: var(--paper); }
-  .footer__bottom { display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); padding: 2rem 0; border-top: .1rem solid rgba(255, 254, 254, .12); font-size: 1.1rem; color: rgba(255, 254, 254, .5); }
-  .to-top { display: inline-flex; align-items: center; gap: 1.2rem; color: var(--paper); font-size: 1rem; letter-spacing: .22em; text-transform: uppercase; }
-  .to-top i { display: flex; align-items: center; justify-content: center; width: 3.6rem; height: 3.6rem; border: .1rem solid rgba(255, 254, 254, .3); border-radius: 50%; transition: transform .5s var(--spring); }
-  .to-top svg { width: .8rem; height: 1.3rem; }
-  .to-top:hover i, .to-top:focus-visible i { transform: translateY(-.4rem); }
-  .to-top:active i { transform: scale(.92); }
+  .footer__col { display: grid; gap: 1.1rem; align-content: start; font-size: 1.3rem; }
+  .footer__col .label { margin-bottom: .4rem; }
+  .footer__col a, .footer__col span { justify-self: start; }
+  .footer__col span:not(.label), .footer__col a[aria-disabled="true"] { color: var(--muted); }
+  .footer__langs { display: flex; flex-wrap: wrap; gap: 1rem 2.4rem; padding: 2.2rem 0; border-top: .1rem solid var(--line); font-size: 1.1rem; letter-spacing: .1em; }
+  .footer__langs a { color: var(--muted); }
+  .footer__langs a[aria-current] { color: var(--ink); }
+  .footer__bottom { display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); padding: 2rem 0; border-top: .1rem solid var(--line); font-size: 1.1rem; color: var(--muted); }
+  .to-top { font-size: 1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); transition: opacity .3s ease; }
+  .to-top:hover, .to-top:focus-visible { opacity: .55; }
+  .to-top:active { opacity: .35; }
 
   /* ───────────── Phone only ───────────── */
   @media (max-width: 639px) {
     body { font-size: 1.5rem; }
-    .logo__sub { font-size: .9rem; }
-    .btn, .text-cta, .footer__bottom, .to-top { font-size: 1.2rem; }
-    .btn { min-height: 5.2rem; }
-    .hero__actions { flex-direction: column; gap: 1.2rem; }
-    .hero__actions .text-cta { padding: 1rem 0; }
-    .footer__col a { padding: .4rem 0; }
-    .footer__bottom { flex-direction: column-reverse; gap: 2rem; padding: 2.8rem 0; }
-    .to-top i { width: 4.4rem; height: 4.4rem; }
+    .hero__actions { flex-direction: column; gap: 1.8rem; }
+    .footer__col a { padding: .3rem 0; }
+    .footer__bottom { flex-direction: column-reverse; gap: 1.6rem; padding: 2.6rem 0; }
   }
 
   /* ───────────── Tablet ───────────── */
   @media (min-width: 640px) {
     html { font-size: clamp(9px, 1.3vw, 11px); }
     :root { --gutter: 4rem; }
-    .hero__title { font-size: 5.8rem; }
+    .h1 { font-size: 4.4rem; }
+    .h2 { font-size: 3.2rem; }
     .stats { grid-template-columns: repeat(4, 1fr); }
-    .stat, .stat:nth-child(odd), .stat:nth-child(even) { padding: 2.8rem 2rem 2.8rem 0; border-left: 0; }
-    .stat + .stat { padding-left: 2rem; border-left: .1rem solid var(--line); }
-    .ben-list { grid-template-columns: 1fr 1fr; column-gap: var(--s-4); }
-    .terms { grid-template-columns: repeat(2, 1fr); }
-    .terms__head { grid-column: 1 / -1; }
-    .term:nth-child(odd) { border-left: .1rem solid rgba(255, 254, 254, .12); }
-    .models { grid-template-columns: repeat(3, 1fr); margin: 0; padding: 0; overflow: visible; }
-    .form { padding: 4.4rem 4rem; }
-    .form__row { grid-template-columns: 1fr 1fr; gap: 2.8rem 3.2rem; }
-    .banner__title { font-size: 4.6rem; }
+    .stat, .stat:nth-child(even) { padding: 2rem 1.6rem 2rem 0; border-left: 0; }
+    .stat + .stat { padding-left: 1.6rem; border-left: .1rem solid var(--line); }
+    .ben-grid { grid-template-columns: 1fr 1fr; gap: var(--s-3) var(--s-4); }
+    .terms { grid-template-columns: repeat(4, 1fr); }
+    .term, .term:nth-child(even) { padding: 3.2rem 2rem; border-left: 0; }
+    .term:nth-child(n + 3) { border-top: 0; }
+    .term:first-child { padding-left: 0; }
+    .term + .term { border-left: .1rem solid var(--line); }
+    .models { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: repeat(4, minmax(0, 1fr)); overflow: visible; }
+    .models--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .models--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .form__row { grid-template-columns: 1fr 1fr; gap: 2.6rem 3.2rem; }
     .footer__cols { grid-template-columns: repeat(4, 1fr); }
   }
 
   /* ───────────── Desktop ───────────── */
   @media (min-width: 1024px) {
     html { font-size: clamp(8px, .6944444444vw, 12px); }
-    :root { --gutter: 6rem; --header: 8.5rem; --s-6: 11rem; --s-5: 7rem; }
-    body { font-size: 1.3rem; }
+    :root { --gutter: 6rem; --header: 7.2rem; --s-6: 11rem; --s-5: 8rem; }
+    body { font-size: 1.4rem; }
 
     .burger, .icon-btn--call, .menu { display: none; }
     .header__nav { display: flex; }
@@ -587,48 +388,25 @@
     .lang { display: block; }
     .mega { display: block; }
 
-    .h2 { font-size: 5.2rem; }
-    .lead { font-size: 2.3rem; }
-    .hero__title { font-size: 7.6rem; }
-    .hero__text { max-width: 52rem; font-size: 1.5rem; }
+    .h1 { font-size: 5.2rem; }
+    .h2 { font-size: 3.4rem; }
+    .hero__inner { padding-bottom: 9rem; }
 
-    .about__grid { grid-template-columns: 5fr 7fr; gap: 10rem; align-items: center; }
+    .split { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+    .split--rev .split__media { order: 2; }
+    .split__media .photo, .split__media--single .photo { aspect-ratio: auto; height: 100%; min-height: 72rem; }
+    .split__body { padding: var(--s-5) var(--gutter) var(--s-5) 8rem; }
+    .split--rev .split__body { padding: var(--s-5) 8rem var(--s-5) var(--gutter); }
 
-    .brands__grid { grid-template-columns: 7fr 4fr; gap: 10rem; align-items: start; }
-    .brand-row { grid-template-columns: 6rem 1fr 4.8rem; gap: .8rem 2rem; padding: 2.8rem 0; }
-    .brand-row__name { font-size: 4.4rem; }
-    .brand-row__go { width: 4.8rem; height: 4.8rem; }
-    .brand-preview { display: block; position: sticky; top: calc(var(--header) + 4rem); }
+    .brands-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .brand--cta { padding: 4rem; }
 
-    .ben-list { grid-template-columns: repeat(3, 1fr); column-gap: 0; border-bottom: 0; }
-    .ben { grid-template-columns: 1fr; gap: 1.2rem; padding: 4rem 3.6rem 4.4rem; }
-    .ben:nth-child(3n + 1) { padding-left: 0; }
-    .ben:nth-child(3n + 2), .ben:nth-child(3n) { border-left: .1rem solid var(--line); }
-    .ben__text { grid-column: auto; max-width: 32rem; }
-    .ben__title { font-size: 2.6rem; }
-    .terms { grid-template-columns: 1.3fr repeat(4, 1fr); }
-    .terms__head { grid-column: auto; padding: 4rem 3.6rem; border-bottom: 0; }
-    .term { padding: 4rem 3.2rem; border-bottom: 0; border-left: .1rem solid rgba(255, 254, 254, .12); }
-
-    .tabs { margin: 0 0 var(--s-4); padding: 0; }
-    .panel { grid-template-columns: 4fr 8fr; gap: 8rem; }
-    .panel__brand { font-size: 5.2rem; }
-    .models { gap: 2.1rem; }
-
-    .services__grid { grid-template-columns: 5fr 7fr; gap: 10rem; align-items: start; }
-    .services__aside { position: sticky; top: calc(var(--header) + 4rem); display: grid; gap: var(--s-4); }
-    .services__aside .section__head { margin-bottom: 0; }
-    .services__visual { width: 82%; }
-    .svc { grid-template-columns: 6rem 1fr 1.2fr; gap: 3rem; padding: 3.6rem 0; align-items: baseline; }
-    .svc__text { grid-column: auto; }
-
-    .banner { align-items: center; min-height: 64rem; }
-    .banner__title { font-size: 6rem; }
-
-    .contact__grid { grid-template-columns: 5fr 7fr; gap: 10rem; align-items: start; }
-    .form { padding: 5.6rem; }
-
+    .contact__grid { grid-template-columns: 5fr 6fr; gap: 12rem; align-items: start; }
     .footer__top { grid-template-columns: 4fr 8fr; gap: 10rem; }
+  }
+
+  @media (hover: none) {
+    .brand:hover .photo img, .model:hover .photo img { transform: none; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -641,28 +419,12 @@
 
 <a class="skip" href="#main">Skip to content</a>
 
-<!-- Preloader -->
-<div class="preloader" id="preloader" aria-hidden="true">
-  <div class="preloader__veil"></div>
-  <div class="preloader__panel">
-    <svg class="preloader__mark" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-      <path class="crown" d="M22 15l3-8 7 6 7-6 3 8"/>
-      <circle class="ring" cx="32" cy="37" r="15"/>
-      <path class="tail" d="M40 45l11 11"/>
-    </svg>
-    <div class="preloader__word"><span>Q</span><span>U</span><span>E</span><span>E</span><span>N</span></div>
-    <div class="preloader__sub">Fashion Group</div>
-    <div class="preloader__bar"><i></i></div>
-    <div class="preloader__count" id="preloaderCount">000</div>
-  </div>
-</div>
-
 <!-- Header -->
 <header class="header" id="header">
   <div class="header__side">
     <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
     <nav class="header__nav" aria-label="Primary">
-      <button class="u-link nav-drop" id="brandsToggle" type="button" aria-expanded="false" aria-controls="mega">
+      <button class="nav-drop" id="brandsToggle" type="button" aria-expanded="false" aria-controls="mega">
         Brands
         <svg viewBox="0 0 8 5" fill="none" stroke="currentColor" aria-hidden="true"><path d="M.5.5 4 4 7.5.5"/></svg>
       </button>
@@ -692,9 +454,9 @@
         <a role="link" aria-disabled="true" lang="el"><span>Ελληνικά</span><b>EL</b></a>
       </div>
     </div>
-    <a class="btn btn--solid btn--sm header__cta" href="#contact" data-label="Become a partner"><span>Become a partner</span></a>
+    <a class="btn btn--sm header__cta" href="#contact" data-label="Become a partner"><span>Become a partner</span></a>
     <a class="icon-btn icon-btn--call" href="tel:+48531472415" aria-label="Call +48 531 472 415">
-      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 2.5H3.9c-.8 0-1.4.7-1.4 1.5C2.9 11.300 8.700 17.100 16 17.500c.8 0 1.500-.6 1.500-1.400v-2.700l-3.700-1.500-1.600 1.900c-2.100-1-3.800-2.700-4.800-4.800l1.900-1.600z"/></svg>
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 2.5H3.9c-.8 0-1.4.7-1.4 1.5C2.9 11.3 8.7 17.1 16 17.5c.8 0 1.5-.6 1.5-1.4v-2.7l-3.7-1.5-1.6 1.9c-2.1-1-3.8-2.7-4.8-4.8l1.9-1.6z"/></svg>
     </a>
   </div>
 </header>
@@ -703,14 +465,12 @@
 <div class="mega" id="mega" inert>
   <div class="mega__inner">
     <div class="mega__intro">
-      <span class="eyebrow">Our brands</span>
+      <span class="label">Our brands</span>
       <p>Seven wedding dress brands from one manufacturer — each with its own character, all made to the same standard.</p>
-      <a class="text-cta" href="#brands" data-mega-close>All brands
-        <svg class="arrow" viewBox="0 0 24 10" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 5h23M19 1l4 4-4 4"/></svg>
-      </a>
+      <a class="link" href="#brands">All brands</a>
     </div>
     <ul class="mega__list">
-      <li class="mega__item"><a class="mega__name" href="#collections" data-brand="queen">QUEEN</a><a class="mega__cat u-link" href="#collections" data-brand="queen">Catalogue</a></li>
+      <li class="mega__item"><a class="mega__name" href="#collections" data-brand="queen">Queen</a><a class="mega__cat u-link" href="#collections" data-brand="queen">Catalogue</a></li>
       <li class="mega__item"><a class="mega__name" href="#collections" data-brand="elle">Elle</a><a class="mega__cat u-link" href="#collections" data-brand="elle">Catalogue</a></li>
       <li class="mega__item"><a class="mega__name" href="#collections" data-brand="eleonora">Eleonora</a><a class="mega__cat u-link" href="#collections" data-brand="eleonora">Catalogue</a></li>
       <li class="mega__item"><a class="mega__name" href="#collections" data-brand="ricci">Atelier Lorenzo Ricci</a><a class="mega__cat u-link" href="#collections" data-brand="ricci">Catalogue</a></li>
@@ -719,10 +479,8 @@
       <li class="mega__item"><a class="mega__name" href="#collections" data-brand="tvoya">TVOYA</a><a class="mega__cat u-link" href="#collections" data-brand="tvoya">Catalogue</a></li>
     </ul>
     <a class="mega__feature" href="#collections" data-brand="queen">
-      <img src="assets/img/collection-queen-2027.jpg" alt="" width="400" height="600" loading="lazy">
-      <span class="media-tint bg-taupe/20 mix-blend-multiply"></span>
-      <span class="media-tint bg-gradient-to-t from-black/60 via-black/10 to-transparent"></span>
-      <span class="mega__feature-body"><small>New collection</small><b>Queen 2027</b></span>
+      <img src="assets/img/models/queen-2027-2760-veil.jpg" alt="" width="1098" height="1650" loading="lazy">
+      <span>New collection — Queen 2027</span>
     </a>
   </div>
 </div>
@@ -730,15 +488,15 @@
 <!-- Mobile menu -->
 <div class="menu" id="menu" inert>
   <nav class="menu__nav" aria-label="Mobile">
-    <a class="menu__link" href="#top" data-close><small>01</small>Home</a>
-    <button class="menu__link" id="menuBrands" type="button" aria-expanded="false" aria-controls="menuBrandsList"><small>02</small>Brands
+    <a class="menu__link" href="#top" data-close>Home</a>
+    <button class="menu__link" id="menuBrands" type="button" aria-expanded="false" aria-controls="menuBrandsList">Brands
       <svg viewBox="0 0 8 5" fill="none" stroke="currentColor" aria-hidden="true"><path d="M.5.5 4 4 7.5.5"/></svg>
     </button>
     <div class="menu__sub" id="menuBrandsList">
       <div>
         <ul>
           <li><a href="#brands" data-close>All brands</a></li>
-          <li><a href="#collections" data-brand="queen" data-close>QUEEN</a></li>
+          <li><a href="#collections" data-brand="queen" data-close>Queen</a></li>
           <li><a href="#collections" data-brand="elle" data-close>Elle</a></li>
           <li><a href="#collections" data-brand="eleonora" data-close>Eleonora</a></li>
           <li><a href="#collections" data-brand="ricci" data-close>Atelier Lorenzo Ricci</a></li>
@@ -748,12 +506,12 @@
         </ul>
       </div>
     </div>
-    <a class="menu__link" href="#about" data-close><small>03</small>About us</a>
-    <a class="menu__link" role="link" aria-disabled="true"><small>04</small>Blog</a>
-    <a class="menu__link" href="#contact" data-close><small>05</small>Contacts</a>
+    <a class="menu__link" href="#about" data-close>About us</a>
+    <a class="menu__link" role="link" aria-disabled="true">Blog</a>
+    <a class="menu__link" href="#contact" data-close>Contacts</a>
   </nav>
   <div class="menu__foot">
-    <a class="btn btn--solid btn--block" href="#contact" data-close data-label="Become a partner"><span>Become a partner</span></a>
+    <a class="btn btn--block" href="#contact" data-close data-label="Become a partner"><span>Become a partner</span></a>
     <div class="menu__langs">
       <a aria-current="true" lang="en">EN</a>
       <a role="link" aria-disabled="true" lang="pl">PL</a>
@@ -777,214 +535,117 @@
       <video autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-poster.jpg">
         <source src="assets/video/hero.mp4" type="video/mp4">
       </video>
-      <span class="media-tint bg-taupe/40 mix-blend-multiply"></span>
-      <span class="media-tint bg-gradient-to-t from-black/60 via-black/35 to-black/30"></span>
+      <span class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10"></span>
     </div>
-
     <div class="hero__inner">
-      <span class="eyebrow eyebrow--center hero__eyebrow fade-up d1">QUEEN Fashion Group</span>
-      <h1 class="display hero__title">
-        <span class="line d1"><span>Seven bridal brands,</span></span>
-        <span class="line d2"><span><em>one fashion house</em></span></span>
-      </h1>
-      <p class="hero__text fade-up d3">Handmade wedding dresses from the manufacturer — supplied wholesale to bridal salons and boutiques in 18 countries.</p>
-      <div class="hero__actions fade-up d4">
-        <a class="btn btn--paper" href="#contact" data-label="Become a partner"><span>Become a partner</span></a>
-        <a class="text-cta" href="#brands">Explore our brands
-          <svg class="arrow" viewBox="0 0 24 10" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 5h23M19 1l4 4-4 4"/></svg>
-        </a>
-      </div>
-    </div>
-
-    <div class="ticker fade-up d5" aria-hidden="true">
-      <div class="ticker__track">
-        <div class="ticker__group">
-          <span class="ticker__item">Queen<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">Elle<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">Eleonora<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">Atelier Lorenzo Ricci<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">Velina<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">Nivera<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">TVOYA<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-        </div>
-        <div class="ticker__group">
-          <span class="ticker__item">Queen<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">Elle<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">Eleonora<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">Atelier Lorenzo Ricci<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">Velina<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">Nivera<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-          <span class="ticker__item">TVOYA<svg viewBox="0 0 8 8" fill="currentColor"><path d="M4 0 8 4 4 8 0 4z"/></svg></span>
-        </div>
+      <span class="label fade">QUEEN Fashion Group</span>
+      <h1 class="h1 fade f2">Seven bridal brands, one fashion house</h1>
+      <p class="hero__text fade f3">Handmade wedding dresses from the manufacturer, supplied wholesale to bridal salons in 18 countries.</p>
+      <div class="hero__actions fade f4">
+        <a class="btn btn--light" href="#contact" data-label="Become a partner"><span>Become a partner</span></a>
+        <a class="link" href="#brands">Explore our brands</a>
       </div>
     </div>
   </section>
 
   <!-- 2. About the group -->
-  <section class="section about" id="about">
-    <div class="about__grid">
-      <div class="about__visual reveal">
-        <div class="about__frame">
-          <img src="assets/img/advantages-atelier.jpg" alt="Seamstress hand-sewing lace appliqu&eacute; onto a wedding dress bodice" width="896" height="1200" loading="lazy">
-          <span class="media-tint bg-taupe/10 mix-blend-multiply"></span>
-          <span class="media-tint bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-30"></span>
-        </div>
-        <div class="about__float">
-          <div>
-            <img src="assets/img/cooperation-detail.jpg" alt="Covered buttons and embroidered lace on the back of a dress" width="1200" height="896" loading="lazy">
-            <span class="media-tint bg-taupe/10 mix-blend-multiply"></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="about__copy">
-        <header class="section__head reveal">
-          <span class="eyebrow">About the group</span>
-          <h2 class="display h2">An atelier <em>with a history</em></h2>
-        </header>
-
-        <p class="lead reveal">QUEEN Fashion Group brings together seven wedding dress brands under one roof — from the signature QUEEN line to younger labels with their own distinct handwriting.</p>
-
-        <p class="about__text muted reveal">Every dress is made by hand in our own production, where each stage is controlled — from the choice of fabric to the final decoration. We supply wedding salons, boutiques and showrooms across Europe and beyond, and present our collections at Barcelona Bridal Fashion Week, Bridal Fashion Warsaw and Fiera Milano.</p>
-
-        <dl class="stats reveal">
-          <div class="stat"><b>7</b><span>bridal brands in one group</span></div>
-          <div class="stat"><b>18</b><span>countries with partner salons</span></div>
-          <div class="stat"><b>5 <small>pcs</small></b><span>minimum order per new collection</span></div>
-          <div class="stat"><b>6–8 <small>wks</small></b><span>production time</span></div>
-        </dl>
-
-        <div class="reveal">
-          <a class="text-cta" role="link" aria-disabled="true" title="Page in progress">More about us
-            <svg class="arrow" viewBox="0 0 24 10" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 5h23M19 1l4 4-4 4"/></svg>
-          </a>
-        </div>
-      </div>
+  <section class="split" id="about">
+    <div class="split__media">
+      <div class="photo reveal"><img src="assets/img/advantages-atelier.jpg" alt="Seamstress hand-sewing lace onto a wedding dress bodice" width="896" height="1200" loading="lazy"></div>
+      <div class="photo reveal d1"><img src="assets/img/models/queen-2027-2753-detail.jpg" alt="Lace sleeves and corset lacing on the back of QUEEN model 2753" width="1098" height="1650" loading="lazy"></div>
+    </div>
+    <div class="split__body">
+      <span class="label reveal">About the group</span>
+      <h2 class="h2 reveal">An atelier with a history</h2>
+      <p class="text reveal">QUEEN Fashion Group brings together seven wedding dress brands under one roof — from the signature QUEEN line to younger labels with their own handwriting.</p>
+      <p class="text reveal">Every dress is made by hand in our own production, where each stage is controlled, from the choice of fabric to the final decoration. We supply salons, boutiques and showrooms across Europe and present our collections at Barcelona Bridal Fashion Week, Bridal Fashion Warsaw and Fiera Milano.</p>
+      <dl class="stats reveal">
+        <div class="stat"><dt>bridal brands</dt><dd>7</dd></div>
+        <div class="stat"><dt>countries</dt><dd>18</dd></div>
+        <div class="stat"><dt>dresses minimum order</dt><dd>5</dd></div>
+        <div class="stat"><dt>weeks production</dt><dd>6–8</dd></div>
+      </dl>
+      <a class="link reveal" role="link" aria-disabled="true" title="Page in progress">More about us</a>
     </div>
   </section>
 
   <!-- 3. Our brands -->
-  <section class="section brands" id="brands">
-    <div class="section__head section__head--split reveal">
-      <div>
-        <span class="eyebrow">Our brands</span>
-        <h2 class="display h2">Seven names, <em>one standard</em></h2>
+  <section class="section" id="brands">
+    <header class="head head--center reveal">
+      <span class="label">Our brands</span>
+      <h2 class="h2">Seven names, one standard</h2>
+      <p class="text">Each brand has its own character and its own bride. Choose the ones that fit your salon, or combine several in one order.</p>
+    </header>
+
+    <div class="brands-grid">
+      <a class="brand reveal" href="#collections" data-brand="queen">
+        <span class="photo"><img src="assets/img/models/queen-2027-2760-veil.jpg" alt="QUEEN — model 2760 with a cathedral veil" width="1098" height="1650" loading="lazy"></span>
+        <span class="brand__cap"><span class="h3">Queen</span><span class="brand__desc">Timeless elegance and feminine sophistication</span></span>
+      </a>
+      <a class="brand reveal d1" href="#collections" data-brand="elle">
+        <span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=ELLE&amp;font=montserrat" alt="Elle — photo coming" width="800" height="1200" loading="lazy"></span>
+        <span class="brand__cap"><span class="h3">Elle</span><span class="brand__desc">Modern style with delicate details</span></span>
+      </a>
+      <a class="brand reveal d2" href="#collections" data-brand="eleonora">
+        <span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=ELEONORA&amp;font=montserrat" alt="Eleonora — photo coming" width="800" height="1200" loading="lazy"></span>
+        <span class="brand__cap"><span class="h3">Eleonora</span><span class="brand__desc">Romantic designs, graceful silhouettes</span></span>
+      </a>
+      <a class="brand reveal d3" href="#collections" data-brand="ricci">
+        <span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=LORENZO+RICCI&amp;font=montserrat" alt="Atelier Lorenzo Ricci — photo coming" width="800" height="1200" loading="lazy"></span>
+        <span class="brand__cap"><span class="h3">Atelier Lorenzo Ricci</span><span class="brand__desc">Refined design, exquisite craftsmanship</span></span>
+      </a>
+      <a class="brand reveal" href="#collections" data-brand="velina">
+        <span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=VELINA&amp;font=montserrat" alt="Velina — photo coming" width="800" height="1200" loading="lazy"></span>
+        <span class="brand__cap"><span class="h3">Velina</span><span class="brand__desc">A soft, airy touch to bridal fashion</span></span>
+      </a>
+      <a class="brand reveal d1" href="#collections" data-brand="nivera">
+        <span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=NIVERA&amp;font=montserrat" alt="Nivera — photo coming" width="800" height="1200" loading="lazy"></span>
+        <span class="brand__cap"><span class="h3">Nivera</span><span class="brand__desc">Clean lines and subtle details</span></span>
+      </a>
+      <a class="brand reveal d2" href="#collections" data-brand="tvoya">
+        <span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=TVOYA&amp;font=montserrat" alt="TVOYA — photo coming" width="800" height="1200" loading="lazy"></span>
+        <span class="brand__cap"><span class="h3">TVOYA</span><span class="brand__desc">Bold, distinctive styles</span></span>
+      </a>
+      <div class="brand brand--cta reveal d3">
+        <span class="h3">One supplier, seven brands</span>
+        <p class="text">One manager, one order and one delivery for every brand you choose.</p>
+        <a class="link" href="#contact">Become a partner</a>
       </div>
-      <p class="section__intro">Each brand has its own character and its own bride. Choose the ones that fit your salon — or combine several in one order.</p>
-    </div>
-
-    <div class="brands__grid">
-      <ol class="brand-list" id="brandList">
-        <li class="brand-row reveal is-active" data-preview="queen">
-          <span class="brand-row__num">01</span>
-          <h3 class="brand-row__name">Queen<span class="brand-row__tag">Signature</span></h3>
-          <p class="brand-row__desc">Timeless elegance and feminine sophistication. Collections 2024–2027.</p>
-          <a class="brand-row__go" href="#collections" data-brand="queen" aria-label="Discover QUEEN">
-            <svg viewBox="0 0 16 8" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 4h15M12 1l3 3-3 3"/></svg>
-          </a>
-        </li>
-        <li class="brand-row reveal" data-preview="elle">
-          <span class="brand-row__num">02</span>
-          <h3 class="brand-row__name">Elle</h3>
-          <p class="brand-row__desc">Modern style combined with delicate details.</p>
-          <a class="brand-row__go" href="#collections" data-brand="elle" aria-label="Discover Elle">
-            <svg viewBox="0 0 16 8" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 4h15M12 1l3 3-3 3"/></svg>
-          </a>
-        </li>
-        <li class="brand-row reveal" data-preview="eleonora">
-          <span class="brand-row__num">03</span>
-          <h3 class="brand-row__name">Eleonora</h3>
-          <p class="brand-row__desc">Romantic designs and graceful silhouettes.</p>
-          <a class="brand-row__go" href="#collections" data-brand="eleonora" aria-label="Discover Eleonora">
-            <svg viewBox="0 0 16 8" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 4h15M12 1l3 3-3 3"/></svg>
-          </a>
-        </li>
-        <li class="brand-row reveal" data-preview="ricci">
-          <span class="brand-row__num">04</span>
-          <h3 class="brand-row__name">Atelier Lorenzo Ricci</h3>
-          <p class="brand-row__desc">Refined design and exquisite craftsmanship.</p>
-          <a class="brand-row__go" href="#collections" data-brand="ricci" aria-label="Discover Atelier Lorenzo Ricci">
-            <svg viewBox="0 0 16 8" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 4h15M12 1l3 3-3 3"/></svg>
-          </a>
-        </li>
-        <li class="brand-row reveal" data-preview="velina">
-          <span class="brand-row__num">05</span>
-          <h3 class="brand-row__name">Velina</h3>
-          <p class="brand-row__desc">A soft, airy touch to bridal fashion.</p>
-          <a class="brand-row__go" href="#collections" data-brand="velina" aria-label="Discover Velina">
-            <svg viewBox="0 0 16 8" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 4h15M12 1l3 3-3 3"/></svg>
-          </a>
-        </li>
-        <li class="brand-row reveal" data-preview="nivera">
-          <span class="brand-row__num">06</span>
-          <h3 class="brand-row__name">Nivera</h3>
-          <p class="brand-row__desc">Modern elegance with clean lines and subtle details.</p>
-          <a class="brand-row__go" href="#collections" data-brand="nivera" aria-label="Discover Nivera">
-            <svg viewBox="0 0 16 8" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 4h15M12 1l3 3-3 3"/></svg>
-          </a>
-        </li>
-        <li class="brand-row reveal" data-preview="tvoya">
-          <span class="brand-row__num">07</span>
-          <h3 class="brand-row__name">TVOYA</h3>
-          <p class="brand-row__desc">Individuality expressed in bold, distinctive styles.</p>
-          <a class="brand-row__go" href="#collections" data-brand="tvoya" aria-label="Discover TVOYA">
-            <svg viewBox="0 0 16 8" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 4h15M12 1l3 3-3 3"/></svg>
-          </a>
-        </li>
-      </ol>
-
-      <aside class="brand-preview reveal d1" aria-hidden="true">
-        <div class="brand-preview__stage">
-          <div class="brand-preview__img is-active" data-preview-img="queen"><img src="assets/img/collection-queen-2027.jpg" alt="" width="400" height="600" loading="lazy"><span class="media-tint bg-taupe/20 mix-blend-multiply"></span><span class="media-tint bg-gradient-to-t from-black/60 to-transparent opacity-40"></span></div>
-          <div class="brand-preview__img" data-preview-img="elle"><img src="https://placehold.co/800x1000/ece4dd/856d65?text=ELLE&amp;font=playfair-display" alt="" width="800" height="1000" loading="lazy"></div>
-          <div class="brand-preview__img" data-preview-img="eleonora"><img src="https://placehold.co/800x1000/ece4dd/856d65?text=ELEONORA&amp;font=playfair-display" alt="" width="800" height="1000" loading="lazy"></div>
-          <div class="brand-preview__img" data-preview-img="ricci"><img src="https://placehold.co/800x1000/ece4dd/856d65?text=ATELIER%5CnLORENZO%20RICCI&amp;font=playfair-display" alt="" width="800" height="1000" loading="lazy"></div>
-          <div class="brand-preview__img" data-preview-img="velina"><img src="https://placehold.co/800x1000/ece4dd/856d65?text=VELINA&amp;font=playfair-display" alt="" width="800" height="1000" loading="lazy"></div>
-          <div class="brand-preview__img" data-preview-img="nivera"><img src="https://placehold.co/800x1000/ece4dd/856d65?text=NIVERA&amp;font=playfair-display" alt="" width="800" height="1000" loading="lazy"></div>
-          <div class="brand-preview__img" data-preview-img="tvoya"><img src="https://placehold.co/800x1000/ece4dd/856d65?text=TVOYA&amp;font=playfair-display" alt="" width="800" height="1000" loading="lazy"></div>
-        </div>
-        <div class="brand-preview__cap"><b id="previewName">Queen</b><span id="previewNum">01 / 07</span></div>
-      </aside>
     </div>
   </section>
 
   <!-- 4. Benefits of working with us -->
-  <section class="section benefits" id="benefits">
-    <header class="section__head section__head--center reveal">
-      <span class="eyebrow eyebrow--center">For wholesale partners</span>
-      <h2 class="display h2">Why salons <em>work with us</em></h2>
-    </header>
-
-    <ol class="ben-list">
-      <li class="ben reveal"><span class="ben__num">01</span><h3 class="ben__title">Handmade quality</h3><p class="ben__text">Every stage of production is strictly controlled, from the choice of fabric to sewing and decorating each dress.</p></li>
-      <li class="ben reveal d1"><span class="ben__num">02</span><h3 class="ben__title">Seven brands, one supplier</h3><p class="ben__text">Cover different brides and price points with one partner, one manager and one delivery.</p></li>
-      <li class="ben reveal d2"><span class="ben__num">03</span><h3 class="ben__title">Favorable prices</h3><p class="ben__text">Manufacturer prices, convenient payment and a flexible approach for regular partners.</p></li>
-      <li class="ben reveal"><span class="ben__num">04</span><h3 class="ben__title">Collections updated every season</h3><p class="ben__text">New models in line with fashion trends — and advice on what sells best this season.</p></li>
-      <li class="ben reveal d1"><span class="ben__num">05</span><h3 class="ben__title">Orders of any size</h3><p class="ben__text">We take both large wholesale and small orders, with prompt production and fast delivery worldwide.</p></li>
-      <li class="ben reveal d2"><span class="ben__num">06</span><h3 class="ben__title">Marketing support</h3><p class="ben__text">Photos and collection materials to present our dresses in your salon and online.</p></li>
-    </ol>
-
-    <div class="terms reveal">
-      <div class="terms__head">
-        <h3>Terms at a glance</h3>
-        <p>Full price list on request — no registration needed.</p>
+  <section class="split split--rev" id="benefits">
+    <div class="split__media split__media--single">
+      <div class="photo reveal"><img src="assets/img/models/paradise-2409.jpg" alt="Paradise model 2409 — fitted lace gown in a palace courtyard" width="1100" height="1648" loading="lazy"></div>
+    </div>
+    <div class="split__body">
+      <span class="label reveal">For wholesale partners</span>
+      <h2 class="h2 reveal">Why salons work with us</h2>
+      <div class="ben-grid">
+        <div class="ben reveal"><h3 class="h3">Handmade quality</h3><p class="text">Every stage of production is controlled, from fabric to the final decoration.</p></div>
+        <div class="ben reveal d1"><h3 class="h3">Seven brands, one supplier</h3><p class="text">Different brides and price points with one partner and one delivery.</p></div>
+        <div class="ben reveal"><h3 class="h3">Manufacturer prices</h3><p class="text">Favorable prices, convenient payment and a flexible approach for regular partners.</p></div>
+        <div class="ben reveal d1"><h3 class="h3">New every season</h3><p class="text">Collections in line with trends, and advice on what sells best this season.</p></div>
+        <div class="ben reveal"><h3 class="h3">Orders of any size</h3><p class="text">Large wholesale and small orders, with fast delivery worldwide.</p></div>
+        <div class="ben reveal d1"><h3 class="h3">Marketing support</h3><p class="text">Photos and collection materials for your salon and online.</p></div>
       </div>
-      <div class="term"><small>Minimum order</small><b>5 dresses</b><span>from a new collection</span></div>
-      <div class="term"><small>Production</small><b>6–8 weeks</b><span>8–12 weeks in season, May – September</span></div>
-      <div class="term"><small>Payment</small><b>30 / 70</b><span>30% deposit, 70% before shipping. EUR, PLN or USD</span></div>
-      <div class="term"><small>Delivery</small><b>DPD</b><span>door-to-door to your salon</span></div>
     </div>
   </section>
 
+  <div class="terms reveal" aria-label="Terms at a glance">
+    <div class="term"><span class="label">Minimum order</span><b>5 dresses</b><span>from a new collection</span></div>
+    <div class="term"><span class="label">Production</span><b>6–8 weeks</b><span>8–12 weeks in season, May – September</span></div>
+    <div class="term"><span class="label">Payment</span><b>30% / 70%</b><span>deposit, then before shipping. EUR, PLN or USD</span></div>
+    <div class="term"><span class="label">Delivery</span><b>DPD</b><span>door-to-door to your salon</span></div>
+  </div>
+
   <!-- 5. Brand collections -->
-  <section class="section collections" id="collections">
-    <div class="section__head section__head--split reveal">
-      <div>
-        <span class="eyebrow">Brand collections</span>
-        <h2 class="display h2">Collections <em>&amp; key models</em></h2>
-      </div>
-      <p class="section__intro">Each model is named by collection and article number, so it is easy to order and reorder.</p>
-    </div>
+  <section class="section" id="collections">
+    <header class="head head--center reveal">
+      <span class="label">Brand collections</span>
+      <h2 class="h2">Discover the collections</h2>
+    </header>
 
     <div class="tabs reveal" role="tablist" aria-label="Brands">
       <button class="tab" id="tab-queen" role="tab" type="button" aria-selected="true" aria-controls="panel-queen" data-tab="queen">Queen</button>
@@ -999,243 +660,176 @@
     <!-- QUEEN -->
     <div class="panel reveal" id="panel-queen" role="tabpanel" aria-labelledby="tab-queen">
       <div class="panel__info">
-        <h3 class="panel__brand">Queen</h3>
-        <p class="panel__desc">The signature brand of the group. Timeless elegance and feminine sophistication — lace, corsetry and long trains.</p>
-        <div class="panel__meta"><small>Collections</small><div class="chips"><span class="chip">Queen 2027</span><span class="chip">Queen 2026</span><span class="chip">Queen 2025</span><span class="chip">Queen 2024</span></div></div>
-        <div class="panel__meta"><small>Key models</small><div class="chips"><span class="chip">2401</span><span class="chip">2747</span><span class="chip">2754</span><span class="chip">2736</span><span class="chip">2752</span></div></div>
-        <div class="panel__links">
-          <a class="btn btn--solid" role="link" aria-disabled="true" data-label="View catalogue"><span>View catalogue</span></a>
-          <a class="u-link u-link--on" role="link" aria-disabled="true">Brand page</a>
-        </div>
+        <p class="text">The signature brand of the group. Timeless elegance and feminine sophistication — lace, corsetry and long trains. Collections 2024 – 2027.</p>
+        <p class="panel__models"><b>Key models</b>2401 · 2747 · 2754 · 2736 · 2752</p>
+        <div class="panel__links"><a class="link" role="link" aria-disabled="true">View catalogue</a><a class="link" role="link" aria-disabled="true">Brand page</a></div>
       </div>
       <div class="models">
-        <a class="model" role="link" aria-disabled="true">
-          <span class="model__media">
-            <img src="assets/img/collection-queen-2027.jpg" alt="Queen 2027 — satin gown with a long train" width="400" height="600" loading="lazy">
-            <span class="media-tint bg-taupe/20 mix-blend-multiply"></span>
-            <span class="model__shade media-tint bg-gradient-to-t from-black/60 to-transparent"></span>
-            <span class="model__badge">New</span>
-          </span>
-          <span class="model__body"><span class="model__title">Queen 2027</span><span class="model__kind">Collection</span></span>
-        </a>
-        <a class="model" role="link" aria-disabled="true">
-          <span class="model__media">
-            <img src="assets/img/collection-paradise.jpg" alt="Paradise — lace wedding dress with long sheer sleeves" width="399" height="600" loading="lazy">
-            <span class="media-tint bg-taupe/20 mix-blend-multiply"></span>
-            <span class="model__shade media-tint bg-gradient-to-t from-black/60 to-transparent"></span>
-          </span>
-          <span class="model__body"><span class="model__title">Paradise</span><span class="model__kind">Collection</span></span>
-        </a>
-        <a class="model" role="link" aria-disabled="true">
-          <span class="model__media">
-            <img src="assets/img/collection-floria.jpg" alt="Floria — off-shoulder ball gown" width="400" height="600" loading="lazy">
-            <span class="media-tint bg-taupe/20 mix-blend-multiply"></span>
-            <span class="model__shade media-tint bg-gradient-to-t from-black/60 to-transparent"></span>
-          </span>
-          <span class="model__body"><span class="model__title">Floria</span><span class="model__kind">Collection</span></span>
-        </a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/models/queen-2027-2752.jpg" alt="Queen 2027 model 2752 — satin ball gown with lace sleeves" width="1098" height="1650" loading="lazy"><span class="model__new">New</span></span><span class="model__cap"><span class="h3">Queen 2027 · 2752</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/models/queen-2027-2760.jpg" alt="Queen 2027 model 2760 — fitted lace gown with a slit" width="1098" height="1650" loading="lazy"><span class="model__new">New</span></span><span class="model__cap"><span class="h3">Queen 2027 · 2760</span><span>Model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/models/paradise-2401.jpg" alt="Paradise model 2401 — off-shoulder lace gown" width="1100" height="1648" loading="lazy"></span><span class="model__cap"><span class="h3">Paradise · 2401</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/models/floria-2441.jpg" alt="Floria model 2441 — sparkling A-line gown with long sleeves" width="1100" height="1648" loading="lazy"></span><span class="model__cap"><span class="h3">Floria · 2441</span><span>Model</span></span></a>
       </div>
     </div>
 
     <!-- ELLE -->
     <div class="panel" id="panel-elle" role="tabpanel" aria-labelledby="tab-elle" hidden>
       <div class="panel__info">
-        <h3 class="panel__brand">Elle</h3>
-        <p class="panel__desc">Modern style combined with delicate details — for the bride who wants something current and light.</p>
-        <div class="panel__meta"><small>Key models</small><div class="chips"><span class="chip">765</span><span class="chip">818</span><span class="chip">808</span><span class="chip">124-91</span></div></div>
-        <div class="panel__links">
-          <a class="btn btn--solid" role="link" aria-disabled="true" data-label="View catalogue"><span>View catalogue</span></a>
-          <a class="u-link u-link--on" role="link" aria-disabled="true">Brand page</a>
-        </div>
+        <p class="text">Modern style combined with delicate details — for the bride who wants something current and light.</p>
+        <p class="panel__models"><b>Key models</b>765 · 818 · 808 · 124-91</p>
+        <div class="panel__links"><a class="link" role="link" aria-disabled="true">View catalogue</a><a class="link" role="link" aria-disabled="true">Brand page</a></div>
       </div>
       <div class="models">
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=ELLE%5Cn765&amp;font=playfair-display" alt="Elle 765" width="600" height="900" loading="lazy"><span class="model__shade media-tint bg-gradient-to-t from-black/60 to-transparent opacity-0"></span></span><span class="model__body"><span class="model__title">Elle · 765</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=ELLE%5Cn818&amp;font=playfair-display" alt="Elle 818" width="600" height="900" loading="lazy"><span class="model__shade media-tint bg-gradient-to-t from-black/60 to-transparent opacity-0"></span></span><span class="model__body"><span class="model__title">Elle · 818</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=ELLE%5Cn808&amp;font=playfair-display" alt="Elle 808" width="600" height="900" loading="lazy"><span class="model__shade media-tint bg-gradient-to-t from-black/60 to-transparent opacity-0"></span></span><span class="model__body"><span class="model__title">Elle · 808</span><span class="model__kind">Model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=ELLE+765&amp;font=montserrat" alt="Elle 765" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Elle · 765</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=ELLE+818&amp;font=montserrat" alt="Elle 818" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Elle · 818</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=ELLE+808&amp;font=montserrat" alt="Elle 808" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Elle · 808</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=ELLE+124-91&amp;font=montserrat" alt="Elle 124-91" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Elle · 124-91</span><span>Key model</span></span></a>
       </div>
     </div>
 
     <!-- ELEONORA -->
     <div class="panel" id="panel-eleonora" role="tabpanel" aria-labelledby="tab-eleonora" hidden>
       <div class="panel__info">
-        <h3 class="panel__brand">Eleonora</h3>
-        <p class="panel__desc">Romantic designs and graceful silhouettes, made for a soft and feminine look.</p>
-        <div class="panel__meta"><small>Key models</small><div class="chips"><span class="chip">P-51</span><span class="chip">P-87</span><span class="chip">P-78</span></div></div>
-        <div class="panel__links">
-          <a class="btn btn--solid" role="link" aria-disabled="true" data-label="View catalogue"><span>View catalogue</span></a>
-          <a class="u-link u-link--on" role="link" aria-disabled="true">Brand page</a>
-        </div>
+        <p class="text">Romantic designs and graceful silhouettes, made for a soft and feminine look.</p>
+        <p class="panel__models"><b>Key models</b>P-51 · P-87 · P-78</p>
+        <div class="panel__links"><a class="link" role="link" aria-disabled="true">View catalogue</a><a class="link" role="link" aria-disabled="true">Brand page</a></div>
       </div>
-      <div class="models">
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=ELEONORA%5CnP-51&amp;font=playfair-display" alt="Eleonora P-51" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Eleonora · P-51</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=ELEONORA%5CnP-87&amp;font=playfair-display" alt="Eleonora P-87" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Eleonora · P-87</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=ELEONORA%5CnP-78&amp;font=playfair-display" alt="Eleonora P-78" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Eleonora · P-78</span><span class="model__kind">Model</span></span></a>
+      <div class="models models--3">
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=ELEONORA+P-51&amp;font=montserrat" alt="Eleonora P-51" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Eleonora · P-51</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=ELEONORA+P-87&amp;font=montserrat" alt="Eleonora P-87" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Eleonora · P-87</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=ELEONORA+P-78&amp;font=montserrat" alt="Eleonora P-78" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Eleonora · P-78</span><span>Key model</span></span></a>
       </div>
     </div>
 
     <!-- ATELIER LORENZO RICCI -->
     <div class="panel" id="panel-ricci" role="tabpanel" aria-labelledby="tab-ricci" hidden>
       <div class="panel__info">
-        <h3 class="panel__brand">Atelier Lorenzo Ricci</h3>
-        <p class="panel__desc">Refined design and exquisite craftsmanship — couture finishing for premium salons.</p>
-        <div class="panel__meta"><small>Key models</small><div class="chips"><span class="chip">T003</span><span class="chip">T006</span><span class="chip">LR-102</span><span class="chip">LR-109</span></div></div>
-        <div class="panel__links">
-          <a class="btn btn--solid" role="link" aria-disabled="true" data-label="View catalogue"><span>View catalogue</span></a>
-          <a class="u-link u-link--on" role="link" aria-disabled="true">Brand page</a>
-        </div>
+        <p class="text">Refined design and exquisite craftsmanship — couture finishing for premium salons.</p>
+        <p class="panel__models"><b>Key models</b>T003 · T006 · LR-102 · LR-109</p>
+        <div class="panel__links"><a class="link" role="link" aria-disabled="true">View catalogue</a><a class="link" role="link" aria-disabled="true">Brand page</a></div>
       </div>
       <div class="models">
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=LORENZO%20RICCI%5CnT003&amp;font=playfair-display" alt="Atelier Lorenzo Ricci T003" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Lorenzo Ricci · T003</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=LORENZO%20RICCI%5CnLR-102&amp;font=playfair-display" alt="Atelier Lorenzo Ricci LR-102" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Lorenzo Ricci · LR-102</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=LORENZO%20RICCI%5CnLR-109&amp;font=playfair-display" alt="Atelier Lorenzo Ricci LR-109" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Lorenzo Ricci · LR-109</span><span class="model__kind">Model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=T003&amp;font=montserrat" alt="Atelier Lorenzo Ricci T003" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Lorenzo Ricci · T003</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=T006&amp;font=montserrat" alt="Atelier Lorenzo Ricci T006" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Lorenzo Ricci · T006</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=LR-102&amp;font=montserrat" alt="Atelier Lorenzo Ricci LR-102" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Lorenzo Ricci · LR-102</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=LR-109&amp;font=montserrat" alt="Atelier Lorenzo Ricci LR-109" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Lorenzo Ricci · LR-109</span><span>Key model</span></span></a>
       </div>
     </div>
 
     <!-- VELINA -->
     <div class="panel" id="panel-velina" role="tabpanel" aria-labelledby="tab-velina" hidden>
       <div class="panel__info">
-        <h3 class="panel__brand">Velina</h3>
-        <p class="panel__desc">A soft, airy touch to bridal fashion — light fabrics and effortless lines.</p>
-        <div class="panel__meta"><small>Key models</small><div class="chips"><span class="chip">26-053</span><span class="chip">26-048</span></div></div>
-        <div class="panel__links">
-          <a class="btn btn--solid" role="link" aria-disabled="true" data-label="View catalogue"><span>View catalogue</span></a>
-          <a class="u-link u-link--on" role="link" aria-disabled="true">Brand page</a>
-        </div>
+        <p class="text">A soft, airy touch to bridal fashion — light fabrics and effortless lines.</p>
+        <p class="panel__models"><b>Key models</b>26-053 · 26-048</p>
+        <div class="panel__links"><a class="link" role="link" aria-disabled="true">View catalogue</a><a class="link" role="link" aria-disabled="true">Brand page</a></div>
       </div>
-      <div class="models">
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=VELINA%5Cn26-053&amp;font=playfair-display" alt="Velina 26-053" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Velina · 26-053</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=VELINA%5Cn26-048&amp;font=playfair-display" alt="Velina 26-048" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Velina · 26-048</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=VELINA%5CnCollection&amp;font=playfair-display" alt="Velina collection" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Velina</span><span class="model__kind">Collection</span></span></a>
+      <div class="models models--2">
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=VELINA+26-053&amp;font=montserrat" alt="Velina 26-053" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Velina · 26-053</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=VELINA+26-048&amp;font=montserrat" alt="Velina 26-048" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Velina · 26-048</span><span>Key model</span></span></a>
       </div>
     </div>
 
     <!-- NIVERA -->
     <div class="panel" id="panel-nivera" role="tabpanel" aria-labelledby="tab-nivera" hidden>
       <div class="panel__info">
-        <h3 class="panel__brand">Nivera</h3>
-        <p class="panel__desc">Modern elegance with clean lines and subtle details — minimal, precise, contemporary.</p>
-        <div class="panel__meta"><small>Key models</small><div class="chips"><span class="chip">K001</span><span class="chip">K002</span></div></div>
-        <div class="panel__links">
-          <a class="btn btn--solid" role="link" aria-disabled="true" data-label="View catalogue"><span>View catalogue</span></a>
-          <a class="u-link u-link--on" role="link" aria-disabled="true">Brand page</a>
-        </div>
+        <p class="text">Modern elegance with clean lines and subtle details — minimal, precise, contemporary.</p>
+        <p class="panel__models"><b>Key models</b>K001 · K002</p>
+        <div class="panel__links"><a class="link" role="link" aria-disabled="true">View catalogue</a><a class="link" role="link" aria-disabled="true">Brand page</a></div>
       </div>
-      <div class="models">
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=NIVERA%5CnK001&amp;font=playfair-display" alt="Nivera K001" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Nivera · K001</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=NIVERA%5CnK002&amp;font=playfair-display" alt="Nivera K002" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Nivera · K002</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=NIVERA%5CnCollection&amp;font=playfair-display" alt="Nivera collection" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">Nivera</span><span class="model__kind">Collection</span></span></a>
+      <div class="models models--2">
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=NIVERA+K001&amp;font=montserrat" alt="Nivera K001" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Nivera · K001</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=NIVERA+K002&amp;font=montserrat" alt="Nivera K002" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">Nivera · K002</span><span>Key model</span></span></a>
       </div>
     </div>
 
     <!-- TVOYA -->
     <div class="panel" id="panel-tvoya" role="tabpanel" aria-labelledby="tab-tvoya" hidden>
       <div class="panel__info">
-        <h3 class="panel__brand">TVOYA</h3>
-        <p class="panel__desc">Celebrates individuality with bold, distinctive styles for brides who stand out.</p>
-        <div class="panel__meta"><small>Key models</small><div class="chips"><span class="chip">RB-26-12</span><span class="chip">RB-26-20</span></div></div>
-        <div class="panel__links">
-          <a class="btn btn--solid" role="link" aria-disabled="true" data-label="View catalogue"><span>View catalogue</span></a>
-          <a class="u-link u-link--on" role="link" aria-disabled="true">Brand page</a>
-        </div>
+        <p class="text">Celebrates individuality with bold, distinctive styles for brides who stand out.</p>
+        <p class="panel__models"><b>Key models</b>RB-26-12 · RB-26-20</p>
+        <div class="panel__links"><a class="link" role="link" aria-disabled="true">View catalogue</a><a class="link" role="link" aria-disabled="true">Brand page</a></div>
       </div>
-      <div class="models">
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=TVOYA%5CnRB-26-12&amp;font=playfair-display" alt="TVOYA RB-26-12" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">TVOYA · RB-26-12</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=TVOYA%5CnRB-26-20&amp;font=playfair-display" alt="TVOYA RB-26-20" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">TVOYA · RB-26-20</span><span class="model__kind">Model</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="model__media"><img src="https://placehold.co/600x900/ece4dd/856d65?text=TVOYA%5CnCollection&amp;font=playfair-display" alt="TVOYA collection" width="600" height="900" loading="lazy"></span><span class="model__body"><span class="model__title">TVOYA</span><span class="model__kind">Collection</span></span></a>
+      <div class="models models--2">
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=TVOYA+RB-26-12&amp;font=montserrat" alt="TVOYA RB-26-12" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">TVOYA · RB-26-12</span><span>Key model</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="https://placehold.co/800x1200/e6e0d8/cfc6bc?text=TVOYA+RB-26-20&amp;font=montserrat" alt="TVOYA RB-26-20" width="800" height="1200" loading="lazy"></span><span class="model__cap"><span class="h3">TVOYA · RB-26-20</span><span>Key model</span></span></a>
       </div>
     </div>
   </section>
 
   <!-- 6. Exclusive services -->
-  <section class="section services" id="services">
-    <div class="services__grid">
-      <div class="services__aside">
-        <header class="section__head reveal">
-          <span class="eyebrow">Exclusive services</span>
-          <h2 class="display h2">Beyond <em>the catalogue</em></h2>
-          <p class="section__intro">For partners who want more than ready collections — dresses and service shaped around your salon.</p>
-        </header>
-        <div class="services__visual reveal d1">
-          <img src="assets/img/cooperation-boutique.jpg" alt="Bridal showroom with wedding dresses on a brass rail" width="896" height="1200" loading="lazy">
-          <span class="media-tint bg-taupe/20 mix-blend-multiply"></span>
-          <span class="media-tint bg-gradient-to-t from-black/60 via-transparent to-transparent"></span>
-        </div>
-      </div>
-
-      <ol class="svc-list">
-        <li class="svc reveal"><span class="svc__num">01</span><h3 class="svc__title">Individual tailoring</h3><p class="svc__text">Our designers create a dress of any complexity to your client's request, taking every nuance into account.</p></li>
-        <li class="svc reveal"><span class="svc__num">02</span><h3 class="svc__title">Made-to-order changes</h3><p class="svc__text">Adjust sleeves, length, train or colour of catalogue models. Each design is worked out for the required size for a perfect fit.</p></li>
-        <li class="svc reveal"><span class="svc__num">03</span><h3 class="svc__title">A manager in your language</h3><p class="svc__text">Personal managers for Polish, German and Italian markets advise on assortment, in-demand models and colours, payment and delivery.</p></li>
-        <li class="svc reveal"><span class="svc__num">04</span><h3 class="svc__title">Partner area</h3><p class="svc__text">Price lists, lookbooks and collection materials in one place for registered partner salons.</p></li>
-      </ol>
+  <section class="split" id="services">
+    <div class="split__media split__media--single">
+      <div class="photo reveal"><img src="assets/img/models/queen-2027-2757.jpg" alt="Queen 2027 model 2757 — open-back lace gown in a panelled interior" width="1098" height="1650" loading="lazy"></div>
+    </div>
+    <div class="split__body">
+      <span class="label reveal">Exclusive services</span>
+      <h2 class="h2 reveal">Beyond the catalogue</h2>
+      <p class="text reveal">For partners who want more than ready collections — dresses and service shaped around your salon.</p>
+      <ul class="svc-list">
+        <li class="svc reveal"><h3 class="h3">Individual tailoring</h3><p class="text">Our designers create a dress of any complexity to your client's request.</p></li>
+        <li class="svc reveal"><h3 class="h3">Made-to-order changes</h3><p class="text">Adjust sleeves, length, train or colour of catalogue models, worked out for the required size.</p></li>
+        <li class="svc reveal"><h3 class="h3">A manager in your language</h3><p class="text">Personal managers for the Polish, German and Italian markets advise on assortment, payment and delivery.</p></li>
+        <li class="svc reveal"><h3 class="h3">Partner area</h3><p class="text">Price lists, lookbooks and collection materials in one place for partner salons.</p></li>
+      </ul>
     </div>
   </section>
 
   <!-- 7. Call to action -->
-  <section class="banner reveal" aria-label="Become a partner">
+  <section class="banner" aria-label="Become a partner">
     <div class="banner__media">
       <img src="assets/img/benefits-banner.jpg" alt="Bride in a lace wedding dress with a long train in a stone colonnade" width="1584" height="672" loading="lazy">
-      <span class="media-tint bg-taupe/20 mix-blend-multiply"></span>
-      <span class="media-tint bg-gradient-to-r from-black/60 via-black/20 to-transparent"></span>
-      <span class="media-tint bg-gradient-to-t from-black/80 via-black/30 to-transparent lg:hidden"></span>
+      <span class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"></span>
+      <span class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent lg:hidden"></span>
     </div>
-    <div class="banner__body">
-      <span class="eyebrow banner__eyebrow">Wholesale partnership</span>
-      <h2 class="display banner__title">Bring our brands<br><em>to your salon</em></h2>
-      <p class="banner__text">Request the wholesale price list and catalogues. A manager will reply within one business day.</p>
+    <div class="banner__body reveal">
+      <span class="label">Wholesale partnership</span>
+      <h2 class="h2">Bring our brands to your salon</h2>
+      <p>Request the wholesale price list and catalogues. A manager will reply within one business day.</p>
       <div class="banner__actions">
-        <a class="btn btn--paper" href="#contact" data-label="Request price list"><span>Request price list</span></a>
-        <a class="text-cta" href="tel:+48531472415">+48 531 472 415
-          <svg class="arrow" viewBox="0 0 24 10" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 5h23M19 1l4 4-4 4"/></svg>
-        </a>
+        <a class="btn btn--light" href="#contact" data-label="Request price list"><span>Request price list</span></a>
+        <a class="link" href="tel:+48531472415">+48 531 472 415</a>
       </div>
     </div>
   </section>
 
   <!-- 8. Contact us -->
-  <section class="section contact" id="contact">
+  <section class="section" id="contact">
     <div class="contact__grid">
       <div class="contact__info">
-        <header class="section__head reveal">
-          <span class="eyebrow">Contact us</span>
-          <h2 class="display h2">Talk to <em>a manager</em></h2>
-          <p class="section__intro">Write or call the manager for your market — we answer in Polish, German, Italian, English and Russian.</p>
+        <header class="head reveal">
+          <span class="label">Contact us</span>
+          <h2 class="h2">Talk to a manager</h2>
+          <p class="text">Write or call the manager for your market. We answer in Polish, German, Italian, English and Russian.</p>
         </header>
-
         <div class="managers reveal">
           <div class="manager"><span class="manager__name">Viktoria</span><span class="manager__market">Poland</span><a class="manager__tel u-link" href="tel:+48531472415">+48 531 472 415</a></div>
           <div class="manager"><span class="manager__name">Daria</span><span class="manager__market">Poland</span><a class="manager__tel u-link" href="tel:+380687748003">+380 68 774 8003</a></div>
           <div class="manager"><span class="manager__name">Polina</span><span class="manager__market">Germany</span><a class="manager__tel u-link" href="tel:+48514732941">+48 514 732 941</a></div>
           <div class="manager"><span class="manager__name">Anastasia</span><span class="manager__market">Italy</span><a class="manager__tel u-link" href="tel:+393938667667">+39 393 866 7667</a></div>
         </div>
-
         <div class="contact__meta reveal">
-          <div><small>E-mail</small><a class="u-link" href="mailto:managerqueen1@gmail.com">managerqueen1@gmail.com</a></div>
-          <div><small>Office</small><span>QUEEN_WED Sp. z o.o.<br>Czyżówka 14/2.11, 30-526 Kraków, Poland</span></div>
+          <div><span class="label">E-mail</span><a class="u-link" href="mailto:managerqueen1@gmail.com">managerqueen1@gmail.com</a></div>
+          <div><span class="label">Office</span><span>QUEEN_WED Sp. z o.o.<br>Czyżówka 14/2.11, 30-526 Kraków, Poland</span></div>
         </div>
       </div>
 
       <form class="form reveal d1" id="leadForm" novalidate>
-        <div class="form__head">
-          <h3 class="form__title">Wholesale <em>enquiry</em></h3>
-          <p class="form__sub">Leave your details and we will send the price list and catalogues.</p>
+        <div class="head">
+          <span class="label">Wholesale enquiry</span>
+          <p class="text">Leave your details and we will send the price list and catalogues.</p>
         </div>
-
         <div class="form__row">
           <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Your name"></div>
           <div class="field"><label for="f-salon">Salon / company</label><input id="f-salon" name="company" type="text" autocomplete="organization" placeholder="Salon name"></div>
           <div class="field"><label for="f-contact">Phone or e-mail</label><input id="f-contact" name="contact" type="text" autocomplete="email" required placeholder="+48 … or name@salon.com"></div>
           <div class="field">
             <label for="f-country">Country</label>
-            <select id="f-country" name="country">
-              <option>Poland</option><option>Germany</option><option>Italy</option><option>Greece</option><option>Spain</option><option>Other</option>
-            </select>
+            <select id="f-country" name="country"><option>Poland</option><option>Germany</option><option>Italy</option><option>Greece</option><option>Spain</option><option>Other</option></select>
           </div>
         </div>
-
-        <fieldset class="brand-picks">
+        <fieldset class="picks">
           <legend>Brands of interest</legend>
-          <div class="chips">
+          <div class="picks__list">
             <label class="pick"><input type="checkbox" name="brands" value="queen"><span>Queen</span></label>
             <label class="pick"><input type="checkbox" name="brands" value="elle"><span>Elle</span></label>
             <label class="pick"><input type="checkbox" name="brands" value="eleonora"><span>Eleonora</span></label>
@@ -1245,13 +839,10 @@
             <label class="pick"><input type="checkbox" name="brands" value="tvoya"><span>TVOYA</span></label>
           </div>
         </fieldset>
-
         <label class="consent"><input type="checkbox" name="consent" required><span>I agree to the processing of my personal data in accordance with the Privacy Policy (GDPR).</span></label>
-
-        <button class="btn btn--solid btn--block" type="submit" data-label="Send enquiry"><span>Send enquiry</span></button>
-
+        <button class="btn btn--block" type="submit" data-label="Send enquiry"><span>Send enquiry</span></button>
         <div class="form__done" role="status" aria-live="polite">
-          <b>Thank you</b>
+          <span class="h3">Thank you</span>
           <p>Your enquiry has been received. A manager will contact you within one business day.</p>
         </div>
       </form>
@@ -1263,17 +854,16 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="footer__top">
-    <div class="footer__brand reveal">
+    <div class="footer__brand">
       <a class="logo" href="#top" aria-label="QUEEN Fashion Group — back to top">
         <span class="logo__word">QUEEN</span>
         <span class="logo__sub">Fashion Group</span>
       </a>
       <p class="footer__tagline">Handmade wedding dresses from the manufacturer, for bridal salons worldwide.</p>
     </div>
-
-    <div class="footer__cols reveal">
+    <div class="footer__cols">
       <nav class="footer__col" aria-label="Brands">
-        <h3>Brands</h3>
+        <span class="label">Brands</span>
         <a class="u-link" href="#collections" data-brand="queen">Queen</a>
         <a class="u-link" href="#collections" data-brand="elle">Elle</a>
         <a class="u-link" href="#collections" data-brand="eleonora">Eleonora</a>
@@ -1283,7 +873,7 @@
         <a class="u-link" href="#collections" data-brand="tvoya">TVOYA</a>
       </nav>
       <nav class="footer__col" aria-label="Company">
-        <h3>Company</h3>
+        <span class="label">Company</span>
         <a class="u-link" href="#brands">Our brands</a>
         <a class="u-link" href="#about">About us</a>
         <a class="u-link" href="#services">Exclusive services</a>
@@ -1291,19 +881,18 @@
         <a class="u-link" href="#contact">Contacts</a>
       </nav>
       <nav class="footer__col" aria-label="Partners">
-        <h3>Partners</h3>
+        <span class="label">Partners</span>
         <a class="u-link" href="#contact">Wholesale enquiry</a>
         <a class="u-link" href="#benefits">Terms of cooperation</a>
       </nav>
       <div class="footer__col">
-        <h3>Contacts</h3>
+        <span class="label">Contacts</span>
         <a class="u-link" href="tel:+48531472415">+48 531 472 415</a>
         <a class="u-link" href="mailto:managerqueen1@gmail.com">managerqueen1@gmail.com</a>
         <span>Czyżówka 14/2.11<br>30-526 Kraków, Poland</span>
       </div>
     </div>
   </div>
-
   <nav class="footer__langs" aria-label="Language">
     <a aria-current="true" lang="en">English</a>
     <a role="link" aria-disabled="true" lang="pl">Polski</a>
@@ -1312,13 +901,9 @@
     <a role="link" aria-disabled="true" lang="it">Italiano</a>
     <a role="link" aria-disabled="true" lang="el">Ελληνικά</a>
   </nav>
-
   <div class="footer__bottom">
     <span>© 2026 QUEEN Fashion Group · QUEEN_WED Sp. z o.o.</span>
-    <a class="to-top" href="#top">
-      <span>Back to top</span>
-      <i><svg viewBox="0 0 10 16" fill="none" stroke="currentColor" aria-hidden="true"><path d="M5 16V1M1 5l4-4 4 4"/></svg></i>
-    </a>
+    <a class="to-top" href="#top">Back to top</a>
   </div>
 </footer>
 
@@ -1327,33 +912,8 @@
   var root = document.documentElement;
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* Preloader: counter runs for a fixed time, then waits for window load (capped) */
-  var preloader = document.getElementById('preloader');
-  var count = document.getElementById('preloaderCount');
-  var DURATION = reduced ? 300 : 2200;
-  var started = performance.now();
-  var pageReady = document.readyState === 'complete';
-  var finished = false;
-  window.addEventListener('load', function () { pageReady = true; });
-  setTimeout(function () { pageReady = true; }, 5000);
-  function finish() {
-    if (finished) return;
-    finished = true;
-    window.scrollTo(0, 0);
-    root.classList.remove('is-loading');
-    root.classList.add('is-loaded');
-    setTimeout(function () { preloader.classList.add('is-gone'); }, 1400);
-  }
-  function tick(now) {
-    var t = Math.min((now - started) / DURATION, 1);
-    var eased = t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-    count.textContent = ('00' + Math.round(eased * (pageReady ? 100 : 96))).slice(-3);
-    if (t < 1 || !pageReady) { requestAnimationFrame(tick); return; }
-    count.textContent = '100';
-    setTimeout(finish, 250);
-  }
-  requestAnimationFrame(tick);
-  setTimeout(finish, 8000);
+  /* Hero fade-in (no preloader) */
+  requestAnimationFrame(function () { root.classList.add('is-ready', 'is-loaded'); });
 
   /* Scroll reveals */
   var reveals = document.querySelectorAll('.reveal');
@@ -1364,7 +924,7 @@
         entry.target.classList.add('is-in');
         io.unobserve(entry.target);
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: .08 });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: .06 });
     reveals.forEach(function (el) { io.observe(el); });
   } else {
     reveals.forEach(function (el) { el.classList.add('is-in'); });
@@ -1372,6 +932,7 @@
 
   /* Header: hide on scroll down, show on scroll up */
   var header = document.getElementById('header');
+  var mega = document.getElementById('mega');
   var lastY = window.scrollY;
   window.addEventListener('scroll', function () {
     var y = window.scrollY;
@@ -1381,7 +942,6 @@
   }, { passive: true });
 
   /* Brands mega menu */
-  var mega = document.getElementById('mega');
   var brandsToggle = document.getElementById('brandsToggle');
   var megaTimer, megaOpenedAt = 0;
   function setMega(open) {
@@ -1429,24 +989,6 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { setMenu(false); setMega(false); } });
   window.matchMedia('(min-width: 1024px)').addEventListener('change', function () { setMenu(false); setMega(false); });
 
-  /* Brand index: hover / focus swaps the preview image */
-  var previewName = document.getElementById('previewName');
-  var previewNum = document.getElementById('previewNum');
-  var rows = document.querySelectorAll('.brand-row');
-  function preview(row) {
-    var key = row.getAttribute('data-preview');
-    rows.forEach(function (r) { r.classList.toggle('is-active', r === row); });
-    document.querySelectorAll('[data-preview-img]').forEach(function (img) {
-      img.classList.toggle('is-active', img.getAttribute('data-preview-img') === key);
-    });
-    previewName.textContent = row.querySelector('.brand-row__name').firstChild.textContent.trim();
-    previewNum.textContent = row.querySelector('.brand-row__num').textContent + ' / 07';
-  }
-  rows.forEach(function (row) {
-    row.addEventListener('mouseenter', function () { preview(row); });
-    row.addEventListener('focusin', function () { preview(row); });
-  });
-
   /* Brand collection tabs */
   var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
   function selectTab(key, focus) {
@@ -1489,7 +1031,6 @@
     form.classList.add('is-sent');
   });
 
-  /* Hero video respects reduced motion */
   if (reduced) {
     var video = document.querySelector('.hero video');
     video.removeAttribute('autoplay');
