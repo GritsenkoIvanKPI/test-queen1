@@ -287,46 +287,6 @@
   .banner__body p { margin: 0; color: rgba(255, 254, 252, .85); }
   .banner__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.6rem 3.2rem; margin-top: .6rem; }
 
-  /* Contact */
-  .contact__grid { display: grid; gap: var(--s-5); }
-  .contact__info { display: grid; gap: var(--s-4); align-content: start; }
-  .contact__info .head { margin-bottom: 0; }
-  .managers { display: grid; border-top: .1rem solid var(--line); }
-  .manager { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0 2rem; padding: 1.6rem 0; border-bottom: .1rem solid var(--line); }
-  .manager__name { font-weight: 500; }
-  .manager__market { grid-column: 1; font-size: 1.1rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-  .manager__tel { grid-column: 2; grid-row: 1 / span 2; font-variant-numeric: tabular-nums; white-space: nowrap; }
-  .contact__meta { display: grid; gap: 2rem; }
-  .contact__meta div { display: grid; gap: .3rem; justify-items: start; }
-
-  .form { position: relative; display: grid; gap: 2.6rem; align-content: start; }
-  .form .head { margin-bottom: 0; }
-  .form__row { display: grid; gap: 2.6rem; }
-  .field { position: relative; display: grid; gap: .2rem; }
-  .field label, .picks legend { font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-  .field input, .field select { width: 100%; height: 4.2rem; padding: 0; border: 0; border-bottom: .1rem solid var(--line); border-radius: 0; background: transparent; font: inherit; font-size: 1.5rem; color: var(--ink); outline: none; appearance: none; }
-  .field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 5' fill='none' stroke='%2377706a'%3E%3Cpath d='M.5.5 4 4 7.5.5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right .4rem center; background-size: .9rem; cursor: pointer; }
-  .field::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: .1rem; background: var(--ink); transform: scaleX(0); transform-origin: left center; transition: transform .5s var(--ease); }
-  .field:focus-within::after { transform: scaleX(1); }
-  .field input::placeholder { color: #b0a8a1; }
-  .picks { margin: 0; padding: 0; border: 0; }
-  .picks legend { margin-bottom: 1.2rem; padding: 0; }
-  .picks__list { display: flex; flex-wrap: wrap; gap: .8rem; }
-  .pick { position: relative; display: inline-flex; }
-  .pick input { position: absolute; opacity: 0; pointer-events: none; }
-  .pick span { display: inline-flex; align-items: center; min-height: 3.4rem; padding: 0 1.4rem; border: .1rem solid var(--line); font-size: 1.2rem; cursor: pointer; transition: transform .3s var(--ease), background-color .3s ease, color .3s ease, border-color .3s ease; }
-  .pick span:hover { border-color: var(--ink); }
-  .pick span:active { transform: scale(.96); }
-  .pick input:checked + span { background: var(--ink); border-color: var(--ink); color: var(--bg); }
-  .pick input:focus-visible + span { outline: .1rem solid var(--ink); outline-offset: .3rem; }
-  .consent { display: grid; grid-template-columns: 1.8rem 1fr; gap: 1.2rem; align-items: start; font-size: 1.2rem; line-height: 1.55; color: var(--muted); cursor: pointer; }
-  .consent input { appearance: none; width: 1.6rem; height: 1.6rem; margin: .2rem 0 0; border: .1rem solid var(--muted); border-radius: 0; display: grid; place-content: center; cursor: pointer; }
-  .consent input::after { content: ""; width: .8rem; height: .8rem; background: var(--ink); transform: scale(0); transition: transform .3s var(--ease); }
-  .consent input:checked::after { transform: scale(1); }
-  .form__done { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.2rem; background: var(--bg); text-align: center; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .5s ease, visibility 0s .5s; }
-  .form.is-sent .form__done { opacity: 1; visibility: visible; pointer-events: auto; transition: opacity .5s ease; }
-  .form__done p { max-width: 32rem; margin: 0; color: var(--muted); }
-
   /* Footer */
   .footer { padding: var(--s-5) var(--gutter) 0; background: var(--bg-2); }
   .footer__top { display: grid; gap: var(--s-4); padding-bottom: var(--s-4); }
@@ -339,6 +299,11 @@
   .footer__col .label { margin-bottom: .4rem; }
   .footer__col a, .footer__col span { justify-self: start; }
   .footer__col span:not(.label), .footer__col a[aria-disabled="true"] { color: var(--muted); }
+  .footer__contacts { display: grid; gap: 2rem; padding: var(--s-4) 0; border-top: .1rem solid var(--line); scroll-margin-top: var(--header); }
+  .contacts-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.4rem var(--s-3); }
+  .contact { display: grid; gap: .2rem; align-content: start; justify-items: start; font-size: 1.3rem; }
+  .contact__name { font-weight: 500; }
+  .contact__meta { margin-bottom: .4rem; font-size: 1.1rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
   .footer__langs { display: flex; flex-wrap: wrap; gap: 1rem 2.4rem; padding: 2.2rem 0; border-top: .1rem solid var(--line); font-size: 1.1rem; letter-spacing: .1em; }
   .footer__langs a { color: var(--muted); }
   .footer__langs a[aria-current] { color: var(--ink); }
@@ -353,6 +318,7 @@
     /* brand grid: CTA tile takes its own row */
     .brand--cta { grid-column: 1 / -1; aspect-ratio: auto; padding: var(--s-4) var(--gutter); }
     .brand__desc { font-size: 1.3rem; }
+    .contact--wide { grid-column: 1 / -1; }
     .hero__actions { flex-direction: column; gap: 1.8rem; }
     .footer__col a { padding: .3rem 0; }
     .footer__bottom { flex-direction: column-reverse; gap: 1.6rem; padding: 2.6rem 0; }
@@ -404,8 +370,8 @@
     /* fewer models keep the same card width as a full row of four */
     .models--3 { grid-template-columns: repeat(3, calc((100% - .6rem) / 4)); justify-content: center; }
     .models--2 { grid-template-columns: repeat(2, calc((100% - .6rem) / 4)); justify-content: center; }
-    .form__row { grid-template-columns: 1fr 1fr; gap: 2.6rem 3.2rem; }
-    .footer__cols { grid-template-columns: repeat(4, 1fr); }
+    .footer__cols { grid-template-columns: repeat(3, 1fr); }
+    .contacts-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   }
 
   /* ───────────── Desktop ───────────── */
@@ -433,8 +399,8 @@
     .brands-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     .brand--cta { padding: 4rem; }
 
-    .contact__grid { grid-template-columns: 5fr 6fr; gap: 12rem; align-items: start; }
-    .footer__top { grid-template-columns: 4fr 8fr; gap: 10rem; }
+    .footer__top { grid-template-columns: 5fr 7fr; gap: 10rem; }
+    .contacts-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   }
 
   @media (hover: none) {
@@ -462,7 +428,7 @@
       </button>
       <a class="u-link" href="#about">About us</a>
       <a class="u-link" role="link" aria-disabled="true" title="Page in progress">Blog</a>
-      <a class="u-link" href="#contact">Contacts</a>
+      <a class="u-link" href="#contacts">Contacts</a>
     </nav>
   </div>
 
@@ -486,7 +452,7 @@
         <a role="link" aria-disabled="true" lang="el"><span>Ελληνικά</span><b>EL</b></a>
       </div>
     </div>
-    <a class="btn btn--sm header__cta" href="#contact" data-label="Become a partner"><span>Become a partner</span></a>
+    <a class="btn btn--sm header__cta" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>
     <a class="icon-btn icon-btn--call" href="tel:+48531472415" aria-label="Call +48 531 472 415">
       <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 2.5H3.9c-.8 0-1.4.7-1.4 1.5C2.9 11.3 8.7 17.1 16 17.5c.8 0 1.5-.6 1.5-1.4v-2.7l-3.7-1.5-1.6 1.9c-2.1-1-3.8-2.7-4.8-4.8l1.9-1.6z"/></svg>
     </a>
@@ -540,10 +506,10 @@
     </div>
     <a class="menu__link" href="#about" data-close>About us</a>
     <a class="menu__link" role="link" aria-disabled="true">Blog</a>
-    <a class="menu__link" href="#contact" data-close>Contacts</a>
+    <a class="menu__link" href="#contacts" data-close>Contacts</a>
   </nav>
   <div class="menu__foot">
-    <a class="btn btn--block" href="#contact" data-close data-label="Become a partner"><span>Become a partner</span></a>
+    <a class="btn btn--block" href="#contacts" data-close data-label="Become a partner"><span>Become a partner</span></a>
     <div class="menu__langs">
       <a aria-current="true" lang="en">EN</a>
       <a role="link" aria-disabled="true" lang="pl">PL</a>
@@ -574,7 +540,7 @@
       <h1 class="h1 fade f2">Seven bridal brands, one fashion house</h1>
       <p class="hero__text fade f3">Handmade wedding dresses from the manufacturer, supplied wholesale to bridal salons in 18 countries.</p>
       <div class="hero__actions fade f4">
-        <a class="btn btn--light" href="#contact" data-label="Become a partner"><span>Become a partner</span></a>
+        <a class="btn btn--light" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>
         <a class="link" href="#brands">Explore our brands</a>
       </div>
     </div>
@@ -641,7 +607,7 @@
       <div class="brand brand--cta reveal d3">
         <span class="h3">One supplier, seven brands</span>
         <p class="text">One manager, one order and one delivery for every brand you choose.</p>
-        <a class="link" href="#contact">Become a partner</a>
+        <a class="link" href="#contacts">Become a partner</a>
       </div>
     </div>
   </section>
@@ -789,66 +755,9 @@
       <h2 class="h2">Bring our brands to your salon</h2>
       <p>Request the wholesale price list and catalogues. A manager will reply within one business day.</p>
       <div class="banner__actions">
-        <a class="btn btn--light" href="#contact" data-label="Request price list"><span>Request price list</span></a>
+        <a class="btn btn--light" href="#contacts" data-label="Request price list"><span>Request price list</span></a>
         <a class="link" href="tel:+48531472415">+48 531 472 415</a>
       </div>
-    </div>
-  </section>
-
-  <!-- 8. Contact us -->
-  <section class="section" id="contact">
-    <div class="contact__grid">
-      <div class="contact__info">
-        <header class="head reveal">
-          <span class="label">Contact us</span>
-          <h2 class="h2">Talk to a manager</h2>
-          <p class="text">Write or call the manager for your market. We answer in Polish, German, Italian, English and Russian.</p>
-        </header>
-        <div class="managers reveal">
-          <div class="manager"><span class="manager__name">Viktoria</span><span class="manager__market">Poland</span><a class="manager__tel u-link" href="tel:+48531472415">+48 531 472 415</a></div>
-          <div class="manager"><span class="manager__name">Daria</span><span class="manager__market">Poland</span><a class="manager__tel u-link" href="tel:+380687748003">+380 68 774 8003</a></div>
-          <div class="manager"><span class="manager__name">Polina</span><span class="manager__market">Germany</span><a class="manager__tel u-link" href="tel:+48514732941">+48 514 732 941</a></div>
-          <div class="manager"><span class="manager__name">Anastasia</span><span class="manager__market">Italy</span><a class="manager__tel u-link" href="tel:+393938667667">+39 393 866 7667</a></div>
-        </div>
-        <div class="contact__meta reveal">
-          <div><span class="label">E-mail</span><a class="u-link" href="mailto:managerqueen1@gmail.com">managerqueen1@gmail.com</a></div>
-          <div><span class="label">Office</span><span>QUEEN_WED Sp. z o.o.<br>Czyżówka 14/2.11, 30-526 Kraków, Poland</span></div>
-        </div>
-      </div>
-
-      <form class="form reveal d1" id="leadForm" novalidate>
-        <div class="head">
-          <span class="label">Wholesale enquiry</span>
-          <p class="text">Leave your details and we will send the price list and catalogues.</p>
-        </div>
-        <div class="form__row">
-          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Your name"></div>
-          <div class="field"><label for="f-salon">Salon / company</label><input id="f-salon" name="company" type="text" autocomplete="organization" placeholder="Salon name"></div>
-          <div class="field"><label for="f-contact">Phone or e-mail</label><input id="f-contact" name="contact" type="text" autocomplete="email" required placeholder="+48 … or name@salon.com"></div>
-          <div class="field">
-            <label for="f-country">Country</label>
-            <select id="f-country" name="country"><option>Poland</option><option>Germany</option><option>Italy</option><option>Greece</option><option>Spain</option><option>Other</option></select>
-          </div>
-        </div>
-        <fieldset class="picks">
-          <legend>Brands of interest</legend>
-          <div class="picks__list">
-            <label class="pick"><input type="checkbox" name="brands" value="queen"><span>Queen</span></label>
-            <label class="pick"><input type="checkbox" name="brands" value="elle"><span>Elle</span></label>
-            <label class="pick"><input type="checkbox" name="brands" value="eleonora"><span>Eleonora</span></label>
-            <label class="pick"><input type="checkbox" name="brands" value="ricci"><span>Lorenzo Ricci</span></label>
-            <label class="pick"><input type="checkbox" name="brands" value="velina"><span>Velina</span></label>
-            <label class="pick"><input type="checkbox" name="brands" value="nivera"><span>Nivera</span></label>
-            <label class="pick"><input type="checkbox" name="brands" value="tvoya"><span>TVOYA</span></label>
-          </div>
-        </fieldset>
-        <label class="consent"><input type="checkbox" name="consent" required><span>I agree to the processing of my personal data in accordance with the Privacy Policy (GDPR).</span></label>
-        <button class="btn btn--block" type="submit" data-label="Send enquiry"><span>Send enquiry</span></button>
-        <div class="form__done" role="status" aria-live="polite">
-          <span class="h3">Thank you</span>
-          <p>Your enquiry has been received. A manager will contact you within one business day.</p>
-        </div>
-      </form>
     </div>
   </section>
 
@@ -881,21 +790,26 @@
         <a class="u-link" href="#about">About us</a>
         <a class="u-link" href="#services">Exclusive services</a>
         <a class="u-link" role="link" aria-disabled="true">Blog</a>
-        <a class="u-link" href="#contact">Contacts</a>
+        <a class="u-link" href="#contacts">Contacts</a>
       </nav>
       <nav class="footer__col" aria-label="Partners">
         <span class="label">Partners</span>
-        <a class="u-link" href="#contact">Wholesale enquiry</a>
+        <a class="u-link" href="#contacts">Wholesale enquiry</a>
         <a class="u-link" href="#benefits">Terms of cooperation</a>
       </nav>
-      <div class="footer__col">
-        <span class="label">Contacts</span>
-        <a class="u-link" href="tel:+48531472415">+48 531 472 415</a>
-        <a class="u-link" href="mailto:managerqueen1@gmail.com">managerqueen1@gmail.com</a>
-        <span>Czyżówka 14/2.11<br>30-526 Kraków, Poland</span>
-      </div>
     </div>
   </div>
+  <section class="footer__contacts" id="contacts" aria-label="Contacts">
+    <span class="label">Contacts</span>
+    <div class="contacts-grid">
+      <div class="contact"><span class="contact__name">Viktoria</span><span class="contact__meta">Poland</span><a class="u-link" href="tel:+48531472415">+48 531 472 415</a></div>
+      <div class="contact"><span class="contact__name">Daria</span><span class="contact__meta">Poland</span><a class="u-link" href="tel:+380687748003">+380 68 774 8003</a></div>
+      <div class="contact"><span class="contact__name">Polina</span><span class="contact__meta">Germany</span><a class="u-link" href="tel:+48514732941">+48 514 732 941</a></div>
+      <div class="contact"><span class="contact__name">Anastasia</span><span class="contact__meta">Italy</span><a class="u-link" href="tel:+393938667667">+39 393 866 7667</a></div>
+      <div class="contact contact--wide"><span class="contact__name">E-mail</span><span class="contact__meta">All markets</span><a class="u-link" href="mailto:managerqueen1@gmail.com">managerqueen1@gmail.com</a></div>
+      <div class="contact contact--wide"><span class="contact__name">Office</span><span class="contact__meta">Poland</span><span>Czyżówka 14/2.11, 30-526 Kraków</span></div>
+    </div>
+  </section>
   <nav class="footer__langs" aria-label="Language">
     <a aria-current="true" lang="en">English</a>
     <a role="link" aria-disabled="true" lang="pl">Polski</a>
@@ -1024,14 +938,6 @@
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[data-brand]');
     if (link) selectTab(link.getAttribute('data-brand'));
-  });
-
-  /* Enquiry form — front-end only until the CRM is connected */
-  var form = document.getElementById('leadForm');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    if (!form.checkValidity()) { form.reportValidity(); return; }
-    form.classList.add('is-sent');
   });
 
   if (reduced) {
