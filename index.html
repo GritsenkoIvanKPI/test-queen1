@@ -179,7 +179,7 @@
   main { padding-top: var(--header); }
   .hero { position: relative; display: flex; align-items: flex-end; justify-content: center; height: calc(100svh - var(--header)); min-height: 56rem; overflow: hidden; background: #2b2724; color: var(--white); isolation: isolate; }
   .hero__media { position: absolute; inset: 0; z-index: -1; }
-  .hero__media video { width: 100%; height: 100%; object-fit: cover; object-position: 62% center; }
+  .hero__media video { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
   .hero__media video.is-tall { object-position: center 30%; }
   .hero__inner { display: grid; justify-items: center; gap: 1.8rem; padding: 0 var(--gutter) 7rem; text-align: center; }
   .hero__inner .label { color: rgba(255, 254, 252, .8); }
@@ -532,17 +532,17 @@
   <!-- 1. Hero -->
   <section class="hero" aria-label="Introduction">
     <div class="hero__media">
-      <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-poster.jpg">
-        <source src="assets/video/hero.mp4" type="video/mp4">
+      <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-wide-poster.jpg">
+        <source src="assets/video/hero-wide.mp4" type="video/mp4">
       </video>
       <script>
-        /* Phones and portrait tablets get the vertical film; wide screens keep the landscape one */
+        /* Phones and portrait tablets get the vertical film; wide screens get a landscape crop of it */
         (function () {
           var v = document.getElementById('heroVideo');
           var tall = window.matchMedia('(max-width: 1023px) and (orientation: portrait)');
           var films = {
             tall: { src: 'assets/video/hero-portrait.mp4', poster: 'assets/img/hero-portrait-poster.jpg' },
-            wide: { src: 'assets/video/hero.mp4', poster: 'assets/img/hero-poster.jpg' }
+            wide: { src: 'assets/video/hero-wide.mp4', poster: 'assets/img/hero-wide-poster.jpg' }
           };
           function pick() {
             var f = tall.matches ? films.tall : films.wide;
