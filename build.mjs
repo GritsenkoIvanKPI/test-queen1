@@ -166,8 +166,7 @@ function brandPage(b) {
         </a>`).join('')}
         <span class="bh-cards__bar" aria-hidden="true"><i></i></span>
       </div>` : ''}
-    </section>
-    <div class="page-top page-top--after">${crumbs([['Home', '/'], ['Brands', '/#brands'], [b.name]])}</div>`;
+    </section>`;
 
   const specRows = [
     ['Key models', b.keyModels.join(' · ')],
@@ -244,7 +243,6 @@ function cataloguePage() {
     labels: L,
   };
   const body = `<section class="cat-head">
-    ${crumbs([['Home', '/'], ['Catalogue']])}
     <h1 class="h1" id="catTitle">All models</h1>
     <p class="text" id="catIntro">Every model from every brand in one place. Choose a brand, then narrow down by silhouette, sleeves or fabric.</p>
   </section>
@@ -320,8 +318,7 @@ function modelPage(m) {
     ['Changes', 'Sleeves, length, train and colour on request'],
   ].filter(Boolean);
 
-  const body = `<div class="page-top">${crumbs([['Catalogue', '/catalogue/'], [b.name, `/catalogue/?brand=${b.slug}`], [m.article]])}</div>
-  <section class="pdp">
+  const body = `<section class="pdp">
     <div class="pdp__gallery" aria-label="Photos">
       ${tiles.join('\n      ')}
     </div>
