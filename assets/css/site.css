@@ -131,7 +131,7 @@
   .mega__feature { display: grid; gap: 1.2rem; transition: opacity .3s ease; }
   .mega__feature:hover { opacity: .85; }
   .mega__feature:active { opacity: .7; }
-  .mega__feature img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .mega__feature img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 12%; }
   .mega__feature span { font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; }
 
   /* Mobile menu */
@@ -185,7 +185,7 @@
   .head--center .text { max-width: 46rem; }
 
   .photo { position: relative; display: block; overflow: hidden; background: var(--bg-2); }
-  .photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s var(--ease); }
+  .photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; transform-origin: center 12%; transition: transform 1.4s var(--ease); }
   /* brands still waiting for photos */
   .photo--empty { display: flex; align-items: center; justify-content: center; background: var(--bg-2); }
   .photo__note { padding: 2rem; text-align: center; font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }

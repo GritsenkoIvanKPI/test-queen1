@@ -14,7 +14,7 @@
 /* Full-screen hero: undarkened media right, small text bottom-left, rotating model card */
 .bh { position: relative; display: grid; color: var(--white); }
 .bh__pic { grid-area: 1 / 1; position: relative; height: calc(100svh - var(--header)); min-height: 52rem; max-height: 110rem; overflow: hidden; background: var(--bg-2); }
-.bh__media { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+.bh__media { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 22%; }
 .bh__body { grid-area: 1 / 1; position: relative; z-index: 1; align-self: end; display: grid; gap: 1rem; justify-items: start; padding: var(--s-4) var(--gutter); text-shadow: 0 .1rem .3rem rgba(26, 24, 22, .3), 0 0 2.4rem rgba(26, 24, 22, .25); }
 .bh__meta { font-size: 1.1rem; letter-spacing: .14em; text-transform: uppercase; color: rgba(255, 254, 252, .85); }
 .bh__title { margin: .4rem 0 0; font-family: var(--serif); font-weight: 400; font-size: 3.2rem; line-height: 1.05; letter-spacing: .01em; }
@@ -22,6 +22,8 @@
 .bh__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.2rem 2.8rem; margin-top: 1.2rem; text-shadow: none; }
 .bh__link { color: var(--white); }
 .bh--elle .bh__media { object-position: center 12%; }
+.bh--queen .bh__media { object-position: center 42%; }
+.bh--eleonora .bh__media { object-position: center 34%; }
 .bh--text { min-height: 48rem; background: var(--bg-2); color: var(--ink); }
 .bh--text .bh__body { text-shadow: none; padding-top: var(--s-5); padding-bottom: var(--s-5); }
 .bh--text .bh__meta, .bh--text .bh__tag { color: var(--muted); }
@@ -35,7 +37,7 @@
 .bh-card__label { font-size: 1.05rem; letter-spacing: .14em; color: var(--muted); font-variant-numeric: tabular-nums; }
 .bh-card__name { font-size: 1.35rem; font-weight: 500; letter-spacing: .02em; transition: opacity .3s ease; }
 .bh-card__meta { margin-top: auto; font-size: 1.15rem; color: var(--muted); }
-.bh-card__img { width: 7.2rem; height: 9.6rem; object-fit: cover; }
+.bh-card__img { width: 7.2rem; height: 9.6rem; object-fit: cover; object-position: center top; }
 .bh-cards__bar { position: absolute; left: 0; right: 0; bottom: 0; height: .2rem; background: var(--line); pointer-events: none; }
 .bh-cards__bar i { display: block; height: 100%; background: var(--ink); transform: scaleX(0); transform-origin: left center; }
 .bh-cards.is-running .bh-cards__bar i { animation: bh-bar var(--bh-dur, 5s) linear infinite; }
