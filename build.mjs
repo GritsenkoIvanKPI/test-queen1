@@ -139,35 +139,33 @@ function brandPage(b) {
   const collections = [...new Set(list.map((m) => m.collection).filter(Boolean))].sort((a, z) => collOrder.indexOf(a) - collOrder.indexOf(z));
   const uniq = (k) => [...new Set(list.map((m) => m[k]))];
 
-  // Editorial hero: oversized wordmark, one large photo overlapping it, a smaller offset photo
-  const size = b.name.length <= 6 ? 's' : b.name.length <= 10 ? 'm' : 'l';
-  const factLine = has ? [
-    `${list.length} models`,
-    collections.length && `${collections.length} collections`,
-    `${uniq('sil').length} silhouettes`,
-    list.some((m) => m.video) && `${list.filter((m) => m.video).length} with video`,
-  ].filter(Boolean).join(' · ') : 'Collection coming soon';
-  const [main, side] = b.hero;
-
-  const hero = `<section class="bh bh--${size}${main ? '' : ' bh--text'}">
-      <div class="bh__top">
-        ${crumbs([['Home', '/'], ['Brands', '/#brands'], [b.name]])}
-        <span class="bh__facts">${factLine}</span>
-      </div>
-      <h1 class="bh__name"><span class="fade">${esc(b.name)}</span></h1>
-      <div class="bh__stage">
-        <div class="bh__copy fade f3">
-          <span class="label">${esc(b.tagline)}</span>
-          <p class="text">${esc(b.intro)}</p>
-          <div class="bh__actions">
-            ${has ? `<a class="btn" href="/catalogue/?brand=${b.slug}" data-label="View catalogue"><span>View catalogue</span></a>
-            <a class="link" href="#contacts">Become a partner</a>` : `<a class="btn" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>`}
-          </div>
+  // Full-screen hero: media fills the right side and fades into the dark,
+  // headline + actions bottom-left, featured-model card bottom-right.
+  const feat = list[0];
+  const media = b.heroVideo
+    ? `<video class="bh__media" autoplay muted loop playsinline preload="metadata" poster="${b.heroPhoto}" aria-hidden="true"><source src="${b.heroVideo}" type="video/mp4"></video>`
+    : b.heroPhoto ? `<img class="bh__media" src="${b.heroPhoto}" alt="${esc(b.name)} wedding dress" fetchpriority="high">` : '';
+  const hero = `<section class="bh${media ? '' : ' bh--text'}">
+      ${media}
+      <span class="bh__shade" aria-hidden="true"></span>
+      <div class="bh__body">
+        <span class="label fade">${has ? `${list.length} models · ${uniq('sil').length} silhouettes` : 'Collection coming soon'}</span>
+        <h1 class="bh__title fade f2">${esc(b.name)}. <em>${esc(b.tagline)}.</em></h1>
+        <div class="bh__actions fade f3">
+          ${has ? `<a class="btn btn--light" href="/catalogue/?brand=${b.slug}" data-label="View catalogue"><span>View catalogue</span></a>
+          <a class="btn btn--glass" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>` : `<a class="btn btn--light" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>`}
         </div>
-        ${main ? `<span class="photo bh__main fade f2">${img(main, `${b.name} wedding dress`, true)}</span>` : ''}
-        ${side ? `<span class="photo bh__side fade f4">${img(side, `${b.name} wedding dress`)}</span>` : ''}
       </div>
-    </section>`;
+      ${feat ? `<a class="bh-card fade f4" href="/catalogue/${feat.id}/">
+        <span class="bh-card__body">
+          <span class="bh-card__label">Key model</span>
+          <span class="bh-card__name">${esc(modelName(feat))}</span>
+          <span class="bh-card__meta">${L.sil[feat.sil]} · ${L.fabric[feat.fabric]}</span>
+        </span>
+        <img class="bh-card__img" src="${feat.photos[0]}" alt="" width="900" height="1350">
+      </a>` : ''}
+    </section>
+    <div class="page-top page-top--after">${crumbs([['Home', '/'], ['Brands', '/#brands'], [b.name]])}</div>`;
 
   const specRows = [
     ['Key models', b.keyModels.join(' · ')],

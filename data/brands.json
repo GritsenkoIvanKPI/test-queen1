@@ -8,10 +8,24 @@
       "QUEEN is the line the group started with, and it still sets the standard for every other brand. Each dress is built around a structured corset bodice that holds its shape, finished with lace appliqué, beading or clean satin.",
       "New collections come out every season. Queen 2027 is the newest, while Paradise and Floria stay in the line as proven best-sellers for partner salons."
     ],
-    "keyModels": ["2401", "2747", "2754", "2736", "2752"],
-    "hero": ["/assets/img/models/queen-2744.jpg", "/assets/img/models/queen-2747.jpg"],
+    "keyModels": [
+      "2401",
+      "2747",
+      "2754",
+      "2736",
+      "2752"
+    ],
+    "hero": [
+      "/assets/img/models/queen-2744.jpg",
+      "/assets/img/models/queen-2747.jpg"
+    ],
     "aboutPhoto": "/assets/img/models/queen-2747-detail.jpg",
-    "cta": ["/assets/img/models/queen-2717.jpg", "/assets/img/models/queen-2750.jpg"]
+    "cta": [
+      "/assets/img/models/queen-2717.jpg",
+      "/assets/img/models/queen-2750.jpg"
+    ],
+    "heroPhoto": "/assets/img/models/queen-2717.jpg",
+    "heroVideo": null
   },
   {
     "slug": "elle",
@@ -22,10 +36,23 @@
       "Elle combines modern style with delicate details. The line moves between minimal satin silhouettes and sheer corset bodices covered in soft lace.",
       "Many models come with detachable sleeves or overskirts, so one dress can be styled in more than one way — a strong point for salons with a varied clientele."
     ],
-    "keyModels": ["765", "818", "808", "124-91"],
-    "hero": ["/assets/catalog/elle-808/2.jpg", "/assets/catalog/elle-813/4.jpg"],
+    "keyModels": [
+      "765",
+      "818",
+      "808",
+      "124-91"
+    ],
+    "hero": [
+      "/assets/catalog/elle-808/2.jpg",
+      "/assets/catalog/elle-813/4.jpg"
+    ],
     "aboutPhoto": "/assets/catalog/elle-807/3.jpg",
-    "cta": ["/assets/catalog/elle-780/1.jpg", "/assets/catalog/elle-124-79/1.jpg"]
+    "cta": [
+      "/assets/catalog/elle-780/1.jpg",
+      "/assets/catalog/elle-124-79/1.jpg"
+    ],
+    "heroPhoto": "/assets/catalog/elle-808/2.jpg",
+    "heroVideo": null
   },
   {
     "slug": "eleonora",
@@ -36,10 +63,22 @@
       "Eleonora features romantic designs and graceful silhouettes. Airy tulle ball gowns, fitted mermaid dresses with lace, and satin pieces with puff or detachable sleeves.",
       "The collection is shot in historic streets and palace gardens, and many models come with a short video that salons can use in their own marketing."
     ],
-    "keyModels": ["P-51", "P-87", "P-78"],
-    "hero": ["/assets/img/brands/eleonora-cover.jpg", "/assets/catalog/eleonora-p-85/1.jpg"],
+    "keyModels": [
+      "P-51",
+      "P-87",
+      "P-78"
+    ],
+    "hero": [
+      "/assets/img/brands/eleonora-cover.jpg",
+      "/assets/catalog/eleonora-p-85/1.jpg"
+    ],
     "aboutPhoto": "/assets/catalog/eleonora-p-83/2.jpg",
-    "cta": ["/assets/catalog/eleonora-p-80/1.jpg", "/assets/catalog/eleonora-p-48/1.jpg"]
+    "cta": [
+      "/assets/catalog/eleonora-p-80/1.jpg",
+      "/assets/catalog/eleonora-p-48/1.jpg"
+    ],
+    "heroPhoto": "/assets/video/brand-eleonora-poster.jpg",
+    "heroVideo": "/assets/video/brand-eleonora.mp4"
   },
   {
     "slug": "ricci",
@@ -49,10 +88,17 @@
     "about": [
       "Atelier Lorenzo Ricci showcases refined design and exquisite craftsmanship."
     ],
-    "keyModels": ["T003", "T006", "LR-102", "LR-109"],
+    "keyModels": [
+      "T003",
+      "T006",
+      "LR-102",
+      "LR-109"
+    ],
     "hero": [],
     "aboutPhoto": null,
-    "cta": []
+    "cta": [],
+    "heroPhoto": null,
+    "heroVideo": null
   },
   {
     "slug": "velina",
@@ -62,10 +108,15 @@
     "about": [
       "Velina brings a soft, airy touch to bridal fashion."
     ],
-    "keyModels": ["26-053", "26-048"],
+    "keyModels": [
+      "26-053",
+      "26-048"
+    ],
     "hero": [],
     "aboutPhoto": null,
-    "cta": []
+    "cta": [],
+    "heroPhoto": null,
+    "heroVideo": null
   },
   {
     "slug": "nivera",
@@ -75,10 +126,15 @@
     "about": [
       "Nivera blends modern elegance with clean lines and subtle details."
     ],
-    "keyModels": ["K001", "K002"],
+    "keyModels": [
+      "K001",
+      "K002"
+    ],
     "hero": [],
     "aboutPhoto": null,
-    "cta": []
+    "cta": [],
+    "heroPhoto": null,
+    "heroVideo": null
   },
   {
     "slug": "tvoya",
@@ -88,9 +144,14 @@
     "about": [
       "TVOYA celebrates individuality with bold, distinctive styles."
     ],
-    "keyModels": ["RB-26-12", "RB-26-20"],
+    "keyModels": [
+      "RB-26-12",
+      "RB-26-20"
+    ],
     "hero": [],
     "aboutPhoto": null,
-    "cta": []
+    "cta": [],
+    "heroPhoto": null,
+    "heroVideo": null
   }
 ]
