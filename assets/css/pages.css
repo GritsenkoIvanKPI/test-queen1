@@ -21,6 +21,7 @@
 .bh__tag { margin: 0; max-width: 34rem; font-size: 1.3rem; color: rgba(255, 254, 252, .9); }
 .bh__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.2rem 2.8rem; margin-top: 1.2rem; text-shadow: none; }
 .bh__link { color: var(--white); }
+.bh--elle .bh__media { object-position: center 12%; }
 .bh--text { min-height: 48rem; background: var(--bg-2); color: var(--ink); }
 .bh--text .bh__body { text-shadow: none; padding-top: var(--s-5); padding-bottom: var(--s-5); }
 .bh--text .bh__meta, .bh--text .bh__tag { color: var(--muted); }

@@ -143,9 +143,9 @@ function brandPage(b) {
   // a card bottom-right that cycles through the brand's models.
   const media = b.heroVideo
     ? `<video class="bh__media" autoplay muted loop playsinline preload="metadata" poster="${b.heroPhoto}" aria-hidden="true"><source src="${b.heroVideo}" type="video/mp4"></video>`
-    : b.heroPhoto ? `<img class="bh__media" src="${b.heroPhoto}" alt="${esc(b.name)} wedding dress" fetchpriority="high">` : '';
+    : b.heroPhoto ? `<img class="bh__media" src="${b.heroPhoto}"${/-2560\.jpg$/.test(b.heroPhoto) ? ` srcset="${b.heroPhoto.replace('-2560', '-1200')} 1200w, ${b.heroPhoto} 2560w" sizes="100vw"` : ''} alt="${esc(b.name)} wedding dress" fetchpriority="high">` : '';
   const cards = list.slice(0, 6);
-  const hero = `<section class="bh${media ? '' : ' bh--text'}">
+  const hero = `<section class="bh bh--${b.slug}${media ? '' : ' bh--text'}">
       ${media ? `<div class="bh__pic">${media}</div>` : ''}
       <div class="bh__body">
         <span class="bh__meta fade">${has ? `${list.length} models · ${uniq('sil').length} silhouettes` : 'Collection coming soon'}</span>
