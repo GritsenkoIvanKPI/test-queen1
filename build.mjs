@@ -108,9 +108,13 @@ const img = (src, alt, eager = false) => `<img src="${src}" alt="${esc(alt)}" wi
 const empty = (note = 'Photo coming soon') => `<span class="photo photo--empty"><span class="photo__note">${note}</span></span>`;
 const crumbs = (items) => `<ol class="crumbs">${items.map(([t, h], i) => `<li>${h && i < items.length - 1 ? `<a href="${h}">${esc(t)}</a>` : `<span aria-current="page">${esc(t)}</span>`}</li>`).join('')}</ol>`;
 
+// Individual model pages are hidden for now. Set to true to publish them again.
+const MODEL_PAGES = false;
+const modelHref = (m) => (MODEL_PAGES ? `/catalogue/${m.id}/` : `/catalogue/?brand=${m.brand}`);
+
 function card(m, cls = '') {
   const [a, b] = m.photos;
-  return `<a class="mcard reveal${cls}" href="/catalogue/${m.id}/">
+  return `<a class="mcard reveal${cls}" href="${modelHref(m)}">
         <span class="photo">${img(a, modelName(m))}${b ? `<img src="${b}" alt="" width="900" height="1350" loading="lazy" aria-hidden="true">` : ''}</span>
         ${m.isNew ? '<span class="mcard__badge">New</span>' : ''}
         <span class="mcard__cap"><span class="h3">${esc(modelName(m))}</span><span class="mcard__meta">${L.sil[m.sil]} · ${L.fabric[m.fabric]}</span></span>
@@ -156,7 +160,7 @@ function brandPage(b) {
         </div>
       </div>
       ${cards.length ? `<div class="bh-cards fade f4" data-rotate aria-label="${esc(b.name)} models">
-        ${cards.map((m, i) => `<a class="bh-card${i ? '' : ' is-on'}" href="/catalogue/${m.id}/"${i ? ' tabindex="-1" aria-hidden="true"' : ''}>
+        ${cards.map((m, i) => `<a class="bh-card${i ? '' : ' is-on'}" href="${modelHref(m)}"${i ? ' tabindex="-1" aria-hidden="true"' : ''}>
           <span class="bh-card__body">
             <span class="bh-card__label">${String(i + 1).padStart(2, '0')} / ${String(cards.length).padStart(2, '0')}</span>
             <span class="bh-card__name">${esc(modelName(m))}</span>
@@ -238,6 +242,7 @@ function cataloguePage() {
     p: m.photos.slice(0, 2), nw: !!m.isNew, v: !!m.video,
   }));
   const meta = {
+    modelPages: MODEL_PAGES,
     brands: brands.map((b) => ({ slug: b.slug, name: b.name, keys: b.keyModels })),
     collections: collOrder.map((c) => ({ slug: slugify(c), name: c })),
     labels: L,
@@ -363,5 +368,8 @@ const write = (path, html) => { mkdirSync(path, { recursive: true }); writeFileS
 if (existsSync('brands')) rmSync('brands', { recursive: true });
 for (const b of brands) write(`brands/${b.slug}`, brandPage(b));
 write('catalogue', cataloguePage());
-for (const m of models) write(`catalogue/${m.id}`, modelPage(m));
-console.log(`Built ${brands.length} brand pages, 1 catalogue, ${models.length} model pages.`);
+for (const m of models) {
+  if (MODEL_PAGES) write(`catalogue/${m.id}`, modelPage(m));
+  else if (existsSync(`catalogue/${m.id}`)) rmSync(`catalogue/${m.id}`, { recursive: true });
+}
+console.log(`Built ${brands.length} brand pages, 1 catalogue, ${MODEL_PAGES ? models.length : 0} model pages.`);

@@ -106,6 +106,7 @@
 .mcard:hover .photo img + img, .mcard:focus-visible .photo img + img { opacity: 1; }
 .mcard:hover .photo img:only-child, .mcard:focus-visible .photo img:only-child { transform: scale(1.04); }
 .mcard:active { opacity: .8; }
+.mcard--static:active { opacity: 1; }
 .mcard__cap { display: grid; gap: .2rem; padding: 0 1.2rem; }
 .mcard__meta { font-size: 1.15rem; color: var(--muted); }
 .mcard__badge { position: absolute; top: 1.2rem; left: 1.2rem; z-index: 1; padding: .3rem .9rem; background: var(--white); font-size: 1.1rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; }

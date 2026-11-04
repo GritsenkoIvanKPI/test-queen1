@@ -84,11 +84,13 @@
   }
 
   function card(m, i) {
-    return '<a class="mcard" href="/catalogue/' + m.id + '/">' +
+    // Model pages hidden for now: cards are plain tiles, not links
+    var tag = META.modelPages ? 'a' : 'div';
+    return '<' + tag + ' class="mcard' + (META.modelPages ? '' : ' mcard--static') + '"' + (META.modelPages ? ' href="/catalogue/' + m.id + '/"' : '') + '>' +
       '<span class="photo"><img src="' + m.p[0] + '" alt="' + esc(m.n) + '" width="900" height="1350"' + (i < 6 ? '' : ' loading="lazy"') + '>' +
       (m.p[1] ? '<img src="' + m.p[1] + '" alt="" width="900" height="1350" loading="lazy" aria-hidden="true">' : '') + '</span>' +
       (m.nw ? '<span class="mcard__badge">New</span>' : '') +
-      '<span class="mcard__cap"><span class="h3">' + esc(m.n) + '</span><span class="mcard__meta">' + L.sil[m.s] + ' · ' + L.fabric[m.f] + (m.v ? ' · Video' : '') + '</span></span></a>';
+      '<span class="mcard__cap"><span class="h3">' + esc(m.n) + '</span><span class="mcard__meta">' + L.sil[m.s] + ' · ' + L.fabric[m.f] + (m.v ? ' · Video' : '') + '</span></span></' + tag + '>';
   }
 
   function selectedCount() { return GROUPS.reduce(function (n, g) { return n + (active(g) ? state.sel[g.key].length : 0); }, 0); }
