@@ -300,7 +300,15 @@
     /* brand grid: CTA tile takes its own row */
     .brand--cta { grid-column: 1 / -1; aspect-ratio: auto; padding: var(--s-4) var(--gutter); }
     .brand__desc { font-size: 1.3rem; }
-    .contact--wide { grid-column: 1 / -1; }
+    /* Contacts as a clean list: name + country on the left, number on the right */
+    .contacts-grid { grid-template-columns: 1fr; gap: 0; border-top: .1rem solid var(--line); }
+    .contact { grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 1.6rem; row-gap: .3rem; padding: 1.6rem 0; border-bottom: .1rem solid var(--line); }
+    .contact__name { grid-column: 1; }
+    .contact__meta { grid-column: 1; margin: 0; }
+    .contact > a, .contact > span:last-child:not(.contact__meta) { grid-column: 2; grid-row: 1 / span 2; justify-self: end; text-align: right; }
+    .contact--wide { grid-template-columns: 1fr; }
+    .contact:last-child { border-bottom: 0; padding-bottom: 0; }
+    .contact--wide > a, .contact--wide > span:last-child:not(.contact__meta) { grid-column: 1; grid-row: auto; justify-self: start; text-align: left; margin-top: .6rem; }
     .hero__actions { flex-direction: column; gap: 1.8rem; }
     .footer__col a { padding: .3rem 0; }
     .footer__bottom { flex-direction: column-reverse; gap: 1.6rem; padding: 2.6rem 0; }
