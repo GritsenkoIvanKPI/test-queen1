@@ -64,6 +64,14 @@
 .babout__text { display: grid; gap: var(--s-2); align-content: start; }
 .babout__text .text { max-width: 56rem; }
 .babout .photo { aspect-ratio: 4 / 5; }
+/* Phones: heading, then photo, then text and specs */
+@media (max-width: 767px) {
+  .babout { gap: var(--s-2); }
+  .babout__text { display: contents; }
+  .babout__text > * { order: 2; }
+  .babout__text > .h2 { order: 0; }
+  .babout .photo { order: 1; margin: var(--s-1) 0; }
+}
 .specs { display: grid; margin: var(--s-1) 0 0; border-top: .1rem solid var(--line); }
 .specs div { display: grid; grid-template-columns: minmax(12rem, 1fr) 2fr; gap: 2rem; padding: 1.4rem 0; border-bottom: .1rem solid var(--line); font-size: 1.3rem; }
 .specs dt { font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding-top: .2rem; }
