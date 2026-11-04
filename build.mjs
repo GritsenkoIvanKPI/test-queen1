@@ -139,7 +139,7 @@ function brandPage(b) {
   const collections = [...new Set(list.map((m) => m.collection).filter(Boolean))].sort((a, z) => collOrder.indexOf(a) - collOrder.indexOf(z));
   const uniq = (k) => [...new Set(list.map((m) => m[k]))];
 
-  // Full-screen hero: photo/video on the right (never darkened), small text bottom-left,
+  // Full-screen hero: full-width photo/video (never darkened), small text bottom-left,
   // a card bottom-right that cycles through the brand's models.
   const media = b.heroVideo
     ? `<video class="bh__media" autoplay muted loop playsinline preload="metadata" poster="${b.heroPhoto}" aria-hidden="true"><source src="${b.heroVideo}" type="video/mp4"></video>`
@@ -153,7 +153,7 @@ function brandPage(b) {
         <p class="bh__tag fade f2">${esc(b.tagline)}</p>
         <div class="bh__actions fade f3">
           ${has ? `<a class="btn btn--light btn--sm" href="/catalogue/?brand=${b.slug}" data-label="View catalogue"><span>View catalogue</span></a>
-          <a class="link bh__link" href="#contacts">Become a partner</a>` : `<a class="btn btn--light btn--sm" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>`}
+          <a class="link bh__link" href="#contacts">Become a partner</a>` : `<a class="btn btn--sm" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>`}
         </div>
       </div>
       ${cards.length ? `<div class="bh-cards fade f4" data-rotate aria-label="${esc(b.name)} models">
