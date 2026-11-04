@@ -77,7 +77,11 @@
 .specs dt { font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding-top: .2rem; }
 .specs dd { margin: 0; }
 
-.coll-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-3) .2rem; margin: 0 calc(var(--gutter) * -1); }
+/* Phones: one swipeable row, the next collection peeks in from the right */
+.coll-grid { display: grid; grid-auto-flow: column; grid-auto-columns: 78%; gap: .8rem; margin: 0 calc(var(--gutter) * -1); padding: 0 var(--gutter); overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 var(--gutter); scrollbar-width: none; overscroll-behavior-x: contain; }
+.coll-grid::-webkit-scrollbar { display: none; }
+.coll-grid > .coll { scroll-snap-align: start; }
+.coll-grid .coll__cap { padding: 0; }
 .coll { display: grid; gap: 1.2rem; align-content: start; transition: opacity .3s ease; }
 .coll .photo { aspect-ratio: 4 / 5; }
 .coll__cap { display: flex; justify-content: space-between; align-items: baseline; gap: 1.2rem; padding: 0 1.2rem; }
@@ -200,7 +204,8 @@ html.sheet-open { overflow: hidden; }
 
 /* ───────────── Tablet ───────────── */
 @media (min-width: 640px) {
-  .coll-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .coll-grid { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-3) .2rem; padding: 0; overflow: visible; scroll-snap-type: none; }
+  .coll-grid .coll__cap { padding: 0 1.2rem; }
   .gallery-grid, .results { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .results.is-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pdp__gallery { grid-auto-columns: 48%; }
