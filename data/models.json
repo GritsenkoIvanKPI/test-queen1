@@ -1,0 +1,2052 @@
+[
+ {
+  "id": "queen-2436",
+  "brand": "queen",
+  "article": "2436",
+  "collection": "Floria",
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/queen-2436/1.jpg",
+   "/assets/catalog/queen-2436/2.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": false
+ },
+ {
+  "id": "queen-2438",
+  "brand": "queen",
+  "article": "2438",
+  "collection": "Floria",
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2438/1.jpg",
+   "/assets/catalog/queen-2438/2.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": false
+ },
+ {
+  "id": "queen-2439",
+  "brand": "queen",
+  "article": "2439",
+  "collection": "Floria",
+  "sil": "aline",
+  "sleeves": "offshoulder",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2439/1.jpg",
+   "/assets/catalog/queen-2439/2.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": false
+ },
+ {
+  "id": "queen-2439-1",
+  "brand": "queen",
+  "article": "2439-1",
+  "collection": "Floria",
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2439-1/1.jpg",
+   "/assets/catalog/queen-2439-1/2.jpg"
+  ],
+  "video": null,
+  "colour": "Cappuccino",
+  "isNew": false
+ },
+ {
+  "id": "queen-2441",
+  "brand": "queen",
+  "article": "2441",
+  "collection": "Floria",
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "glitter",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2441/1.jpg",
+   "/assets/catalog/queen-2441/2.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": false
+ },
+ {
+  "id": "queen-2442",
+  "brand": "queen",
+  "article": "2442",
+  "collection": "Floria",
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "glitter",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2442/1.jpg",
+   "/assets/catalog/queen-2442/2.jpg"
+  ],
+  "video": null,
+  "colour": "Cappuccino",
+  "isNew": false
+ },
+ {
+  "id": "queen-2443",
+  "brand": "queen",
+  "article": "2443",
+  "collection": "Floria",
+  "sil": "mermaid",
+  "sleeves": "straps",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2443/1.jpg",
+   "/assets/catalog/queen-2443/2.jpg"
+  ],
+  "video": null,
+  "colour": "Cappuccino",
+  "isNew": false
+ },
+ {
+  "id": "queen-2444",
+  "brand": "queen",
+  "article": "2444",
+  "collection": "Floria",
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2444/1.jpg",
+   "/assets/catalog/queen-2444/2.jpg"
+  ],
+  "video": null,
+  "colour": "Cappuccino",
+  "isNew": false
+ },
+ {
+  "id": "queen-2445",
+  "brand": "queen",
+  "article": "2445",
+  "collection": "Floria",
+  "sil": "mermaid",
+  "sleeves": "straps",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2445/1.jpg",
+   "/assets/catalog/queen-2445/2.jpg"
+  ],
+  "video": null,
+  "colour": "Cappuccino",
+  "isNew": false
+ },
+ {
+  "id": "queen-2401",
+  "brand": "queen",
+  "article": "2401",
+  "collection": "Paradise",
+  "sil": "aline",
+  "sleeves": "offshoulder",
+  "fabric": "glitter",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2401/1.jpg",
+   "/assets/catalog/queen-2401/2.jpg"
+  ],
+  "video": null,
+  "colour": "Cappuccino",
+  "isNew": false
+ },
+ {
+  "id": "queen-2402",
+  "brand": "queen",
+  "article": "2402",
+  "collection": "Paradise",
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/queen-2402/1.jpg",
+   "/assets/catalog/queen-2402/2.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": false
+ },
+ {
+  "id": "queen-2403",
+  "brand": "queen",
+  "article": "2403",
+  "collection": "Paradise",
+  "sil": "aline",
+  "sleeves": "offshoulder",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2403/1.jpg",
+   "/assets/catalog/queen-2403/2.jpg"
+  ],
+  "video": null,
+  "colour": "Cappuccino",
+  "isNew": false
+ },
+ {
+  "id": "queen-2404",
+  "brand": "queen",
+  "article": "2404",
+  "collection": "Paradise",
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2404/1.jpg",
+   "/assets/catalog/queen-2404/2.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": false
+ },
+ {
+  "id": "queen-2405",
+  "brand": "queen",
+  "article": "2405",
+  "collection": "Paradise",
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2405/1.jpg",
+   "/assets/catalog/queen-2405/2.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": false
+ },
+ {
+  "id": "queen-2406",
+  "brand": "queen",
+  "article": "2406",
+  "collection": "Paradise",
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2406/1.jpg",
+   "/assets/catalog/queen-2406/2.jpg"
+  ],
+  "video": null,
+  "colour": "Cappuccino",
+  "isNew": false
+ },
+ {
+  "id": "queen-2407",
+  "brand": "queen",
+  "article": "2407",
+  "collection": "Paradise",
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2407/1.jpg",
+   "/assets/catalog/queen-2407/2.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": false
+ },
+ {
+  "id": "queen-2408",
+  "brand": "queen",
+  "article": "2408",
+  "collection": "Paradise",
+  "sil": "mermaid",
+  "sleeves": "straps",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2408/1.jpg",
+   "/assets/catalog/queen-2408/2.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": false
+ },
+ {
+  "id": "queen-2409",
+  "brand": "queen",
+  "article": "2409",
+  "collection": "Paradise",
+  "sil": "mermaid",
+  "sleeves": "straps",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2409/1.jpg",
+   "/assets/catalog/queen-2409/2.jpg"
+  ],
+  "video": null,
+  "colour": "Cappuccino",
+  "isNew": false
+ },
+ {
+  "id": "queen-2715",
+  "brand": "queen",
+  "article": "2715",
+  "collection": "Queen 2027",
+  "sil": "ball",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2715/1.jpg",
+   "/assets/catalog/queen-2715/2.jpg",
+   "/assets/catalog/queen-2715/3.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": true
+ },
+ {
+  "id": "queen-2728",
+  "brand": "queen",
+  "article": "2728",
+  "collection": "Queen 2027",
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "glitter",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2728/1.jpg",
+   "/assets/catalog/queen-2728/2.jpg",
+   "/assets/catalog/queen-2728/3.jpg",
+   "/assets/catalog/queen-2728/4.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": true
+ },
+ {
+  "id": "queen-2751",
+  "brand": "queen",
+  "article": "2751",
+  "collection": "Queen 2027",
+  "sil": "mermaid",
+  "sleeves": "long",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2751/1.jpg",
+   "/assets/catalog/queen-2751/2.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": true
+ },
+ {
+  "id": "queen-2752",
+  "brand": "queen",
+  "article": "2752",
+  "collection": "Queen 2027",
+  "sil": "ball",
+  "sleeves": "detachable",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2752/1.jpg",
+   "/assets/catalog/queen-2752/2.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": true
+ },
+ {
+  "id": "queen-2753",
+  "brand": "queen",
+  "article": "2753",
+  "collection": "Queen 2027",
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2753/1.jpg",
+   "/assets/catalog/queen-2753/2.jpg",
+   "/assets/catalog/queen-2753/3.jpg",
+   "/assets/catalog/queen-2753/4.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": true
+ },
+ {
+  "id": "queen-2756",
+  "brand": "queen",
+  "article": "2756",
+  "collection": "Queen 2027",
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2756/1.jpg",
+   "/assets/catalog/queen-2756/2.jpg",
+   "/assets/catalog/queen-2756/3.jpg",
+   "/assets/catalog/queen-2756/4.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": true
+ },
+ {
+  "id": "queen-2757",
+  "brand": "queen",
+  "article": "2757",
+  "collection": "Queen 2027",
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2757/1.jpg",
+   "/assets/catalog/queen-2757/2.jpg",
+   "/assets/catalog/queen-2757/3.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": true
+ },
+ {
+  "id": "queen-2759",
+  "brand": "queen",
+  "article": "2759",
+  "collection": "Queen 2027",
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2759/1.jpg",
+   "/assets/catalog/queen-2759/2.jpg",
+   "/assets/catalog/queen-2759/3.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": true
+ },
+ {
+  "id": "queen-2760",
+  "brand": "queen",
+  "article": "2760",
+  "collection": "Queen 2027",
+  "sil": "mermaid",
+  "sleeves": "strapless",
+  "fabric": "lace",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/queen-2760/1.jpg",
+   "/assets/catalog/queen-2760/2.jpg",
+   "/assets/catalog/queen-2760/3.jpg",
+   "/assets/catalog/queen-2760/4.jpg"
+  ],
+  "video": null,
+  "colour": "Ivory",
+  "isNew": true
+ },
+ {
+  "id": "queen-2744",
+  "brand": "queen",
+  "article": "2744",
+  "collection": "Queen 2027",
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2744/1.jpg"
+  ],
+  "video": null,
+  "colour": null,
+  "isNew": true
+ },
+ {
+  "id": "queen-2747",
+  "brand": "queen",
+  "article": "2747",
+  "collection": "Queen 2027",
+  "sil": "ball",
+  "sleeves": "long",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2747/1.jpg",
+   "/assets/catalog/queen-2747/2.jpg"
+  ],
+  "video": null,
+  "colour": null,
+  "isNew": true
+ },
+ {
+  "id": "queen-2717",
+  "brand": "queen",
+  "article": "2717",
+  "collection": "Queen 2027",
+  "sil": "ball",
+  "sleeves": "long",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/queen-2717/1.jpg"
+  ],
+  "video": null,
+  "colour": null,
+  "isNew": true
+ },
+ {
+  "id": "queen-2750",
+  "brand": "queen",
+  "article": "2750",
+  "collection": "Queen 2027",
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [
+   "overskirt"
+  ],
+  "photos": [
+   "/assets/catalog/queen-2750/1.jpg"
+  ],
+  "video": null,
+  "colour": null,
+  "isNew": true
+ },
+ {
+  "id": "eleonora-p-05",
+  "brand": "eleonora",
+  "article": "P-05",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-05/1.jpg",
+   "/assets/catalog/eleonora-p-05/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-05/video.mp4"
+ },
+ {
+  "id": "eleonora-p-11",
+  "brand": "eleonora",
+  "article": "P-11",
+  "collection": null,
+  "sil": "ball",
+  "sleeves": "strapless",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-11/1.jpg",
+   "/assets/catalog/eleonora-p-11/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-11/video.mp4"
+ },
+ {
+  "id": "eleonora-p-18",
+  "brand": "eleonora",
+  "article": "P-18",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-18/1.jpg",
+   "/assets/catalog/eleonora-p-18/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-18/video.mp4"
+ },
+ {
+  "id": "eleonora-p-19",
+  "brand": "eleonora",
+  "article": "P-19",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/eleonora-p-19/1.jpg",
+   "/assets/catalog/eleonora-p-19/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-19/video.mp4"
+ },
+ {
+  "id": "eleonora-p-24",
+  "brand": "eleonora",
+  "article": "P-24",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-24/1.jpg",
+   "/assets/catalog/eleonora-p-24/2.jpg",
+   "/assets/catalog/eleonora-p-24/3.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-24/video.mp4"
+ },
+ {
+  "id": "eleonora-p-25",
+  "brand": "eleonora",
+  "article": "P-25",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "glitter",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-25/1.jpg",
+   "/assets/catalog/eleonora-p-25/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-25/video.mp4"
+ },
+ {
+  "id": "eleonora-p-26",
+  "brand": "eleonora",
+  "article": "P-26",
+  "collection": null,
+  "sil": "ball",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-26/1.jpg",
+   "/assets/catalog/eleonora-p-26/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-26/video.mp4"
+ },
+ {
+  "id": "eleonora-p-27",
+  "brand": "eleonora",
+  "article": "P-27",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-27/1.jpg",
+   "/assets/catalog/eleonora-p-27/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-27/video.mp4"
+ },
+ {
+  "id": "eleonora-p-28",
+  "brand": "eleonora",
+  "article": "P-28",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-28/1.jpg",
+   "/assets/catalog/eleonora-p-28/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-29",
+  "brand": "eleonora",
+  "article": "P-29",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/eleonora-p-29/1.jpg",
+   "/assets/catalog/eleonora-p-29/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-30",
+  "brand": "eleonora",
+  "article": "P-30",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/eleonora-p-30/1.jpg",
+   "/assets/catalog/eleonora-p-30/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-31",
+  "brand": "eleonora",
+  "article": "P-31",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-31/1.jpg",
+   "/assets/catalog/eleonora-p-31/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-32",
+  "brand": "eleonora",
+  "article": "P-32",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-32/1.jpg",
+   "/assets/catalog/eleonora-p-32/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-33",
+  "brand": "eleonora",
+  "article": "P-33",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-33/1.jpg",
+   "/assets/catalog/eleonora-p-33/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-34",
+  "brand": "eleonora",
+  "article": "P-34",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-34/1.jpg",
+   "/assets/catalog/eleonora-p-34/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-35",
+  "brand": "eleonora",
+  "article": "P-35",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-35/1.jpg",
+   "/assets/catalog/eleonora-p-35/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-36",
+  "brand": "eleonora",
+  "article": "P-36",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-36/1.jpg",
+   "/assets/catalog/eleonora-p-36/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-37",
+  "brand": "eleonora",
+  "article": "P-37",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-37/1.jpg",
+   "/assets/catalog/eleonora-p-37/2.jpg",
+   "/assets/catalog/eleonora-p-37/3.jpg",
+   "/assets/catalog/eleonora-p-37/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-38",
+  "brand": "eleonora",
+  "article": "P-38",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-38/1.jpg",
+   "/assets/catalog/eleonora-p-38/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-39",
+  "brand": "eleonora",
+  "article": "P-39",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-39/1.jpg",
+   "/assets/catalog/eleonora-p-39/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-40",
+  "brand": "eleonora",
+  "article": "P-40",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-40/1.jpg",
+   "/assets/catalog/eleonora-p-40/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-41",
+  "brand": "eleonora",
+  "article": "P-41",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-41/1.jpg",
+   "/assets/catalog/eleonora-p-41/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-42",
+  "brand": "eleonora",
+  "article": "P-42",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/eleonora-p-42/1.jpg",
+   "/assets/catalog/eleonora-p-42/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-43",
+  "brand": "eleonora",
+  "article": "P-43",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-43/1.jpg",
+   "/assets/catalog/eleonora-p-43/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-45",
+  "brand": "eleonora",
+  "article": "P-45",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-45/1.jpg",
+   "/assets/catalog/eleonora-p-45/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-45/video.mp4"
+ },
+ {
+  "id": "eleonora-p-46",
+  "brand": "eleonora",
+  "article": "P-46",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "straps",
+  "fabric": "satin",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/eleonora-p-46/1.jpg",
+   "/assets/catalog/eleonora-p-46/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-47",
+  "brand": "eleonora",
+  "article": "P-47",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "straps",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-47/1.jpg",
+   "/assets/catalog/eleonora-p-47/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-47/video.mp4"
+ },
+ {
+  "id": "eleonora-p-48",
+  "brand": "eleonora",
+  "article": "P-48",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "long",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-48/1.jpg",
+   "/assets/catalog/eleonora-p-48/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-48/video.mp4"
+ },
+ {
+  "id": "eleonora-p-49",
+  "brand": "eleonora",
+  "article": "P-49",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "satin",
+  "details": [
+   "overskirt"
+  ],
+  "photos": [
+   "/assets/catalog/eleonora-p-49/1.jpg",
+   "/assets/catalog/eleonora-p-49/2.jpg",
+   "/assets/catalog/eleonora-p-49/3.jpg",
+   "/assets/catalog/eleonora-p-49/4.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-49/video.mp4"
+ },
+ {
+  "id": "eleonora-p-50",
+  "brand": "eleonora",
+  "article": "P-50",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "straps",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-50/1.jpg",
+   "/assets/catalog/eleonora-p-50/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-50/video.mp4"
+ },
+ {
+  "id": "eleonora-p-51",
+  "brand": "eleonora",
+  "article": "P-51",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-51/1.jpg",
+   "/assets/catalog/eleonora-p-51/2.jpg",
+   "/assets/catalog/eleonora-p-51/3.jpg",
+   "/assets/catalog/eleonora-p-51/4.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-51/video.mp4"
+ },
+ {
+  "id": "eleonora-p-52",
+  "brand": "eleonora",
+  "article": "P-52",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-52/1.jpg",
+   "/assets/catalog/eleonora-p-52/2.jpg",
+   "/assets/catalog/eleonora-p-52/3.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-53",
+  "brand": "eleonora",
+  "article": "P-53",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "offshoulder",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-53/1.jpg",
+   "/assets/catalog/eleonora-p-53/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-53/video.mp4"
+ },
+ {
+  "id": "eleonora-p-61",
+  "brand": "eleonora",
+  "article": "P-61",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-61/1.jpg",
+   "/assets/catalog/eleonora-p-61/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-61/video.mp4"
+ },
+ {
+  "id": "eleonora-p-62",
+  "brand": "eleonora",
+  "article": "P-62",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-62/1.jpg",
+   "/assets/catalog/eleonora-p-62/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-62/video.mp4"
+ },
+ {
+  "id": "eleonora-p-63",
+  "brand": "eleonora",
+  "article": "P-63",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-63/1.jpg",
+   "/assets/catalog/eleonora-p-63/2.jpg",
+   "/assets/catalog/eleonora-p-63/3.jpg",
+   "/assets/catalog/eleonora-p-63/4.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-63/video.mp4"
+ },
+ {
+  "id": "eleonora-p-66",
+  "brand": "eleonora",
+  "article": "P-66",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "straps",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-66/1.jpg",
+   "/assets/catalog/eleonora-p-66/2.jpg",
+   "/assets/catalog/eleonora-p-66/3.jpg",
+   "/assets/catalog/eleonora-p-66/4.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-66/video.mp4"
+ },
+ {
+  "id": "eleonora-p-68",
+  "brand": "eleonora",
+  "article": "P-68",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-68/1.jpg",
+   "/assets/catalog/eleonora-p-68/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-68/video.mp4"
+ },
+ {
+  "id": "eleonora-p-72",
+  "brand": "eleonora",
+  "article": "P-72",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "offshoulder",
+  "fabric": "satin",
+  "details": [
+   "slit",
+   "overskirt"
+  ],
+  "photos": [
+   "/assets/catalog/eleonora-p-72/1.jpg",
+   "/assets/catalog/eleonora-p-72/2.jpg",
+   "/assets/catalog/eleonora-p-72/3.jpg",
+   "/assets/catalog/eleonora-p-72/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-73",
+  "brand": "eleonora",
+  "article": "P-73",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/eleonora-p-73/1.jpg",
+   "/assets/catalog/eleonora-p-73/2.jpg",
+   "/assets/catalog/eleonora-p-73/3.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-74",
+  "brand": "eleonora",
+  "article": "P-74",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-74/1.jpg",
+   "/assets/catalog/eleonora-p-74/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-74/video.mp4"
+ },
+ {
+  "id": "eleonora-p-75",
+  "brand": "eleonora",
+  "article": "P-75",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "offshoulder",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-75/1.jpg",
+   "/assets/catalog/eleonora-p-75/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-75/video.mp4"
+ },
+ {
+  "id": "eleonora-p-76",
+  "brand": "eleonora",
+  "article": "P-76",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "strapless",
+  "fabric": "glitter",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-76/1.jpg",
+   "/assets/catalog/eleonora-p-76/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-76/video.mp4"
+ },
+ {
+  "id": "eleonora-p-78",
+  "brand": "eleonora",
+  "article": "P-78",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-78/1.jpg",
+   "/assets/catalog/eleonora-p-78/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-79",
+  "brand": "eleonora",
+  "article": "P-79",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-79/1.jpg",
+   "/assets/catalog/eleonora-p-79/2.jpg",
+   "/assets/catalog/eleonora-p-79/3.jpg",
+   "/assets/catalog/eleonora-p-79/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-80",
+  "brand": "eleonora",
+  "article": "P-80",
+  "collection": null,
+  "sil": "ball",
+  "sleeves": "detachable",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-80/1.jpg",
+   "/assets/catalog/eleonora-p-80/2.jpg",
+   "/assets/catalog/eleonora-p-80/3.jpg",
+   "/assets/catalog/eleonora-p-80/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-81",
+  "brand": "eleonora",
+  "article": "P-81",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-81/1.jpg",
+   "/assets/catalog/eleonora-p-81/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-81/video.mp4"
+ },
+ {
+  "id": "eleonora-p-82",
+  "brand": "eleonora",
+  "article": "P-82",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-82/1.jpg",
+   "/assets/catalog/eleonora-p-82/2.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-82/video.mp4"
+ },
+ {
+  "id": "eleonora-p-83",
+  "brand": "eleonora",
+  "article": "P-83",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-83/1.jpg",
+   "/assets/catalog/eleonora-p-83/2.jpg",
+   "/assets/catalog/eleonora-p-83/3.jpg",
+   "/assets/catalog/eleonora-p-83/4.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-83/video.mp4"
+ },
+ {
+  "id": "eleonora-p-85",
+  "brand": "eleonora",
+  "article": "P-85",
+  "collection": null,
+  "sil": "ball",
+  "sleeves": "offshoulder",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-85/1.jpg",
+   "/assets/catalog/eleonora-p-85/2.jpg",
+   "/assets/catalog/eleonora-p-85/3.jpg",
+   "/assets/catalog/eleonora-p-85/4.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-85/video.mp4"
+ },
+ {
+  "id": "eleonora-p-86",
+  "brand": "eleonora",
+  "article": "P-86",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-86/1.jpg",
+   "/assets/catalog/eleonora-p-86/2.jpg",
+   "/assets/catalog/eleonora-p-86/3.jpg",
+   "/assets/catalog/eleonora-p-86/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-87",
+  "brand": "eleonora",
+  "article": "P-87",
+  "collection": null,
+  "sil": "ball",
+  "sleeves": "strapless",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-87/1.jpg",
+   "/assets/catalog/eleonora-p-87/2.jpg",
+   "/assets/catalog/eleonora-p-87/3.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "eleonora-p-64",
+  "brand": "eleonora",
+  "article": "P-64",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-64/1.jpg",
+   "/assets/catalog/eleonora-p-64/2.jpg",
+   "/assets/catalog/eleonora-p-64/3.jpg"
+  ],
+  "video": "/assets/catalog/eleonora-p-64/video.mp4"
+ },
+ {
+  "id": "eleonora-p-89",
+  "brand": "eleonora",
+  "article": "P-89",
+  "collection": null,
+  "sil": "ball",
+  "sleeves": "long",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/eleonora-p-89/1.jpg",
+   "/assets/catalog/eleonora-p-89/2.jpg",
+   "/assets/catalog/eleonora-p-89/3.jpg",
+   "/assets/catalog/eleonora-p-89/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-124-74",
+  "brand": "elle",
+  "article": "124-74",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "strapless",
+  "fabric": "lace",
+  "details": [
+   "overskirt"
+  ],
+  "photos": [
+   "/assets/catalog/elle-124-74/1.jpg",
+   "/assets/catalog/elle-124-74/2.jpg",
+   "/assets/catalog/elle-124-74/3.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-124-77",
+  "brand": "elle",
+  "article": "124-77",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-124-77/1.jpg",
+   "/assets/catalog/elle-124-77/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-124-79",
+  "brand": "elle",
+  "article": "124-79",
+  "collection": null,
+  "sil": "ball",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-124-79/1.jpg",
+   "/assets/catalog/elle-124-79/2.jpg",
+   "/assets/catalog/elle-124-79/3.jpg",
+   "/assets/catalog/elle-124-79/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-124-82",
+  "brand": "elle",
+  "article": "124-82",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [
+   "overskirt"
+  ],
+  "photos": [
+   "/assets/catalog/elle-124-82/1.jpg",
+   "/assets/catalog/elle-124-82/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-124-83",
+  "brand": "elle",
+  "article": "124-83",
+  "collection": null,
+  "sil": "short",
+  "sleeves": "long",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-124-83/1.jpg",
+   "/assets/catalog/elle-124-83/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-122-999",
+  "brand": "elle",
+  "article": "122-999",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "lace",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/elle-122-999/1.jpg",
+   "/assets/catalog/elle-122-999/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-780",
+  "brand": "elle",
+  "article": "780",
+  "collection": null,
+  "sil": "ball",
+  "sleeves": "straps",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-780/1.jpg",
+   "/assets/catalog/elle-780/2.jpg",
+   "/assets/catalog/elle-780/3.jpg",
+   "/assets/catalog/elle-780/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-807",
+  "brand": "elle",
+  "article": "807",
+  "collection": null,
+  "sil": "ball",
+  "sleeves": "strapless",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-807/1.jpg",
+   "/assets/catalog/elle-807/2.jpg",
+   "/assets/catalog/elle-807/3.jpg",
+   "/assets/catalog/elle-807/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-808",
+  "brand": "elle",
+  "article": "808",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "offshoulder",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-808/1.jpg",
+   "/assets/catalog/elle-808/2.jpg",
+   "/assets/catalog/elle-808/3.jpg",
+   "/assets/catalog/elle-808/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-765",
+  "brand": "elle",
+  "article": "765",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/elle-765/1.jpg",
+   "/assets/catalog/elle-765/2.jpg",
+   "/assets/catalog/elle-765/3.jpg",
+   "/assets/catalog/elle-765/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-818",
+  "brand": "elle",
+  "article": "818",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-818/1.jpg",
+   "/assets/catalog/elle-818/2.jpg",
+   "/assets/catalog/elle-818/3.jpg",
+   "/assets/catalog/elle-818/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-781",
+  "brand": "elle",
+  "article": "781",
+  "collection": null,
+  "sil": "sheath",
+  "sleeves": "offshoulder",
+  "fabric": "satin",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/elle-781/1.jpg",
+   "/assets/catalog/elle-781/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-782",
+  "brand": "elle",
+  "article": "782",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-782/1.jpg",
+   "/assets/catalog/elle-782/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-783",
+  "brand": "elle",
+  "article": "783",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/elle-783/1.jpg",
+   "/assets/catalog/elle-783/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-784",
+  "brand": "elle",
+  "article": "784",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "offshoulder",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/elle-784/1.jpg",
+   "/assets/catalog/elle-784/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-785",
+  "brand": "elle",
+  "article": "785",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-785/1.jpg",
+   "/assets/catalog/elle-785/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-786",
+  "brand": "elle",
+  "article": "786",
+  "collection": null,
+  "sil": "sheath",
+  "sleeves": "straps",
+  "fabric": "lace",
+  "details": [
+   "slit",
+   "cape"
+  ],
+  "photos": [
+   "/assets/catalog/elle-786/1.jpg",
+   "/assets/catalog/elle-786/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-787",
+  "brand": "elle",
+  "article": "787",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "offshoulder",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/elle-787/1.jpg",
+   "/assets/catalog/elle-787/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-788",
+  "brand": "elle",
+  "article": "788",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-788/1.jpg",
+   "/assets/catalog/elle-788/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-789",
+  "brand": "elle",
+  "article": "789",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "glitter",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-789/1.jpg",
+   "/assets/catalog/elle-789/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-792",
+  "brand": "elle",
+  "article": "792",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-792/1.jpg",
+   "/assets/catalog/elle-792/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-794",
+  "brand": "elle",
+  "article": "794",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "glitter",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-794/1.jpg",
+   "/assets/catalog/elle-794/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-795",
+  "brand": "elle",
+  "article": "795",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "satin",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/elle-795/1.jpg",
+   "/assets/catalog/elle-795/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-796",
+  "brand": "elle",
+  "article": "796",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/elle-796/1.jpg",
+   "/assets/catalog/elle-796/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-809",
+  "brand": "elle",
+  "article": "809",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-809/1.jpg",
+   "/assets/catalog/elle-809/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-813",
+  "brand": "elle",
+  "article": "813",
+  "collection": null,
+  "sil": "ball",
+  "sleeves": "strapless",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-813/1.jpg",
+   "/assets/catalog/elle-813/2.jpg",
+   "/assets/catalog/elle-813/3.jpg",
+   "/assets/catalog/elle-813/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-816",
+  "brand": "elle",
+  "article": "816",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-816/1.jpg",
+   "/assets/catalog/elle-816/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-823",
+  "brand": "elle",
+  "article": "823",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "strapless",
+  "fabric": "glitter",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-823/1.jpg",
+   "/assets/catalog/elle-823/2.jpg",
+   "/assets/catalog/elle-823/3.jpg",
+   "/assets/catalog/elle-823/4.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-827",
+  "brand": "elle",
+  "article": "827",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-827/1.jpg",
+   "/assets/catalog/elle-827/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-828",
+  "brand": "elle",
+  "article": "828",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "detachable",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-828/1.jpg",
+   "/assets/catalog/elle-828/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-829",
+  "brand": "elle",
+  "article": "829",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "offshoulder",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-829/1.jpg",
+   "/assets/catalog/elle-829/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-831",
+  "brand": "elle",
+  "article": "831",
+  "collection": null,
+  "sil": "ball",
+  "sleeves": "offshoulder",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-831/1.jpg",
+   "/assets/catalog/elle-831/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-832",
+  "brand": "elle",
+  "article": "832",
+  "collection": null,
+  "sil": "sheath",
+  "sleeves": "strapless",
+  "fabric": "satin",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-832/1.jpg",
+   "/assets/catalog/elle-832/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-837",
+  "brand": "elle",
+  "article": "837",
+  "collection": null,
+  "sil": "mermaid",
+  "sleeves": "offshoulder",
+  "fabric": "satin",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/elle-837/1.jpg",
+   "/assets/catalog/elle-837/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-840",
+  "brand": "elle",
+  "article": "840",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [
+   "slit",
+   "cape"
+  ],
+  "photos": [
+   "/assets/catalog/elle-840/1.jpg",
+   "/assets/catalog/elle-840/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-845",
+  "brand": "elle",
+  "article": "845",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "straps",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/elle-845/1.jpg",
+   "/assets/catalog/elle-845/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-846",
+  "brand": "elle",
+  "article": "846",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "tulle",
+  "details": [
+   "slit"
+  ],
+  "photos": [
+   "/assets/catalog/elle-846/1.jpg",
+   "/assets/catalog/elle-846/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-848",
+  "brand": "elle",
+  "article": "848",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "lace",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-848/1.jpg",
+   "/assets/catalog/elle-848/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-849",
+  "brand": "elle",
+  "article": "849",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "strapless",
+  "fabric": "tulle",
+  "details": [],
+  "photos": [
+   "/assets/catalog/elle-849/1.jpg",
+   "/assets/catalog/elle-849/2.jpg"
+  ],
+  "video": null
+ },
+ {
+  "id": "elle-850",
+  "brand": "elle",
+  "article": "850",
+  "collection": null,
+  "sil": "aline",
+  "sleeves": "long",
+  "fabric": "satin",
+  "details": [
+   "overskirt"
+  ],
+  "photos": [
+   "/assets/catalog/elle-850/1.jpg",
+   "/assets/catalog/elle-850/2.jpg"
+  ],
+  "video": null
+ }
+]

@@ -18,402 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
-<style>
-  /* ───────────── Tokens ───────────── */
-  :root {
-    --bg: #f6f4f0;
-    --bg-2: #eeeae4;
-    --ink: #1a1816;
-    --muted: #77706a;
-    --line: #dcd6cf;
-    --accent: #856d65;
-    --white: #fffefc;
-
-    --serif: "Cormorant Garamond", Georgia, serif;
-    --sans: Manrope, system-ui, sans-serif;
-
-    --ease: cubic-bezier(.22, 1, .36, 1);
-
-    --gutter: 2rem;
-    --header: 6rem;
-    --s-1: .8rem;
-    --s-2: 1.6rem;
-    --s-3: 2.4rem;
-    --s-4: 4rem;
-    --s-5: 6.4rem;
-    --s-6: 9rem;
-  }
-
-  *, :after, :before { box-sizing: border-box; }
-
-  /* 1rem = 10px on a 375px phone and on a 1440px desktop */
-  html { font-size: clamp(10px, 2.6667vw, 11.5px); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-  html.menu-open { overflow: hidden; }
-  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 1.4rem; font-weight: 400; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-
-  ::selection { background: var(--ink); color: var(--bg); }
-  a, button { -webkit-tap-highlight-color: transparent; }
-  button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
-  img { display: block; max-width: 100%; }
-  :focus-visible { outline: .1rem solid var(--ink); outline-offset: .4rem; }
-  section[id] { scroll-margin-top: var(--header); }
-  [aria-disabled="true"] { cursor: default; }
-
-  .skip { position: fixed; left: var(--gutter); top: 1rem; z-index: 120; padding: 1rem 1.6rem; background: var(--ink); color: var(--bg); font-size: 1.2rem; transform: translateY(-300%); transition: transform .4s var(--ease); }
-  .skip:focus { transform: none; }
-
-  /* ───────────── Type ─────────────
-     Accent serif: logo, h1, h2 only. Everything else: Manrope. */
-  .h1, .h2 { margin: 0; font-family: var(--serif); font-weight: 400; letter-spacing: -.01em; text-wrap: balance; }
-  .h1 { font-size: 3.4rem; line-height: 1.08; }
-  .h2 { font-size: 2.8rem; line-height: 1.15; }
-  .label { display: block; font-size: 1.1rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
-  .h3 { margin: 0; font-size: 1.15rem; font-weight: 500; line-height: 1.5; letter-spacing: .14em; text-transform: uppercase; }
-  .text { margin: 0; color: var(--muted); }
-
-  /* ───────────── Links & buttons ───────────── */
-  .link { display: inline-block; padding-bottom: .3rem; border-bottom: .1rem solid currentColor; font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; transition: opacity .3s ease; }
-  .link:hover, .link:focus-visible { opacity: .55; }
-  .link:active { opacity: .35; }
-  .u-link { transition: opacity .3s ease; }
-  .u-link:hover, .u-link:focus-visible { opacity: .55; }
-  .u-link:active { opacity: .35; }
-
-  .btn {
-    position: relative; display: inline-flex; align-items: center; justify-content: center; overflow: hidden;
-    min-height: 4.6rem; padding: 0 3rem; border: 0; background: var(--ink); color: var(--bg);
-    font-size: 1.1rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; white-space: nowrap;
-    transition: transform .4s var(--ease);
-  }
-  .btn::after { content: attr(data-label); position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--accent); color: var(--white); transform: translateY(101%); transition: transform .5s var(--ease); }
-  .btn:hover::after, .btn:focus-visible::after { transform: none; }
-  .btn:active { transform: scale(.98); }
-  .btn--light { background: var(--white); color: var(--ink); }
-  .btn--sm { min-height: 3.8rem; padding: 0 2rem; font-size: 1.1rem; }
-  .btn--block { width: 100%; }
-
-  /* ───────────── Header ───────────── */
-  .header { position: fixed; top: 0; left: 0; z-index: 20; width: 100%; height: var(--header); display: flex; align-items: center; justify-content: space-between; padding: 0 var(--gutter); background: var(--bg); border-bottom: .1rem solid var(--line); transition: transform .6s var(--ease); }
-  .header.is-hidden { transform: translateY(-101%); }
-  .header__side { flex: 1 1 0; display: flex; align-items: center; min-width: 0; }
-  .header__side--right { justify-content: flex-end; gap: 2.8rem; }
-  .header__nav { display: none; align-items: center; gap: 3.2rem; font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; }
-  .nav-drop { display: inline-flex; align-items: center; gap: .6rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; transition: opacity .3s ease; }
-  .nav-drop:hover { opacity: .55; }
-  .nav-drop:active { opacity: .35; }
-  .nav-drop svg { width: .8rem; height: .5rem; transition: transform .5s var(--ease); }
-  .nav-drop[aria-expanded="true"] svg { transform: rotate(180deg); }
-
-  .logo { display: flex; flex-direction: column; align-items: center; flex: none; transition: opacity .3s ease; }
-  .logo:hover { opacity: .7; }
-  .logo:active { opacity: .5; }
-  .logo__word { font-family: var(--serif); font-size: 2.2rem; font-weight: 500; line-height: 1; letter-spacing: .38em; padding-left: .38em; }
-  .logo__sub { margin-top: .5rem; font-size: .85rem; font-weight: 500; line-height: 1; letter-spacing: .4em; padding-left: .4em; text-transform: uppercase; color: var(--muted); }
-
-  .burger { position: relative; width: 4.4rem; height: 4.4rem; margin-left: -1rem; }
-  .burger i { position: absolute; left: 1rem; width: 2.2rem; height: .1rem; background: var(--ink); transition: transform .5s var(--ease); }
-  .burger i:first-child { top: 1.8rem; }
-  .burger i:last-child { top: 2.5rem; }
-  .burger:active { opacity: .5; }
-  .menu-open .burger i:first-child { transform: translateY(.35rem) rotate(45deg); }
-  .menu-open .burger i:last-child { transform: translateY(-.35rem) rotate(-45deg); }
-
-  .icon-btn { display: flex; align-items: center; justify-content: center; width: 4.4rem; height: 4.4rem; margin-right: -1rem; transition: opacity .3s ease; }
-  .icon-btn svg { width: 1.8rem; height: 1.8rem; }
-  .icon-btn:hover { opacity: .55; }
-  .icon-btn:active { opacity: .35; }
-
-  .header__cta, .lang { display: none; }
-  .lang { position: relative; font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; }
-  .lang__btn { display: flex; align-items: center; gap: .6rem; height: 3.4rem; letter-spacing: .14em; }
-  .lang__btn svg { width: .8rem; height: .5rem; transition: transform .5s var(--ease); }
-  .lang:hover .lang__btn svg, .lang:focus-within .lang__btn svg { transform: rotate(180deg); }
-  .lang__btn:active { opacity: .5; }
-  .lang__list { position: absolute; top: 100%; right: -2rem; min-width: 17rem; padding: 1rem 0; background: var(--white); border: .1rem solid var(--line); opacity: 0; transform: translateY(-.6rem); pointer-events: none; transition: opacity .3s ease, transform .4s var(--ease); }
-  .lang:hover .lang__list, .lang:focus-within .lang__list { opacity: 1; transform: none; pointer-events: auto; }
-  .lang__list a { display: flex; justify-content: space-between; gap: 2rem; padding: .7rem 2rem; font-weight: 400; letter-spacing: .04em; color: var(--muted); transition: opacity .3s ease; }
-  .lang__list a b { font-weight: 500; letter-spacing: .14em; color: var(--ink); }
-  .lang__list a:hover, .lang__list a:focus-visible { opacity: .55; }
-  .lang__list a:active { opacity: .35; }
-  .lang__list a[aria-current] { color: var(--ink); }
-
-  /* Brands mega menu (desktop) */
-  .mega { position: fixed; left: 0; right: 0; top: var(--header); z-index: 19; display: none; background: var(--bg); border-bottom: .1rem solid var(--line); opacity: 0; transform: translateY(-1rem); pointer-events: none; transition: opacity .35s ease, transform .5s var(--ease); }
-  .mega.is-open { opacity: 1; transform: none; pointer-events: auto; }
-  .mega__inner { display: grid; grid-template-columns: 3fr 5fr 3fr; gap: 6rem; padding: 4.4rem var(--gutter) 4.8rem; }
-  .mega__intro { display: grid; gap: 1.6rem; align-content: start; justify-items: start; }
-  .mega__intro p { margin: 0; color: var(--muted); max-width: 28rem; }
-  .mega__list { display: grid; align-content: start; margin: 0; padding: 0; list-style: none; border-top: .1rem solid var(--line); }
-  .mega__item { display: flex; align-items: baseline; justify-content: space-between; gap: 2rem; padding: 1.3rem 0; border-bottom: .1rem solid var(--line); }
-  .mega__name { font-size: 1.15rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; transition: opacity .3s ease; }
-  .mega__name:hover, .mega__name:focus-visible { opacity: .55; }
-  .mega__name:active { opacity: .35; }
-  .mega__cat { font-size: 1.1rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-  .mega__feature { display: grid; gap: 1.2rem; transition: opacity .3s ease; }
-  .mega__feature:hover { opacity: .85; }
-  .mega__feature:active { opacity: .7; }
-  .mega__feature img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
-  .mega__feature span { font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; }
-
-  /* Mobile menu */
-  .menu { position: fixed; inset: var(--header) 0 0 0; z-index: 19; overflow-y: auto; display: flex; flex-direction: column; padding: var(--s-3) var(--gutter); background: var(--bg); opacity: 0; pointer-events: none; transition: opacity .4s ease; }
-  .menu-open .menu { opacity: 1; pointer-events: auto; }
-  .menu__nav { display: flex; flex-direction: column; border-top: .1rem solid var(--line); }
-  .menu__link { display: flex; align-items: center; width: 100%; padding: 1.6rem 0; border-bottom: .1rem solid var(--line); font-size: 1.3rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; text-align: left; transition: opacity .3s ease; }
-  .menu__link:active { opacity: .5; }
-  .menu__link[aria-disabled="true"] { color: var(--muted); }
-  .menu__link svg { width: 1rem; height: .6rem; margin-left: auto; transition: transform .5s var(--ease); }
-  .menu__link[aria-expanded="true"] svg { transform: rotate(180deg); }
-  .menu__sub { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .5s var(--ease); }
-  .menu__sub.is-open { grid-template-rows: 1fr; }
-  .menu__sub > div { overflow: hidden; }
-  .menu__sub ul { display: grid; margin: 0; padding: .8rem 0 1.2rem; list-style: none; border-bottom: .1rem solid var(--line); }
-  .menu__sub a { display: block; padding: .8rem 0; font-size: 1.5rem; color: var(--muted); }
-  .menu__sub a:active { opacity: .5; }
-  .menu__foot { margin-top: auto; padding-top: var(--s-4); display: grid; gap: var(--s-3); font-size: 1.4rem; }
-  .menu__langs { display: flex; flex-wrap: wrap; gap: .4rem 2.4rem; font-size: 1.1rem; letter-spacing: .14em; }
-  .menu__langs a { padding: .6rem 0; color: var(--muted); }
-  .menu__langs a[aria-current] { color: var(--ink); }
-
-  /* ───────────── Hero ───────────── */
-  main { padding-top: var(--header); }
-  .hero { position: relative; display: flex; align-items: flex-end; justify-content: center; height: calc(100svh - var(--header)); min-height: 56rem; overflow: hidden; background: #2b2724; color: var(--white); isolation: isolate; }
-  .hero__media { position: absolute; inset: 0; z-index: -1; }
-  .hero__media video { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
-  .hero__media video.is-tall { object-position: center 30%; }
-  .hero__inner { display: grid; justify-items: center; gap: 1.8rem; padding: 0 var(--gutter) 7rem; text-align: center; }
-  .hero__inner .label { color: rgba(255, 254, 252, .8); }
-  .hero__text { max-width: 44rem; margin: 0; color: rgba(255, 254, 252, .85); }
-  .hero__actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1.6rem 3.2rem; margin-top: 1rem; }
-
-  .js .fade { opacity: 0; transform: translateY(1.4rem); transition: opacity 1.1s ease, transform 1.2s var(--ease); }
-  .is-ready .fade { opacity: 1; transform: none; }
-  .is-ready .fade.f2 { transition-delay: .12s; }
-  .is-ready .fade.f3 { transition-delay: .24s; }
-  .is-ready .fade.f4 { transition-delay: .36s; }
-
-  /* ───────────── Scroll reveals ───────────── */
-  .js .reveal { opacity: 0; transform: translateY(2rem); transition: opacity 1s ease, transform 1.1s var(--ease); }
-  .js .reveal.is-in { opacity: 1; transform: none; }
-  .js .reveal.d1 { transition-delay: .08s; }
-  .js .reveal.d2 { transition-delay: .16s; }
-  .js .reveal.d3 { transition-delay: .24s; }
-
-  /* ───────────── Layout ───────────── */
-  .section { padding: var(--s-6) var(--gutter); }
-  .head { display: grid; gap: 1.4rem; margin-bottom: var(--s-4); }
-  .head--center { justify-items: center; text-align: center; }
-  .head--center .text { max-width: 46rem; }
-
-  .photo { position: relative; display: block; overflow: hidden; background: var(--bg-2); }
-  .photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s var(--ease); }
-  /* brands still waiting for photos */
-  .photo--empty { display: flex; align-items: center; justify-content: center; background: var(--bg-2); }
-  .photo__note { padding: 2rem; text-align: center; font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-
-  /* Split: photo half + text half (full bleed) */
-  .split { display: grid; }
-  .split__media { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 .2rem; }
-  .split__media .photo { aspect-ratio: 2 / 3; }
-  .split__media--single { grid-template-columns: 1fr; }
-  .split__media--single .photo { aspect-ratio: 4 / 5; }
-  .split__body { display: grid; align-content: center; justify-items: start; gap: var(--s-3); padding: var(--s-5) var(--gutter); }
-  .split__body .text { max-width: 52rem; }
-
-  /* About */
-  .stats { display: grid; grid-template-columns: 1fr 1fr; width: 100%; margin: var(--s-1) 0 0; border-top: .1rem solid var(--line); }
-  .stat { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: .4rem; padding: 2rem 0; border-bottom: .1rem solid var(--line); }
-  .stat:nth-child(even) { padding-left: 2rem; border-left: .1rem solid var(--line); }
-  .stat dt { font-size: 1.2rem; line-height: 1.5; color: var(--muted); }
-  .stat dd { margin: 0; font-size: 2.4rem; font-weight: 300; line-height: 1.1; letter-spacing: -.01em; }
-
-  /* Brands grid */
-  .brands-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 .2rem; margin: 0 calc(var(--gutter) * -1); }
-  .brand { display: grid; align-content: start; gap: 1.2rem; padding-bottom: var(--s-3); transition: opacity .3s ease; }
-  .brand .photo { aspect-ratio: 2 / 3; }
-  .brand__cap { display: grid; gap: .3rem; padding: 0 1.2rem; }
-  .brand__desc { font-size: 1.25rem; line-height: 1.55; color: var(--muted); }
-  .brand:hover .photo img, .brand:focus-visible .photo img { transform: scale(1.04); }
-  .brand:active { opacity: .8; }
-  .brand--cta { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 1.6rem; aspect-ratio: 2 / 3; padding: 2rem; }
-  .brand--cta .text { font-size: 1.3rem; }
-
-  /* Benefits */
-  .ben-grid { display: grid; gap: var(--s-3); margin-top: var(--s-1); }
-  .ben { display: grid; gap: .6rem; }
-  .ben .text { font-size: 1.3rem; }
-  .terms { display: grid; grid-template-columns: 1fr 1fr; margin: 0 var(--gutter); border-bottom: .1rem solid var(--line); }
-  .term { display: grid; gap: .6rem; align-content: start; padding: 2.8rem 1.6rem 2.8rem 0; }
-  .term:nth-child(even) { padding-left: 1.6rem; border-left: .1rem solid var(--line); }
-  .term:nth-child(n + 3) { border-top: .1rem solid var(--line); }
-  .term b { font-size: 2.2rem; font-weight: 300; line-height: 1.15; }
-  .term span:last-child { font-size: 1.2rem; line-height: 1.55; color: var(--muted); }
-
-  /* Brand collections */
-  .tabs { display: flex; gap: 2.8rem; margin: 0 calc(var(--gutter) * -1) var(--s-4); padding: 0 var(--gutter); overflow-x: auto; scrollbar-width: none; }
-  .tabs::-webkit-scrollbar { display: none; }
-  .tab:first-child { margin-left: auto; }
-  .tab:last-child { margin-right: auto; }
-  .tab { position: relative; flex: none; padding: 1.2rem 0; font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); white-space: nowrap; transition: color .3s ease; }
-  .tab::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: .1rem; background: var(--ink); transform: scaleX(0); transition: transform .5s var(--ease); }
-  .tab:hover { color: var(--ink); }
-  .tab:active { opacity: .6; }
-  .tab[aria-selected="true"] { color: var(--ink); }
-  .tab[aria-selected="true"]::after { transform: scaleX(1); }
-
-  .panel[hidden] { display: none; }
-  .panel.is-entering { animation: panel-in .8s var(--ease) both; }
-  @keyframes panel-in { from { opacity: 0; transform: translateY(1.4rem); } }
-  .panel__foot { display: flex; justify-content: center; margin-top: var(--s-4); }
-
-  .models { display: grid; grid-auto-flow: column; grid-auto-columns: 72%; gap: 0 .2rem; margin: 0 calc(var(--gutter) * -1); overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
-  .models::-webkit-scrollbar { display: none; }
-  .model { display: grid; align-content: start; gap: 1.2rem; scroll-snap-align: start; }
-  .model .photo { aspect-ratio: 2 / 3; }
-  .model__cap { padding: 0 1.2rem; text-align: center; }
-  .model:hover .photo img, .model:focus-visible .photo img { transform: scale(1.04); }
-  .model__new { position: absolute; top: 1.2rem; left: 1.2rem; padding: .3rem .9rem; background: var(--white); font-size: 1.1rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; }
-
-  /* Services */
-  .svc-list { display: grid; width: 100%; margin: var(--s-1) 0 0; padding: 0; list-style: none; border-top: .1rem solid var(--line); }
-  .svc { display: grid; gap: .6rem; padding: 2.2rem 0; border-bottom: .1rem solid var(--line); }
-  .svc .text { font-size: 1.3rem; }
-
-  /* CTA banner */
-  /* full-width landscape video; on phones/tablets the text sits below it */
-  .banner { position: relative; display: grid; background: #2b2724; color: var(--white); isolation: isolate; }
-  .banner__media { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #3a3430; }
-  .banner__media video { width: 100%; height: 100%; object-fit: cover; }
-  .banner__shade { display: none; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20, 16, 14, .72) 0%, rgba(20, 16, 14, .45) 38%, rgba(20, 16, 14, 0) 70%); }
-  .banner__body { display: grid; gap: 1.8rem; justify-items: start; max-width: 56rem; padding: var(--s-5) var(--gutter); }
-  .banner__body .label { color: rgba(255, 254, 252, .8); }
-  .banner__body p { margin: 0; color: rgba(255, 254, 252, .85); }
-  .banner__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.6rem 3.2rem; margin-top: .6rem; }
-
-  /* Footer */
-  .footer { padding: var(--s-5) var(--gutter) 0; background: var(--bg-2); }
-  .footer__top { display: grid; gap: var(--s-4); padding-bottom: var(--s-4); }
-  .footer__brand { display: grid; gap: 1.6rem; justify-items: start; align-content: start; }
-  .footer .logo { align-items: flex-start; }
-  .footer .logo__word, .footer .logo__sub { padding-left: 0; }
-  .footer__tagline { max-width: 28rem; margin: 0; font-size: 1.3rem; color: var(--muted); }
-  .footer__cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4) var(--s-3); }
-  .footer__col { display: grid; gap: 1.1rem; align-content: start; font-size: 1.3rem; }
-  .footer__col .label { margin-bottom: .4rem; }
-  .footer__col a, .footer__col span { justify-self: start; }
-  .footer__col span:not(.label), .footer__col a[aria-disabled="true"] { color: var(--muted); }
-  .footer__contacts { display: grid; gap: 2rem; padding: var(--s-4) 0; border-top: .1rem solid var(--line); scroll-margin-top: var(--header); }
-  .contacts-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.4rem var(--s-3); }
-  .contact { display: grid; gap: .2rem; align-content: start; justify-items: start; font-size: 1.3rem; }
-  .contact__name { font-weight: 500; }
-  .contact__meta { margin-bottom: .4rem; font-size: 1.1rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-  .footer__langs { display: flex; flex-wrap: wrap; gap: 1rem 2.4rem; padding: 2.2rem 0; border-top: .1rem solid var(--line); font-size: 1.1rem; letter-spacing: .1em; }
-  .footer__langs a { color: var(--muted); }
-  .footer__langs a[aria-current] { color: var(--ink); }
-  .footer__bottom { display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); padding: 2rem 0; border-top: .1rem solid var(--line); font-size: 1.1rem; color: var(--muted); }
-  .to-top { font-size: 1.1rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); transition: opacity .3s ease; }
-  .to-top:hover, .to-top:focus-visible { opacity: .55; }
-  .to-top:active { opacity: .35; }
-
-  /* ───────────── Phone only ───────────── */
-  @media (max-width: 639px) {
-    body { font-size: 1.5rem; }
-    /* brand grid: CTA tile takes its own row */
-    .brand--cta { grid-column: 1 / -1; aspect-ratio: auto; padding: var(--s-4) var(--gutter); }
-    .brand__desc { font-size: 1.3rem; }
-    .contact--wide { grid-column: 1 / -1; }
-    .hero__actions { flex-direction: column; gap: 1.8rem; }
-    .footer__col a { padding: .3rem 0; }
-    .footer__bottom { flex-direction: column-reverse; gap: 1.6rem; padding: 2.6rem 0; }
-  }
-
-  @media (min-width: 640px) and (max-width: 1023px) {
-    .banner__media { aspect-ratio: 16 / 9; }
-  }
-
-  /* ───────────── Large tablet: desktop-like split ───────────── */
-  @media (min-width: 768px) {
-    .brands-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .split { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
-    .split--rev .split__media { order: 2; }
-    .split__media .photo, .split__media--single .photo { aspect-ratio: auto; height: 100%; min-height: 56rem; }
-    .split__body { padding: var(--s-5) var(--gutter); }
-  }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .split .stats { grid-template-columns: 1fr 1fr; }
-    .split .stat:nth-child(3) { padding-left: 0; border-left: 0; }
-    .split .ben-grid { grid-template-columns: 1fr; }
-  }
-
-  /* ───────────── Tablet ───────────── */
-  @media (min-width: 640px) {
-    html { font-size: clamp(10px, 1.3vw, 11px); }
-    :root { --gutter: 4rem; }
-    .h1 { font-size: 4.4rem; }
-    .h2 { font-size: 3.2rem; }
-    .stats { grid-template-columns: repeat(4, 1fr); }
-    .stat, .stat:nth-child(even) { padding: 2rem 1.6rem 2rem 0; border-left: 0; }
-    .stat + .stat { padding-left: 1.6rem; border-left: .1rem solid var(--line); }
-    .ben-grid { grid-template-columns: 1fr 1fr; gap: var(--s-3) var(--s-4); }
-    .terms { grid-template-columns: repeat(4, 1fr); }
-    .term, .term:nth-child(even) { padding: 3.2rem 2rem; border-left: 0; }
-    .term:nth-child(n + 3) { border-top: 0; }
-    .term:first-child { padding-left: 0; }
-    .term + .term { border-left: .1rem solid var(--line); }
-    .models { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 .2rem; overflow: visible; }
-    /* fewer models keep the same card width as a full row of four */
-    .models--3 { grid-template-columns: repeat(3, calc((100% - .6rem) / 4)); justify-content: center; }
-    .models--2 { grid-template-columns: repeat(2, calc((100% - .6rem) / 4)); justify-content: center; }
-    .footer__cols { grid-template-columns: repeat(3, 1fr); }
-    .contacts-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  }
-
-  /* ───────────── Desktop ───────────── */
-  @media (min-width: 1024px) {
-    html { font-size: clamp(10px, .6944444444vw, 12px); }
-    :root { --gutter: 6rem; --header: 7.2rem; --s-6: 11rem; --s-5: 8rem; }
-    body { font-size: 1.4rem; }
-
-    .burger, .icon-btn--call, .menu { display: none; }
-    .header__nav { display: flex; }
-    .header__cta { display: inline-flex; }
-    .lang { display: block; }
-    .mega { display: block; }
-
-    .h1 { font-size: 5.2rem; }
-    .h2 { font-size: 3.4rem; }
-    .hero__inner { padding-bottom: 9rem; }
-
-    .split { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
-    .split--rev .split__media { order: 2; }
-    .split__media .photo, .split__media--single .photo { aspect-ratio: auto; height: 100%; min-height: 72rem; }
-    .split__body { padding: var(--s-5) var(--gutter) var(--s-5) 8rem; }
-    .split--rev .split__body { padding: var(--s-5) 8rem var(--s-5) var(--gutter); }
-
-    .brands-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .brand--cta { padding: 4rem; }
-
-    .banner { display: flex; align-items: center; min-height: calc(100svh - var(--header)); }
-    .banner__media { position: absolute; inset: 0; z-index: -1; aspect-ratio: auto; }
-    .banner__shade { display: block; }
-    .banner__body { max-width: 52rem; }
-
-    .footer__top { grid-template-columns: 5fr 7fr; gap: 10rem; }
-  }
-
-  @media (min-width: 1280px) {
-    .contacts-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-  }
-
-  @media (hover: none) {
-    .brand:hover .photo img, .model:hover .photo img { transform: none; }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    *, :after, :before { animation-duration: .01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; transition-delay: 0s !important; }
-  }
-</style>
+<link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body id="top">
 
@@ -428,6 +33,7 @@
         Brands
         <svg viewBox="0 0 8 5" fill="none" stroke="currentColor" aria-hidden="true"><path d="M.5.5 4 4 7.5.5"/></svg>
       </button>
+      <a class="u-link" href="/catalogue/">Catalogue</a>
       <a class="u-link" href="#about">About us</a>
       <a class="u-link" role="link" aria-disabled="true" title="Page in progress">Blog</a>
       <a class="u-link" href="#contacts">Contacts</a>
@@ -467,19 +73,19 @@
     <div class="mega__intro">
       <span class="label">Our brands</span>
       <p>Seven wedding dress brands from one manufacturer — each with its own character, all made to the same standard.</p>
-      <a class="link" href="#brands">All brands</a>
+      <a class="link" href="/catalogue/">Full catalogue</a>
     </div>
     <ul class="mega__list">
-      <li class="mega__item"><a class="mega__name" href="#collections" data-brand="queen">Queen</a><a class="mega__cat u-link" href="#collections" data-brand="queen">Catalogue</a></li>
-      <li class="mega__item"><a class="mega__name" href="#collections" data-brand="elle">Elle</a><a class="mega__cat u-link" href="#collections" data-brand="elle">Catalogue</a></li>
-      <li class="mega__item"><a class="mega__name" href="#collections" data-brand="eleonora">Eleonora</a><a class="mega__cat u-link" href="#collections" data-brand="eleonora">Catalogue</a></li>
-      <li class="mega__item"><a class="mega__name" href="#collections" data-brand="ricci">Atelier Lorenzo Ricci</a><a class="mega__cat u-link" href="#collections" data-brand="ricci">Catalogue</a></li>
-      <li class="mega__item"><a class="mega__name" href="#collections" data-brand="velina">Velina</a><a class="mega__cat u-link" href="#collections" data-brand="velina">Catalogue</a></li>
-      <li class="mega__item"><a class="mega__name" href="#collections" data-brand="nivera">Nivera</a><a class="mega__cat u-link" href="#collections" data-brand="nivera">Catalogue</a></li>
-      <li class="mega__item"><a class="mega__name" href="#collections" data-brand="tvoya">TVOYA</a><a class="mega__cat u-link" href="#collections" data-brand="tvoya">Catalogue</a></li>
+      <li class="mega__item"><a class="mega__name" href="/brands/queen/">Queen</a><a class="mega__cat u-link" href="/catalogue/?brand=queen">Catalogue</a></li>
+      <li class="mega__item"><a class="mega__name" href="/brands/elle/">Elle</a><a class="mega__cat u-link" href="/catalogue/?brand=elle">Catalogue</a></li>
+      <li class="mega__item"><a class="mega__name" href="/brands/eleonora/">Eleonora</a><a class="mega__cat u-link" href="/catalogue/?brand=eleonora">Catalogue</a></li>
+      <li class="mega__item"><a class="mega__name" href="/brands/ricci/">Atelier Lorenzo Ricci</a><a class="mega__cat u-link" href="/catalogue/?brand=ricci">Catalogue</a></li>
+      <li class="mega__item"><a class="mega__name" href="/brands/velina/">Velina</a><a class="mega__cat u-link" href="/catalogue/?brand=velina">Catalogue</a></li>
+      <li class="mega__item"><a class="mega__name" href="/brands/nivera/">Nivera</a><a class="mega__cat u-link" href="/catalogue/?brand=nivera">Catalogue</a></li>
+      <li class="mega__item"><a class="mega__name" href="/brands/tvoya/">TVOYA</a><a class="mega__cat u-link" href="/catalogue/?brand=tvoya">Catalogue</a></li>
     </ul>
-    <a class="mega__feature" href="#collections" data-brand="queen">
-      <img src="assets/img/models/queen-2027-2760-veil.jpg" alt="" width="1098" height="1650" loading="lazy">
+    <a class="mega__feature" href="/catalogue/?brand=queen&amp;collection=queen-2027">
+      <img src="/assets/img/models/queen-2027-2760-veil.jpg" alt="" width="1098" height="1650" loading="lazy">
       <span>New collection — Queen 2027</span>
     </a>
   </div>
@@ -496,16 +102,17 @@
       <div>
         <ul>
           <li><a href="#brands" data-close>All brands</a></li>
-          <li><a href="#collections" data-brand="queen" data-close>Queen</a></li>
-          <li><a href="#collections" data-brand="elle" data-close>Elle</a></li>
-          <li><a href="#collections" data-brand="eleonora" data-close>Eleonora</a></li>
-          <li><a href="#collections" data-brand="ricci" data-close>Atelier Lorenzo Ricci</a></li>
-          <li><a href="#collections" data-brand="velina" data-close>Velina</a></li>
-          <li><a href="#collections" data-brand="nivera" data-close>Nivera</a></li>
-          <li><a href="#collections" data-brand="tvoya" data-close>TVOYA</a></li>
+          <li><a href="/brands/queen/" data-close>Queen</a></li>
+          <li><a href="/brands/elle/" data-close>Elle</a></li>
+          <li><a href="/brands/eleonora/" data-close>Eleonora</a></li>
+          <li><a href="/brands/ricci/" data-close>Atelier Lorenzo Ricci</a></li>
+          <li><a href="/brands/velina/" data-close>Velina</a></li>
+          <li><a href="/brands/nivera/" data-close>Nivera</a></li>
+          <li><a href="/brands/tvoya/" data-close>TVOYA</a></li>
         </ul>
       </div>
     </div>
+    <a class="menu__link" href="/catalogue/" data-close>Catalogue</a>
     <a class="menu__link" href="#about" data-close>About us</a>
     <a class="menu__link" role="link" aria-disabled="true">Blog</a>
     <a class="menu__link" href="#contacts" data-close>Contacts</a>
@@ -532,8 +139,8 @@
   <!-- 1. Hero -->
   <section class="hero" aria-label="Introduction">
     <div class="hero__media">
-      <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-wide-poster.jpg">
-        <source src="assets/video/hero-wide.mp4" type="video/mp4">
+      <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="/assets/img/hero-wide-poster.jpg">
+        <source src="/assets/video/hero-wide.mp4" type="video/mp4">
       </video>
       <script>
         /* Phones and portrait tablets get the vertical film; wide screens get a landscape crop of it */
@@ -541,8 +148,8 @@
           var v = document.getElementById('heroVideo');
           var tall = window.matchMedia('(max-width: 1023px) and (orientation: portrait)');
           var films = {
-            tall: { src: 'assets/video/hero-portrait.mp4', poster: 'assets/img/hero-portrait-poster.jpg' },
-            wide: { src: 'assets/video/hero-wide.mp4', poster: 'assets/img/hero-wide-poster.jpg' }
+            tall: { src: '/assets/video/hero-portrait.mp4', poster: '/assets/img/hero-portrait-poster.jpg' },
+            wide: { src: '/assets/video/hero-wide.mp4', poster: '/assets/img/hero-wide-poster.jpg' }
           };
           function pick() {
             var f = tall.matches ? films.tall : films.wide;
@@ -573,8 +180,8 @@
   <!-- 2. About the group -->
   <section class="split" id="about">
     <div class="split__media">
-      <div class="photo reveal"><img src="assets/img/models/queen-2747.jpg" alt="QUEEN model 2747 — lace ball gown with a sheer high-neck bolero" width="1100" height="1650" loading="lazy"></div>
-      <div class="photo reveal d1"><img src="assets/img/models/queen-2747-detail.jpg" alt="QUEEN model 2747 — corset bodice and lace sleeves close up" width="1100" height="1650" loading="lazy"></div>
+      <div class="photo reveal"><img src="/assets/img/models/queen-2747.jpg" alt="QUEEN model 2747 — lace ball gown with a sheer high-neck bolero" width="1100" height="1650" loading="lazy"></div>
+      <div class="photo reveal d1"><img src="/assets/img/models/queen-2747-detail.jpg" alt="QUEEN model 2747 — corset bodice and lace sleeves close up" width="1100" height="1650" loading="lazy"></div>
     </div>
     <div class="split__body">
       <span class="label reveal">About the group</span>
@@ -600,31 +207,31 @@
     </header>
 
     <div class="brands-grid">
-      <a class="brand reveal" href="#collections" data-brand="queen">
-        <span class="photo"><img src="assets/img/models/queen-2744.jpg" alt="QUEEN — model 2744, lace mermaid gown with detachable sleeves" width="1100" height="1650" loading="lazy"></span>
+      <a class="brand reveal" href="/brands/queen/">
+        <span class="photo"><img src="/assets/img/models/queen-2744.jpg" alt="QUEEN — model 2744, lace mermaid gown with detachable sleeves" width="1100" height="1650" loading="lazy"></span>
         <span class="brand__cap"><span class="h3">Queen</span><span class="brand__desc">Timeless elegance and feminine sophistication</span></span>
       </a>
-      <a class="brand reveal d1" href="#collections" data-brand="elle">
-        <span class="photo"><img src="assets/img/brands/elle-cover.jpg" alt="Elle — two lace gowns with detachable sleeves" width="1100" height="1650" loading="lazy"></span>
+      <a class="brand reveal d1" href="/brands/elle/">
+        <span class="photo"><img src="/assets/img/brands/elle-cover.jpg" alt="Elle — two lace gowns with detachable sleeves" width="1100" height="1650" loading="lazy"></span>
         <span class="brand__cap"><span class="h3">Elle</span><span class="brand__desc">Modern style with delicate details</span></span>
       </a>
-      <a class="brand reveal d2" href="#collections" data-brand="eleonora">
-        <span class="photo"><img src="assets/img/brands/eleonora-cover.jpg" alt="Eleonora — model P-87, satin ball gown with a pearl-beaded bodice" width="1100" height="1650" loading="lazy"></span>
+      <a class="brand reveal d2" href="/brands/eleonora/">
+        <span class="photo"><img src="/assets/img/brands/eleonora-cover.jpg" alt="Eleonora — model P-87, satin ball gown with a pearl-beaded bodice" width="1100" height="1650" loading="lazy"></span>
         <span class="brand__cap"><span class="h3">Eleonora</span><span class="brand__desc">Romantic designs, graceful silhouettes</span></span>
       </a>
-      <a class="brand reveal d3" href="#collections" data-brand="ricci">
+      <a class="brand reveal d3" href="/brands/ricci/">
         <span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span>
         <span class="brand__cap"><span class="h3">Atelier Lorenzo Ricci</span><span class="brand__desc">Refined design, exquisite craftsmanship</span></span>
       </a>
-      <a class="brand reveal" href="#collections" data-brand="velina">
+      <a class="brand reveal" href="/brands/velina/">
         <span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span>
         <span class="brand__cap"><span class="h3">Velina</span><span class="brand__desc">A soft, airy touch to bridal fashion</span></span>
       </a>
-      <a class="brand reveal d1" href="#collections" data-brand="nivera">
+      <a class="brand reveal d1" href="/brands/nivera/">
         <span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span>
         <span class="brand__cap"><span class="h3">Nivera</span><span class="brand__desc">Clean lines and subtle details</span></span>
       </a>
-      <a class="brand reveal d2" href="#collections" data-brand="tvoya">
+      <a class="brand reveal d2" href="/brands/tvoya/">
         <span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span>
         <span class="brand__cap"><span class="h3">TVOYA</span><span class="brand__desc">Bold, distinctive styles</span></span>
       </a>
@@ -639,7 +246,7 @@
   <!-- 4. Benefits of working with us -->
   <section class="split split--rev" id="benefits">
     <div class="split__media split__media--single">
-      <div class="photo reveal"><img src="assets/img/models/queen-2717.jpg" alt="QUEEN model 2717 — satin ball gown with a lace bolero in a palace garden" width="1100" height="1650" loading="lazy"></div>
+      <div class="photo reveal"><img src="/assets/img/models/queen-2717.jpg" alt="QUEEN model 2717 — satin ball gown with a lace bolero in a palace garden" width="1100" height="1650" loading="lazy"></div>
     </div>
     <div class="split__body">
       <span class="label reveal">For wholesale partners</span>
@@ -682,32 +289,32 @@
     <!-- QUEEN -->
     <div class="panel reveal" id="panel-queen" role="tabpanel" aria-labelledby="tab-queen">
       <div class="models">
-        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/models/queen-2027-2752.jpg" alt="Queen 2027 model 2752 — satin ball gown with lace sleeves" width="1098" height="1650" loading="lazy"><span class="model__new">New</span></span><span class="model__cap"><span class="h3">Queen 2027 · 2752</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/models/queen-tab-2.jpg" alt="QUEEN — lace mermaid gown with long sleeves and a cathedral train" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Queen</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/models/queen-tab-3.jpg" alt="QUEEN — off-shoulder sparkling A-line gown" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Queen</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/models/queen-tab-4.jpg" alt="QUEEN — lace A-line gown with a high slit and lace sleeves" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Queen</span></span></a>
+        <a class="model" href="/catalogue/queen-2752/"><span class="photo"><img src="/assets/img/models/queen-2027-2752.jpg" alt="Queen 2027 model 2752 — satin ball gown with lace sleeves" width="1098" height="1650" loading="lazy"><span class="model__new">New</span></span><span class="model__cap"><span class="h3">Queen 2027 · 2752</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="/assets/img/models/queen-tab-2.jpg" alt="QUEEN — lace mermaid gown with long sleeves and a cathedral train" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Queen</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="/assets/img/models/queen-tab-3.jpg" alt="QUEEN — off-shoulder sparkling A-line gown" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Queen</span></span></a>
+        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="/assets/img/models/queen-tab-4.jpg" alt="QUEEN — lace A-line gown with a high slit and lace sleeves" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Queen</span></span></a>
       </div>
-      <div class="panel__foot"><a class="link" role="link" aria-disabled="true" title="Catalogue in progress">View the Queen catalogue</a></div>
+      <div class="panel__foot"><a class="link" href="/catalogue/?brand=queen">View the Queen catalogue</a></div>
     </div>
 
     <!-- ELLE -->
     <div class="panel" id="panel-elle" role="tabpanel" aria-labelledby="tab-elle" hidden>
       <div class="models models--3">
-        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/brands/elle-765.jpg" alt="Elle 765 — lace gown with a high slit and sleeves" width="870" height="1305" loading="lazy"></span><span class="model__cap"><span class="h3">Elle · 765</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/brands/elle-818.jpg" alt="Elle 818 — fitted gown with sheer lace panels" width="870" height="1305" loading="lazy"></span><span class="model__cap"><span class="h3">Elle · 818</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/brands/elle-808.jpg" alt="Elle 808 — off-shoulder satin gown" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Elle · 808</span></span></a>
+        <a class="model" href="/catalogue/elle-765/"><span class="photo"><img src="/assets/img/brands/elle-765.jpg" alt="Elle 765 — lace gown with a high slit and sleeves" width="870" height="1305" loading="lazy"></span><span class="model__cap"><span class="h3">Elle · 765</span></span></a>
+        <a class="model" href="/catalogue/elle-818/"><span class="photo"><img src="/assets/img/brands/elle-818.jpg" alt="Elle 818 — fitted gown with sheer lace panels" width="870" height="1305" loading="lazy"></span><span class="model__cap"><span class="h3">Elle · 818</span></span></a>
+        <a class="model" href="/catalogue/elle-808/"><span class="photo"><img src="/assets/img/brands/elle-808.jpg" alt="Elle 808 — off-shoulder satin gown" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Elle · 808</span></span></a>
       </div>
-      <div class="panel__foot"><a class="link" role="link" aria-disabled="true" title="Catalogue in progress">View the Elle catalogue</a></div>
+      <div class="panel__foot"><a class="link" href="/catalogue/?brand=elle">View the Elle catalogue</a></div>
     </div>
 
     <!-- ELEONORA -->
     <div class="panel" id="panel-eleonora" role="tabpanel" aria-labelledby="tab-eleonora" hidden>
       <div class="models models--3">
-        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/brands/eleonora-p-51.jpg" alt="Eleonora P-51 — mermaid gown with lace sleeves" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Eleonora · P-51</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/brands/eleonora-p-87.jpg" alt="Eleonora P-87 — satin ball gown with a beaded bodice" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Eleonora · P-87</span></span></a>
-        <a class="model" role="link" aria-disabled="true"><span class="photo"><img src="assets/img/brands/eleonora-p-78.jpg" alt="Eleonora P-78 — tulle ball gown with off-shoulder sleeves" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Eleonora · P-78</span></span></a>
+        <a class="model" href="/catalogue/eleonora-p-51/"><span class="photo"><img src="/assets/img/brands/eleonora-p-51.jpg" alt="Eleonora P-51 — mermaid gown with lace sleeves" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Eleonora · P-51</span></span></a>
+        <a class="model" href="/catalogue/eleonora-p-87/"><span class="photo"><img src="/assets/img/brands/eleonora-p-87.jpg" alt="Eleonora P-87 — satin ball gown with a beaded bodice" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Eleonora · P-87</span></span></a>
+        <a class="model" href="/catalogue/eleonora-p-78/"><span class="photo"><img src="/assets/img/brands/eleonora-p-78.jpg" alt="Eleonora P-78 — tulle ball gown with off-shoulder sleeves" width="1100" height="1650" loading="lazy"></span><span class="model__cap"><span class="h3">Eleonora · P-78</span></span></a>
       </div>
-      <div class="panel__foot"><a class="link" role="link" aria-disabled="true" title="Catalogue in progress">View the Eleonora catalogue</a></div>
+      <div class="panel__foot"><a class="link" href="/catalogue/?brand=eleonora">View the Eleonora catalogue</a></div>
     </div>
 
     <!-- ATELIER LORENZO RICCI -->
@@ -718,7 +325,7 @@
         <a class="model" role="link" aria-disabled="true"><span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span><span class="model__cap"><span class="h3">Lorenzo Ricci · LR-102</span></span></a>
         <a class="model" role="link" aria-disabled="true"><span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span><span class="model__cap"><span class="h3">Lorenzo Ricci · LR-109</span></span></a>
       </div>
-      <div class="panel__foot"><a class="link" role="link" aria-disabled="true" title="Catalogue in progress">View the Atelier Lorenzo Ricci catalogue</a></div>
+      <div class="panel__foot"><a class="link" href="/catalogue/?brand=ricci">View the Atelier Lorenzo Ricci catalogue</a></div>
     </div>
 
     <!-- VELINA -->
@@ -727,7 +334,7 @@
         <a class="model" role="link" aria-disabled="true"><span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span><span class="model__cap"><span class="h3">Velina · 26-053</span></span></a>
         <a class="model" role="link" aria-disabled="true"><span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span><span class="model__cap"><span class="h3">Velina · 26-048</span></span></a>
       </div>
-      <div class="panel__foot"><a class="link" role="link" aria-disabled="true" title="Catalogue in progress">View the Velina catalogue</a></div>
+      <div class="panel__foot"><a class="link" href="/catalogue/?brand=velina">View the Velina catalogue</a></div>
     </div>
 
     <!-- NIVERA -->
@@ -736,7 +343,7 @@
         <a class="model" role="link" aria-disabled="true"><span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span><span class="model__cap"><span class="h3">Nivera · K001</span></span></a>
         <a class="model" role="link" aria-disabled="true"><span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span><span class="model__cap"><span class="h3">Nivera · K002</span></span></a>
       </div>
-      <div class="panel__foot"><a class="link" role="link" aria-disabled="true" title="Catalogue in progress">View the Nivera catalogue</a></div>
+      <div class="panel__foot"><a class="link" href="/catalogue/?brand=nivera">View the Nivera catalogue</a></div>
     </div>
 
     <!-- TVOYA -->
@@ -745,14 +352,14 @@
         <a class="model" role="link" aria-disabled="true"><span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span><span class="model__cap"><span class="h3">TVOYA · RB-26-12</span></span></a>
         <a class="model" role="link" aria-disabled="true"><span class="photo photo--empty"><span class="photo__note">Photo coming soon</span></span><span class="model__cap"><span class="h3">TVOYA · RB-26-20</span></span></a>
       </div>
-      <div class="panel__foot"><a class="link" role="link" aria-disabled="true" title="Catalogue in progress">View the TVOYA catalogue</a></div>
+      <div class="panel__foot"><a class="link" href="/catalogue/?brand=tvoya">View the TVOYA catalogue</a></div>
     </div>
   </section>
 
   <!-- 6. Exclusive services -->
   <section class="split" id="services">
     <div class="split__media split__media--single">
-      <div class="photo reveal"><img src="assets/img/models/queen-2750.jpg" alt="QUEEN model 2750 — lace sheath gown with a tulle overskirt and detachable sleeves" width="1100" height="1650" loading="lazy"></div>
+      <div class="photo reveal"><img src="/assets/img/models/queen-2750.jpg" alt="QUEEN model 2750 — lace sheath gown with a tulle overskirt and detachable sleeves" width="1100" height="1650" loading="lazy"></div>
     </div>
     <div class="split__body">
       <span class="label reveal">Exclusive services</span>
@@ -770,8 +377,8 @@
   <!-- 7. Call to action -->
   <section class="banner" aria-label="Become a partner">
     <div class="banner__media">
-      <video class="banner__video" muted loop playsinline preload="none" poster="assets/video/eleonora-banner-poster.jpg" aria-label="Eleonora dresses filmed in Kraków">
-        <source src="assets/video/eleonora-banner.mp4" type="video/mp4">
+      <video class="banner__video" muted loop playsinline preload="none" poster="/assets/video/eleonora-banner-poster.jpg" aria-label="Eleonora dresses filmed in Kraków">
+        <source src="/assets/video/eleonora-banner.mp4" type="video/mp4">
       </video>
       <span class="banner__shade"></span>
     </div>
@@ -801,17 +408,18 @@
     <div class="footer__cols">
       <nav class="footer__col" aria-label="Brands">
         <span class="label">Brands</span>
-        <a class="u-link" href="#collections" data-brand="queen">Queen</a>
-        <a class="u-link" href="#collections" data-brand="elle">Elle</a>
-        <a class="u-link" href="#collections" data-brand="eleonora">Eleonora</a>
-        <a class="u-link" href="#collections" data-brand="ricci">Atelier Lorenzo Ricci</a>
-        <a class="u-link" href="#collections" data-brand="velina">Velina</a>
-        <a class="u-link" href="#collections" data-brand="nivera">Nivera</a>
-        <a class="u-link" href="#collections" data-brand="tvoya">TVOYA</a>
+        <a class="u-link" href="/brands/queen/">Queen</a>
+        <a class="u-link" href="/brands/elle/">Elle</a>
+        <a class="u-link" href="/brands/eleonora/">Eleonora</a>
+        <a class="u-link" href="/brands/ricci/">Atelier Lorenzo Ricci</a>
+        <a class="u-link" href="/brands/velina/">Velina</a>
+        <a class="u-link" href="/brands/nivera/">Nivera</a>
+        <a class="u-link" href="/brands/tvoya/">TVOYA</a>
       </nav>
       <nav class="footer__col" aria-label="Company">
         <span class="label">Company</span>
         <a class="u-link" href="#brands">Our brands</a>
+        <a class="u-link" href="/catalogue/">Catalogue</a>
         <a class="u-link" href="#about">About us</a>
         <a class="u-link" href="#services">Exclusive services</a>
         <a class="u-link" role="link" aria-disabled="true">Blog</a>
@@ -849,141 +457,6 @@
   </div>
 </footer>
 
-<script>
-(function () {
-  var root = document.documentElement;
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* Hero fade-in (no preloader) */
-  requestAnimationFrame(function () { root.classList.add('is-ready', 'is-loaded'); });
-
-  /* Scroll reveals */
-  var reveals = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-in');
-        io.unobserve(entry.target);
-      });
-    }, { rootMargin: '0px 0px -6% 0px', threshold: .06 });
-    reveals.forEach(function (el) { io.observe(el); });
-  } else {
-    reveals.forEach(function (el) { el.classList.add('is-in'); });
-  }
-
-  /* Header: hide on scroll down, show on scroll up */
-  var header = document.getElementById('header');
-  var mega = document.getElementById('mega');
-  var lastY = window.scrollY;
-  window.addEventListener('scroll', function () {
-    var y = window.scrollY;
-    if (root.classList.contains('menu-open') || mega.classList.contains('is-open')) { lastY = y; return; }
-    header.classList.toggle('is-hidden', y > lastY && y > 400);
-    lastY = y;
-  }, { passive: true });
-
-  /* Brands mega menu */
-  var brandsToggle = document.getElementById('brandsToggle');
-  var megaTimer, megaOpenedAt = 0;
-  function setMega(open) {
-    clearTimeout(megaTimer);
-    if (open && !mega.classList.contains('is-open')) megaOpenedAt = Date.now();
-    mega.classList.toggle('is-open', open);
-    mega.inert = !open;
-    brandsToggle.setAttribute('aria-expanded', String(open));
-  }
-  function closeMegaSoon() { clearTimeout(megaTimer); megaTimer = setTimeout(function () { setMega(false); }, 220); }
-  brandsToggle.addEventListener('click', function () {
-    /* a click right after hover-open should not close the panel */
-    if (mega.classList.contains('is-open') && Date.now() - megaOpenedAt < 500) return;
-    setMega(!mega.classList.contains('is-open'));
-  });
-  if (window.matchMedia('(hover: hover)').matches) {
-    brandsToggle.addEventListener('mouseenter', function () { setMega(true); });
-    brandsToggle.addEventListener('mouseleave', closeMegaSoon);
-    mega.addEventListener('mouseenter', function () { clearTimeout(megaTimer); });
-    mega.addEventListener('mouseleave', closeMegaSoon);
-  }
-  mega.addEventListener('click', function (e) { if (e.target.closest('a')) setMega(false); });
-  document.addEventListener('click', function (e) {
-    if (mega.classList.contains('is-open') && !mega.contains(e.target) && !brandsToggle.contains(e.target)) setMega(false);
-  });
-
-  /* Mobile menu */
-  var burger = document.getElementById('burger');
-  var menu = document.getElementById('menu');
-  function setMenu(open) {
-    root.classList.toggle('menu-open', open);
-    burger.setAttribute('aria-expanded', String(open));
-    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    menu.inert = !open;
-  }
-  burger.addEventListener('click', function () { setMenu(!root.classList.contains('menu-open')); });
-  menu.addEventListener('click', function (e) { if (e.target.closest('[data-close]')) setMenu(false); });
-  var menuBrands = document.getElementById('menuBrands');
-  var menuBrandsList = document.getElementById('menuBrandsList');
-  menuBrands.addEventListener('click', function () {
-    var open = menuBrands.getAttribute('aria-expanded') !== 'true';
-    menuBrands.setAttribute('aria-expanded', String(open));
-    menuBrandsList.classList.toggle('is-open', open);
-  });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { setMenu(false); setMega(false); } });
-  window.matchMedia('(min-width: 1024px)').addEventListener('change', function () { setMenu(false); setMega(false); });
-
-  /* Brand collection tabs */
-  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
-  function selectTab(key, focus) {
-    tabs.forEach(function (tab) {
-      var on = tab.getAttribute('data-tab') === key;
-      tab.setAttribute('aria-selected', String(on));
-      tab.tabIndex = on ? 0 : -1;
-      var panel = document.getElementById(tab.getAttribute('aria-controls'));
-      panel.hidden = !on;
-      if (on) {
-        panel.classList.add('is-in');
-        panel.classList.remove('is-entering');
-        void panel.offsetWidth;
-        panel.classList.add('is-entering');
-        if (focus) tab.focus();
-        tab.scrollIntoView({ block: 'nearest', inline: 'center', behavior: reduced ? 'auto' : 'smooth' });
-      }
-    });
-  }
-  tabs.forEach(function (tab, i) {
-    tab.addEventListener('click', function () { selectTab(tab.getAttribute('data-tab')); });
-    tab.addEventListener('keydown', function (e) {
-      var next = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : null;
-      if (next === null) return;
-      e.preventDefault();
-      selectTab(tabs[(next + tabs.length) % tabs.length].getAttribute('data-tab'), true);
-    });
-  });
-  /* Any link with data-brand opens that brand's tab */
-  document.addEventListener('click', function (e) {
-    var link = e.target.closest('a[data-brand]');
-    if (link) selectTab(link.getAttribute('data-brand'));
-  });
-
-  /* Banner films: load and play only while on screen */
-  var films = document.querySelectorAll('.banner__video');
-  if (!reduced && 'IntersectionObserver' in window) {
-    var filmIO = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        var v = entry.target;
-        if (entry.isIntersecting) { var play = v.play(); if (play && play.catch) play.catch(function () {}); }
-        else v.pause();
-      });
-    }, { threshold: .25 });
-    films.forEach(function (v) { filmIO.observe(v); });
-  }
-
-  if (reduced) {
-    var video = document.querySelector('.hero video');
-    video.removeAttribute('autoplay');
-    video.pause();
-  }
-})();
-</script>
+<script src="/assets/js/site.js"></script>
 </body>
 </html>
