@@ -139,31 +139,34 @@ function brandPage(b) {
   const collections = [...new Set(list.map((m) => m.collection).filter(Boolean))].sort((a, z) => collOrder.indexOf(a) - collOrder.indexOf(z));
   const uniq = (k) => [...new Set(list.map((m) => m[k]))];
 
-  // Full-screen hero: media fills the right side and fades into the dark,
-  // headline + actions bottom-left, featured-model card bottom-right.
-  const feat = list[0];
+  // Full-screen hero: photo/video on the right (never darkened), small text bottom-left,
+  // a card bottom-right that cycles through the brand's models.
   const media = b.heroVideo
     ? `<video class="bh__media" autoplay muted loop playsinline preload="metadata" poster="${b.heroPhoto}" aria-hidden="true"><source src="${b.heroVideo}" type="video/mp4"></video>`
     : b.heroPhoto ? `<img class="bh__media" src="${b.heroPhoto}" alt="${esc(b.name)} wedding dress" fetchpriority="high">` : '';
+  const cards = list.slice(0, 6);
   const hero = `<section class="bh${media ? '' : ' bh--text'}">
-      ${media}
-      <span class="bh__shade" aria-hidden="true"></span>
+      ${media ? `<div class="bh__pic">${media}</div>` : ''}
       <div class="bh__body">
-        <span class="label fade">${has ? `${list.length} models · ${uniq('sil').length} silhouettes` : 'Collection coming soon'}</span>
-        <h1 class="bh__title fade f2">${esc(b.name)}. <em>${esc(b.tagline)}.</em></h1>
+        <span class="bh__meta fade">${has ? `${list.length} models · ${uniq('sil').length} silhouettes` : 'Collection coming soon'}</span>
+        <h1 class="bh__title fade f2">${esc(b.name)}</h1>
+        <p class="bh__tag fade f2">${esc(b.tagline)}</p>
         <div class="bh__actions fade f3">
-          ${has ? `<a class="btn btn--light" href="/catalogue/?brand=${b.slug}" data-label="View catalogue"><span>View catalogue</span></a>
-          <a class="btn btn--glass" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>` : `<a class="btn btn--light" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>`}
+          ${has ? `<a class="btn btn--light btn--sm" href="/catalogue/?brand=${b.slug}" data-label="View catalogue"><span>View catalogue</span></a>
+          <a class="link bh__link" href="#contacts">Become a partner</a>` : `<a class="btn btn--light btn--sm" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>`}
         </div>
       </div>
-      ${feat ? `<a class="bh-card fade f4" href="/catalogue/${feat.id}/">
-        <span class="bh-card__body">
-          <span class="bh-card__label">Key model</span>
-          <span class="bh-card__name">${esc(modelName(feat))}</span>
-          <span class="bh-card__meta">${L.sil[feat.sil]} · ${L.fabric[feat.fabric]}</span>
-        </span>
-        <img class="bh-card__img" src="${feat.photos[0]}" alt="" width="900" height="1350">
-      </a>` : ''}
+      ${cards.length ? `<div class="bh-cards fade f4" data-rotate aria-label="${esc(b.name)} models">
+        ${cards.map((m, i) => `<a class="bh-card${i ? '' : ' is-on'}" href="/catalogue/${m.id}/"${i ? ' tabindex="-1" aria-hidden="true"' : ''}>
+          <span class="bh-card__body">
+            <span class="bh-card__label">${String(i + 1).padStart(2, '0')} / ${String(cards.length).padStart(2, '0')}</span>
+            <span class="bh-card__name">${esc(modelName(m))}</span>
+            <span class="bh-card__meta">${L.sil[m.sil]} · ${L.fabric[m.fabric]}</span>
+          </span>
+          <img class="bh-card__img" src="${m.photos[0]}" alt="" width="900" height="1350"${i ? ' loading="lazy"' : ''}>
+        </a>`).join('')}
+        <span class="bh-cards__bar" aria-hidden="true"><i></i></span>
+      </div>` : ''}
     </section>
     <div class="page-top page-top--after">${crumbs([['Home', '/'], ['Brands', '/#brands'], [b.name]])}</div>`;
 
@@ -226,6 +229,7 @@ function brandPage(b) {
     title: `${b.name} — wedding dresses wholesale | QUEEN Fashion Group`,
     description: `${b.name}: ${b.tagline.toLowerCase()}. ${has ? list.length + ' models. ' : ''}Wholesale wedding dresses for bridal salons from QUEEN Fashion Group.`,
     path: `/brands/${b.slug}/`,
+    scripts: '<script src="/assets/js/brand.js"></script>',
     body: [hero, about, coll, gal, ctaSplit(b, b.cta)].join('\n\n  '),
   });
 }
