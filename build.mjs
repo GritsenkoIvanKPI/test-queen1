@@ -120,7 +120,6 @@ function card(m, cls = '') {
 function ctaSplit(b, photos) {
   return `<section class="cta-split" aria-label="Become a partner">
     <div class="cta-split__body reveal">
-      <span class="label">Wholesale partnership</span>
       <h2 class="h2">Bring ${esc(b.name)} to your salon</h2>
       <p>Request the wholesale price list and lookbook. A manager will reply within one business day.</p>
       <div class="banner__actions">
@@ -182,7 +181,6 @@ function brandPage(b) {
   const about = `<section class="section" id="about-brand">
       <div class="babout">
         <div class="babout__text">
-          <span class="label reveal">About the brand</span>
           <h2 class="h2 reveal">${esc(b.tagline)}</h2>
           ${b.about.map((p) => `<p class="text reveal">${esc(p)}</p>`).join('\n          ')}
           <dl class="specs reveal">${specRows.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
@@ -201,7 +199,6 @@ function brandPage(b) {
   }
   const coll = `<section class="section" id="collections">
       <header class="head head--center reveal">
-        <span class="label">Brand collections</span>
         <h2 class="h2">${collections.length ? 'Collections' : 'The collection'}</h2>
         ${has && !collections.length ? `<p class="text">The current ${esc(b.name)} line, by silhouette.</p>` : ''}
       </header>
@@ -215,7 +212,6 @@ function brandPage(b) {
 
   const gal = `<section class="section" id="gallery">
       <header class="head head--center reveal">
-        <span class="label">Model gallery</span>
         <h2 class="h2">Selected models</h2>
       </header>
       ${has ? `<div class="gallery-grid">
@@ -249,7 +245,6 @@ function cataloguePage() {
   };
   const body = `<section class="cat-head">
     ${crumbs([['Home', '/'], ['Catalogue']])}
-    <span class="label">Catalogue</span>
     <h1 class="h1" id="catTitle">All models</h1>
     <p class="text" id="catIntro">Every model from every brand in one place. Choose a brand, then narrow down by silhouette, sleeves or fabric.</p>
   </section>
@@ -349,7 +344,6 @@ function modelPage(m) {
 
   ${more.length ? `<section class="section" aria-label="More models">
     <header class="head head--center reveal">
-      <span class="label">${esc(b.name)}</span>
       <h2 class="h2">More from this brand</h2>
     </header>
     <div class="gallery-grid">
