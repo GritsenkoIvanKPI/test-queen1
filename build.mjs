@@ -139,29 +139,33 @@ function brandPage(b) {
   const collections = [...new Set(list.map((m) => m.collection).filter(Boolean))].sort((a, z) => collOrder.indexOf(a) - collOrder.indexOf(z));
   const uniq = (k) => [...new Set(list.map((m) => m[k]))];
 
-  const heroMedia = b.hero.length
-    ? `<div class="bhero__media">${b.hero.map((p, i) => `<span class="photo">${img(p, `${b.name} wedding dress`, i === 0)}</span>`).join('')}</div>`
-    : `<div class="bhero__media bhero__media--empty">${empty()}</div>`;
+  // Editorial hero: oversized wordmark, one large photo overlapping it, a smaller offset photo
+  const size = b.name.length <= 6 ? 's' : b.name.length <= 10 ? 'm' : 'l';
+  const factLine = has ? [
+    `${list.length} models`,
+    collections.length && `${collections.length} collections`,
+    `${uniq('sil').length} silhouettes`,
+    list.some((m) => m.video) && `${list.filter((m) => m.video).length} with video`,
+  ].filter(Boolean).join(' · ') : 'Collection coming soon';
+  const [main, side] = b.hero;
 
-  const facts = has ? `<dl class="bhero__facts">
-          <div><dt>Models</dt><dd>${list.length}</dd></div>
-          ${collections.length ? `<div><dt>Collections</dt><dd>${collections.length}</dd></div>` : ''}
-          <div><dt>Silhouettes</dt><dd>${uniq('sil').length}</dd></div>
-          ${list.some((m) => m.video) ? `<div><dt>With video</dt><dd>${list.filter((m) => m.video).length}</dd></div>` : ''}
-        </dl>` : '';
-
-  const hero = `<section class="bhero">
-      ${heroMedia}
-      <div class="bhero__body">
+  const hero = `<section class="bh bh--${size}${main ? '' : ' bh--text'}">
+      <div class="bh__top">
         ${crumbs([['Home', '/'], ['Brands', '/#brands'], [b.name]])}
-        <span class="label">QUEEN Fashion Group</span>
-        <h1 class="h1">${esc(b.name)}</h1>
-        <p class="text">${esc(b.intro)}</p>
-        <div class="bhero__actions">
-          ${has ? `<a class="btn" href="/catalogue/?brand=${b.slug}" data-label="View catalogue"><span>View catalogue</span></a>
-          <a class="link" href="#contacts">Become a partner</a>` : `<a class="btn" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>`}
+        <span class="bh__facts">${factLine}</span>
+      </div>
+      <h1 class="bh__name"><span class="fade">${esc(b.name)}</span></h1>
+      <div class="bh__stage">
+        <div class="bh__copy fade f3">
+          <span class="label">${esc(b.tagline)}</span>
+          <p class="text">${esc(b.intro)}</p>
+          <div class="bh__actions">
+            ${has ? `<a class="btn" href="/catalogue/?brand=${b.slug}" data-label="View catalogue"><span>View catalogue</span></a>
+            <a class="link" href="#contacts">Become a partner</a>` : `<a class="btn" href="#contacts" data-label="Become a partner"><span>Become a partner</span></a>`}
+          </div>
         </div>
-        ${facts}
+        ${main ? `<span class="photo bh__main fade f2">${img(main, `${b.name} wedding dress`, true)}</span>` : ''}
+        ${side ? `<span class="photo bh__side fade f4">${img(side, `${b.name} wedding dress`)}</span>` : ''}
       </div>
     </section>`;
 
