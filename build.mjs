@@ -272,7 +272,7 @@ function cataloguePage() {
       <div>
         <div class="results" id="results"></div>
         <div class="results-empty" id="resultsEmpty" hidden></div>
-        <div class="more" id="more" hidden><button class="btn btn--ghost" type="button" id="moreBtn" data-label="Show more"><span>Show more</span></button></div>
+        <div class="more" id="more" hidden><button class="btn" type="button" id="moreBtn" data-label="Show more"><span>Show more</span></button></div>
       </div>
     </div>
   </section>
@@ -280,7 +280,7 @@ function cataloguePage() {
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Filters" inert>
     <div class="sheet__head"><span class="h3">Filters</span><button class="sheet__close" type="button" id="sheetClose" aria-label="Close filters"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" aria-hidden="true"><path d="M1 1l12 12M13 1 1 13"/></svg></button></div>
     <div class="sheet__body" id="filtersSheet"></div>
-    <div class="sheet__foot"><button class="btn btn--ghost" type="button" id="sheetClear" data-label="Clear"><span>Clear</span></button><button class="btn" type="button" id="sheetApply" data-label="Show models"><span id="sheetApplyLabel">Show models</span></button></div>
+    <div class="sheet__foot"><button class="btn btn--light" type="button" id="sheetClear" data-label="Clear"><span>Clear</span></button><button class="btn" type="button" id="sheetApply" data-label="Show models"><span id="sheetApplyLabel">Show models</span></button></div>
   </div>`;
   return page({
     title: 'Catalogue — all wedding dress models | QUEEN Fashion Group',

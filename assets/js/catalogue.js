@@ -62,8 +62,9 @@
       html += '<button class="tab" type="button" data-brand="' + b.slug + '" aria-pressed="' + (state.brand === b.slug) + '">' + esc(b.name) + '<sup>' + (counts[b.slug] || 0) + '</sup></button>';
     });
     $('catBrands').innerHTML = html;
-    var on = $('catBrands').querySelector('[aria-pressed="true"]');
-    if (on && on.scrollIntoView && state.brand) on.scrollIntoView({ block: 'nearest', inline: 'center' });
+    // Centre the active tab inside the strip only — never scroll the page itself
+    var strip = $('catBrands'), on = strip.querySelector('[aria-pressed="true"]');
+    if (on && state.brand && strip.scrollWidth > strip.clientWidth) strip.scrollLeft += on.getBoundingClientRect().left - strip.getBoundingClientRect().left - (strip.clientWidth - on.offsetWidth) / 2;
   }
 
   function renderFilters(target) {
@@ -167,7 +168,13 @@
     var v = e.target.closest('.view-toggle [data-view]');
     if (v) { state.view = v.getAttribute('data-view'); render(); }
   });
-  $('moreBtn').addEventListener('click', function () { state.shown += PAGE; render(); });
+    // Show more: append the next batch in place so the page stays where it is
+  $('moreBtn').addEventListener('click', function () {
+    var list = sorted(filtered(null)), from = state.shown;
+    state.shown += PAGE;
+    $('results').insertAdjacentHTML('beforeend', list.slice(from, state.shown).map(function (m, i) { return card(m, from + i); }).join(''));
+    $('more').hidden = list.length <= state.shown;
+  });
 
   /* Phone/tablet filter sheet */
   var sheet = $('sheet');
