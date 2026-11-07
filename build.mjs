@@ -330,16 +330,13 @@ function modelPage(m) {
   const facts = [
     ['Silhouette', L.sil[m.sil]],
     ['Fabric', L.fabric[m.fabric]],
-    ['Sleeves & neckline', L.sleeves[m.sleeves]],
-    m.collection && ['Collection', esc(m.collection)],
-    ['Article', esc(m.article)],
+    ['Sleeves', L.sleeves[m.sleeves]],
     m.details.length && ['Details', m.details.map((d) => L.details[d]).join(' · ')],
     m.colour && ['Colour', esc(m.colour)],
   ].filter(Boolean);
   const sizes = [
     ['Size charts', 'European and Ukrainian'],
     ['Made to order', 'Sleeves, length, train and colour can be changed for your client'],
-    ['Individual tailoring', 'Our designers can create a dress to an individual request'],
   ];
   const terms = [
     ['Minimum order', '5 dresses from a new collection — models and brands can be combined'],
@@ -360,21 +357,18 @@ function modelPage(m) {
 
     <div class="pdp__info">
       <div class="pdp__panel">
-        <p class="pdp__eyebrow"><a class="u-link" href="/brands/${b.slug}/">${esc(b.name)}</a>${m.collection && m.collection !== b.name ? `<span>${esc(m.collection)}</span>` : ''}${m.isNew ? '<em>New</em>' : ''}</p>
+        <p class="pdp__eyebrow"><a class="u-link" href="/brands/${b.slug}/">${esc(b.name)}</a>${m.isNew ? '<em>New</em>' : ''}</p>
         <h1 class="pdp__title">${esc(name)}</h1>
         <p class="pdp__sub">${esc(describe(m))}</p>
-        <p class="text">Handmade in our own production and worked out for every size. Supplied wholesale to bridal salons — the price list is sent on request.</p>
-        <a class="btn btn--block" href="/contact/?model=${encodeURIComponent(name)}&amp;brand=${encodeURIComponent(b.name)}#enquiry" data-label="Request price"><span>Request price</span></a>
-        <p class="pdp__call">Prefer to talk? <a class="u-link" href="tel:${PHONE.tel}">${PHONE.label}</a></p>
-
-        <div class="pdp__block">
-          <h2 class="pdp__h">Details</h2>
-          <dl class="pdp__facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+        <div class="pdp__cta">
+          <a class="btn" href="/contact/?model=${encodeURIComponent(name)}&amp;brand=${encodeURIComponent(b.name)}#enquiry" data-label="Request price"><span>Request price</span></a>
+          <a class="link" href="tel:${PHONE.tel}">Ask a manager</a>
         </div>
 
+        <dl class="pdp__facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+
         <div class="faq pdp__more">
-          <details class="faq__item"><summary>Sizes &amp; changes<i aria-hidden="true"></i></summary>${specList(sizes)}</details>
-          <details class="faq__item"><summary>Wholesale terms<i aria-hidden="true"></i></summary>${specList(terms)}</details>
+          <details class="faq__item"><summary>Sizes &amp; wholesale terms<i aria-hidden="true"></i></summary>${specList([...sizes, ...terms])}</details>
         </div>
 
         <nav class="pdp__switch" aria-label="Switch model">
