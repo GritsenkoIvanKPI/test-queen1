@@ -135,7 +135,7 @@
       var b = META.brands.filter(function (x) { return x.slug === state.brand; })[0];
       var brandEmpty = b && !M.some(function (m) { return m.b === b.slug; });
       empty.innerHTML = brandEmpty
-        ? '<span class="h3">' + esc(b.name) + ' — coming soon</span><p class="text">The collection is being photographed. Key models: ' + b.keys.map(esc).join(' · ') + '.</p><a class="btn" href="#contacts" data-label="Ask a manager"><span>Ask a manager</span></a>'
+        ? '<span class="h3">' + esc(b.name) + ' — coming soon</span><p class="text">The collection is being photographed. Key models: ' + b.keys.map(esc).join(' · ') + '.</p><a class="btn" href="/contact/" data-label="Ask a manager"><span>Ask a manager</span></a>'
         : '<span class="h3">No models match these filters</span><button class="link" type="button" data-clear>Clear filters</button>';
       empty.hidden = false;
     } else empty.hidden = true;
