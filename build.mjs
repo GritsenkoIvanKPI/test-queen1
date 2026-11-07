@@ -718,6 +718,19 @@ function partnersPage() {
   });
 }
 
+// Photos for the endless strip on the contact page (mixed brands)
+const MARQUEE = [
+  '/assets/img/pages/contact-1600.jpg',
+  '/assets/catalog/queen-2752/1-lg.jpg',
+  '/assets/catalog/elle-765/1-lg.jpg',
+  '/assets/catalog/eleonora-p-51/1-lg.jpg',
+  '/assets/img/models/queen-2744.jpg',
+  '/assets/img/hero/elle-1200.jpg',
+  '/assets/catalog/eleonora-p-78/1-lg.jpg',
+  '/assets/catalog/queen-2401/1-lg.jpg',
+  '/assets/catalog/elle-818/1-lg.jpg',
+];
+
 /* ── Contacts ── */
 function contactPage() {
   const brandChecks = brands.map((b) => `<label class="pick"><input type="checkbox" name="brands" value="${esc(b.name)}"><span>${esc(b.name)}</span></label>`).join('');
@@ -767,10 +780,10 @@ function contactPage() {
       </div>
     </div>
   </section>
-  <section class="cpage-photo" aria-hidden="true">
-    <span class="photo">${img('/assets/img/pages/contact-1600.jpg', '')}</span>
-    <span class="photo">${img('/assets/img/models/queen-2744.jpg', '')}</span>
-    <span class="photo">${img('/assets/img/hero/elle-1200.jpg', '')}</span>
+  <section class="marquee" aria-label="Dresses from our brands">
+    <div class="marquee__track">
+      ${[0, 1].map((copy) => MARQUEE.map((src) => `<span class="marquee__item"${copy ? ' aria-hidden="true"' : ''}><img src="${src}" alt="" width="1400" height="2100" decoding="async"></span>`).join('')).join('\n      ')}
+    </div>
   </section>`,
     scripts: '<script src="/assets/js/contact.js"></script>',
   });
