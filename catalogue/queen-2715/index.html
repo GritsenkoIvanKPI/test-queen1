@@ -130,51 +130,52 @@
 <main id="main">
 <section class="pdp" data-pdp>
     <div class="pdp__media">
-      <div class="pdp__thumbs" role="tablist" aria-label="Photos">
-        <button class="pdp__thumb" type="button" role="tab" data-go="0" aria-selected="true" aria-label="Photo 1"><img src="/assets/catalog/queen-2715/1.jpg" alt="" width="900" height="1350" loading="lazy"></button>
-        <button class="pdp__thumb" type="button" role="tab" data-go="1" aria-selected="false" aria-label="Photo 2"><img src="/assets/catalog/queen-2715/2.jpg" alt="" width="900" height="1350" loading="lazy"></button>
-        <button class="pdp__thumb" type="button" role="tab" data-go="2" aria-selected="false" aria-label="Photo 3"><img src="/assets/catalog/queen-2715/3.jpg" alt="" width="900" height="1350" loading="lazy"></button>
-      </div>
-      <div class="pdp__stage">
-        <div class="pdp__track" aria-label="Queen 2027 · 2715 photos">
-        <figure class="pdp__slide" data-index="0">
-          <img src="/assets/catalog/queen-2715/1.jpg" alt="Queen 2027 · 2715 — front" width="900" height="1350" fetchpriority="high">
+      <div class="pdp__rail"><div class="pdp__thumbs" aria-label="Photos">
+        <button class="pdp__thumb" type="button" data-go="0" aria-current="true" aria-label="Photo 1"><img src="/assets/catalog/queen-2715/1.jpg" alt="" width="900" height="1350" loading="lazy"></button>
+        <button class="pdp__thumb" type="button" data-go="1" aria-current="false" aria-label="Photo 2"><img src="/assets/catalog/queen-2715/2.jpg" alt="" width="900" height="1350" loading="lazy"></button>
+        <button class="pdp__thumb" type="button" data-go="2" aria-current="false" aria-label="Photo 3"><img src="/assets/catalog/queen-2715/3.jpg" alt="" width="900" height="1350" loading="lazy"></button>
+      </div></div>
+      <div class="pdp__track" aria-label="Queen 2027 · 2715 photos">
+        <figure class="pdp__slide" id="photo-1" data-index="0">
+          <img src="/assets/catalog/queen-2715/1-lg.jpg" srcset="/assets/catalog/queen-2715/1.jpg 900w, /assets/catalog/queen-2715/1-lg.jpg 1400w" sizes="(min-width: 1024px) 50vw, 100vw" alt="Queen 2027 · 2715 — front" width="1400" height="2100" fetchpriority="high">
           <button class="pdp__zoom" type="button" data-zoom="0" aria-label="Open photo 1 of 3 full screen"></button>
         </figure>
-        <figure class="pdp__slide" data-index="1">
-          <img src="/assets/catalog/queen-2715/2.jpg" alt="Queen 2027 · 2715 — view 2" width="900" height="1350" loading="lazy">
+        <figure class="pdp__slide" id="photo-2" data-index="1">
+          <img src="/assets/catalog/queen-2715/2-lg.jpg" srcset="/assets/catalog/queen-2715/2.jpg 900w, /assets/catalog/queen-2715/2-lg.jpg 1400w" sizes="(min-width: 1024px) 50vw, 100vw" alt="Queen 2027 · 2715 — view 2" width="1400" height="2100" loading="lazy">
           <button class="pdp__zoom" type="button" data-zoom="1" aria-label="Open photo 2 of 3 full screen"></button>
         </figure>
-        <figure class="pdp__slide" data-index="2">
-          <img src="/assets/catalog/queen-2715/3.jpg" alt="Queen 2027 · 2715 — view 3" width="900" height="1350" loading="lazy">
+        <figure class="pdp__slide" id="photo-3" data-index="2">
+          <img src="/assets/catalog/queen-2715/3-lg.jpg" srcset="/assets/catalog/queen-2715/3.jpg 900w, /assets/catalog/queen-2715/3-lg.jpg 1400w" sizes="(min-width: 1024px) 50vw, 100vw" alt="Queen 2027 · 2715 — view 3" width="1400" height="2100" loading="lazy">
           <button class="pdp__zoom" type="button" data-zoom="2" aria-label="Open photo 3 of 3 full screen"></button>
         </figure>
-        </div>
-        <span class="pdp__count" aria-hidden="true"><b data-current>1</b> / 3</span>
       </div>
+      <span class="pdp__count" aria-hidden="true"><b data-current>1</b> / 3</span>
     </div>
 
     <div class="pdp__info">
-      <div class="pdp__top">
-        <a class="label u-link" href="/brands/queen/">Queen</a>
-        <span class="pdp__new">New</span>
+      <div class="pdp__panel">
+        <p class="pdp__eyebrow"><a class="u-link" href="/brands/queen/">Queen</a><span>Queen 2027</span><em>New</em></p>
+        <h1 class="pdp__title">Queen 2027 · 2715</h1>
+        <p class="pdp__sub">Ball gown wedding dress in lace with detachable sleeves.</p>
+        <p class="text">Handmade in our own production and worked out for every size. Supplied wholesale to bridal salons — the price list is sent on request.</p>
+        <a class="btn btn--block" href="/contact/?model=Queen%202027%20%C2%B7%202715&amp;brand=Queen#enquiry" data-label="Request price"><span>Request price</span></a>
+        <p class="pdp__call">Prefer to talk? <a class="u-link" href="tel:+48531472415">+48 531 472 415</a></p>
+
+        <div class="pdp__block">
+          <h2 class="pdp__h">Details</h2>
+          <dl class="pdp__facts"><div><dt>Silhouette</dt><dd>Ball gown</dd></div><div><dt>Fabric</dt><dd>Lace</dd></div><div><dt>Sleeves & neckline</dt><dd>Detachable sleeves</dd></div><div><dt>Collection</dt><dd>Queen 2027</dd></div><div><dt>Article</dt><dd>2715</dd></div><div><dt>Colour</dt><dd>Ivory</dd></div></dl>
+        </div>
+
+        <div class="faq pdp__more">
+          <details class="faq__item"><summary>Sizes &amp; changes<i aria-hidden="true"></i></summary><dl class="specs"><div><dt>Size charts</dt><dd>European and Ukrainian</dd></div><div><dt>Made to order</dt><dd>Sleeves, length, train and colour can be changed for your client</dd></div><div><dt>Individual tailoring</dt><dd>Our designers can create a dress to an individual request</dd></div></dl></details>
+          <details class="faq__item"><summary>Wholesale terms<i aria-hidden="true"></i></summary><dl class="specs"><div><dt>Minimum order</dt><dd>5 dresses from a new collection — models and brands can be combined</dd></div><div><dt>Production</dt><dd>6–8 weeks after prepayment, 8–12 weeks from May to September</dd></div><div><dt>Payment</dt><dd>30% deposit, 70% before shipping. EUR, PLN or USD</dd></div><div><dt>Delivery</dt><dd>DPD, door-to-door to your salon</dd></div></dl></details>
+        </div>
+
+        <nav class="pdp__switch" aria-label="Switch model">
+          <a href="/catalogue/queen-2752/" rel="prev"><small>Previous</small><b>Queen 2027 · 2752</b></a>
+          <a href="/catalogue/queen-2717/" rel="next"><small>Next</small><b>Queen 2027 · 2717</b></a>
+        </nav>
       </div>
-      <h1 class="pdp__title">Queen 2027 · 2715</h1>
-      <p class="text">Ball gown wedding dress in lace with detachable sleeves.</p>
-      <dl class="pdp__facts"><div><dt>Silhouette</dt><dd>Ball gown</dd></div><div><dt>Sleeves</dt><dd>Detachable sleeves</dd></div><div><dt>Fabric</dt><dd>Lace</dd></div></dl>
-      <div class="pdp__actions">
-        <a class="btn" href="/contact/?model=Queen%202027%20%C2%B7%202715&amp;brand=Queen#enquiry" data-label="Request price"><span>Request price</span></a>
-        <a class="link" href="tel:+48531472415">Ask a manager</a>
-      </div>
-      <p class="pdp__note">Wholesale only. Price on request — a manager replies within one business day.</p>
-      <div class="faq pdp__more">
-        <details class="faq__item" open><summary>Details &amp; sizes<i aria-hidden="true"></i></summary><dl class="specs"><div><dt>Collection</dt><dd>Queen 2027</dd></div><div><dt>Article</dt><dd>2715</dd></div><div><dt>Colour</dt><dd>Ivory</dd></div><div><dt>Sizes</dt><dd>EU and UA size charts</dd></div><div><dt>Changes</dt><dd>Sleeves, length, train and colour on request</dd></div></dl></details>
-        <details class="faq__item"><summary>Wholesale terms<i aria-hidden="true"></i></summary><dl class="specs"><div><dt>Minimum order</dt><dd>5 dresses from a new collection — models and brands can be combined</dd></div><div><dt>Production</dt><dd>6–8 weeks after prepayment, 8–12 weeks from May to September</dd></div><div><dt>Payment</dt><dd>30% deposit, 70% before shipping. EUR, PLN or USD</dd></div><div><dt>Delivery</dt><dd>DPD, door-to-door to your salon</dd></div></dl></details>
-      </div>
-      <nav class="pdp__switch" aria-label="Switch model">
-        <a href="/catalogue/queen-2752/" rel="prev"><small>Previous</small><b>Queen 2027 · 2752</b></a>
-        <a href="/catalogue/queen-2717/" rel="next"><small>Next</small><b>Queen 2027 · 2717</b></a>
-      </nav>
     </div>
   </section>
 

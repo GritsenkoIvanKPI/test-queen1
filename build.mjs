@@ -316,25 +316,31 @@ function modelPage(m) {
   if (m.video) media.splice(1, 0, { type: 'video', src: m.video, poster: m.photos[0], alt: `${name} — video` });
   const total = media.length;
 
-  const slides = media.map((x, k) => `<figure class="pdp__slide" data-index="${k}">
+  const lg = (src) => src.replace(/\.jpg$/, '-lg.jpg');
+  const slides = media.map((x, k) => `<figure class="pdp__slide" id="photo-${k + 1}" data-index="${k}">
           ${x.type === 'video'
-            ? `<video src="${x.src}" poster="${x.poster}" muted loop playsinline autoplay preload="metadata" aria-label="${esc(x.alt)}"></video><span class="pdp__tag">Video</span>`
-            : `<img src="${x.src}" alt="${esc(x.alt)}" width="900" height="1350"${k ? ' loading="lazy"' : ' fetchpriority="high"'}>`}
-          ${x.type === 'img' ? `<button class="pdp__zoom" type="button" data-zoom="${k}" aria-label="Open photo ${k + 1} of ${total} full screen"></button>` : ''}
+            ? `<video src="${x.src}" poster="${lg(x.poster)}" muted loop playsinline autoplay preload="metadata" aria-label="${esc(x.alt)}"></video><span class="pdp__tag">Video</span>`
+            : `<img src="${lg(x.src)}" srcset="${x.src} 900w, ${lg(x.src)} 1400w" sizes="(min-width: 1024px) 50vw, 100vw" alt="${esc(x.alt)}" width="1400" height="2100"${k ? ' loading="lazy"' : ' fetchpriority="high"'}>
+          <button class="pdp__zoom" type="button" data-zoom="${k}" aria-label="Open photo ${k + 1} of ${total} full screen"></button>`}
         </figure>`).join('\n        ');
-  const thumbs = total > 1 ? `<div class="pdp__thumbs" role="tablist" aria-label="Photos">
-        ${media.map((x, k) => `<button class="pdp__thumb" type="button" role="tab" data-go="${k}" aria-selected="${k === 0}" aria-label="${x.type === 'video' ? 'Video' : `Photo ${k + 1}`}"><img src="${x.type === 'video' ? x.poster : x.src}" alt="" width="900" height="1350" loading="lazy">${x.type === 'video' ? '<span class="pdp__play" aria-hidden="true"></span>' : ''}</button>`).join('\n        ')}
-      </div>` : '';
+  const thumbs = total > 1 ? `<div class="pdp__rail"><div class="pdp__thumbs" aria-label="Photos">
+        ${media.map((x, k) => `<button class="pdp__thumb" type="button" data-go="${k}" aria-current="${k === 0}" aria-label="${x.type === 'video' ? 'Video' : `Photo ${k + 1}`}"><img src="${x.type === 'video' ? x.poster : x.src}" alt="" width="900" height="1350" loading="lazy">${x.type === 'video' ? '<span class="pdp__play" aria-hidden="true"></span>' : ''}</button>`).join('\n        ')}
+      </div></div>` : '';
 
-  const facts = [['Silhouette', L.sil[m.sil]], ['Sleeves', L.sleeves[m.sleeves]], ['Fabric', L.fabric[m.fabric]]];
-  const details = [
+  const facts = [
+    ['Silhouette', L.sil[m.sil]],
+    ['Fabric', L.fabric[m.fabric]],
+    ['Sleeves & neckline', L.sleeves[m.sleeves]],
     m.collection && ['Collection', esc(m.collection)],
     ['Article', esc(m.article)],
-    m.details.length && ['Details', m.details.map((d) => L.details[d]).join(', ')],
+    m.details.length && ['Details', m.details.map((d) => L.details[d]).join(' · ')],
     m.colour && ['Colour', esc(m.colour)],
-    ['Sizes', 'EU and UA size charts'],
-    ['Changes', 'Sleeves, length, train and colour on request'],
   ].filter(Boolean);
+  const sizes = [
+    ['Size charts', 'European and Ukrainian'],
+    ['Made to order', 'Sleeves, length, train and colour can be changed for your client'],
+    ['Individual tailoring', 'Our designers can create a dress to an individual request'],
+  ];
   const terms = [
     ['Minimum order', '5 dresses from a new collection — models and brands can be combined'],
     ['Production', '6–8 weeks after prepayment, 8–12 weeks from May to September'],
@@ -346,35 +352,36 @@ function modelPage(m) {
   const body = `<section class="pdp" data-pdp>
     <div class="pdp__media">
       ${thumbs}
-      <div class="pdp__stage">
-        <div class="pdp__track" aria-label="${esc(name)} photos">
+      <div class="pdp__track" aria-label="${esc(name)} photos">
         ${slides}
-        </div>
-        ${total > 1 ? `<span class="pdp__count" aria-hidden="true"><b data-current>1</b> / ${total}</span>` : ''}
       </div>
+      ${total > 1 ? `<span class="pdp__count" aria-hidden="true"><b data-current>1</b> / ${total}</span>` : ''}
     </div>
 
     <div class="pdp__info">
-      <div class="pdp__top">
-        <a class="label u-link" href="/brands/${b.slug}/">${esc(b.name)}</a>
-        ${m.isNew ? '<span class="pdp__new">New</span>' : ''}
+      <div class="pdp__panel">
+        <p class="pdp__eyebrow"><a class="u-link" href="/brands/${b.slug}/">${esc(b.name)}</a>${m.collection && m.collection !== b.name ? `<span>${esc(m.collection)}</span>` : ''}${m.isNew ? '<em>New</em>' : ''}</p>
+        <h1 class="pdp__title">${esc(name)}</h1>
+        <p class="pdp__sub">${esc(describe(m))}</p>
+        <p class="text">Handmade in our own production and worked out for every size. Supplied wholesale to bridal salons — the price list is sent on request.</p>
+        <a class="btn btn--block" href="/contact/?model=${encodeURIComponent(name)}&amp;brand=${encodeURIComponent(b.name)}#enquiry" data-label="Request price"><span>Request price</span></a>
+        <p class="pdp__call">Prefer to talk? <a class="u-link" href="tel:${PHONE.tel}">${PHONE.label}</a></p>
+
+        <div class="pdp__block">
+          <h2 class="pdp__h">Details</h2>
+          <dl class="pdp__facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+        </div>
+
+        <div class="faq pdp__more">
+          <details class="faq__item"><summary>Sizes &amp; changes<i aria-hidden="true"></i></summary>${specList(sizes)}</details>
+          <details class="faq__item"><summary>Wholesale terms<i aria-hidden="true"></i></summary>${specList(terms)}</details>
+        </div>
+
+        <nav class="pdp__switch" aria-label="Switch model">
+          <a href="/catalogue/${prev.id}/" rel="prev"><small>Previous</small><b>${esc(modelName(prev))}</b></a>
+          <a href="/catalogue/${next.id}/" rel="next"><small>Next</small><b>${esc(modelName(next))}</b></a>
+        </nav>
       </div>
-      <h1 class="pdp__title">${esc(name)}</h1>
-      <p class="text">${esc(describe(m))}</p>
-      <dl class="pdp__facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
-      <div class="pdp__actions">
-        <a class="btn" href="/contact/?model=${encodeURIComponent(name)}&amp;brand=${encodeURIComponent(b.name)}#enquiry" data-label="Request price"><span>Request price</span></a>
-        <a class="link" href="tel:${PHONE.tel}">Ask a manager</a>
-      </div>
-      <p class="pdp__note">Wholesale only. Price on request — a manager replies within one business day.</p>
-      <div class="faq pdp__more">
-        <details class="faq__item" open><summary>Details &amp; sizes<i aria-hidden="true"></i></summary>${specList(details)}</details>
-        <details class="faq__item"><summary>Wholesale terms<i aria-hidden="true"></i></summary>${specList(terms)}</details>
-      </div>
-      <nav class="pdp__switch" aria-label="Switch model">
-        <a href="/catalogue/${prev.id}/" rel="prev"><small>Previous</small><b>${esc(modelName(prev))}</b></a>
-        <a href="/catalogue/${next.id}/" rel="next"><small>Next</small><b>${esc(modelName(next))}</b></a>
-      </nav>
     </div>
   </section>
 

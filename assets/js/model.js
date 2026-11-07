@@ -10,15 +10,20 @@
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var index = 0;
 
+  var desktop = window.matchMedia('(min-width: 1024px)');
+
   function setActive(i) {
     index = i;
     if (current) current.textContent = i + 1;
-    thumbs.forEach(function (t, k) { t.setAttribute('aria-selected', String(k === i)); });
+    thumbs.forEach(function (t, k) { t.setAttribute('aria-current', String(k === i)); });
   }
 
+  // Desktop: photos are stacked, so scroll the page; phones: scroll the swipe strip
   function go(i) {
     var s = slides[i]; if (!s) return;
-    track.scrollTo({ left: s.offsetLeft - track.offsetLeft, behavior: reduced ? 'auto' : 'smooth' });
+    var behavior = reduced ? 'auto' : 'smooth';
+    if (desktop.matches) window.scrollTo({ top: s.getBoundingClientRect().top + window.scrollY - (document.getElementById('header').offsetHeight || 0), behavior: behavior });
+    else track.scrollTo({ left: s.offsetLeft - track.offsetLeft, behavior: behavior });
     setActive(i);
   }
 
@@ -26,13 +31,18 @@
     t.addEventListener('click', function () { go(+t.getAttribute('data-go')); });
   });
 
-  // Keep thumbnails and counter in step with swiping
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { if (e.isIntersecting && e.intersectionRatio > .6) setActive(+e.target.getAttribute('data-index')); });
-    }, { root: track, threshold: [.6] });
+  // Keep thumbnails and counter in step with scrolling / swiping
+  var io = null;
+  function watch() {
+    if (!('IntersectionObserver' in window)) return;
+    if (io) io.disconnect();
+    io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) setActive(+e.target.getAttribute('data-index')); });
+    }, desktop.matches ? { rootMargin: '-45% 0px -45% 0px' } : { root: track, threshold: .6 });
     slides.forEach(function (s) { io.observe(s); });
   }
+  watch();
+  if (desktop.addEventListener) desktop.addEventListener('change', watch);
 
   /* Full-screen viewer (photos only) */
   var lb = document.getElementById('lightbox');
