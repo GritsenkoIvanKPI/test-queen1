@@ -14,6 +14,13 @@
     if (field) { field.setAttribute('aria-invalid', 'true'); field.focus(); }
   }
 
+  // Coming from a model page: "Request price" passes the model and brand
+  var q = new URLSearchParams(location.search);
+  if (q.get('model')) {
+    form.elements.message.value = 'Price request: ' + q.get('model');
+    [].forEach.call(form.querySelectorAll('input[name="brands"]'), function (c) { if (c.value === q.get('brand')) c.checked = true; });
+  }
+
   form.addEventListener('input', function (e) {
     if (e.target.hasAttribute('aria-invalid')) e.target.removeAttribute('aria-invalid');
     error.hidden = true;

@@ -113,7 +113,7 @@ const empty = (note = 'Photo coming soon') => `<span class="photo photo--empty">
 const crumbs = (items) => `<ol class="crumbs">${items.map(([t, h], i) => `<li>${h && i < items.length - 1 ? `<a href="${h}">${esc(t)}</a>` : `<span aria-current="page">${esc(t)}</span>`}</li>`).join('')}</ol>`;
 
 // Individual model pages are hidden for now. Set to true to publish them again.
-const MODEL_PAGES = false;
+const MODEL_PAGES = true;
 const modelHref = (m) => (MODEL_PAGES ? `/catalogue/${m.id}/` : `/catalogue/?brand=${m.brand}`);
 
 function card(m, cls = '') {
@@ -311,36 +311,66 @@ function modelPage(m) {
   const more = [1, 2, 3, 4].map((k) => list[(i + k) % list.length]).filter((x) => x !== m);
   const name = modelName(m);
 
-  const tiles = m.photos.map((p, k) => `<span class="photo">${img(p, k === 0 ? `${name} — front` : `${name} — view ${k + 1}`, k === 0)}${k === 0 && m.isNew ? '<span class="mcard__badge">New</span>' : ''}</span>`);
-  if (m.video) tiles.splice(1, 0, `<span class="photo"><video src="${m.video}" poster="${m.photos[0]}" muted loop playsinline autoplay preload="metadata" aria-label="${esc(name)} — video"></video><span class="pdp__tag">Video</span></span>`);
+  // Photos, with the video (if any) as the second item
+  const media = m.photos.map((src, k) => ({ type: 'img', src, alt: k === 0 ? `${name} — front` : `${name} — view ${k + 1}` }));
+  if (m.video) media.splice(1, 0, { type: 'video', src: m.video, poster: m.photos[0], alt: `${name} — video` });
+  const total = media.length;
 
-  const specs = [
-    ['Brand', `<a class="u-link" href="/brands/${b.slug}/">${esc(b.name)}</a>`],
+  const slides = media.map((x, k) => `<figure class="pdp__slide" data-index="${k}">
+          ${x.type === 'video'
+            ? `<video src="${x.src}" poster="${x.poster}" muted loop playsinline autoplay preload="metadata" aria-label="${esc(x.alt)}"></video><span class="pdp__tag">Video</span>`
+            : `<img src="${x.src}" alt="${esc(x.alt)}" width="900" height="1350"${k ? ' loading="lazy"' : ' fetchpriority="high"'}>`}
+          ${x.type === 'img' ? `<button class="pdp__zoom" type="button" data-zoom="${k}" aria-label="Open photo ${k + 1} of ${total} full screen"></button>` : ''}
+        </figure>`).join('\n        ');
+  const thumbs = total > 1 ? `<div class="pdp__thumbs" role="tablist" aria-label="Photos">
+        ${media.map((x, k) => `<button class="pdp__thumb" type="button" role="tab" data-go="${k}" aria-selected="${k === 0}" aria-label="${x.type === 'video' ? 'Video' : `Photo ${k + 1}`}"><img src="${x.type === 'video' ? x.poster : x.src}" alt="" width="900" height="1350" loading="lazy">${x.type === 'video' ? '<span class="pdp__play" aria-hidden="true"></span>' : ''}</button>`).join('\n        ')}
+      </div>` : '';
+
+  const facts = [['Silhouette', L.sil[m.sil]], ['Sleeves', L.sleeves[m.sleeves]], ['Fabric', L.fabric[m.fabric]]];
+  const details = [
     m.collection && ['Collection', esc(m.collection)],
     ['Article', esc(m.article)],
-    ['Silhouette', L.sil[m.sil]],
-    ['Sleeves', L.sleeves[m.sleeves]],
-    ['Fabric', L.fabric[m.fabric]],
     m.details.length && ['Details', m.details.map((d) => L.details[d]).join(', ')],
-    m.colour && ['Colour', m.colour],
+    m.colour && ['Colour', esc(m.colour)],
     ['Sizes', 'EU and UA size charts'],
     ['Changes', 'Sleeves, length, train and colour on request'],
   ].filter(Boolean);
+  const terms = [
+    ['Minimum order', '5 dresses from a new collection — models and brands can be combined'],
+    ['Production', '6–8 weeks after prepayment, 8–12 weeks from May to September'],
+    ['Payment', '30% deposit, 70% before shipping. EUR, PLN or USD'],
+    ['Delivery', 'DPD, door-to-door to your salon'],
+  ];
+  const specList = (rows) => `<dl class="specs">${rows.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>`;
 
-  const body = `<section class="pdp">
-    <div class="pdp__gallery" aria-label="Photos">
-      ${tiles.join('\n      ')}
-    </div>
-    <div class="pdp__info">
-      <a class="label u-link" href="/brands/${b.slug}/">${esc(b.name)}</a>
-      <h1 class="h2">${esc(name)}</h1>
-      <p class="text">${esc(describe(m))}</p>
-      <dl class="specs">${specs.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
-      <div class="pdp__actions">
-        <a class="btn" href="/contact/" data-label="Request price"><span>Request price</span></a>
-        <a class="link" href="/catalogue/?brand=${b.slug}">All ${esc(b.name)} models</a>
+  const body = `<section class="pdp" data-pdp>
+    <div class="pdp__media">
+      ${thumbs}
+      <div class="pdp__stage">
+        <div class="pdp__track" aria-label="${esc(name)} photos">
+        ${slides}
+        </div>
+        ${total > 1 ? `<span class="pdp__count" aria-hidden="true"><b data-current>1</b> / ${total}</span>` : ''}
       </div>
-      <p class="pdp__note">Price on request. Minimum order — 5 dresses from a new collection.</p>
+    </div>
+
+    <div class="pdp__info">
+      <div class="pdp__top">
+        <a class="label u-link" href="/brands/${b.slug}/">${esc(b.name)}</a>
+        ${m.isNew ? '<span class="pdp__new">New</span>' : ''}
+      </div>
+      <h1 class="pdp__title">${esc(name)}</h1>
+      <p class="text">${esc(describe(m))}</p>
+      <dl class="pdp__facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+      <div class="pdp__actions">
+        <a class="btn" href="/contact/?model=${encodeURIComponent(name)}&amp;brand=${encodeURIComponent(b.name)}#enquiry" data-label="Request price"><span>Request price</span></a>
+        <a class="link" href="tel:${PHONE.tel}">Ask a manager</a>
+      </div>
+      <p class="pdp__note">Wholesale only. Price on request — a manager replies within one business day.</p>
+      <div class="faq pdp__more">
+        <details class="faq__item" open><summary>Details &amp; sizes<i aria-hidden="true"></i></summary>${specList(details)}</details>
+        <details class="faq__item"><summary>Wholesale terms<i aria-hidden="true"></i></summary>${specList(terms)}</details>
+      </div>
       <nav class="pdp__switch" aria-label="Switch model">
         <a href="/catalogue/${prev.id}/" rel="prev"><small>Previous</small><b>${esc(modelName(prev))}</b></a>
         <a href="/catalogue/${next.id}/" rel="next"><small>Next</small><b>${esc(modelName(next))}</b></a>
@@ -348,13 +378,22 @@ function modelPage(m) {
     </div>
   </section>
 
-  ${more.length ? `<section class="section" aria-label="More models">
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="${esc(name)} — photos">
+    <img class="lightbox__img" alt="">
+    <span class="lightbox__count" aria-live="polite"></span>
+    <button class="lightbox__btn lightbox__close" type="button" data-lb="close" aria-label="Close"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 3l14 14M17 3 3 17"/></svg></button>
+    <button class="lightbox__btn lightbox__prev" type="button" data-lb="prev" aria-label="Previous photo"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12.5 3 5.5 10l7 7"/></svg></button>
+    <button class="lightbox__btn lightbox__next" type="button" data-lb="next" aria-label="Next photo"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hidden="true"><path d="M7.5 3l7 7-7 7"/></svg></button>
+  </div>
+
+  ${more.length ? `<section class="section section--tint" aria-label="More models">
     <header class="head head--center reveal">
-      <h2 class="h2">More from this brand</h2>
+      <h2 class="h2">More from ${esc(b.name)}</h2>
     </header>
     <div class="gallery-grid">
       ${more.map((x, k) => card(x, k ? ' d' + k : '')).join('\n      ')}
     </div>
+    <div class="panel__foot"><a class="link" href="/catalogue/?brand=${b.slug}">All ${esc(b.name)} models</a></div>
   </section>` : ''}`;
 
   return page({
@@ -363,7 +402,7 @@ function modelPage(m) {
     path: `/catalogue/${m.id}/`,
     current: 'catalogue',
     body,
-    scripts: `<script>document.addEventListener('keydown',function(e){if(e.target.closest('input,select,textarea'))return;if(e.key==='ArrowLeft')location.href='/catalogue/${prev.id}/';if(e.key==='ArrowRight')location.href='/catalogue/${next.id}/';});</script>`,
+    scripts: `<script>window.PDP = { prev: '/catalogue/${prev.id}/', next: '/catalogue/${next.id}/' };</script>\n<script src="/assets/js/model.js"></script>`,
   });
 }
 
