@@ -160,7 +160,7 @@ function brandPage(b) {
         <p class="bh__tag fade f2">${esc(b.tagline)}</p>
         <div class="bh__actions fade f3">
           ${has ? `<a class="btn btn--light btn--sm" href="/catalogue/?brand=${b.slug}" data-label="View catalogue"><span>View catalogue</span></a>
-          <a class="link bh__link" href="/contact/">Become a partner</a>` : `<a class="btn btn--sm" href="/contact/" data-label="Become a partner"><span>Become a partner</span></a>`}
+          <a class="link bh__link" href="/contact/">Become a partner</a>` : `<a class="btn btn--sm${media ? ' btn--light' : ''}" href="/contact/" data-label="Become a partner"><span>Become a partner</span></a>`}
         </div>
       </div>
       ${cards.length ? `<div class="bh-cards fade f4" data-rotate aria-label="${esc(b.name)} models">
@@ -504,8 +504,8 @@ function brandsPage() {
         <p class="brow__tag">${esc(b.tagline)}</p>
         <p class="text">${esc(b.intro)}</p>
         <dl class="brow__meta">
-          <div><dt>Models</dt><dd>${list.length}</dd></div>
-          <div><dt>Silhouettes</dt><dd>${sils}</dd></div>
+          ${list.length ? `<div><dt>Models</dt><dd>${list.length}</dd></div>
+          <div><dt>Silhouettes</dt><dd>${sils}</dd></div>` : '<div><dt>Collection</dt><dd>Coming soon</dd></div>'}
           <div><dt>Key models</dt><dd>${b.keyModels.slice(0, 3).join(' · ')}</dd></div>
         </dl>
         <div class="brow__actions">
