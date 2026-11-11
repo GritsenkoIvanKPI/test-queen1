@@ -36,7 +36,7 @@
   /* photo + text fill exactly the first screen: the photo takes what the text leaves */
   .bh__first { display: flex; flex-direction: column; height: calc(100svh - var(--header)); min-height: 46rem; }
   .bh__pic { flex: 1 1 auto; height: auto; min-height: 22rem; max-height: none; }
-  .bh__body { flex: none; gap: .8rem; padding: var(--s-3) var(--gutter); text-shadow: none; }
+  .bh__body { flex: none; align-self: stretch; justify-items: stretch; gap: .8rem; padding: var(--s-3) var(--gutter); text-shadow: none; }
   .bh--text .bh__first { height: auto; min-height: 0; }
   .bh--text .bh__body { padding-top: var(--s-5); padding-bottom: var(--s-5); }
   .bh__meta { color: var(--muted); }
@@ -551,3 +551,4 @@ html.lb-open { overflow: hidden; }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .pdp__info { padding-left: 5.6rem; padding-right: 5.6rem; }
 }
+

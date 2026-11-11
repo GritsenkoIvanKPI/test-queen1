@@ -405,3 +405,24 @@
     html { scroll-behavior: auto; }
     *, :after, :before { animation-duration: .01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; transition-delay: 0s !important; }
   }
+
+/* ───────────── Phones: full-width buttons ─────────────
+   Every button spans the content width (inside the gutters). A link paired with a button
+   sits under it as a centred secondary action with the same tap height. */
+@media (max-width: 639px) {
+  html .btn { width: 100%; }
+  html .btn--sm { min-height: 4.6rem; }
+  html .form .btn, html .pdp__cta .btn { justify-self: stretch; max-width: none; }
+
+  html .hero__actions, html .bh__actions, html .banner__actions, html .brow__actions, html .pdp__cta, html .page-intro__actions {
+    flex-direction: column; align-items: stretch; flex-wrap: nowrap; gap: .4rem; width: 100%;
+  }
+  html .hero__actions .link, html .bh__actions .link, html .banner__actions .link, html .brow__actions .link, html .pdp__cta .link, html .page-intro__actions .link {
+    display: flex; align-items: center; justify-content: center; min-height: 4.6rem; padding: 0;
+    border-bottom: 0; text-decoration: underline; text-decoration-thickness: .1rem; text-underline-offset: .6rem;
+  }
+  html .hero__actions { margin-top: .6rem; }
+  html .bh__actions { margin-top: 1rem; }
+  html .brow__actions { margin-top: .6rem; }
+  html .cta-split__body, html .banner__body { justify-items: stretch; }
+}
