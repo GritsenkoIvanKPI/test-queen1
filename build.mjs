@@ -153,6 +153,7 @@ function brandPage(b) {
     : b.heroPhoto ? `<img class="bh__media" src="${b.heroPhoto}"${/-2560\.jpg$/.test(b.heroPhoto) ? ` srcset="${b.heroPhoto.replace('-2560', '-1200')} 1200w, ${b.heroPhoto} 2560w" sizes="100vw"` : ''} alt="${esc(b.name)} wedding dress" fetchpriority="high">` : '';
   const cards = list.slice(0, 6);
   const hero = `<section class="bh bh--${b.slug}${media ? '' : ' bh--text'}">
+      <div class="bh__first">
       ${media ? `<div class="bh__pic">${media}</div>` : ''}
       <div class="bh__body">
         <span class="bh__meta fade">${has ? `${list.length} models · ${uniq('sil').length} silhouettes` : 'Collection coming soon'}</span>
@@ -162,6 +163,7 @@ function brandPage(b) {
           ${has ? `<a class="btn btn--light btn--sm" href="/catalogue/?brand=${b.slug}" data-label="View catalogue"><span>View catalogue</span></a>
           <a class="link bh__link" href="/contact/">Become a partner</a>` : `<a class="btn btn--sm${media ? ' btn--light' : ''}" href="/contact/" data-label="Become a partner"><span>Become a partner</span></a>`}
         </div>
+      </div>
       </div>
       ${cards.length ? `<div class="bh-cards fade f4" data-rotate aria-label="${esc(b.name)} models">
         ${cards.map((m, i) => `<a class="bh-card${i ? '' : ' is-on'}" href="${modelHref(m)}"${i ? ' tabindex="-1" aria-hidden="true"' : ''}>
@@ -555,11 +557,13 @@ function aboutPage() {
     ['On time', 'Fast production for orders of any volume and quick delivery anywhere in the world.'],
   ];
   const hero = `<section class="bh bh--about">
+      <div class="bh__first">
       <div class="bh__pic"><img class="bh__media" src="/assets/img/hero/about-2560.jpg" srcset="/assets/img/hero/about-1200.jpg 1200w, /assets/img/hero/about-2560.jpg 2560w" sizes="100vw" alt="A bride in an Eleonora gown in a palace garden" fetchpriority="high"></div>
       <div class="bh__body">
         <span class="bh__meta fade">About QUEEN Fashion Group</span>
         <h1 class="bh__title fade f2">An atelier with a history</h1>
         <p class="bh__tag fade f2">Handmade wedding dresses from the manufacturer, for bridal salons in 18 countries.</p>
+      </div>
       </div>
     </section>`;
   const story = `<section class="section">
