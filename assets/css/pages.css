@@ -29,6 +29,21 @@
 .bh--text .bh__meta, .bh--text .bh__tag { color: var(--muted); }
 
 .bh-cards { position: relative; display: grid; margin: var(--s-3) var(--gutter) 0; }
+/* Phones: the photo stays bright and uncovered; the text sits below it on the page background */
+@media (max-width: 767px) {
+  .bh { color: var(--ink); }
+  .bh__pic { height: min(70svh, 62rem); min-height: 42rem; }
+  .bh__body { grid-area: 2 / 1; align-self: start; gap: .8rem; padding: var(--s-3) var(--gutter) 0; text-shadow: none; }
+  .bh--text .bh__body { grid-area: 1 / 1; align-self: end; }
+  .bh__meta { color: var(--muted); }
+  .bh__title { font-size: 3.6rem; }
+  .bh__tag { color: var(--muted); }
+  .bh__actions { margin-top: 1.4rem; }
+  .bh .btn--light { background: var(--ink); color: var(--bg); }
+  .bh__link { color: var(--ink); }
+  .bh-cards { grid-row: 3; }
+}
+
 .bh-card { grid-area: 1 / 1; display: grid; grid-template-columns: 1fr 7.2rem; gap: 1.6rem; padding: 1rem 1rem 1rem 1.6rem; background: var(--bg); color: var(--ink); opacity: 0; visibility: hidden; transition: opacity .8s ease, visibility 0s .8s; }
 .bh-card.is-on { opacity: 1; visibility: visible; transition: opacity .8s ease; }
 .bh-card:hover .bh-card__name, .bh-card:focus-visible .bh-card__name { opacity: .6; }
