@@ -132,7 +132,7 @@ function ctaSplit(b, photos) {
       <p>Request the wholesale price list and lookbook. A manager will reply within one business day.</p>
       <div class="banner__actions">
         <a class="btn btn--light" href="/contact/" data-label="Request price list"><span>Request price list</span></a>
-        <a class="link" href="tel:+48531472415">+48 531 472 415</a>
+        <a class="link" href="tel:+48514732941">+48 514 732 941</a>
       </div>
     </div>
     ${photos.length ? `<div class="cta-split__media">${photos.map((p) => `<span class="photo">${img(p, '')}</span>`).join('')}</div>` : ''}
@@ -408,7 +408,7 @@ function modelPage(m) {
 }
 
 /* ───────── Company pages ───────── */
-const PHONE = { tel: '+48531472415', label: '+48 531 472 415' };
+const PHONE = { tel: '+48514732941', label: '+48 514 732 941' };
 const EMAIL = 'managerqueen1@gmail.com';
 const MANAGERS = [
   { name: 'Viktoria', market: 'Polish market', tel: '+48531472415', label: '+48 531 472 415' },
