@@ -737,6 +737,7 @@ function pageEditor(key) {
   return {
     url: def.url,
     html: `<div class="head"><div><h1>${def.title}</h1><p>Edit a section and the preview scrolls to it. Changes appear on the right as you type.</p></div></div>
+      <p class="card__note" style="margin:-8px 0 16px">You are editing the English version. The PL, DE, RU, IT and EL versions keep their own translations — ask for them to be updated after larger text changes. Products, photos and collections update in every language automatically.</p>
       ${def.sections.map(([title, anchor, body], i) => section({ n: i + 1, title, anchor, body: body(), closed: i > 1 })).join('')}`,
   };
 }

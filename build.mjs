@@ -8,6 +8,7 @@ import { createSite, GENERATED_DIRS } from './lib/render.mjs';
 const read = (f) => JSON.parse(readFileSync(`data/${f}.json`, 'utf8'));
 export const loadData = () => ({
   brands: read('brands'), models: read('models'), collections: read('collections'), posts: read('posts'), site: read('site'),
+  translations: read('translations'),
 });
 
 const pages = createSite(loadData()).pages();

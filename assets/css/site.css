@@ -23,6 +23,10 @@
     --s-6: 9rem;
   }
 
+  /* Cormorant has no Greek letters: Greek pages set headings in GFS Didot (the logo keeps Cormorant) */
+  html[lang="el"] { --serif: "GFS Didot", "Cormorant Garamond", Georgia, serif; }
+  html[lang="el"] .logo__word { font-family: "Cormorant Garamond", Georgia, serif; }
+
   *, :after, :before { box-sizing: border-box; }
 
   /* 1rem = 10px on a 375px phone and on a 1440px desktop */

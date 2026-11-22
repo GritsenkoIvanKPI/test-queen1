@@ -1,0 +1,4002 @@
+{
+ "pl": {
+  "ui": {
+   "nav": {
+    "brands": "Marki",
+    "catalogue": "Katalog",
+    "aboutUs": "O nas",
+    "blog": "Blog",
+    "contacts": "Kontakt",
+    "home": "Strona główna",
+    "ourBrands": "Nasze marki",
+    "allBrands": "Wszystkie marki",
+    "fullCatalogue": "Pełny katalog",
+    "company": "Firma",
+    "partners": "Partnerzy",
+    "wholesaleEnquiry": "Zapytanie hurtowe",
+    "termsOfCooperation": "Warunki współpracy",
+    "exclusiveServices": "Usługi ekskluzywne",
+    "privacyPolicy": "Polityka prywatności",
+    "becomePartner": "Zostań partnerem",
+    "email": "E-mail",
+    "allMarkets": "Wszystkie rynki",
+    "office": "Biuro",
+    "officeCountry": "Polska",
+    "backToTop": "Do góry",
+    "skip": "Przejdź do treści",
+    "openMenu": "Otwórz menu",
+    "homeAria": "QUEEN Fashion Group — strona główna",
+    "topAria": "QUEEN Fashion Group — powrót na górę",
+    "language": "Język",
+    "call": "Zadzwoń: {phone}"
+   },
+   "common": {
+    "new": "Nowość",
+    "video": "Wideo",
+    "photoSoon": "Zdjęcie wkrótce",
+    "comingSoon": "Wkrótce",
+    "moreAboutUs": "Więcej o nas",
+    "viewBrandCatalogue": "Zobacz katalog {brand}",
+    "termsAria": "Warunki w skrócie",
+    "introAria": "Wprowadzenie",
+    "heroVideoAria": "Suknie Eleonora sfilmowane w Krakowie"
+   },
+   "brand": {
+    "nModels": {
+     "one": "{n} model",
+     "few": "{n} modele",
+     "many": "{n} modeli",
+     "other": "{n} modelu"
+    },
+    "nSilhouettes": {
+     "one": "{n} sylwetka",
+     "few": "{n} sylwetki",
+     "many": "{n} sylwetek",
+     "other": "{n} sylwetki"
+    },
+    "collectionSoon": "Kolekcja wkrótce",
+    "viewCatalogue": "Zobacz katalog",
+    "heroAlt": "Suknia ślubna {brand}",
+    "modelsAria": "Modele {brand}",
+    "keyModels": "Kluczowe modele",
+    "silhouettes": "Sylwetki",
+    "fabrics": "Tkaniny",
+    "production": "Produkcja",
+    "productionValue": "Ręcznie, we własnej szwalni",
+    "minOrder": "Minimalne zamówienie",
+    "minOrderValue": "5 sukien z nowej kolekcji",
+    "sizes": "Rozmiary",
+    "sizesValue": "Tabele rozmiarów EU i UA",
+    "detailAlt": "{brand} — detal",
+    "collections": "Kolekcje",
+    "theCollection": "Kolekcja",
+    "bySilhouette": "Aktualna linia {brand} według sylwetek.",
+    "collectionsSoon": "Kolekcje wkrótce",
+    "selectedModels": "Wybrane modele",
+    "viewAll": {
+     "one": "Zobacz {n} model",
+     "few": "Zobacz wszystkie {n} modele",
+     "many": "Zobacz wszystkich {n} modeli",
+     "other": "Zobacz wszystkie modele ({n})"
+    },
+    "modelsSoon": "Modele wkrótce",
+    "seoTitle": "{brand} — suknie ślubne hurtowo | QUEEN Fashion Group",
+    "seoDesc": "{brand}: {tagline}. Suknie ślubne w hurcie dla salonów od QUEEN Fashion Group."
+   },
+   "catalogue": {
+    "title": "Wszystkie modele",
+    "intro": "Wszystkie modele wszystkich marek w jednym miejscu. Wybierz markę, a następnie zawęź wybór według sylwetki, rękawów lub tkaniny.",
+    "brandIntro": "Katalog {brand}. Markę można w każdej chwili zmienić powyżej lub zawęzić wybór według sylwetki, rękawów lub tkaniny.",
+    "all": "Wszystkie",
+    "filters": "Filtry",
+    "sort": "Sortuj",
+    "featured": "Polecane",
+    "newFirst": "Najnowsze",
+    "byArticle": "Wg artykułu",
+    "view": "Widok",
+    "grid": "Widok siatki",
+    "gallery": "Widok galerii",
+    "showMore": "Pokaż więcej",
+    "closeFilters": "Zamknij filtry",
+    "clear": "Wyczyść",
+    "clearAll": "Wyczyść wszystko",
+    "clearFilters": "Wyczyść filtry",
+    "remove": "Usuń",
+    "showN": {
+     "one": "Pokaż {n} model",
+     "few": "Pokaż {n} modele",
+     "many": "Pokaż {n} modeli",
+     "other": "Pokaż {n} modelu"
+    },
+    "brandAria": "Marka",
+    "modelsAria": "Modele",
+    "gCollection": "Kolekcja",
+    "gSilhouette": "Sylwetka",
+    "gSleeves": "Rękawy i dekolt",
+    "gFabric": "Tkanina",
+    "gDetails": "Detale",
+    "newModels": "Nowe modele",
+    "withVideo": "Z wideo",
+    "soonTitle": "{brand} — wkrótce",
+    "soonText": "Trwa sesja zdjęciowa kolekcji. Kluczowe modele: {keys}.",
+    "askManager": "Zapytaj menedżera",
+    "noMatch": "Brak modeli spełniających te kryteria",
+    "docTitle": "Katalog — wszystkie modele sukien ślubnych | QUEEN Fashion Group",
+    "docTitleBrand": "Katalog {brand} | QUEEN Fashion Group",
+    "seoDesc": "Katalog hurtowy sukien ślubnych — modele: {n}. Filtruj według marki, kolekcji, sylwetki, rękawów i tkaniny."
+   },
+   "model": {
+    "front": "{name} — przód",
+    "view": "{name} — ujęcie {k}",
+    "videoAlt": "{name} — wideo",
+    "openPhoto": "Otwórz zdjęcie {k} z {total} na pełnym ekranie",
+    "photos": "Zdjęcia",
+    "photo": "Zdjęcie {k}",
+    "silhouette": "Sylwetka",
+    "fabric": "Tkanina",
+    "sleeves": "Rękawy",
+    "details": "Detale",
+    "colour": "Kolor",
+    "sizeCharts": "Tabele rozmiarów",
+    "sizeChartsValue": "Europejska i ukraińska",
+    "madeToOrder": "Na zamówienie",
+    "madeToOrderValue": "Rękawy, długość, tren i kolor można dopasować do Państwa klientki",
+    "minOrder": "Minimalne zamówienie",
+    "minOrderValue": "5 sukien z nowej kolekcji — modele i marki można łączyć",
+    "production": "Produkcja",
+    "productionValue": "6–8 tygodni od przedpłaty, 8–12 tygodni od maja do września",
+    "payment": "Płatność",
+    "paymentValue": "30% zaliczki, 70% przed wysyłką. EUR, PLN lub USD",
+    "delivery": "Dostawa",
+    "deliveryValue": "DPD, bezpośrednio do Państwa salonu",
+    "requestPrice": "Zapytaj o cenę",
+    "askManager": "Zapytaj menedżera",
+    "sizesTerms": "Rozmiary i warunki hurtowe",
+    "switchModel": "Zmień model",
+    "previous": "Poprzedni",
+    "next": "Następny",
+    "close": "Zamknij",
+    "prevPhoto": "Poprzednie zdjęcie",
+    "nextPhoto": "Następne zdjęcie",
+    "moreFrom": "Więcej od {brand}",
+    "allBrandModels": "Wszystkie modele {brand}",
+    "moreModels": "Więcej modeli",
+    "seoTitle": "{name} — suknia ślubna {brand} | QUEEN Fashion Group",
+    "seoDesc": "{name}. {desc} Hurtowo od QUEEN Fashion Group, cena na zapytanie.",
+    "weddingDress": "suknia ślubna"
+   },
+   "brandsPage": {
+    "models": "Modele",
+    "silhouettes": "Sylwetki",
+    "collection": "Kolekcja",
+    "keyModels": "Kluczowe modele",
+    "keyModelsLine": "Kluczowe modele · {keys}",
+    "discover": "Poznaj {brand}",
+    "catalogue": "Katalog",
+    "seoTitle": "Nasze marki — QUEEN Fashion Group",
+    "seoDesc": "Siedem marek sukien ślubnych od jednego producenta: {list}."
+   },
+   "about": {
+    "heroAlt": "Panna młoda w sukni Eleonora w pałacowym ogrodzie",
+    "allBrands": "Wszystkie marki",
+    "seoTitle": "O nas — QUEEN Fashion Group",
+    "seoDesc": "QUEEN Fashion Group: siedem marek sukien ślubnych szytych ręcznie we własnej produkcji i dostarczanych hurtowo do salonów w 18 krajach."
+   },
+   "partners": {
+    "becomePartner": "Zostań partnerem",
+    "termsLink": "Warunki współpracy",
+    "seoTitle": "Współpraca hurtowa — QUEEN Fashion Group",
+    "seoDesc": "Warunki współpracy dla salonów ślubnych: minimalne zamówienie 5 sukien, produkcja 6–8 tygodni, płatność 30/70 w EUR, PLN lub USD, dostawa DPD."
+   },
+   "contact": {
+    "seoTitle": "Kontakt — QUEEN Fashion Group",
+    "seoDesc": "Kontakt z QUEEN Fashion Group: zapytania hurtowe, menedżerowie rynku polskiego, niemieckiego i włoskiego, biuro w Krakowie.",
+    "name": "Imię i nazwisko *",
+    "salon": "Salon lub firma *",
+    "email": "E-mail *",
+    "phone": "Telefon",
+    "country": "Kraj *",
+    "brandsLegend": "Marki, którymi są Państwo zainteresowani",
+    "message": "Wiadomość",
+    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na to zapytanie, zgodnie z {link}. *",
+    "consentLink": "polityką prywatności",
+    "send": "Wyślij zapytanie",
+    "thanks": "Dziękujemy",
+    "thanksText": "Otworzyła się aplikacja pocztowa z gotowym zapytaniem. Jeśli tak się nie stało, prosimy o wiadomość na {email} lub telefon pod numer {phone}.",
+    "browse": "Przeglądaj katalog",
+    "stripAria": "Suknie naszych marek",
+    "errName": "Prosimy podać imię i nazwisko.",
+    "errSalon": "Prosimy podać nazwę salonu lub firmy.",
+    "errEmail": "Prosimy podać adres e-mail.",
+    "errEmailBad": "Prosimy sprawdzić adres e-mail.",
+    "errCountry": "Prosimy podać kraj.",
+    "errConsent": "Prosimy o zgodę na przetwarzanie danych.",
+    "mailSubject": "Zapytanie hurtowe — {company}",
+    "mailName": "Imię i nazwisko",
+    "mailSalon": "Salon / firma",
+    "mailCountry": "Kraj",
+    "mailEmail": "E-mail",
+    "mailPhone": "Telefon",
+    "mailBrands": "Marki",
+    "priceRequest": "Zapytanie o cenę: {model}"
+   },
+   "blog": {
+    "seoTitle": "Blog — QUEEN Fashion Group",
+    "seoDesc": "Aktualności QUEEN Fashion Group: tygodnie mody ślubnej, targi i nowe kolekcje.",
+    "readStory": "Czytaj dalej",
+    "allNews": "Wszystkie aktualności",
+    "moreNews": "Więcej aktualności"
+   },
+   "privacy": {
+    "title": "Polityka prywatności",
+    "seoTitle": "Polityka prywatności — QUEEN Fashion Group",
+    "seoDesc": "Jak QUEEN Fashion Group przetwarza dane osobowe partnerów i użytkowników strony."
+   },
+   "notFound": {
+    "seoTitle": "Nie znaleziono strony — QUEEN Fashion Group",
+    "seoDesc": "Ta strona nie istnieje.",
+    "title": "Nie znaleziono strony",
+    "text": "Link może być nieaktualny lub strona została przeniesiona.",
+    "home": "Strona główna",
+    "catalogue": "Zobacz katalog"
+   },
+   "colours": {
+    "Ivory": "Ivory",
+    "Cappuccino": "Cappuccino",
+    "White": "Biel",
+    "Champagne": "Szampan"
+   }
+  },
+  "labels": {
+   "sil": {
+    "aline": "Litera A",
+    "ball": "Księżniczka",
+    "mermaid": "Syrena",
+    "sheath": "Prosta",
+    "short": "Krótka"
+   },
+   "sleeves": {
+    "long": "Długie rękawy",
+    "detachable": "Odpinane rękawy",
+    "offshoulder": "Odkryte ramiona",
+    "straps": "Ramiączka",
+    "strapless": "Bez ramiączek"
+   },
+   "fabric": {
+    "lace": "Koronka",
+    "tulle": "Tiul",
+    "satin": "Satyna",
+    "glitter": "Tiul brokatowy"
+   },
+   "details": {
+    "slit": "Wysokie rozcięcie",
+    "overskirt": "Odpinana spódnica",
+    "cape": "Peleryna"
+   }
+  },
+  "site": {
+   "contact": {
+    "managers": [
+     {
+      "market": "Rynek polski",
+      "country": "Polska"
+     },
+     {
+      "market": "Rynek polski",
+      "country": "Polska"
+     },
+     {
+      "market": "Rynek niemiecki",
+      "country": "Niemcy"
+     },
+     {
+      "market": "Rynek włoski",
+      "country": "Włochy"
+     }
+    ]
+   },
+   "terms": [
+    {
+     "label": "Minimalne zamówienie",
+     "value": "5 sukien",
+     "note": "z nowej kolekcji"
+    },
+    {
+     "label": "Produkcja",
+     "value": "6–8 tygodni",
+     "note": "8–12 tygodni w sezonie, maj – wrzesień"
+    },
+    {
+     "label": "Płatność",
+     "note": "zaliczka, reszta przed wysyłką. EUR, PLN lub USD"
+    },
+    {
+     "label": "Dostawa",
+     "value": "DPD",
+     "note": "bezpośrednio do Państwa salonu"
+    }
+   ],
+   "nav": {
+    "megaText": "Siedem marek sukien ślubnych od jednego producenta — każda o własnym charakterze, wszystkie w tym samym standardzie.",
+    "featureTitle": "Nowa kolekcja — Queen 2027",
+    "footerTagline": "Ręcznie szyte suknie ślubne od producenta dla salonów na całym świecie."
+   },
+   "home": {
+    "seoTitle": "QUEEN Fashion Group — międzynarodowy dostawca sukien ślubnych",
+    "seoDescription": "QUEEN Fashion Group łączy siedem marek sukien ślubnych — QUEEN, Elle, Eleonora, Atelier Lorenzo Ricci, Velina, Nivera i TVOYA. Dostawy hurtowe dla salonów ślubnych w 18 krajach.",
+    "hero": {
+     "label": "QUEEN Fashion Group",
+     "title": "Siedem marek ślubnych, jeden dom mody",
+     "text": "Ręcznie szyte suknie ślubne od producenta, dostarczane hurtowo do salonów w 18 krajach.",
+     "button": "Zostań partnerem",
+     "link": "Poznaj nasze marki"
+    },
+    "about": {
+     "label": "O grupie",
+     "title": "Atelier z historią",
+     "texts": [
+      "QUEEN Fashion Group łączy pod jednym dachem siedem marek sukien ślubnych — od flagowej linii QUEEN po młodsze marki o własnym charakterze.",
+      "Każda suknia powstaje ręcznie w naszej własnej produkcji, gdzie kontrolujemy każdy etap — od wyboru tkaniny po ostatnie zdobienie. Zaopatrujemy salony, butiki i showroomy w całej Europie, a nasze kolekcje prezentujemy na Barcelona Bridal Fashion Week, Bridal Fashion Warsaw i Fiera Milano."
+     ],
+     "stats": [
+      {
+       "label": "marek ślubnych"
+      },
+      {
+       "label": "krajów"
+      },
+      {
+       "label": "sukien — minimalne zamówienie"
+      },
+      {
+       "label": "tygodni produkcji"
+      }
+     ]
+    },
+    "brands": {
+     "label": "Nasze marki",
+     "title": "Siedem nazw, jeden standard",
+     "text": "Każda marka ma własny charakter i własną pannę młodą. Prosimy wybrać marki pasujące do Państwa salonu lub połączyć kilka w jednym zamówieniu.",
+     "ctaTitle": "Jeden dostawca, siedem marek",
+     "ctaText": "Jeden menedżer, jedno zamówienie i jedna dostawa dla wszystkich wybranych marek."
+    },
+    "benefits": {
+     "label": "Dla partnerów hurtowych",
+     "title": "Dlaczego salony z nami współpracują",
+     "items": [
+      {
+       "title": "Jakość szycia ręcznego",
+       "text": "Kontrolujemy każdy etap produkcji — od tkaniny po ostatnie zdobienie."
+      },
+      {
+       "title": "Siedem marek, jeden dostawca",
+       "text": "Różne panny młode i przedziały cenowe — jeden partner i jedna dostawa."
+      },
+      {
+       "title": "Ceny producenta",
+       "text": "Korzystne ceny, wygodna płatność i elastyczne podejście do stałych partnerów."
+      },
+      {
+       "title": "Nowości co sezon",
+       "text": "Kolekcje zgodne z trendami i doradztwo w zakresie bestsellerów sezonu."
+      },
+      {
+       "title": "Zamówienia każdej wielkości",
+       "text": "Duże zamówienia hurtowe i mniejsze partie, z szybką dostawą na cały świat."
+      },
+      {
+       "title": "Wsparcie marketingowe",
+       "text": "Zdjęcia i materiały kolekcji dla Państwa salonu i kanałów online."
+      }
+     ]
+    },
+    "collections": {
+     "label": "Kolekcje marek",
+     "title": "Poznaj kolekcje",
+     "tabs": {
+      "queen": [
+       {
+        "alt": "Queen 2027, model 2752 — satynowa suknia typu księżniczka z koronkowymi rękawami",
+        "caption": "Queen 2027 · 2752"
+       },
+       {
+        "alt": "QUEEN — koronkowa suknia syrena z długimi rękawami i trenem katedralnym",
+        "caption": "Queen"
+       },
+       {
+        "alt": "QUEEN — połyskująca suknia w kształcie litery A z odkrytymi ramionami",
+        "caption": "Queen"
+       },
+       {
+        "alt": "QUEEN — koronkowa suknia w kształcie litery A z wysokim rozcięciem i koronkowymi rękawami",
+        "caption": "Queen"
+       }
+      ],
+      "elle": [
+       {
+        "alt": "Elle 765 — koronkowa suknia z wysokim rozcięciem i rękawami",
+        "caption": "Elle · 765"
+       },
+       {
+        "alt": "Elle 818 — dopasowana suknia z transparentnymi koronkowymi wstawkami",
+        "caption": "Elle · 818"
+       },
+       {
+        "alt": "Elle 808 — satynowa suknia z odkrytymi ramionami",
+        "caption": "Elle · 808"
+       }
+      ],
+      "eleonora": [
+       {
+        "alt": "Eleonora P-51 — suknia syrena z koronkowymi rękawami",
+        "caption": "Eleonora · P-51"
+       },
+       {
+        "alt": "Eleonora P-87 — satynowa suknia typu księżniczka z gorsetem zdobionym koralikami",
+        "caption": "Eleonora · P-87"
+       },
+       {
+        "alt": "Eleonora P-78 — tiulowa suknia typu księżniczka z opadającymi rękawami",
+        "caption": "Eleonora · P-78"
+       }
+      ]
+     }
+    },
+    "services": {
+     "label": "Usługi ekskluzywne",
+     "title": "Więcej niż katalog",
+     "text": "Dla partnerów, którzy oczekują więcej niż gotowych kolekcji — suknie i obsługa dopasowane do Państwa salonu.",
+     "items": [
+      {
+       "title": "Szycie indywidualne",
+       "text": "Nasi projektanci stworzą suknię o dowolnym stopniu złożoności na życzenie Państwa klientki."
+      },
+      {
+       "title": "Zmiany na zamówienie",
+       "text": "Modyfikacja rękawów, długości, trenu lub koloru modeli z katalogu, dopasowana do wymaganego rozmiaru."
+      },
+      {
+       "title": "Menedżer w Państwa języku",
+       "text": "Osobiści menedżerowie rynku polskiego, niemieckiego i włoskiego doradzają w kwestii asortymentu, płatności i dostawy."
+      },
+      {
+       "title": "Strefa partnera",
+       "text": "Cenniki, lookbooki i materiały kolekcji w jednym miejscu dla salonów partnerskich."
+      }
+     ]
+    },
+    "banner": {
+     "label": "Współpraca hurtowa",
+     "title": "Nasze marki w Państwa salonie",
+     "text": "Prosimy o zapytanie o cennik hurtowy i katalogi. Menedżer odpowie w ciągu jednego dnia roboczego.",
+     "button": "Poproś o cennik"
+    }
+   },
+   "cta": {
+    "title": "Nasze marki w Państwa salonie",
+    "text": "Prosimy o zapytanie o cennik hurtowy i lookbook. Menedżer odpowie w ciągu jednego dnia roboczego.",
+    "button": "Poproś o cennik",
+    "brandTitle": "{brand} w Państwa salonie"
+   },
+   "brandsPage": {
+    "title": "Nasze marki",
+    "text": "Siedem marek sukien ślubnych od jednego producenta — każda o własnym charakterze, wszystkie szyte ręcznie w tym samym standardzie.",
+    "nextTitle": "Już wkrótce",
+    "nextText": "Nowe marki w grupie. Trwa sesja zdjęciowa kolekcji — w międzyczasie lookbook udostępni menedżer.",
+    "ctaTitle": "Jeden dostawca, siedem marek",
+    "ctaText": "Jeden menedżer, jedno zamówienie i jedna dostawa dla wszystkich wybranych marek. Kilka marek można połączyć w jednym zamówieniu."
+   },
+   "about": {
+    "hero": {
+     "label": "O QUEEN Fashion Group",
+     "title": "Atelier z historią",
+     "text": "Ręcznie szyte suknie ślubne od producenta dla salonów w 18 krajach."
+    },
+    "story": {
+     "title": "Siedem marek ślubnych pod jednym dachem, we własnej produkcji",
+     "texts": [
+      "QUEEN Fashion Group wyrosła z marki QUEEN — znanej z konstrukcyjnych gorsetów, delikatnej koronki i długich trenów. Dziś grupa łączy siedem marek, od flagowej linii QUEEN po młodsze marki o własnym charakterze.",
+      "Współpracujemy z właścicielami salonów ślubnych, butików i showroomów. Partnerzy zamawiają z naszych katalogów lub zlecają ekskluzywne szycie indywidualne, a my realizujemy zarówno duże zamówienia hurtowe, jak i mniejsze partie.",
+      "Nasi menedżerowie pomagają każdemu salonowi odnaleźć się w asortymencie: które modele i kolory są w tym sezonie najbardziej poszukiwane oraz jaka forma płatności i dostawy będzie najwygodniejsza."
+     ]
+    },
+    "craft": {
+     "title": "Szyte ręcznie, sprawdzane na każdym etapie",
+     "text": "Każda suknia powstaje w naszej własnej szwalni. Każdy model jest dopracowywany pod wymagany rozmiar, aby leżał tak, jak powinien — niezależnie od tego, czy pochodzi z katalogu, czy jest szyty na zamówienie.",
+     "items": [
+      {
+       "title": "Własna produkcja",
+       "text": "Od tkaniny po ostatnie zdobienie — każdy etap pozostaje w naszych rękach."
+      },
+      {
+       "title": "Zmiany na zamówienie",
+       "text": "Rękawy, długość, tren i kolor można dopasować na życzenie."
+      },
+      {
+       "title": "Rozmiary EU i UA",
+       "text": "Tabele rozmiarów europejskich i ukraińskich."
+      }
+     ]
+    },
+    "values": {
+     "title": "Nasze wartości",
+     "items": [
+      {
+       "title": "Wysoka jakość",
+       "text": "Każdy etap produkcji podlega ścisłej kontroli — od wyboru tkaniny po szycie i zdobienie każdej sukni."
+      },
+      {
+       "title": "Unikalny design",
+       "text": "Linia ekskluzywnych, ręcznie szytych sukien projektanckich, tworzonych w rytmie trendów branży mody."
+      },
+      {
+       "title": "Indywidualne podejście",
+       "text": "Nasi projektanci uwzględniają każdy niuans i mogą stworzyć suknię o dowolnym stopniu złożoności dla Państwa klientki."
+      },
+      {
+       "title": "Uczciwe ceny",
+       "text": "Ceny producenta i wygodna płatność. Stali partnerzy otrzymują rabaty i oferty specjalne."
+      },
+      {
+       "title": "Staranna obsługa",
+       "text": "Menedżerowie szczegółowo odpowiadają na każde pytanie i starannie uzgadniają każdą dostawę."
+      },
+      {
+       "title": "Terminowość",
+       "text": "Szybka produkcja zamówień o każdej wielkości i sprawna dostawa w dowolne miejsce na świecie."
+      }
+     ]
+    },
+    "groupTitle": "Marki grupy",
+    "eventsTitle": "Gdzie nas spotkać",
+    "eventsText": "Nasze kolekcje prezentujemy na najważniejszych targach ślubnych w Europie."
+   },
+   "partners": {
+    "title": "Współpraca hurtowa",
+    "text": "Pomagamy właścicielom salonów ślubnych, butików i showroomów budować asortyment z ręcznie szytych sukien siedmiu marek.",
+    "stepsTitle": "Jak przebiega współpraca",
+    "steps": [
+     {
+      "title": "Zapytanie",
+      "text": "Wystarczy wypełnić formularz lub zadzwonić do menedżera swojego rynku."
+     },
+     {
+      "title": "Cennik",
+      "text": "Wysyłamy cennik hurtowy i lookbooki wybranych marek."
+     },
+     {
+      "title": "Zamówienie",
+      "text": "Od 5 sukien z nowej kolekcji, z zaliczką 30%."
+     },
+     {
+      "title": "Produkcja",
+      "text": "6–8 tygodni od przedpłaty, 8–12 tygodni od maja do września."
+     },
+     {
+      "title": "Dostawa",
+      "text": "Pozostałe 70% płatne przed wysyłką. DPD dostarcza zamówienie do salonu."
+     }
+    ],
+    "benefitsTitle": "Korzyści ze współpracy",
+    "benefitsPhoto": {
+     "alt": "Panna młoda w tiulowej sukni Eleonora w pałacowym ogrodzie"
+    },
+    "benefits": [
+     {
+      "title": "Sprawny łańcuch dostaw",
+      "text": "Jeden menedżer i jedna dostawa dla wszystkich marek w zamówieniu."
+     },
+     {
+      "title": "Korzystne ceny",
+      "text": "Ceny producenta i elastyczny system rabatów dla stałych partnerów."
+     },
+     {
+      "title": "Wysoka jakość produktu",
+      "text": "Ręcznie szyte suknie, sprawdzane na każdym etapie produkcji."
+     },
+     {
+      "title": "Regularne nowości",
+      "text": "Nowe kolekcje co sezon i doradztwo w zakresie bestsellerów."
+     },
+     {
+      "title": "Wsparcie marketingowe",
+      "text": "Zdjęcia, filmy i materiały kolekcji dla Państwa salonu i mediów społecznościowych."
+     },
+     {
+      "title": "Wygodna płatność",
+      "text": "Ceny w EUR, z możliwością płatności także w PLN lub USD."
+     }
+    ],
+    "servicesTitle": "Usługi ekskluzywne",
+    "servicesText": "Dla partnerów, którzy oczekują więcej niż gotowych kolekcji — suknie i obsługa dopasowane do Państwa salonu.",
+    "servicesPhoto": {
+     "alt": "QUEEN, model 2750 — koronkowa suknia prosta z tiulową odpinaną spódnicą"
+    },
+    "services": [
+     {
+      "title": "Szycie indywidualne",
+      "text": "Nasi projektanci stworzą suknię o dowolnym stopniu złożoności na życzenie Państwa klientki."
+     },
+     {
+      "title": "Zmiany na zamówienie",
+      "text": "Modyfikacja rękawów, długości, trenu lub koloru modeli z katalogu, dopasowana do wymaganego rozmiaru."
+     },
+     {
+      "title": "Menedżer w Państwa języku",
+      "text": "Osobiści menedżerowie rynku polskiego, niemieckiego i włoskiego doradzają w kwestii asortymentu, płatności i dostawy."
+     },
+     {
+      "title": "Strefa partnera",
+      "text": "Cenniki, lookbooki i materiały kolekcji w jednym miejscu dla salonów partnerskich."
+     }
+    ],
+    "faqTitle": "Pytania od salonów",
+    "faq": [
+     {
+      "q": "Jakie jest minimalne zamówienie?",
+      "a": "Pięć sukien z nowej kolekcji. W jednym zamówieniu można łączyć modele i marki."
+     },
+     {
+      "q": "Ile trwa produkcja?",
+      "a": "6–8 tygodni od przedpłaty. W wysokim sezonie, od 1 maja do 30 września, 8–12 tygodni."
+     },
+     {
+      "q": "Jak wygląda płatność?",
+      "a": "30% zaliczki przy składaniu zamówienia i pozostałe 70% przed wysyłką. Ceny podajemy w EUR; płatność możliwa również w PLN lub USD."
+     },
+     {
+      "q": "Jak dostarczane są suknie?",
+      "a": "Wysyłamy przez DPD, bezpośrednio do Państwa salonu."
+     },
+     {
+      "q": "Czy model można zmienić dla mojej klientki?",
+      "a": "Tak. Rękawy, długość, tren i kolor można dopasować, a nasi projektanci mogą stworzyć suknię według indywidualnego zamówienia."
+     },
+     {
+      "q": "Jakich tabel rozmiarów używacie?",
+      "a": "Pracujemy według europejskich i ukraińskich tabel rozmiarów."
+     },
+     {
+      "q": "Jak poznać ceny?",
+      "a": "Ceny udostępniamy na zapytanie. Po wysłaniu formularza menedżer prześle cennik w ciągu jednego dnia roboczego."
+     }
+    ],
+    "ctaTitle": "Rozpocznij współpracę",
+    "ctaText": "Prosimy o zapytanie — menedżer prześle cennik i lookbooki w ciągu jednego dnia roboczego."
+   },
+   "contactPage": {
+    "title": "Kontakt",
+    "text": "Prosimy o zapytanie lub telefon do menedżera Państwa rynku. Odpowiadamy w ciągu jednego dnia roboczego.",
+    "formTitle": "Zapytanie hurtowe",
+    "formText": "Cennik i lookbooki na zapytanie. Pola oznaczone * są wymagane."
+   },
+   "blogPage": {
+    "title": "Blog",
+    "text": "Aktualności z grupy — tygodnie mody, targi i nowe kolekcje."
+   },
+   "privacy": {
+    "updated": "Ostatnia aktualizacja: 7 listopada 2026",
+    "sections": [
+     {
+      "title": "Kim jesteśmy",
+      "text": "Administratorem Państwa danych osobowych jest QUEEN_WED Sp. z o.o., Czyżówka 14/2.11, 30-526 Kraków, Polska. We wszystkich sprawach dotyczących danych prosimy o kontakt pod adresem {email}."
+     },
+     {
+      "title": "Jakie dane zbieramy",
+      "text": "Po wysłaniu zapytania hurtowego otrzymujemy dane wpisane w formularzu: imię i nazwisko, nazwę salonu lub firmy, adres e-mail, numer telefonu, kraj, interesujące Państwa marki oraz treść wiadomości. Gdy dzwonią Państwo lub piszą do menedżera, otrzymujemy dane przekazane w tej rozmowie."
+     },
+     {
+      "title": "W jakim celu je wykorzystujemy",
+      "text": "Wykorzystujemy te dane wyłącznie w celu odpowiedzi na zapytanie, przesłania cenników i katalogów, przygotowania i realizacji zamówień oraz utrzymywania kontaktu z partnerem biznesowym. Podstawą prawną jest podjęcie działań na Państwa żądanie przed zawarciem umowy oraz nasz prawnie uzasadniony interes polegający na udzielaniu odpowiedzi na zapytania biznesowe (art. 6 ust. 1 lit. b i f RODO) lub Państwa zgoda, jeśli o nią prosimy."
+     },
+     {
+      "title": "Kto je otrzymuje",
+      "text": "Dostęp do Państwa danych mają nasi menedżerowie. Możemy je przekazywać dostawcom wspierającym nas w prowadzeniu działalności — usług poczty e-mail i hostingu, systemu do zarządzania relacjami z klientami (CRM) oraz firm kurierskich, takich jak DPD, w celu wysyłki zamówień. Nie sprzedajemy Państwa danych."
+     },
+     {
+      "title": "Jak długo je przechowujemy",
+      "text": "Dane z zapytań przechowujemy tak długo, jak jest to potrzebne do udzielenia odpowiedzi i kontynuowania rozmowy, a dane związane z zamówieniami — przez okres wymagany przepisami prawa rachunkowego i podatkowego."
+     },
+     {
+      "title": "Państwa prawa",
+      "text": "Przysługuje Państwu prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, wniesienia sprzeciwu wobec przetwarzania oraz przenoszenia danych. Jeśli przetwarzanie odbywa się na podstawie zgody, mogą ją Państwo w każdej chwili wycofać. Przysługuje Państwu również prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (UODO)."
+     },
+     {
+      "title": "Pliki cookies",
+      "text": "Ta strona nie wykorzystuje reklamowych ani analitycznych plików cookies. Jeśli to się zmieni, zaktualizujemy niniejszą politykę i poprosimy o Państwa zgodę, gdy będzie to wymagane."
+     }
+    ]
+   }
+  },
+  "brands": {
+   "queen": {
+    "tagline": "Ponadczasowa elegancja i kobiece wyrafinowanie",
+    "intro": "Flagowa marka QUEEN Fashion Group — gorsety, koronka i długie treny, szyte ręcznie we własnej produkcji.",
+    "about": [
+     "QUEEN to linia, od której zaczęła się grupa, i wciąż wyznacza standard dla pozostałych marek. Każda suknia opiera się na konstrukcyjnym gorsecie, który trzyma formę, wykończonym aplikacjami z koronki, koralikami lub gładką satyną.",
+     "Nowe kolekcje pojawiają się co sezon. Queen 2027 to najnowsza z nich, a Paradise i Floria pozostają w ofercie jako sprawdzone bestsellery salonów partnerskich."
+    ],
+    "coverAlt": "QUEEN — model 2744, koronkowa suknia syrena z odpinanymi rękawami"
+   },
+   "elle": {
+    "tagline": "Nowoczesny styl i delikatne detale",
+    "intro": "Czyste linie, rzeźbiona satyna i delikatna koronka — dla panny młodej, która szuka sukni aktualnej i lekkiej.",
+    "about": [
+     "Elle łączy nowoczesny styl z delikatnymi detalami. Linia porusza się między minimalistycznymi satynowymi sylwetkami a transparentnymi gorsetami pokrytymi miękką koronką.",
+     "Wiele modeli ma odpinane rękawy lub spódnice, dzięki czemu jedną suknię można stylizować na kilka sposobów — to duży atut dla salonów o zróżnicowanej klienteli."
+    ],
+    "coverAlt": "Elle — dwie koronkowe suknie z odpinanymi rękawami"
+   },
+   "eleonora": {
+    "tagline": "Romantyczne projekty, pełne gracji sylwetki",
+    "intro": "Bujne tiulowe spódnice, rzeźbione gorsety i miękka objętość — romantyczna linia stworzona dla kobiecego wizerunku.",
+    "about": [
+     "Eleonora to romantyczne projekty i pełne gracji sylwetki. Zwiewne tiulowe suknie typu księżniczka, dopasowane syreny z koronką oraz satynowe modele z bufiastymi lub odpinanymi rękawami.",
+     "Sesje kolekcji powstają na zabytkowych ulicach i w pałacowych ogrodach, a do wielu modeli dołączamy krótkie wideo, które salony mogą wykorzystać we własnym marketingu."
+    ],
+    "coverAlt": "Eleonora — model P-87, satynowa suknia typu księżniczka z gorsetem zdobionym perłami"
+   },
+   "ricci": {
+    "tagline": "Wyrafinowany design, mistrzowskie wykonanie",
+    "intro": "Wykończenie na poziomie couture i wyrafinowany design dla salonów premium.",
+    "about": [
+     "Atelier Lorenzo Ricci to wyrafinowany design i mistrzowskie rzemiosło."
+    ],
+    "coverAlt": "Atelier Lorenzo Ricci — koronkowa suknia typu księżniczka z transparentnymi bufiastymi rękawami"
+   },
+   "velina": {
+    "tagline": "Miękkość i lekkość w modzie ślubnej",
+    "intro": "Lekkie tkaniny i swobodne linie.",
+    "about": [
+     "Velina wnosi do mody ślubnej miękkość i lekkość."
+    ]
+   },
+   "nivera": {
+    "tagline": "Czyste linie i subtelne detale",
+    "intro": "Nowoczesna elegancja — minimalistyczna, precyzyjna, współczesna.",
+    "about": [
+     "Nivera łączy nowoczesną elegancję z czystymi liniami i subtelnymi detalami."
+    ],
+    "coverAlt": "Nivera — satynowa suknia w kształcie litery A bez ramiączek, z drapowanym gorsetem"
+   },
+   "tvoya": {
+    "tagline": "Odważne, wyraziste fasony",
+    "intro": "Dla panien młodych, które chcą się wyróżnić.",
+    "about": [
+     "TVOYA celebruje indywidualność odważnymi, wyrazistymi fasonami."
+    ]
+   }
+  },
+  "posts": {
+   "barcelona-bridal-fashion-week-2025": {
+    "title": "Nasz debiut na Barcelona Bridal Fashion Week",
+    "date": "2025",
+    "tag": "Tydzień mody",
+    "lead": "Queen Wedding Dresses zadebiutowała na prestiżowym Barcelona Bridal Fashion Week 2025, zyskała nowych klientów w Hiszpanii i poszerzyła swoją sieć do 18 krajów na świecie.",
+    "body": [
+     "Barcelona Bridal Fashion Week to jedno z najważniejszych wydarzeń w kalendarzu mody ślubnej. Przyjeżdżają tu kupcy z salonów z całej Europy i spoza niej, aby jako pierwsi zobaczyć nowy sezon i poznać stojących za nim producentów.",
+     "Dla QUEEN był to debiut na tej scenie. Nasz zespół zaprezentował na stoisku najnowsze kolekcje, a kupcy mogli z bliska obejrzeć suknie — konstrukcję gorsetów, koronkę i wykończenie, które wyróżniają naszą ręczną produkcję.",
+     "Tydzień przyniósł nowych partnerów w Hiszpanii — dzięki nim nasze suknie są dziś sprzedawane w 18 krajach. Dziękujemy wszystkim salonom, które odwiedziły nasze stoisko, i cieszymy się na wspólną pracę."
+    ]
+   },
+   "bridal-fashion-warsaw-2025": {
+    "title": "Bridal Fashion Warsaw 2025",
+    "date": "17–18 maja 2025",
+    "tag": "Targi",
+    "lead": "W dniach 17–18 maja Queen Wedding Dresses wzięła udział w Bridal Fashion Warsaw 2025. Przez oba dni nasze stoisko było pełne polskich klientów.",
+    "body": [
+     "Polska to jeden z naszych kluczowych rynków, a Bridal Fashion Warsaw to miejsce, w którym osobiście spotykamy wielu partnerów. Przez dwa dni na stoisku panował ruch od otwarcia do zamknięcia.",
+     "Największe zainteresowanie wzbudziła kolekcja 2026. Właściciele salonów przychodzili zobaczyć nowe sylwetki, omówić asortyment na nadchodzący sezon i uzgodnić pierwsze zamówienia.",
+     "Podczas targów potwierdziliśmy dziesiątki nowych partnerstw — to wyraźny znak naszej silnej pozycji na polskim rynku. Nasi polskojęzyczni menedżerowie kontynuują rozmowy z każdym salonem, który poznaliśmy."
+    ]
+   },
+   "fiera-milano": {
+    "title": "Nasze stoisko na Fiera Milano",
+    "date": "2025",
+    "tag": "Targi",
+    "lead": "Zespół QUEEN zaprezentował kolekcje na własnym stoisku podczas Fiera Milano, spotykając kupców z Włoch i całej Europy.",
+    "body": [
+     "Mediolan to naturalne miejsce spotkań marki ślubnej z rynkiem: miasto nadaje ton modzie, a jego targi gromadzą kupców poszukujących jakości i designu.",
+     "Na stoisku pokazaliśmy suknie z aktualnych kolekcji i rozmawialiśmy z salonami o ich klientkach, poszukiwanych fasonach i warunkach współpracy.",
+     "Dla partnerów z Włoch mamy dedykowanego menedżera, który doradza po włosku w kwestii asortymentu, płatności i dostawy. Jeśli nie udało się nam spotkać w Mediolanie, prosimy o kontakt — prześlemy lookbook i cennik."
+    ]
+   }
+  }
+ },
+ "de": {
+  "ui": {
+   "nav": {
+    "brands": "Marken",
+    "catalogue": "Katalog",
+    "aboutUs": "Über uns",
+    "blog": "Blog",
+    "contacts": "Kontakt",
+    "home": "Startseite",
+    "ourBrands": "Unsere Marken",
+    "allBrands": "Alle Marken",
+    "fullCatalogue": "Gesamtkatalog",
+    "company": "Unternehmen",
+    "partners": "Partner",
+    "wholesaleEnquiry": "Großhandelsanfrage",
+    "termsOfCooperation": "Konditionen",
+    "exclusiveServices": "Exklusive Services",
+    "privacyPolicy": "Datenschutz",
+    "becomePartner": "Partner werden",
+    "email": "E-Mail",
+    "allMarkets": "Alle Märkte",
+    "office": "Büro",
+    "officeCountry": "Polen",
+    "backToTop": "Nach oben",
+    "skip": "Zum Inhalt springen",
+    "openMenu": "Menü öffnen",
+    "homeAria": "QUEEN Fashion Group — Startseite",
+    "topAria": "QUEEN Fashion Group — nach oben",
+    "language": "Sprache",
+    "call": "{phone} anrufen"
+   },
+   "common": {
+    "new": "Neu",
+    "video": "Video",
+    "photoSoon": "Foto folgt in Kürze",
+    "comingSoon": "Demnächst",
+    "moreAboutUs": "Mehr über uns",
+    "viewBrandCatalogue": "Zum {brand}-Katalog",
+    "termsAria": "Konditionen im Überblick",
+    "introAria": "Einführung",
+    "heroVideoAria": "Eleonora-Kleider, gefilmt in Kraków"
+   },
+   "brand": {
+    "nModels": {
+     "one": "{n} Modell",
+     "other": "{n} Modelle"
+    },
+    "nSilhouettes": {
+     "one": "{n} Silhouette",
+     "other": "{n} Silhouetten"
+    },
+    "collectionSoon": "Kollektion folgt in Kürze",
+    "viewCatalogue": "Zum Katalog",
+    "heroAlt": "{brand} Brautkleid",
+    "modelsAria": "{brand}-Modelle",
+    "keyModels": "Schlüsselmodelle",
+    "silhouettes": "Silhouetten",
+    "fabrics": "Stoffe",
+    "production": "Fertigung",
+    "productionValue": "Handgefertigt in eigener Produktion",
+    "minOrder": "Mindestbestellung",
+    "minOrderValue": "5 Kleider aus einer neuen Kollektion",
+    "sizes": "Größen",
+    "sizesValue": "EU- und UA-Größentabellen",
+    "detailAlt": "{brand} — Detail",
+    "collections": "Kollektionen",
+    "theCollection": "Die Kollektion",
+    "bySilhouette": "Die aktuelle {brand}-Linie, nach Silhouette.",
+    "collectionsSoon": "Kollektionen folgen in Kürze",
+    "selectedModels": "Ausgewählte Modelle",
+    "viewAll": {
+     "one": "{n} Modell ansehen",
+     "other": "Alle {n} Modelle ansehen"
+    },
+    "modelsSoon": "Modelle folgen in Kürze",
+    "seoTitle": "{brand} — Brautkleider im Großhandel | QUEEN Fashion Group",
+    "seoDesc": "{brand}: {tagline}. Brautkleider im Großhandel für Brautmodengeschäfte von QUEEN Fashion Group."
+   },
+   "catalogue": {
+    "title": "Alle Modelle",
+    "intro": "Alle Modelle aller Marken an einem Ort. Wählen Sie eine Marke und filtern Sie dann nach Silhouette, Ärmeln oder Stoff.",
+    "brandIntro": "Der {brand}-Katalog. Wechseln Sie oben jederzeit die Marke oder filtern Sie nach Silhouette, Ärmeln oder Stoff.",
+    "all": "Alle",
+    "filters": "Filter",
+    "sort": "Sortieren",
+    "featured": "Empfohlen",
+    "newFirst": "Neueste zuerst",
+    "byArticle": "Nach Artikel",
+    "view": "Ansicht",
+    "grid": "Rasteransicht",
+    "gallery": "Galerieansicht",
+    "showMore": "Mehr anzeigen",
+    "closeFilters": "Filter schließen",
+    "clear": "Löschen",
+    "clearAll": "Alle löschen",
+    "clearFilters": "Filter zurücksetzen",
+    "remove": "Entfernen",
+    "showN": {
+     "one": "{n} Modell anzeigen",
+     "other": "{n} Modelle anzeigen"
+    },
+    "brandAria": "Marke",
+    "modelsAria": "Modelle",
+    "gCollection": "Kollektion",
+    "gSilhouette": "Silhouette",
+    "gSleeves": "Ärmel & Ausschnitt",
+    "gFabric": "Stoff",
+    "gDetails": "Details",
+    "newModels": "Neue Modelle",
+    "withVideo": "Mit Video",
+    "soonTitle": "{brand} — demnächst",
+    "soonText": "Die Kollektion wird gerade fotografiert. Schlüsselmodelle: {keys}.",
+    "askManager": "Manager fragen",
+    "noMatch": "Keine Modelle entsprechen diesen Filtern",
+    "docTitle": "Katalog — alle Brautkleid-Modelle | QUEEN Fashion Group",
+    "docTitleBrand": "{brand}-Katalog | QUEEN Fashion Group",
+    "seoDesc": "Großhandelskatalog mit {n} Brautkleid-Modellen. Filter nach Marke, Kollektion, Silhouette, Ärmeln und Stoff."
+   },
+   "model": {
+    "front": "{name} — Vorderansicht",
+    "view": "{name} — Ansicht {k}",
+    "videoAlt": "{name} — Video",
+    "openPhoto": "Foto {k} von {total} im Vollbild öffnen",
+    "photos": "Fotos",
+    "photo": "Foto {k}",
+    "silhouette": "Silhouette",
+    "fabric": "Stoff",
+    "sleeves": "Ärmel",
+    "details": "Details",
+    "colour": "Farbe",
+    "sizeCharts": "Größentabellen",
+    "sizeChartsValue": "Europäisch und ukrainisch",
+    "madeToOrder": "Auf Bestellung",
+    "madeToOrderValue": "Ärmel, Länge, Schleppe und Farbe lassen sich für Ihre Kundin anpassen",
+    "minOrder": "Mindestbestellung",
+    "minOrderValue": "5 Kleider aus einer neuen Kollektion — Modelle und Marken frei kombinierbar",
+    "production": "Fertigung",
+    "productionValue": "6–8 Wochen nach Anzahlung, von Mai bis September 8–12 Wochen",
+    "payment": "Zahlung",
+    "paymentValue": "30 % Anzahlung, 70 % vor Versand. EUR, PLN oder USD",
+    "delivery": "Lieferung",
+    "deliveryValue": "DPD, direkt in Ihren Salon",
+    "requestPrice": "Preis anfragen",
+    "askManager": "Manager fragen",
+    "sizesTerms": "Größen & Konditionen",
+    "switchModel": "Modell wechseln",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "close": "Schließen",
+    "prevPhoto": "Vorheriges Foto",
+    "nextPhoto": "Nächstes Foto",
+    "moreFrom": "Mehr von {brand}",
+    "allBrandModels": "Alle {brand}-Modelle",
+    "moreModels": "Weitere Modelle",
+    "seoTitle": "{name} — {brand} Brautkleid | QUEEN Fashion Group",
+    "seoDesc": "{name}. {desc} Im Großhandel von QUEEN Fashion Group, Preis auf Anfrage.",
+    "weddingDress": "Brautkleid"
+   },
+   "brandsPage": {
+    "models": "Modelle",
+    "silhouettes": "Silhouetten",
+    "collection": "Kollektion",
+    "keyModels": "Schlüsselmodelle",
+    "keyModelsLine": "Schlüsselmodelle · {keys}",
+    "discover": "{brand} entdecken",
+    "catalogue": "Katalog",
+    "seoTitle": "Unsere Marken — QUEEN Fashion Group",
+    "seoDesc": "Sieben Brautmodenmarken aus einer Hand: {list}."
+   },
+   "about": {
+    "heroAlt": "Eine Braut in einem Eleonora-Kleid in einem Schlossgarten",
+    "allBrands": "Alle Marken",
+    "seoTitle": "Über uns — QUEEN Fashion Group",
+    "seoDesc": "QUEEN Fashion Group: sieben Brautmodenmarken, handgefertigt in eigener Produktion und im Großhandel an Brautmodengeschäfte in 18 Ländern geliefert."
+   },
+   "partners": {
+    "becomePartner": "Partner werden",
+    "termsLink": "Konditionen",
+    "seoTitle": "Großhandelspartnerschaft — QUEEN Fashion Group",
+    "seoDesc": "Konditionen für Brautmodengeschäfte: Mindestbestellung 5 Kleider, Fertigung in 6–8 Wochen, Zahlung 30/70 in EUR, PLN oder USD, Lieferung per DPD."
+   },
+   "contact": {
+    "seoTitle": "Kontakt — QUEEN Fashion Group",
+    "seoDesc": "Kontakt zur QUEEN Fashion Group: Großhandelsanfragen, Ansprechpartner für den polnischen, deutschen und italienischen Markt, Büro in Kraków.",
+    "name": "Name *",
+    "salon": "Salon oder Firma *",
+    "email": "E-Mail *",
+    "phone": "Telefon",
+    "country": "Land *",
+    "brandsLegend": "Marken, die Sie interessieren",
+    "message": "Nachricht",
+    "consent": "Ich willige in die Verarbeitung meiner personenbezogenen Daten zur Beantwortung dieser Anfrage gemäß der {link} ein. *",
+    "consentLink": "Datenschutzerklärung",
+    "send": "Anfrage senden",
+    "thanks": "Vielen Dank",
+    "thanksText": "Ihr E-Mail-Programm wurde mit der fertigen Anfrage geöffnet. Falls nicht, schreiben Sie uns an {email} oder rufen Sie uns an unter {phone}.",
+    "browse": "Zum Katalog",
+    "stripAria": "Kleider unserer Marken",
+    "errName": "Bitte geben Sie Ihren Namen ein.",
+    "errSalon": "Bitte geben Sie Ihren Salon oder Ihre Firma ein.",
+    "errEmail": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+    "errEmailBad": "Bitte prüfen Sie Ihre E-Mail-Adresse.",
+    "errCountry": "Bitte geben Sie Ihr Land ein.",
+    "errConsent": "Bitte stimmen Sie der Datenverarbeitung zu.",
+    "mailSubject": "Großhandelsanfrage — {company}",
+    "mailName": "Name",
+    "mailSalon": "Salon / Firma",
+    "mailCountry": "Land",
+    "mailEmail": "E-Mail",
+    "mailPhone": "Telefon",
+    "mailBrands": "Marken",
+    "priceRequest": "Preisanfrage: {model}"
+   },
+   "blog": {
+    "seoTitle": "Blog — QUEEN Fashion Group",
+    "seoDesc": "Neuigkeiten der QUEEN Fashion Group: Bridal Fashion Weeks, Fachmessen und neue Kollektionen.",
+    "readStory": "Weiterlesen",
+    "allNews": "Alle News",
+    "moreNews": "Weitere News"
+   },
+   "privacy": {
+    "title": "Datenschutzerklärung",
+    "seoTitle": "Datenschutzerklärung — QUEEN Fashion Group",
+    "seoDesc": "Wie die QUEEN Fashion Group mit den personenbezogenen Daten von Partnern und Website-Besuchern umgeht."
+   },
+   "notFound": {
+    "seoTitle": "Seite nicht gefunden — QUEEN Fashion Group",
+    "seoDesc": "Diese Seite existiert nicht.",
+    "title": "Diese Seite wurde nicht gefunden",
+    "text": "Der Link ist möglicherweise veraltet oder die Seite wurde verschoben.",
+    "home": "Zur Startseite",
+    "catalogue": "Zum Katalog"
+   },
+   "colours": {
+    "Ivory": "Ivory",
+    "Cappuccino": "Cappuccino",
+    "White": "Weiß",
+    "Champagne": "Champagner"
+   }
+  },
+  "labels": {
+   "sil": {
+    "aline": "A-Linie",
+    "ball": "Prinzessin",
+    "mermaid": "Meerjungfrau",
+    "sheath": "Etui",
+    "short": "Kurz"
+   },
+   "sleeves": {
+    "long": "Lange Ärmel",
+    "detachable": "Abnehmbare Ärmel",
+    "offshoulder": "Schulterfrei",
+    "straps": "Träger",
+    "strapless": "Trägerlos"
+   },
+   "fabric": {
+    "lace": "Spitze",
+    "tulle": "Tüll",
+    "satin": "Satin",
+    "glitter": "Glitzertüll"
+   },
+   "details": {
+    "slit": "Hoher Schlitz",
+    "overskirt": "Abnehmbarer Überrock",
+    "cape": "Cape"
+   }
+  },
+  "site": {
+   "contact": {
+    "managers": [
+     {
+      "market": "Polnischer Markt",
+      "country": "Polen"
+     },
+     {
+      "market": "Polnischer Markt",
+      "country": "Polen"
+     },
+     {
+      "market": "Deutscher Markt",
+      "country": "Deutschland"
+     },
+     {
+      "market": "Italienischer Markt",
+      "country": "Italien"
+     }
+    ]
+   },
+   "terms": [
+    {
+     "label": "Mindestbestellung",
+     "value": "5 Kleider",
+     "note": "aus einer neuen Kollektion"
+    },
+    {
+     "label": "Fertigung",
+     "value": "6–8 Wochen",
+     "note": "8–12 Wochen in der Saison, Mai – September"
+    },
+    {
+     "label": "Zahlung",
+     "note": "Anzahlung, Rest vor Versand. EUR, PLN oder USD"
+    },
+    {
+     "label": "Lieferung",
+     "value": "DPD",
+     "note": "direkt in Ihren Salon"
+    }
+   ],
+   "nav": {
+    "megaText": "Sieben Brautmodenmarken aus einer Hand — jede mit eigenem Charakter, alle nach demselben Standard gefertigt.",
+    "featureTitle": "Neue Kollektion — Queen 2027",
+    "footerTagline": "Handgefertigte Brautkleider direkt vom Hersteller, für Brautmodengeschäfte weltweit."
+   },
+   "home": {
+    "seoTitle": "QUEEN Fashion Group — Internationaler Brautkleid-Lieferant",
+    "seoDescription": "Die QUEEN Fashion Group vereint sieben Brautmodenmarken — QUEEN, Elle, Eleonora, Atelier Lorenzo Ricci, Velina, Nivera und TVOYA. Großhandel für Brautmodengeschäfte in 18 Ländern.",
+    "hero": {
+     "label": "QUEEN Fashion Group",
+     "title": "Sieben Brautmarken, ein Modehaus",
+     "text": "Handgefertigte Brautkleider direkt vom Hersteller, im Großhandel an Brautmodengeschäfte in 18 Ländern geliefert.",
+     "button": "Partner werden",
+     "link": "Unsere Marken"
+    },
+    "about": {
+     "label": "Über die Gruppe",
+     "title": "Ein Atelier mit Geschichte",
+     "texts": [
+      "Die QUEEN Fashion Group vereint sieben Brautmodenmarken unter einem Dach — von der Signature-Linie QUEEN bis zu jüngeren Labels mit eigener Handschrift.",
+      "Jedes Kleid entsteht in Handarbeit in unserer eigenen Produktion, in der jeder Schritt kontrolliert wird — von der Stoffauswahl bis zur letzten Verzierung. Wir beliefern Salons, Boutiquen und Showrooms in ganz Europa und präsentieren unsere Kollektionen auf der Barcelona Bridal Fashion Week, der Bridal Fashion Warsaw und der Fiera Milano."
+     ],
+     "stats": [
+      {
+       "label": "Brautmarken"
+      },
+      {
+       "label": "Länder"
+      },
+      {
+       "label": "Kleider Mindestbestellung"
+      },
+      {
+       "label": "Wochen Fertigung"
+      }
+     ]
+    },
+    "brands": {
+     "label": "Unsere Marken",
+     "title": "Sieben Namen, ein Standard",
+     "text": "Jede Marke hat ihren eigenen Charakter und ihre eigene Braut. Wählen Sie die Marken, die zu Ihrem Salon passen, oder kombinieren Sie mehrere in einer Bestellung.",
+     "ctaTitle": "Ein Lieferant, sieben Marken",
+     "ctaText": "Ein Ansprechpartner, eine Bestellung und eine Lieferung für alle gewählten Marken."
+    },
+    "benefits": {
+     "label": "Für Großhandelspartner",
+     "title": "Warum Salons mit uns arbeiten",
+     "items": [
+      {
+       "title": "Handwerkliche Qualität",
+       "text": "Jeder Fertigungsschritt wird kontrolliert, vom Stoff bis zur letzten Verzierung."
+      },
+      {
+       "title": "Sieben Marken, ein Lieferant",
+       "text": "Verschiedene Bräute und Preisklassen mit einem Partner und einer Lieferung."
+      },
+      {
+       "title": "Herstellerpreise",
+       "text": "Attraktive Preise, bequeme Zahlung und flexible Konditionen für Stammpartner."
+      },
+      {
+       "title": "Jede Saison neu",
+       "text": "Trendgerechte Kollektionen und Beratung dazu, was in dieser Saison am besten läuft."
+      },
+      {
+       "title": "Jede Bestellgröße",
+       "text": "Große Großhandels- und kleine Bestellungen, mit schneller Lieferung weltweit."
+      },
+      {
+       "title": "Marketing-Support",
+       "text": "Fotos und Kollektionsmaterial für Ihren Salon und Ihre Online-Kanäle."
+      }
+     ]
+    },
+    "collections": {
+     "label": "Kollektionen der Marken",
+     "title": "Die Kollektionen entdecken",
+     "tabs": {
+      "queen": [
+       {
+        "alt": "Queen 2027 Modell 2752 — Prinzessinnenkleid aus Satin mit Spitzenärmeln",
+        "caption": "Queen 2027 · 2752"
+       },
+       {
+        "alt": "QUEEN — Meerjungfrauenkleid aus Spitze mit langen Ärmeln und Kathedralschleppe",
+        "caption": "Queen"
+       },
+       {
+        "alt": "QUEEN — schulterfreies, glitzerndes Kleid in A-Linie",
+        "caption": "Queen"
+       },
+       {
+        "alt": "QUEEN — Spitzenkleid in A-Linie mit hohem Schlitz und Spitzenärmeln",
+        "caption": "Queen"
+       }
+      ],
+      "elle": [
+       {
+        "alt": "Elle 765 — Spitzenkleid mit hohem Schlitz und Ärmeln",
+        "caption": "Elle · 765"
+       },
+       {
+        "alt": "Elle 818 — tailliertes Kleid mit transparenten Spitzeneinsätzen",
+        "caption": "Elle · 818"
+       },
+       {
+        "alt": "Elle 808 — schulterfreies Satinkleid",
+        "caption": "Elle · 808"
+       }
+      ],
+      "eleonora": [
+       {
+        "alt": "Eleonora P-51 — Meerjungfrauenkleid mit Spitzenärmeln",
+        "caption": "Eleonora · P-51"
+       },
+       {
+        "alt": "Eleonora P-87 — Prinzessinnenkleid aus Satin mit perlenbesticktem Oberteil",
+        "caption": "Eleonora · P-87"
+       },
+       {
+        "alt": "Eleonora P-78 — Prinzessinnenkleid aus Tüll mit schulterfreien Ärmeln",
+        "caption": "Eleonora · P-78"
+       }
+      ]
+     }
+    },
+    "services": {
+     "label": "Exklusive Services",
+     "title": "Mehr als der Katalog",
+     "text": "Für Partner, die mehr als fertige Kollektionen suchen — Kleider und Service, abgestimmt auf Ihren Salon.",
+     "items": [
+      {
+       "title": "Individuelle Anfertigung",
+       "text": "Unsere Designer fertigen ein Kleid jeder Komplexität nach dem Wunsch Ihrer Kundin."
+      },
+      {
+       "title": "Änderungen auf Bestellung",
+       "text": "Ärmel, Länge, Schleppe oder Farbe von Katalogmodellen anpassen — abgestimmt auf die gewünschte Größe."
+      },
+      {
+       "title": "Beratung in Ihrer Sprache",
+       "text": "Persönliche Ansprechpartner für den polnischen, deutschen und italienischen Markt beraten zu Sortiment, Zahlung und Lieferung."
+      },
+      {
+       "title": "Partnerbereich",
+       "text": "Preislisten, Lookbooks und Kollektionsmaterial für Partnersalons an einem Ort."
+      }
+     ]
+    },
+    "banner": {
+     "label": "Großhandelspartnerschaft",
+     "title": "Unsere Marken in Ihrem Salon",
+     "text": "Fordern Sie die Großhandelspreisliste und Kataloge an. Ein Ansprechpartner antwortet innerhalb eines Werktags.",
+     "button": "Preisliste anfordern"
+    }
+   },
+   "cta": {
+    "title": "Unsere Marken in Ihrem Salon",
+    "text": "Fordern Sie die Großhandelspreisliste und das Lookbook an. Ein Ansprechpartner antwortet innerhalb eines Werktags.",
+    "button": "Preisliste anfordern",
+    "brandTitle": "{brand} in Ihrem Salon"
+   },
+   "brandsPage": {
+    "title": "Unsere Marken",
+    "text": "Sieben Brautmodenmarken aus einer Hand — jede mit eigenem Charakter, alle in Handarbeit nach demselben Standard gefertigt.",
+    "nextTitle": "Demnächst",
+    "nextText": "Neue Marken der Gruppe. Die Kollektionen werden gerade fotografiert — fragen Sie bis dahin Ihren Ansprechpartner nach dem Lookbook.",
+    "ctaTitle": "Ein Lieferant, sieben Marken",
+    "ctaText": "Ein Ansprechpartner, eine Bestellung und eine Lieferung für alle gewählten Marken. Kombinieren Sie mehrere Marken in einer Bestellung."
+   },
+   "about": {
+    "hero": {
+     "label": "Über die QUEEN Fashion Group",
+     "title": "Ein Atelier mit Geschichte",
+     "text": "Handgefertigte Brautkleider direkt vom Hersteller, für Brautmodengeschäfte in 18 Ländern."
+    },
+    "story": {
+     "title": "Sieben Brautmarken unter einem Dach, gefertigt in eigener Produktion",
+     "texts": [
+      "Die QUEEN Fashion Group ist aus QUEEN hervorgegangen — einer Brautmodenmarke, bekannt für strukturierte Korsagen, feine Spitze und lange Schleppen. Heute vereint die Gruppe sieben Marken, von der Signature-Linie QUEEN bis zu jüngeren Labels mit eigener Handschrift.",
+      "Wir arbeiten mit Inhaberinnen und Inhabern von Brautmodengeschäften, Boutiquen und Showrooms. Partner bestellen aus unseren Katalogen oder wünschen exklusive Einzelanfertigungen — wir nehmen große Großhandels- wie auch kleine Bestellungen an.",
+      "Unsere Ansprechpartner helfen jedem Salon, sich im Sortiment zurechtzufinden: welche Modelle und Farben in dieser Saison gefragt sind und welche Zahlungs- und Lieferart am besten passt."
+     ]
+    },
+    "craft": {
+     "title": "Handgefertigt, bei jedem Schritt geprüft",
+     "text": "Jedes Kleid wird in unserer eigenen Produktion genäht. Jedes Modell wird auf die gewünschte Größe abgestimmt, damit es perfekt sitzt — ob aus dem Katalog oder auf Bestellung gefertigt.",
+     "items": [
+      {
+       "title": "Eigene Produktion",
+       "text": "Vom Stoff bis zur letzten Verzierung bleibt jeder Schritt in unserer Hand."
+      },
+      {
+       "title": "Änderungen auf Bestellung",
+       "text": "Ärmel, Länge, Schleppe und Farbe lassen sich auf Wunsch anpassen."
+      },
+      {
+       "title": "EU- und UA-Größen",
+       "text": "Größentabellen für europäische und ukrainische Größen."
+      }
+     ]
+    },
+    "values": {
+     "title": "Wofür wir stehen",
+     "items": [
+      {
+       "title": "Hohe Qualität",
+       "text": "Jeder Fertigungsschritt wird streng kontrolliert — von der Stoffauswahl bis zum Nähen und Verzieren jedes Kleides."
+      },
+      {
+       "title": "Einzigartiges Design",
+       "text": "Eine Linie exklusiver, handgefertigter Designerkleider, im Einklang mit den Trends der Modebranche."
+      },
+      {
+       "title": "Individueller Ansatz",
+       "text": "Unsere Designer berücksichtigen jedes Detail und fertigen für Ihre Kundin ein Kleid jeder Komplexität."
+      },
+      {
+       "title": "Faire Preise",
+       "text": "Herstellerpreise und bequeme Zahlung. Stammpartner erhalten Rabatte und Sonderangebote."
+      },
+      {
+       "title": "Aufmerksamer Service",
+       "text": "Unsere Ansprechpartner beantworten jede Frage ausführlich und stimmen jede Lieferung sorgfältig ab."
+      },
+      {
+       "title": "Termintreue",
+       "text": "Schnelle Fertigung für Bestellungen jeder Größe und zügige Lieferung weltweit."
+      }
+     ]
+    },
+    "groupTitle": "Die Marken der Gruppe",
+    "eventsTitle": "Hier treffen Sie uns",
+    "eventsText": "Wir präsentieren unsere Kollektionen auf den führenden Brautmodenmessen Europas."
+   },
+   "partners": {
+    "title": "Großhandelspartnerschaft",
+    "text": "Wir unterstützen Inhaberinnen und Inhaber von Brautmodengeschäften, Boutiquen und Showrooms dabei, ihr Sortiment mit handgefertigten Kleidern aus sieben Marken aufzubauen.",
+    "stepsTitle": "So funktioniert die Zusammenarbeit",
+    "steps": [
+     {
+      "title": "Anfrage senden",
+      "text": "Hinterlassen Sie Ihre Daten im Formular oder rufen Sie den Ansprechpartner für Ihren Markt an."
+     },
+     {
+      "title": "Preisliste erhalten",
+      "text": "Wir senden Ihnen die Großhandelspreisliste und Lookbooks der gewählten Marken."
+     },
+     {
+      "title": "Bestellung aufgeben",
+      "text": "Ab 5 Kleidern aus einer neuen Kollektion, mit 30 % Anzahlung."
+     },
+     {
+      "title": "Fertigung",
+      "text": "6–8 Wochen nach Anzahlung, von Mai bis September 8–12 Wochen."
+     },
+     {
+      "title": "Lieferung",
+      "text": "Die restlichen 70 % zahlen Sie vor Versand. DPD liefert direkt in Ihren Salon."
+     }
+    ],
+    "benefitsTitle": "Ihre Vorteile",
+    "benefitsPhoto": {
+     "alt": "Eine Braut in einem Eleonora-Tüllkleid in einem Schlossgarten"
+    },
+    "benefits": [
+     {
+      "title": "Effiziente Lieferkette",
+      "text": "Ein Ansprechpartner und eine Lieferung für alle Marken Ihrer Bestellung."
+     },
+     {
+      "title": "Attraktive Preise",
+      "text": "Herstellerpreise und ein flexibles Rabattsystem für Stammpartner."
+     },
+     {
+      "title": "Hohe Produktqualität",
+      "text": "Handgefertigte Kleider, bei jedem Fertigungsschritt geprüft."
+     },
+     {
+      "title": "Regelmäßige Neuheiten",
+      "text": "Neue Kollektionen jede Saison, mit Beratung zu den Bestsellern."
+     },
+     {
+      "title": "Marketing-Support",
+      "text": "Fotos, Videos und Kollektionsmaterial für Ihren Salon und Ihre Social-Media-Kanäle."
+     },
+     {
+      "title": "Bequeme Zahlung",
+      "text": "Preise in EUR, Zahlung auch in PLN oder USD möglich."
+     }
+    ],
+    "servicesTitle": "Exklusive Services",
+    "servicesText": "Für Partner, die mehr als fertige Kollektionen suchen — Kleider und Service, abgestimmt auf Ihren Salon.",
+    "servicesPhoto": {
+     "alt": "QUEEN Modell 2750 — Etuikleid aus Spitze mit Überrock aus Tüll"
+    },
+    "services": [
+     {
+      "title": "Individuelle Anfertigung",
+      "text": "Unsere Designer fertigen ein Kleid jeder Komplexität nach dem Wunsch Ihrer Kundin."
+     },
+     {
+      "title": "Änderungen auf Bestellung",
+      "text": "Ärmel, Länge, Schleppe oder Farbe von Katalogmodellen anpassen — abgestimmt auf die gewünschte Größe."
+     },
+     {
+      "title": "Beratung in Ihrer Sprache",
+      "text": "Persönliche Ansprechpartner für den polnischen, deutschen und italienischen Markt beraten zu Sortiment, Zahlung und Lieferung."
+     },
+     {
+      "title": "Partnerbereich",
+      "text": "Preislisten, Lookbooks und Kollektionsmaterial für Partnersalons an einem Ort."
+     }
+    ],
+    "faqTitle": "Fragen von Salons",
+    "faq": [
+     {
+      "q": "Wie hoch ist die Mindestbestellung?",
+      "a": "Fünf Kleider aus einer neuen Kollektion. Modelle und Marken lassen sich in einer Bestellung kombinieren."
+     },
+     {
+      "q": "Wie lange dauert die Fertigung?",
+      "a": "6–8 Wochen nach Anzahlung. In der Hochsaison, vom 1. Mai bis 30. September, sind es 8–12 Wochen."
+     },
+     {
+      "q": "Wie erfolgt die Zahlung?",
+      "a": "30 % Anzahlung bei Bestellung, die restlichen 70 % vor Versand. Die Preise sind in EUR; Sie können auch in PLN oder USD zahlen."
+     },
+     {
+      "q": "Wie werden die Kleider geliefert?",
+      "a": "Wir versenden mit DPD, direkt in Ihren Salon."
+     },
+     {
+      "q": "Kann ein Modell für meine Kundin angepasst werden?",
+      "a": "Ja. Ärmel, Länge, Schleppe und Farbe lassen sich anpassen, und unsere Designer fertigen auch Kleider nach individuellem Wunsch."
+     },
+     {
+      "q": "Welche Größentabellen verwenden Sie?",
+      "a": "Wir arbeiten mit europäischen und ukrainischen Größentabellen."
+     },
+     {
+      "q": "Wie erhalte ich die Preise?",
+      "a": "Preise erhalten Sie auf Anfrage. Senden Sie das Formular, und ein Ansprechpartner schickt Ihnen die Preisliste innerhalb eines Werktags."
+     }
+    ],
+    "ctaTitle": "Starten Sie die Zusammenarbeit",
+    "ctaText": "Senden Sie eine Anfrage — ein Ansprechpartner schickt Ihnen Preisliste und Lookbooks innerhalb eines Werktags."
+   },
+   "contactPage": {
+    "title": "Kontakt",
+    "text": "Senden Sie eine Anfrage oder rufen Sie den Ansprechpartner für Ihren Markt an. Wir antworten innerhalb eines Werktags.",
+    "formTitle": "Großhandelsanfrage",
+    "formText": "Preisliste und Lookbooks auf Anfrage. Mit * markierte Felder sind Pflichtfelder."
+   },
+   "blogPage": {
+    "title": "Blog",
+    "text": "Neuigkeiten aus der Gruppe — Fashion Weeks, Fachmessen und neue Kollektionen."
+   },
+   "privacy": {
+    "updated": "Zuletzt aktualisiert am 7. November 2026",
+    "sections": [
+     {
+      "title": "Wer wir sind",
+      "text": "Verantwortlicher für Ihre personenbezogenen Daten ist die QUEEN_WED Sp. z o.o., Czyżówka 14/2.11, 30-526 Kraków, Polen. Bei Fragen zu Ihren Daten schreiben Sie an {email}."
+     },
+     {
+      "title": "Welche Daten wir erheben",
+      "text": "Wenn Sie eine Großhandelsanfrage senden, erhalten wir die Daten, die Sie im Formular eingeben: Ihren Namen, den Namen Ihres Salons oder Ihrer Firma, E-Mail-Adresse, Telefonnummer, Land, die Marken, die Sie interessieren, und Ihre Nachricht. Wenn Sie einen Ansprechpartner anrufen oder anschreiben, erhalten wir die Daten, die Sie in diesem Gespräch mitteilen."
+     },
+     {
+      "title": "Wozu wir sie verwenden",
+      "text": "Wir verwenden diese Daten ausschließlich, um Ihre Anfrage zu beantworten, Preislisten und Kataloge zu senden, Bestellungen vorzubereiten und abzuwickeln sowie als Geschäftspartner in Kontakt zu bleiben. Rechtsgrundlage sind vorvertragliche Maßnahmen auf Ihre Anfrage und unser berechtigtes Interesse an der Beantwortung geschäftlicher Anfragen (Art. 6 Abs. 1 lit. b und f DSGVO) oder Ihre Einwilligung, sofern wir darum bitten."
+     },
+     {
+      "title": "Wer sie erhält",
+      "text": "Ihre Daten sind unseren Ansprechpartnern zugänglich. Wir können sie an Dienstleister weitergeben, die uns beim Betrieb unseres Unternehmens unterstützen — E-Mail- und Hosting-Dienste, ein CRM-System sowie Versanddienstleister wie DPD für den Versand von Bestellungen. Wir verkaufen Ihre Daten nicht."
+     },
+     {
+      "title": "Wie lange wir sie speichern",
+      "text": "Anfragedaten speichern wir so lange, wie es für die Beantwortung und die weitere Kommunikation erforderlich ist, bestellbezogene Daten für den nach Handels- und Steuerrecht vorgeschriebenen Zeitraum."
+     },
+     {
+      "title": "Ihre Rechte",
+      "text": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch sowie Datenübertragbarkeit. Beruht die Verarbeitung auf einer Einwilligung, können Sie diese jederzeit widerrufen. Zudem können Sie Beschwerde beim Präsidenten des Amtes für den Schutz personenbezogener Daten (UODO) in Polen einlegen."
+     },
+     {
+      "title": "Cookies",
+      "text": "Diese Website verwendet keine Werbe- oder Analyse-Cookies. Sollte sich das ändern, aktualisieren wir diese Erklärung und holen, wo erforderlich, Ihre Einwilligung ein."
+     }
+    ]
+   }
+  },
+  "brands": {
+   "queen": {
+    "tagline": "Zeitlose Eleganz und feminine Raffinesse",
+    "intro": "Die Signature-Marke der QUEEN Fashion Group — Korsagen, Spitze und lange Schleppen, handgefertigt in eigener Produktion.",
+    "about": [
+     "Mit QUEEN hat die Gruppe begonnen, und die Linie setzt bis heute den Standard für alle anderen Marken. Jedes Kleid basiert auf einer formstabilen, strukturierten Korsage, veredelt mit Spitzenapplikationen, Perlenstickerei oder klarem Satin.",
+     "Jede Saison erscheinen neue Kollektionen. Queen 2027 ist die neueste, während Paradise und Floria als bewährte Bestseller für Partnersalons im Sortiment bleiben."
+    ],
+    "coverAlt": "QUEEN — Modell 2744, Meerjungfrauenkleid aus Spitze mit abnehmbaren Ärmeln"
+   },
+   "elle": {
+    "tagline": "Moderner Stil mit zarten Details",
+    "intro": "Klare Linien, skulpturaler Satin und feine Spitze — für die Braut, die ein zeitgemäßes, leichtes Kleid sucht.",
+    "about": [
+     "Elle verbindet modernen Stil mit zarten Details. Die Linie bewegt sich zwischen minimalistischen Satin-Silhouetten und transparenten Korsagen mit zarter Spitze.",
+     "Viele Modelle haben abnehmbare Ärmel oder Überröcke, sodass sich ein Kleid auf mehrere Arten stylen lässt — ein klarer Vorteil für Salons mit vielfältiger Kundschaft."
+    ],
+    "coverAlt": "Elle — zwei Spitzenkleider mit abnehmbaren Ärmeln"
+   },
+   "eleonora": {
+    "tagline": "Romantische Entwürfe, anmutige Silhouetten",
+    "intro": "Volle Tüllröcke, skulpturale Korsagen und weiches Volumen — eine romantische Linie für einen femininen Look.",
+    "about": [
+     "Eleonora steht für romantische Entwürfe und anmutige Silhouetten: luftige Prinzessinnenkleider aus Tüll, taillierte Meerjungfrauenkleider mit Spitze und Satinmodelle mit Puff- oder abnehmbaren Ärmeln.",
+     "Die Kollektion wird in historischen Gassen und Schlossgärten fotografiert, und zu vielen Modellen gibt es ein kurzes Video, das Salons für ihr eigenes Marketing nutzen können."
+    ],
+    "coverAlt": "Eleonora — Modell P-87, Prinzessinnenkleid aus Satin mit perlenbesetztem Oberteil"
+   },
+   "ricci": {
+    "tagline": "Raffiniertes Design, exquisite Handwerkskunst",
+    "intro": "Verarbeitung auf Couture-Niveau und raffiniertes Design für Premium-Salons.",
+    "about": [
+     "Atelier Lorenzo Ricci steht für raffiniertes Design und exquisite Handwerkskunst."
+    ],
+    "coverAlt": "Atelier Lorenzo Ricci — Prinzessinnenkleid aus Spitze mit transparenten Puffärmeln"
+   },
+   "velina": {
+    "tagline": "Eine sanfte, luftige Note für die Brautmode",
+    "intro": "Leichte Stoffe und mühelose Linien.",
+    "about": [
+     "Velina bringt eine sanfte, luftige Note in die Brautmode."
+    ]
+   },
+   "nivera": {
+    "tagline": "Klare Linien und subtile Details",
+    "intro": "Moderne Eleganz — minimalistisch, präzise, zeitgemäß.",
+    "about": [
+     "Nivera verbindet moderne Eleganz mit klaren Linien und subtilen Details."
+    ],
+    "coverAlt": "Nivera — trägerloses Satinkleid in A-Linie mit drapiertem Oberteil"
+   },
+   "tvoya": {
+    "tagline": "Mutige, ausdrucksstarke Styles",
+    "intro": "Für Bräute, die auffallen möchten.",
+    "about": [
+     "TVOYA feiert Individualität mit mutigen, ausdrucksstarken Styles."
+    ]
+   }
+  },
+  "posts": {
+   "barcelona-bridal-fashion-week-2025": {
+    "title": "Unser Debüt auf der Barcelona Bridal Fashion Week",
+    "date": "2025",
+    "tag": "Fashion Week",
+    "lead": "Queen Wedding Dresses feierte sein Debüt auf der renommierten Barcelona Bridal Fashion Week 2025, gewann neue Kunden in Spanien und erweiterte sein Netzwerk auf 18 Länder weltweit.",
+    "body": [
+     "Die Barcelona Bridal Fashion Week ist einer der wichtigsten Termine im Brautmodenkalender. Einkäufer von Salons aus ganz Europa und darüber hinaus kommen hierher, um die neue Saison als Erste zu sehen und die Hersteller dahinter kennenzulernen.",
+     "Für QUEEN war es der erste Auftritt auf dieser Bühne. Unser Team präsentierte am Stand die neuesten Kollektionen, und die Einkäufer konnten die Kleider aus der Nähe betrachten — die Korsagenkonstruktion, die Spitze und die Verarbeitung, die unsere Handfertigung auszeichnen.",
+     "Die Woche brachte neue Partner in Spanien, und mit ihnen werden unsere Kleider nun in 18 Ländern verkauft. Wir danken jedem Salon, der unseren Stand besucht hat, und freuen uns auf die Zusammenarbeit."
+    ]
+   },
+   "bridal-fashion-warsaw-2025": {
+    "title": "Bridal Fashion Warsaw 2025",
+    "date": "17.–18. Mai 2025",
+    "tag": "Fachmesse",
+    "lead": "Am 17. und 18. Mai nahm Queen Wedding Dresses an der Bridal Fashion Warsaw 2025 teil. An beiden Tagen war unser Stand voller Kunden aus Polen.",
+    "body": [
+     "Polen ist einer unserer wichtigsten Märkte, und auf der Bridal Fashion Warsaw treffen wir viele unserer Partner persönlich. An beiden Tagen war der Stand von der Öffnung bis zum Schluss gut besucht.",
+     "Die Kollektion 2026 zog die meiste Aufmerksamkeit auf sich. Salon-Inhaber kamen, um die neuen Silhouetten zu sehen, das Sortiment für die kommende Saison zu besprechen und erste Bestellungen zu vereinbaren.",
+     "Während der Messe wurden Dutzende neuer Partnerschaften bestätigt — ein klares Zeichen für unsere starke Position auf dem polnischen Markt. Unsere polnischsprachigen Ansprechpartner führen das Gespräch mit jedem Salon fort, den wir getroffen haben."
+    ]
+   },
+   "fiera-milano": {
+    "title": "Unser Stand auf der Fiera Milano",
+    "date": "2025",
+    "tag": "Fachmesse",
+    "lead": "Das QUEEN-Team präsentierte die Kollektionen auf unserem eigenen Stand auf der Fiera Milano und traf Einkäufer aus Italien und ganz Europa.",
+    "body": [
+     "Mailand ist für eine Brautmodenmarke der natürliche Treffpunkt mit dem Markt: Die Stadt gibt in der Mode den Ton an, und ihre Messen bringen Einkäufer zusammen, die Wert auf Qualität und Design legen.",
+     "Am Stand zeigten wir Kleider aus unseren aktuellen Kollektionen und sprachen mit Salons über ihre Kundinnen, gefragte Styles und unsere Konditionen.",
+     "Für unsere italienischen Partner gibt es einen eigenen Ansprechpartner, der auf Italienisch zu Sortiment, Zahlung und Lieferung berät. Falls Sie uns in Mailand verpasst haben, kontaktieren Sie uns — wir senden Ihnen gern Lookbook und Preisliste."
+    ]
+   }
+  }
+ },
+ "ru": {
+  "ui": {
+   "nav": {
+    "brands": "Бренды",
+    "catalogue": "Каталог",
+    "aboutUs": "О нас",
+    "blog": "Блог",
+    "contacts": "Контакты",
+    "home": "Главная",
+    "ourBrands": "Наши бренды",
+    "allBrands": "Все бренды",
+    "fullCatalogue": "Весь каталог",
+    "company": "Компания",
+    "partners": "Партнёрам",
+    "wholesaleEnquiry": "Оптовый запрос",
+    "termsOfCooperation": "Условия сотрудничества",
+    "exclusiveServices": "Эксклюзивные услуги",
+    "privacyPolicy": "Политика конфиденциальности",
+    "becomePartner": "Стать партнёром",
+    "email": "E-mail",
+    "allMarkets": "Все рынки",
+    "office": "Офис",
+    "officeCountry": "Польша",
+    "backToTop": "Наверх",
+    "skip": "Перейти к содержанию",
+    "openMenu": "Открыть меню",
+    "homeAria": "QUEEN Fashion Group — главная",
+    "topAria": "QUEEN Fashion Group — наверх",
+    "language": "Язык",
+    "call": "Позвонить: {phone}"
+   },
+   "common": {
+    "new": "Новинка",
+    "video": "Видео",
+    "photoSoon": "Фото скоро",
+    "comingSoon": "Скоро",
+    "moreAboutUs": "Подробнее о нас",
+    "viewBrandCatalogue": "Каталог {brand}",
+    "termsAria": "Условия вкратце",
+    "introAria": "Введение",
+    "heroVideoAria": "Платья Eleonora, снятые в Кракове"
+   },
+   "brand": {
+    "nModels": {
+     "one": "{n} модель",
+     "few": "{n} модели",
+     "many": "{n} моделей",
+     "other": "{n} модели"
+    },
+    "nSilhouettes": {
+     "one": "{n} силуэт",
+     "few": "{n} силуэта",
+     "many": "{n} силуэтов",
+     "other": "{n} силуэта"
+    },
+    "collectionSoon": "Коллекция скоро",
+    "viewCatalogue": "Смотреть каталог",
+    "heroAlt": "Свадебное платье {brand}",
+    "modelsAria": "Модели {brand}",
+    "keyModels": "Ключевые модели",
+    "silhouettes": "Силуэты",
+    "fabrics": "Ткани",
+    "production": "Производство",
+    "productionValue": "Ручная работа, собственное производство",
+    "minOrder": "Минимальный заказ",
+    "minOrderValue": "5 платьев из новой коллекции",
+    "sizes": "Размеры",
+    "sizesValue": "Размерные сетки EU и UA",
+    "detailAlt": "{brand} — деталь",
+    "collections": "Коллекции",
+    "theCollection": "Коллекция",
+    "bySilhouette": "Актуальная линия {brand} по силуэтам.",
+    "collectionsSoon": "Коллекции скоро",
+    "selectedModels": "Избранные модели",
+    "viewAll": {
+     "one": "Смотреть {n} модель",
+     "few": "Смотреть все {n} модели",
+     "many": "Смотреть все {n} моделей",
+     "other": "Смотреть все {n} модели"
+    },
+    "modelsSoon": "Модели скоро",
+    "seoTitle": "{brand} — свадебные платья оптом | QUEEN Fashion Group",
+    "seoDesc": "{brand}: {tagline}. Свадебные платья оптом для салонов от QUEEN Fashion Group."
+   },
+   "catalogue": {
+    "title": "Все модели",
+    "intro": "Все модели всех брендов в одном месте. Выберите бренд, затем уточните поиск по силуэту, рукавам или ткани.",
+    "brandIntro": "Каталог {brand}. Бренд можно сменить выше в любой момент или уточнить поиск по силуэту, рукавам или ткани.",
+    "all": "Все",
+    "filters": "Фильтры",
+    "sort": "Сортировка",
+    "featured": "Рекомендуемые",
+    "newFirst": "Сначала новые",
+    "byArticle": "По артикулу",
+    "view": "Вид",
+    "grid": "Сетка",
+    "gallery": "Галерея",
+    "showMore": "Показать ещё",
+    "closeFilters": "Закрыть фильтры",
+    "clear": "Сбросить",
+    "clearAll": "Сбросить всё",
+    "clearFilters": "Сбросить фильтры",
+    "remove": "Удалить",
+    "showN": {
+     "one": "Показать {n} модель",
+     "few": "Показать {n} модели",
+     "many": "Показать {n} моделей",
+     "other": "Показать {n} модели"
+    },
+    "brandAria": "Бренд",
+    "modelsAria": "Модели",
+    "gCollection": "Коллекция",
+    "gSilhouette": "Силуэт",
+    "gSleeves": "Рукава и вырез",
+    "gFabric": "Ткань",
+    "gDetails": "Детали",
+    "newModels": "Новинки",
+    "withVideo": "С видео",
+    "soonTitle": "{brand} — скоро",
+    "soonText": "Коллекция на фотосъёмке. Ключевые модели: {keys}.",
+    "askManager": "Спросить менеджера",
+    "noMatch": "Нет моделей по выбранным фильтрам",
+    "docTitle": "Каталог — все модели свадебных платьев | QUEEN Fashion Group",
+    "docTitleBrand": "Каталог {brand} | QUEEN Fashion Group",
+    "seoDesc": "Оптовый каталог свадебных платьев, моделей: {n}. Фильтры по бренду, коллекции, силуэту, рукавам и ткани."
+   },
+   "model": {
+    "front": "{name} — спереди",
+    "view": "{name} — вид {k}",
+    "videoAlt": "{name} — видео",
+    "openPhoto": "Открыть фото {k} из {total} на весь экран",
+    "photos": "Фото",
+    "photo": "Фото {k}",
+    "silhouette": "Силуэт",
+    "fabric": "Ткань",
+    "sleeves": "Рукава",
+    "details": "Детали",
+    "colour": "Цвет",
+    "sizeCharts": "Размерные сетки",
+    "sizeChartsValue": "Европейская и украинская",
+    "madeToOrder": "Под заказ",
+    "madeToOrderValue": "Рукава, длину, шлейф и цвет можно изменить для Вашей клиентки",
+    "minOrder": "Минимальный заказ",
+    "minOrderValue": "5 платьев из новой коллекции — модели и бренды можно комбинировать",
+    "production": "Производство",
+    "productionValue": "6–8 недель после предоплаты, 8–12 недель с мая по сентябрь",
+    "payment": "Оплата",
+    "paymentValue": "30% предоплата, 70% перед отправкой. EUR, PLN или USD",
+    "delivery": "Доставка",
+    "deliveryValue": "DPD, от двери до двери Вашего салона",
+    "requestPrice": "Запросить цену",
+    "askManager": "Спросить менеджера",
+    "sizesTerms": "Размеры и условия опта",
+    "switchModel": "Другая модель",
+    "previous": "Предыдущая",
+    "next": "Следующая",
+    "close": "Закрыть",
+    "prevPhoto": "Предыдущее фото",
+    "nextPhoto": "Следующее фото",
+    "moreFrom": "Ещё модели {brand}",
+    "allBrandModels": "Все модели {brand}",
+    "moreModels": "Другие модели",
+    "seoTitle": "{name} — свадебное платье {brand} | QUEEN Fashion Group",
+    "seoDesc": "{name}. {desc} Оптом от QUEEN Fashion Group, цена по запросу.",
+    "weddingDress": "свадебное платье"
+   },
+   "brandsPage": {
+    "models": "Модели",
+    "silhouettes": "Силуэты",
+    "collection": "Коллекция",
+    "keyModels": "Ключевые модели",
+    "keyModelsLine": "Ключевые модели · {keys}",
+    "discover": "Открыть {brand}",
+    "catalogue": "Каталог",
+    "seoTitle": "Наши бренды — QUEEN Fashion Group",
+    "seoDesc": "Семь брендов свадебных платьев от одного производителя: {list}."
+   },
+   "about": {
+    "heroAlt": "Невеста в платье Eleonora в дворцовом саду",
+    "allBrands": "Все бренды",
+    "seoTitle": "О нас — QUEEN Fashion Group",
+    "seoDesc": "QUEEN Fashion Group: семь брендов свадебных платьев ручной работы собственного производства, оптовые поставки салонам в 18 странах."
+   },
+   "partners": {
+    "becomePartner": "Стать партнёром",
+    "termsLink": "Условия сотрудничества",
+    "seoTitle": "Оптовое партнёрство — QUEEN Fashion Group",
+    "seoDesc": "Условия сотрудничества для свадебных салонов: минимальный заказ от 5 платьев, производство 6–8 недель, оплата 30/70 в EUR, PLN или USD, доставка DPD."
+   },
+   "contact": {
+    "seoTitle": "Контакты — QUEEN Fashion Group",
+    "seoDesc": "Контакты QUEEN Fashion Group: оптовые запросы, менеджеры для рынков Польши, Германии и Италии, офис в Кракове.",
+    "name": "Имя *",
+    "salon": "Салон или компания *",
+    "email": "E-mail *",
+    "phone": "Телефон",
+    "country": "Страна *",
+    "brandsLegend": "Интересующие бренды",
+    "message": "Сообщение",
+    "consent": "Я согласен(на) на обработку моих персональных данных для ответа на запрос в соответствии с {link}. *",
+    "consentLink": "политикой конфиденциальности",
+    "send": "Отправить запрос",
+    "thanks": "Спасибо",
+    "thanksText": "Открылось Ваше почтовое приложение с готовым запросом. Если этого не произошло, напишите нам на {email} или позвоните по номеру {phone}.",
+    "browse": "Смотреть каталог",
+    "stripAria": "Платья наших брендов",
+    "errName": "Пожалуйста, укажите имя.",
+    "errSalon": "Пожалуйста, укажите салон или компанию.",
+    "errEmail": "Пожалуйста, укажите e-mail.",
+    "errEmailBad": "Пожалуйста, проверьте адрес e-mail.",
+    "errCountry": "Пожалуйста, укажите страну.",
+    "errConsent": "Пожалуйста, подтвердите согласие на обработку данных.",
+    "mailSubject": "Оптовый запрос — {company}",
+    "mailName": "Имя",
+    "mailSalon": "Салон / компания",
+    "mailCountry": "Страна",
+    "mailEmail": "E-mail",
+    "mailPhone": "Телефон",
+    "mailBrands": "Бренды",
+    "priceRequest": "Запрос цены: {model}"
+   },
+   "blog": {
+    "seoTitle": "Блог — QUEEN Fashion Group",
+    "seoDesc": "Новости QUEEN Fashion Group: недели свадебной моды, выставки и новые коллекции.",
+    "readStory": "Читать",
+    "allNews": "Все новости",
+    "moreNews": "Другие новости"
+   },
+   "privacy": {
+    "title": "Политика конфиденциальности",
+    "seoTitle": "Политика конфиденциальности — QUEEN Fashion Group",
+    "seoDesc": "Как QUEEN Fashion Group обрабатывает персональные данные партнёров и посетителей сайта."
+   },
+   "notFound": {
+    "seoTitle": "Страница не найдена — QUEEN Fashion Group",
+    "seoDesc": "Такой страницы не существует.",
+    "title": "Страница не найдена",
+    "text": "Возможно, ссылка устарела или страница была перемещена.",
+    "home": "На главную",
+    "catalogue": "Смотреть каталог"
+   },
+   "colours": {
+    "Ivory": "Айвори",
+    "Cappuccino": "Капучино",
+    "White": "Белый",
+    "Champagne": "Шампань"
+   }
+  },
+  "labels": {
+   "sil": {
+    "aline": "А-силуэт",
+    "ball": "Пышное",
+    "mermaid": "Русалка",
+    "sheath": "Прямой силуэт",
+    "short": "Короткое"
+   },
+   "sleeves": {
+    "long": "Длинные рукава",
+    "detachable": "Съёмные рукава",
+    "offshoulder": "Открытые плечи",
+    "straps": "На бретелях",
+    "strapless": "Без бретелей"
+   },
+   "fabric": {
+    "lace": "Кружево",
+    "tulle": "Фатин",
+    "satin": "Атлас",
+    "glitter": "Фатин с блёстками"
+   },
+   "details": {
+    "slit": "Высокий разрез",
+    "overskirt": "Съёмная юбка",
+    "cape": "Кейп"
+   }
+  },
+  "site": {
+   "contact": {
+    "managers": [
+     {
+      "market": "Рынок Польши",
+      "country": "Польша"
+     },
+     {
+      "market": "Рынок Польши",
+      "country": "Польша"
+     },
+     {
+      "market": "Рынок Германии",
+      "country": "Германия"
+     },
+     {
+      "market": "Рынок Италии",
+      "country": "Италия"
+     }
+    ]
+   },
+   "terms": [
+    {
+     "label": "Минимальный заказ",
+     "value": "5 платьев",
+     "note": "из новой коллекции"
+    },
+    {
+     "label": "Производство",
+     "value": "6–8 недель",
+     "note": "8–12 недель в сезон, с мая по сентябрь"
+    },
+    {
+     "label": "Оплата",
+     "note": "предоплата, остаток — перед отправкой. EUR, PLN или USD"
+    },
+    {
+     "label": "Доставка",
+     "value": "DPD",
+     "note": "от двери до двери Вашего салона"
+    }
+   ],
+   "nav": {
+    "megaText": "Семь брендов свадебных платьев от одного производителя — у каждого свой характер, все созданы по единому стандарту.",
+    "featureTitle": "Новая коллекция — Queen 2027",
+    "footerTagline": "Свадебные платья ручной работы от производителя для салонов по всему миру."
+   },
+   "home": {
+    "seoTitle": "QUEEN Fashion Group — международный поставщик свадебных платьев",
+    "seoDescription": "QUEEN Fashion Group объединяет семь брендов свадебных платьев — QUEEN, Elle, Eleonora, Atelier Lorenzo Ricci, Velina, Nivera и TVOYA. Оптовые поставки для свадебных салонов в 18 странах.",
+    "hero": {
+     "label": "QUEEN Fashion Group",
+     "title": "Семь свадебных брендов, один модный дом",
+     "text": "Свадебные платья ручной работы от производителя, оптом для салонов в 18 странах.",
+     "button": "Стать партнёром",
+     "link": "Наши бренды"
+    },
+    "about": {
+     "label": "О группе",
+     "title": "Ателье с историей",
+     "texts": [
+      "QUEEN Fashion Group объединяет семь брендов свадебных платьев — от фирменной линии QUEEN до молодых марок со своим почерком.",
+      "Каждое платье создаётся вручную на собственном производстве, где под контролем каждый этап — от выбора ткани до финального декора. Мы поставляем платья салонам, бутикам и шоурумам по всей Европе и представляем коллекции на Barcelona Bridal Fashion Week, Bridal Fashion Warsaw и Fiera Milano."
+     ],
+     "stats": [
+      {
+       "label": "свадебных брендов"
+      },
+      {
+       "label": "стран"
+      },
+      {
+       "label": "платьев — минимальный заказ"
+      },
+      {
+       "label": "недель производства"
+      }
+     ]
+    },
+    "brands": {
+     "label": "Наши бренды",
+     "title": "Семь имён, один стандарт",
+     "text": "У каждого бренда свой характер и своя невеста. Выберите те, что подходят Вашему салону, или объедините несколько в одном заказе.",
+     "ctaTitle": "Один поставщик, семь брендов",
+     "ctaText": "Один менеджер, один заказ и одна доставка для всех выбранных брендов."
+    },
+    "benefits": {
+     "label": "Для оптовых партнёров",
+     "title": "Почему салоны выбирают нас",
+     "items": [
+      {
+       "title": "Ручная работа",
+       "text": "Каждый этап производства под контролем — от ткани до финального декора."
+      },
+      {
+       "title": "Семь брендов, один поставщик",
+       "text": "Разные невесты и ценовые сегменты — один партнёр и одна доставка."
+      },
+      {
+       "title": "Цены производителя",
+       "text": "Выгодные цены, удобная оплата и гибкий подход для постоянных партнёров."
+      },
+      {
+       "title": "Новинки каждый сезон",
+       "text": "Коллекции в духе трендов и советы, что лучше продаётся в этом сезоне."
+      },
+      {
+       "title": "Заказы любого объёма",
+       "text": "Крупный опт и небольшие заказы, быстрая доставка по всему миру."
+      },
+      {
+       "title": "Маркетинговая поддержка",
+       "text": "Фото и материалы коллекций для Вашего салона и онлайн-продаж."
+      }
+     ]
+    },
+    "collections": {
+     "label": "Коллекции брендов",
+     "title": "Откройте коллекции",
+     "tabs": {
+      "queen": [
+       {
+        "alt": "Queen 2027, модель 2752 — пышное атласное платье с кружевными рукавами",
+        "caption": "Queen 2027 · 2752"
+       },
+       {
+        "alt": "QUEEN — кружевное платье-русалка с длинными рукавами и соборным шлейфом",
+        "caption": "Queen"
+       },
+       {
+        "alt": "QUEEN — сияющее платье А-силуэта с открытыми плечами",
+        "caption": "Queen"
+       },
+       {
+        "alt": "QUEEN — кружевное платье А-силуэта с высоким разрезом и кружевными рукавами",
+        "caption": "Queen"
+       }
+      ],
+      "elle": [
+       {
+        "alt": "Elle 765 — кружевное платье с высоким разрезом и рукавами",
+        "caption": "Elle · 765"
+       },
+       {
+        "alt": "Elle 818 — облегающее платье с прозрачными кружевными вставками",
+        "caption": "Elle · 818"
+       },
+       {
+        "alt": "Elle 808 — атласное платье с открытыми плечами",
+        "caption": "Elle · 808"
+       }
+      ],
+      "eleonora": [
+       {
+        "alt": "Eleonora P-51 — платье-русалка с кружевными рукавами",
+        "caption": "Eleonora · P-51"
+       },
+       {
+        "alt": "Eleonora P-87 — пышное атласное платье с расшитым бусинами корсетом",
+        "caption": "Eleonora · P-87"
+       },
+       {
+        "alt": "Eleonora P-78 — пышное фатиновое платье с открытыми плечами",
+        "caption": "Eleonora · P-78"
+       }
+      ]
+     }
+    },
+    "services": {
+     "label": "Эксклюзивные услуги",
+     "title": "Больше, чем каталог",
+     "text": "Для партнёров, которым нужно больше готовых коллекций, — платья и сервис под Ваш салон.",
+     "items": [
+      {
+       "title": "Индивидуальный пошив",
+       "text": "Наши дизайнеры создадут платье любой сложности по запросу Вашей клиентки."
+      },
+      {
+       "title": "Изменения под заказ",
+       "text": "Рукава, длина, шлейф или цвет моделей из каталога — с проработкой под нужный размер."
+      },
+      {
+       "title": "Менеджер на Вашем языке",
+       "text": "Персональные менеджеры для рынков Польши, Германии и Италии консультируют по ассортименту, оплате и доставке."
+      },
+      {
+       "title": "Кабинет партнёра",
+       "text": "Прайс-листы, лукбуки и материалы коллекций в одном месте для салонов-партнёров."
+      }
+     ]
+    },
+    "banner": {
+     "label": "Оптовое партнёрство",
+     "title": "Наши бренды — в Вашем салоне",
+     "text": "Запросите оптовый прайс-лист и каталоги. Менеджер ответит в течение одного рабочего дня.",
+     "button": "Запросить прайс"
+    }
+   },
+   "cta": {
+    "title": "Наши бренды — в Вашем салоне",
+    "text": "Запросите оптовый прайс-лист и лукбук. Менеджер ответит в течение одного рабочего дня.",
+    "button": "Запросить прайс",
+    "brandTitle": "{brand} — в Вашем салоне"
+   },
+   "brandsPage": {
+    "title": "Наши бренды",
+    "text": "Семь брендов свадебных платьев от одного производителя — у каждого свой характер, все созданы вручную по единому стандарту.",
+    "nextTitle": "Скоро",
+    "nextText": "Новые бренды группы. Коллекции сейчас на фотосъёмке — а пока запросите лукбук у менеджера.",
+    "ctaTitle": "Один поставщик, семь брендов",
+    "ctaText": "Один менеджер, один заказ и одна доставка для всех выбранных брендов. Объединяйте несколько брендов в одном заказе."
+   },
+   "about": {
+    "hero": {
+     "label": "О QUEEN Fashion Group",
+     "title": "Ателье с историей",
+     "text": "Свадебные платья ручной работы от производителя для салонов в 18 странах."
+    },
+    "story": {
+     "title": "Семь свадебных брендов под одной крышей, собственное производство",
+     "texts": [
+      "QUEEN Fashion Group выросла из QUEEN — бренда свадебных платьев, известного корсетными лифами, тонким кружевом и длинными шлейфами. Сегодня группа объединяет семь брендов — от фирменной линии QUEEN до молодых марок со своим почерком.",
+      "Мы работаем с владельцами свадебных салонов, бутиков и шоурумов. Партнёры заказывают модели из наших каталогов или эксклюзивный индивидуальный пошив; мы принимаем как крупные оптовые, так и небольшие заказы.",
+      "Наши менеджеры помогают каждому салону сориентироваться в ассортименте: какие модели и цвета востребованы в этом сезоне и какой способ оплаты и доставки подойдёт лучше всего."
+     ]
+    },
+    "craft": {
+     "title": "Ручная работа, контроль на каждом этапе",
+     "text": "Каждое платье шьётся на нашем собственном производстве. Каждая модель прорабатывается под нужный размер и сидит как надо — будь то модель из каталога или платье под заказ.",
+     "items": [
+      {
+       "title": "Собственное производство",
+       "text": "От ткани до финального декора — каждый этап в наших руках."
+      },
+      {
+       "title": "Изменения под заказ",
+       "text": "Рукава, длину, шлейф и цвет можно изменить по запросу."
+      },
+      {
+       "title": "Размеры EU и UA",
+       "text": "Европейская и украинская размерные сетки."
+      }
+     ]
+    },
+    "values": {
+     "title": "Наши принципы",
+     "items": [
+      {
+       "title": "Высокое качество",
+       "text": "Каждый этап производства под строгим контролем — от выбора ткани до пошива и декора каждого платья."
+      },
+      {
+       "title": "Уникальный дизайн",
+       "text": "Линия эксклюзивных дизайнерских платьев ручной работы, созданных в ногу с трендами модной индустрии."
+      },
+      {
+       "title": "Индивидуальный подход",
+       "text": "Наши дизайнеры учитывают каждый нюанс и создадут для Вашей клиентки платье любой сложности."
+      },
+      {
+       "title": "Честные цены",
+       "text": "Цены производителя и удобная оплата. Постоянным партнёрам — скидки и специальные предложения."
+      },
+      {
+       "title": "Внимательный сервис",
+       "text": "Менеджеры подробно отвечают на все вопросы и тщательно согласовывают каждую поставку."
+      },
+      {
+       "title": "Точно в срок",
+       "text": "Быстрое производство заказов любого объёма и оперативная доставка по всему миру."
+      }
+     ]
+    },
+    "groupTitle": "Бренды группы",
+    "eventsTitle": "Где нас встретить",
+    "eventsText": "Мы представляем коллекции на ведущих свадебных выставках Европы."
+   },
+   "partners": {
+    "title": "Оптовое партнёрство",
+    "text": "Мы помогаем владельцам свадебных салонов, бутиков и шоурумов формировать ассортимент из платьев ручной работы семи брендов.",
+    "stepsTitle": "Как строится сотрудничество",
+    "steps": [
+     {
+      "title": "Отправьте запрос",
+      "text": "Оставьте данные в форме или позвоните менеджеру Вашего рынка."
+     },
+     {
+      "title": "Получите прайс-лист",
+      "text": "Мы пришлём оптовый прайс-лист и лукбуки выбранных брендов."
+     },
+     {
+      "title": "Оформите заказ",
+      "text": "От 5 платьев из новой коллекции, предоплата 30%."
+     },
+     {
+      "title": "Производство",
+      "text": "6–8 недель после предоплаты, 8–12 недель с мая по сентябрь."
+     },
+     {
+      "title": "Доставка",
+      "text": "Оставшиеся 70% оплачиваются перед отправкой. DPD доставит заказ в Ваш салон."
+     }
+    ],
+    "benefitsTitle": "Преимущества работы с нами",
+    "benefitsPhoto": {
+     "alt": "Невеста в фатиновом платье Eleonora в дворцовом саду"
+    },
+    "benefits": [
+     {
+      "title": "Отлаженные поставки",
+      "text": "Один менеджер и одна доставка для всех брендов в заказе."
+     },
+     {
+      "title": "Выгодные цены",
+      "text": "Цены производителя и гибкая система скидок для постоянных партнёров."
+     },
+     {
+      "title": "Высокое качество",
+      "text": "Платья ручной работы с контролем на каждом этапе производства."
+     },
+     {
+      "title": "Регулярные обновления",
+      "text": "Новые коллекции каждый сезон и советы, что лучше продаётся."
+     },
+     {
+      "title": "Маркетинговая поддержка",
+      "text": "Фото, видео и материалы коллекций для Вашего салона и соцсетей."
+     },
+     {
+      "title": "Удобная оплата",
+      "text": "Цены в EUR, оплата также возможна в PLN или USD."
+     }
+    ],
+    "servicesTitle": "Эксклюзивные услуги",
+    "servicesText": "Для партнёров, которым нужно больше готовых коллекций, — платья и сервис под Ваш салон.",
+    "servicesPhoto": {
+     "alt": "QUEEN, модель 2750 — кружевное платье прямого силуэта со съёмной фатиновой юбкой"
+    },
+    "services": [
+     {
+      "title": "Индивидуальный пошив",
+      "text": "Наши дизайнеры создадут платье любой сложности по запросу Вашей клиентки."
+     },
+     {
+      "title": "Изменения под заказ",
+      "text": "Рукава, длина, шлейф или цвет моделей из каталога — с проработкой под нужный размер."
+     },
+     {
+      "title": "Менеджер на Вашем языке",
+      "text": "Персональные менеджеры для рынков Польши, Германии и Италии консультируют по ассортименту, оплате и доставке."
+     },
+     {
+      "title": "Кабинет партнёра",
+      "text": "Прайс-листы, лукбуки и материалы коллекций в одном месте для салонов-партнёров."
+     }
+    ],
+    "faqTitle": "Вопросы салонов",
+    "faq": [
+     {
+      "q": "Каков минимальный заказ?",
+      "a": "Пять платьев из новой коллекции. В одном заказе можно комбинировать модели и бренды."
+     },
+     {
+      "q": "Сколько длится производство?",
+      "a": "6–8 недель после предоплаты. В высокий сезон, с 1 мая по 30 сентября, — 8–12 недель."
+     },
+     {
+      "q": "Как происходит оплата?",
+      "a": "Предоплата 30% при оформлении заказа, оставшиеся 70% — перед отправкой. Цены указаны в EUR; оплатить можно также в PLN или USD."
+     },
+     {
+      "q": "Как доставляются платья?",
+      "a": "Мы отправляем заказы службой DPD, от двери до двери Вашего салона."
+     },
+     {
+      "q": "Можно ли изменить модель для моей клиентки?",
+      "a": "Да. Рукава, длину, шлейф и цвет можно изменить, а наши дизайнеры создадут платье по индивидуальному запросу."
+     },
+     {
+      "q": "Какие размерные сетки вы используете?",
+      "a": "Мы работаем с европейской и украинской размерными сетками."
+     },
+     {
+      "q": "Как узнать цены?",
+      "a": "Цены предоставляются по запросу. Отправьте форму, и менеджер пришлёт прайс-лист в течение одного рабочего дня."
+     }
+    ],
+    "ctaTitle": "Начните работать с нами",
+    "ctaText": "Оставьте запрос, и менеджер пришлёт прайс-лист и лукбуки в течение одного рабочего дня."
+   },
+   "contactPage": {
+    "title": "Контакты",
+    "text": "Оставьте запрос или позвоните менеджеру Вашего рынка. Мы отвечаем в течение одного рабочего дня.",
+    "formTitle": "Оптовый запрос",
+    "formText": "Прайс-лист и лукбуки по запросу. Поля, отмеченные *, обязательны."
+   },
+   "blogPage": {
+    "title": "Блог",
+    "text": "Новости группы — недели моды, выставки и новые коллекции."
+   },
+   "privacy": {
+    "updated": "Последнее обновление: 7 ноября 2026",
+    "sections": [
+     {
+      "title": "Кто мы",
+      "text": "Администратором Ваших персональных данных является QUEEN_WED Sp. z o.o., Czyżówka 14/2.11, 30-526 Kraków, Польша. По любым вопросам о Ваших данных пишите на {email}."
+     },
+     {
+      "title": "Какие данные мы собираем",
+      "text": "Когда Вы отправляете оптовый запрос, мы получаем данные, указанные в форме: Ваше имя, название салона или компании, адрес e-mail, номер телефона, страну, интересующие бренды и Ваше сообщение. Когда Вы звоните или пишете менеджеру, мы получаем данные, которыми Вы делитесь в ходе разговора."
+     },
+     {
+      "title": "Зачем мы их используем",
+      "text": "Мы используем эти данные только для ответа на Ваш запрос, отправки прайс-листов и каталогов, подготовки и выполнения заказов и поддержания деловых контактов. Правовым основанием являются действия, предпринимаемые по Вашему запросу до заключения договора, и наш законный интерес в ответе на деловые запросы (ст. 6(1)(b) и (f) GDPR), либо Ваше согласие, если мы его запрашиваем."
+     },
+     {
+      "title": "Кто их получает",
+      "text": "Доступ к Вашим данным имеют наши менеджеры. Мы можем передавать их поставщикам, которые помогают нам вести бизнес, — сервисам электронной почты и хостинга, CRM-системе и службам доставки, например DPD, для отправки заказов. Мы не продаём Ваши данные."
+     },
+     {
+      "title": "Как долго мы их храним",
+      "text": "Данные запросов мы храним столько, сколько нужно для ответа и продолжения общения, а данные, связанные с заказами, — в течение срока, установленного бухгалтерским и налоговым законодательством."
+     },
+     {
+      "title": "Ваши права",
+      "text": "Вы имеете право на доступ к своим данным, их исправление, удаление, ограничение обработки или возражение против неё, а также на получение данных в переносимом формате. Если обработка основана на согласии, Вы можете отозвать его в любой момент. Вы также можете подать жалобу Председателю Управления по защите персональных данных (UODO) в Польше."
+     },
+     {
+      "title": "Файлы cookie",
+      "text": "Этот сайт не использует рекламные или аналитические cookie. Если это изменится, мы обновим настоящую политику и запросим Ваше согласие, когда это необходимо."
+     }
+    ]
+   }
+  },
+  "brands": {
+   "queen": {
+    "tagline": "Вневременная элегантность и женственная утончённость",
+    "intro": "Фирменный бренд QUEEN Fashion Group — корсетные лифы, кружево и длинные шлейфы, ручная работа на собственном производстве.",
+    "about": [
+     "QUEEN — линия, с которой началась группа, и она по-прежнему задаёт стандарт для всех остальных брендов. В основе каждого платья — структурированный корсетный лиф, держащий форму, с отделкой кружевной аппликацией, бисером или лаконичным атласом.",
+     "Новые коллекции выходят каждый сезон. Queen 2027 — самая новая, а Paradise и Floria остаются в линии как проверенные бестселлеры салонов-партнёров."
+    ],
+    "coverAlt": "QUEEN — модель 2744, кружевное платье-русалка со съёмными рукавами"
+   },
+   "elle": {
+    "tagline": "Современный стиль и нежные детали",
+    "intro": "Чистые линии, скульптурный атлас и тонкое кружево — для невесты, которой нужно актуальное и лёгкое платье.",
+    "about": [
+     "Elle сочетает современный стиль с нежными деталями. Линия охватывает и минималистичные атласные силуэты, и прозрачные корсетные лифы, покрытые мягким кружевом.",
+     "Многие модели дополнены съёмными рукавами или юбками, поэтому одно платье можно стилизовать по-разному — сильный аргумент для салонов с разноплановой клиентурой."
+    ],
+    "coverAlt": "Elle — два кружевных платья со съёмными рукавами"
+   },
+   "eleonora": {
+    "tagline": "Романтичный дизайн, изящные силуэты",
+    "intro": "Пышные фатиновые юбки, скульптурные корсеты и мягкий объём — романтичная линия для женственного образа.",
+    "about": [
+     "Eleonora — это романтичный дизайн и изящные силуэты. Воздушные пышные платья из фатина, облегающие платья-русалки с кружевом и атласные модели с объёмными или съёмными рукавами.",
+     "Коллекция снята на исторических улицах и в дворцовых садах, а ко многим моделям прилагается короткое видео, которое салоны могут использовать в собственном маркетинге."
+    ],
+    "coverAlt": "Eleonora — модель P-87, пышное атласное платье с корсетом, расшитым жемчугом"
+   },
+   "ricci": {
+    "tagline": "Изысканный дизайн, безупречное мастерство",
+    "intro": "Отделка уровня кутюр и изысканный дизайн для салонов премиум-сегмента.",
+    "about": [
+     "Atelier Lorenzo Ricci — это изысканный дизайн и безупречное мастерство."
+    ],
+    "coverAlt": "Atelier Lorenzo Ricci — пышное кружевное платье с прозрачными объёмными рукавами"
+   },
+   "velina": {
+    "tagline": "Мягкость и воздушность в свадебной моде",
+    "intro": "Лёгкие ткани и непринуждённые линии.",
+    "about": [
+     "Velina привносит в свадебную моду мягкость и воздушность."
+    ]
+   },
+   "nivera": {
+    "tagline": "Чистые линии и тонкие детали",
+    "intro": "Современная элегантность — минимализм, точность, актуальность.",
+    "about": [
+     "Nivera сочетает современную элегантность с чистыми линиями и тонкими деталями."
+    ],
+    "coverAlt": "Nivera — атласное платье А-силуэта без бретелей с драпированным лифом"
+   },
+   "tvoya": {
+    "tagline": "Смелые, выразительные образы",
+    "intro": "Для невест, которые хотят выделяться.",
+    "about": [
+     "TVOYA воспевает индивидуальность смелыми, выразительными образами."
+    ]
+   }
+  },
+  "posts": {
+   "barcelona-bridal-fashion-week-2025": {
+    "title": "Наш дебют на Barcelona Bridal Fashion Week",
+    "date": "2025",
+    "tag": "Неделя моды",
+    "lead": "Queen Wedding Dresses дебютировала на престижной Barcelona Bridal Fashion Week 2025, привлекла новых клиентов в Испании и расширила свою сеть до 18 стран мира.",
+    "body": [
+     "Barcelona Bridal Fashion Week — одно из важнейших событий свадебного календаря. Сюда приезжают байеры салонов со всей Европы и не только, чтобы первыми увидеть новый сезон и познакомиться с производителями.",
+     "Для QUEEN это был первый выход на эту сцену. Наша команда представила на стенде новейшие коллекции, и байеры могли рассмотреть платья вблизи — корсетную конструкцию, кружево и отделку, которые отличают наше производство ручной работы.",
+     "Неделя принесла новых партнёров в Испании, и теперь наши платья продаются в 18 странах. Благодарим каждый салон, посетивший наш стенд, и с нетерпением ждём совместной работы."
+    ]
+   },
+   "bridal-fashion-warsaw-2025": {
+    "title": "Bridal Fashion Warsaw 2025",
+    "date": "17–18 мая 2025",
+    "tag": "Выставка",
+    "lead": "17–18 мая Queen Wedding Dresses приняла участие в Bridal Fashion Warsaw 2025. Оба дня наш стенд был полон польских клиентов.",
+    "body": [
+     "Польша — один из наших ключевых рынков, и на Bridal Fashion Warsaw мы лично встречаемся со многими партнёрами. Два дня на стенде было многолюдно от открытия до закрытия.",
+     "Больше всего внимания привлекла коллекция 2026 года. Владельцы салонов приходили увидеть новые силуэты, обсудить ассортимент на предстоящий сезон и согласовать первые заказы.",
+     "За время выставки были подтверждены десятки новых партнёрств — явный признак нашей сильной позиции на польском рынке. Наши польскоязычные менеджеры продолжают общение с каждым салоном, с которым мы познакомились."
+    ]
+   },
+   "fiera-milano": {
+    "title": "Наш стенд на Fiera Milano",
+    "date": "2025",
+    "tag": "Выставка",
+    "lead": "Команда QUEEN представила коллекции на собственном стенде на Fiera Milano и встретилась с байерами из Италии и всей Европы.",
+    "body": [
+     "Милан — естественное место встречи свадебного бренда с рынком: город задаёт тон в моде, а его выставки собирают байеров, которые ищут качество и дизайн.",
+     "На стенде мы показали платья из актуальных коллекций и обсудили с салонами их клиенток, востребованные стили и условия сотрудничества.",
+     "Для итальянских партнёров у нас есть отдельный менеджер, который консультирует на итальянском языке по ассортименту, оплате и доставке. Если Вы не застали нас в Милане, свяжитесь с нами — мы пришлём лукбук и прайс-лист."
+    ]
+   }
+  }
+ },
+ "it": {
+  "ui": {
+   "nav": {
+    "brands": "Brand",
+    "catalogue": "Catalogo",
+    "aboutUs": "Chi siamo",
+    "blog": "Blog",
+    "contacts": "Contatti",
+    "home": "Home",
+    "ourBrands": "I nostri brand",
+    "allBrands": "Tutti i brand",
+    "fullCatalogue": "Catalogo completo",
+    "company": "Azienda",
+    "partners": "Partner",
+    "wholesaleEnquiry": "Richiesta ingrosso",
+    "termsOfCooperation": "Condizioni di collaborazione",
+    "exclusiveServices": "Servizi esclusivi",
+    "privacyPolicy": "Privacy policy",
+    "becomePartner": "Diventa partner",
+    "email": "E-mail",
+    "allMarkets": "Tutti i mercati",
+    "office": "Sede",
+    "officeCountry": "Polonia",
+    "backToTop": "Torna su",
+    "skip": "Vai al contenuto",
+    "openMenu": "Apri il menu",
+    "homeAria": "QUEEN Fashion Group — home",
+    "topAria": "QUEEN Fashion Group — torna su",
+    "language": "Lingua",
+    "call": "Chiama {phone}"
+   },
+   "common": {
+    "new": "Novità",
+    "video": "Video",
+    "photoSoon": "Foto in arrivo",
+    "comingSoon": "Prossimamente",
+    "moreAboutUs": "Scopri di più",
+    "viewBrandCatalogue": "Vedi il catalogo {brand}",
+    "termsAria": "Condizioni in sintesi",
+    "introAria": "Introduzione",
+    "heroVideoAria": "Abiti Eleonora filmati a Cracovia"
+   },
+   "brand": {
+    "nModels": {
+     "one": "{n} modello",
+     "many": "{n} modelli",
+     "other": "{n} modelli"
+    },
+    "nSilhouettes": {
+     "one": "{n} linea",
+     "many": "{n} linee",
+     "other": "{n} linee"
+    },
+    "collectionSoon": "Collezione in arrivo",
+    "viewCatalogue": "Vedi il catalogo",
+    "heroAlt": "Abito da sposa {brand}",
+    "modelsAria": "Modelli {brand}",
+    "keyModels": "Modelli chiave",
+    "silhouettes": "Linee",
+    "fabrics": "Tessuti",
+    "production": "Produzione",
+    "productionValue": "Fatti a mano, nella nostra produzione",
+    "minOrder": "Ordine minimo",
+    "minOrderValue": "5 abiti di una nuova collezione",
+    "sizes": "Taglie",
+    "sizesValue": "Tabelle taglie EU e UA",
+    "detailAlt": "{brand} — dettaglio",
+    "collections": "Collezioni",
+    "theCollection": "La collezione",
+    "bySilhouette": "La linea {brand} attuale, per silhouette.",
+    "collectionsSoon": "Collezioni in arrivo",
+    "selectedModels": "Modelli selezionati",
+    "viewAll": {
+     "one": "Vedi {n} modello",
+     "many": "Vedi tutti i {n} modelli",
+     "other": "Vedi tutti i {n} modelli"
+    },
+    "modelsSoon": "Modelli in arrivo",
+    "seoTitle": "{brand} — abiti da sposa all'ingrosso | QUEEN Fashion Group",
+    "seoDesc": "{brand}: {tagline}. Abiti da sposa all'ingrosso per atelier sposa da QUEEN Fashion Group."
+   },
+   "catalogue": {
+    "title": "Tutti i modelli",
+    "intro": "Tutti i modelli di tutti i brand in un unico luogo. Scelga un brand, poi affini per silhouette, maniche o tessuto.",
+    "brandIntro": "Il catalogo {brand}. Può cambiare brand in alto in qualsiasi momento, o affinare per silhouette, maniche o tessuto.",
+    "all": "Tutti",
+    "filters": "Filtri",
+    "sort": "Ordina",
+    "featured": "In evidenza",
+    "newFirst": "Novità prima",
+    "byArticle": "Per articolo",
+    "view": "Vista",
+    "grid": "Vista griglia",
+    "gallery": "Vista galleria",
+    "showMore": "Mostra altri",
+    "closeFilters": "Chiudi filtri",
+    "clear": "Azzera",
+    "clearAll": "Azzera tutto",
+    "clearFilters": "Azzera filtri",
+    "remove": "Rimuovi",
+    "showN": {
+     "one": "Mostra {n} modello",
+     "many": "Mostra {n} modelli",
+     "other": "Mostra {n} modelli"
+    },
+    "brandAria": "Brand",
+    "modelsAria": "Modelli",
+    "gCollection": "Collezione",
+    "gSilhouette": "Silhouette",
+    "gSleeves": "Maniche e scollo",
+    "gFabric": "Tessuto",
+    "gDetails": "Dettagli",
+    "newModels": "Nuovi modelli",
+    "withVideo": "Con video",
+    "soonTitle": "{brand} — prossimamente",
+    "soonText": "Il servizio fotografico della collezione è in corso. Modelli chiave: {keys}.",
+    "askManager": "Chieda a un manager",
+    "noMatch": "Nessun modello corrisponde ai filtri",
+    "docTitle": "Catalogo — tutti i modelli di abiti da sposa | QUEEN Fashion Group",
+    "docTitleBrand": "Catalogo {brand} | QUEEN Fashion Group",
+    "seoDesc": "Catalogo all'ingrosso di {n} modelli di abiti da sposa. Filtri per brand, collezione, silhouette, maniche e tessuto."
+   },
+   "model": {
+    "front": "{name} — fronte",
+    "view": "{name} — vista {k}",
+    "videoAlt": "{name} — video",
+    "openPhoto": "Apri la foto {k} di {total} a schermo intero",
+    "photos": "Foto",
+    "photo": "Foto {k}",
+    "silhouette": "Silhouette",
+    "fabric": "Tessuto",
+    "sleeves": "Maniche",
+    "details": "Dettagli",
+    "colour": "Colore",
+    "sizeCharts": "Tabelle taglie",
+    "sizeChartsValue": "Europee e ucraine",
+    "madeToOrder": "Su misura",
+    "madeToOrderValue": "Maniche, lunghezza, strascico e colore modificabili per la Sua cliente",
+    "minOrder": "Ordine minimo",
+    "minOrderValue": "5 abiti di una nuova collezione — modelli e brand combinabili",
+    "production": "Produzione",
+    "productionValue": "6–8 settimane dall'acconto, 8–12 settimane da maggio a settembre",
+    "payment": "Pagamento",
+    "paymentValue": "Acconto 30%, saldo 70% prima della spedizione. EUR, PLN o USD",
+    "delivery": "Consegna",
+    "deliveryValue": "DPD, porta a porta fino al Suo atelier",
+    "requestPrice": "Richiedi il prezzo",
+    "askManager": "Chieda a un manager",
+    "sizesTerms": "Taglie e condizioni ingrosso",
+    "switchModel": "Cambia modello",
+    "previous": "Precedente",
+    "next": "Successivo",
+    "close": "Chiudi",
+    "prevPhoto": "Foto precedente",
+    "nextPhoto": "Foto successiva",
+    "moreFrom": "Altro da {brand}",
+    "allBrandModels": "Tutti i modelli {brand}",
+    "moreModels": "Altri modelli",
+    "seoTitle": "{name} — abito da sposa {brand} | QUEEN Fashion Group",
+    "seoDesc": "{name}. {desc} All'ingrosso da QUEEN Fashion Group, prezzo su richiesta.",
+    "weddingDress": "abito da sposa"
+   },
+   "brandsPage": {
+    "models": "Modelli",
+    "silhouettes": "Linee",
+    "collection": "Collezione",
+    "keyModels": "Modelli chiave",
+    "keyModelsLine": "Modelli chiave · {keys}",
+    "discover": "Scopri {brand}",
+    "catalogue": "Catalogo",
+    "seoTitle": "I nostri brand — QUEEN Fashion Group",
+    "seoDesc": "Sette brand di abiti da sposa da un unico produttore: {list}."
+   },
+   "about": {
+    "heroAlt": "Una sposa in abito Eleonora nel giardino di un palazzo",
+    "allBrands": "Tutti i brand",
+    "seoTitle": "Chi siamo — QUEEN Fashion Group",
+    "seoDesc": "QUEEN Fashion Group: sette brand di abiti da sposa, fatti a mano nella nostra produzione e forniti all'ingrosso ad atelier sposa in 18 Paesi."
+   },
+   "partners": {
+    "becomePartner": "Diventa partner",
+    "termsLink": "Condizioni di collaborazione",
+    "seoTitle": "Partnership all'ingrosso — QUEEN Fashion Group",
+    "seoDesc": "Condizioni per atelier sposa: ordine minimo di 5 abiti, produzione in 6–8 settimane, pagamento 30/70 in EUR, PLN o USD, consegna DPD."
+   },
+   "contact": {
+    "seoTitle": "Contatti — QUEEN Fashion Group",
+    "seoDesc": "Contatti QUEEN Fashion Group: richieste all'ingrosso, manager per i mercati polacco, tedesco e italiano, sede a Cracovia.",
+    "name": "Nome *",
+    "salon": "Atelier o azienda *",
+    "email": "E-mail *",
+    "phone": "Telefono",
+    "country": "Paese *",
+    "brandsLegend": "Brand di Suo interesse",
+    "message": "Messaggio",
+    "consent": "Acconsento al trattamento dei miei dati personali per rispondere a questa richiesta, come descritto nella {link}. *",
+    "consentLink": "privacy policy",
+    "send": "Invia richiesta",
+    "thanks": "Grazie",
+    "thanksText": "Il Suo programma di posta si è aperto con la richiesta pronta all'invio. In caso contrario, ci scriva a {email} o chiami il {phone}.",
+    "browse": "Sfoglia il catalogo",
+    "stripAria": "Abiti dei nostri brand",
+    "errName": "Inserisca il Suo nome.",
+    "errSalon": "Inserisca il nome dell'atelier o dell'azienda.",
+    "errEmail": "Inserisca la Sua e-mail.",
+    "errEmailBad": "Verifichi l'indirizzo e-mail.",
+    "errCountry": "Inserisca il Paese.",
+    "errConsent": "È necessario il consenso al trattamento dei dati.",
+    "mailSubject": "Richiesta ingrosso — {company}",
+    "mailName": "Nome",
+    "mailSalon": "Atelier / azienda",
+    "mailCountry": "Paese",
+    "mailEmail": "E-mail",
+    "mailPhone": "Telefono",
+    "mailBrands": "Brand",
+    "priceRequest": "Richiesta prezzo: {model}"
+   },
+   "blog": {
+    "seoTitle": "Blog — QUEEN Fashion Group",
+    "seoDesc": "Notizie da QUEEN Fashion Group: settimane della moda sposa, fiere e nuove collezioni.",
+    "readStory": "Leggi l'articolo",
+    "allNews": "Tutte le notizie",
+    "moreNews": "Altre notizie"
+   },
+   "privacy": {
+    "title": "Privacy policy",
+    "seoTitle": "Privacy policy — QUEEN Fashion Group",
+    "seoDesc": "Come QUEEN Fashion Group tratta i dati personali di partner e visitatori del sito."
+   },
+   "notFound": {
+    "seoTitle": "Pagina non trovata — QUEEN Fashion Group",
+    "seoDesc": "Questa pagina non esiste.",
+    "title": "Pagina non trovata",
+    "text": "Il link potrebbe non essere più valido, oppure la pagina è stata spostata.",
+    "home": "Torna alla home",
+    "catalogue": "Vedi il catalogo"
+   },
+   "colours": {
+    "Ivory": "Avorio",
+    "Cappuccino": "Cappuccino",
+    "White": "Bianco",
+    "Champagne": "Champagne"
+   }
+  },
+  "labels": {
+   "sil": {
+    "aline": "Linea ad A",
+    "ball": "Principessa",
+    "mermaid": "Sirena",
+    "sheath": "Tubino",
+    "short": "Corto"
+   },
+   "sleeves": {
+    "long": "Maniche lunghe",
+    "detachable": "Maniche staccabili",
+    "offshoulder": "Spalle scoperte",
+    "straps": "Spalline",
+    "strapless": "Senza spalline"
+   },
+   "fabric": {
+    "lace": "Pizzo",
+    "tulle": "Tulle",
+    "satin": "Raso",
+    "glitter": "Tulle glitterato"
+   },
+   "details": {
+    "slit": "Spacco alto",
+    "overskirt": "Sovragonna staccabile",
+    "cape": "Mantella"
+   }
+  },
+  "site": {
+   "contact": {
+    "managers": [
+     {
+      "market": "Mercato polacco",
+      "country": "Polonia"
+     },
+     {
+      "market": "Mercato polacco",
+      "country": "Polonia"
+     },
+     {
+      "market": "Mercato tedesco",
+      "country": "Germania"
+     },
+     {
+      "market": "Mercato italiano",
+      "country": "Italia"
+     }
+    ]
+   },
+   "terms": [
+    {
+     "label": "Ordine minimo",
+     "value": "5 abiti",
+     "note": "di una nuova collezione"
+    },
+    {
+     "label": "Produzione",
+     "value": "6–8 settimane",
+     "note": "8–12 settimane in alta stagione, maggio – settembre"
+    },
+    {
+     "label": "Pagamento",
+     "note": "acconto, saldo prima della spedizione. EUR, PLN o USD"
+    },
+    {
+     "label": "Consegna",
+     "value": "DPD",
+     "note": "porta a porta fino al Suo atelier"
+    }
+   ],
+   "nav": {
+    "megaText": "Sette brand di abiti da sposa da un unico produttore — ognuno con il proprio carattere, tutti realizzati con lo stesso standard.",
+    "featureTitle": "Nuova collezione — Queen 2027",
+    "footerTagline": "Abiti da sposa fatti a mano, direttamente dal produttore, per atelier sposa in tutto il mondo."
+   },
+   "home": {
+    "seoTitle": "QUEEN Fashion Group — Fornitore internazionale di abiti da sposa",
+    "seoDescription": "QUEEN Fashion Group riunisce sette brand di abiti da sposa — QUEEN, Elle, Eleonora, Atelier Lorenzo Ricci, Velina, Nivera e TVOYA. Fornitura all'ingrosso per atelier sposa in 18 Paesi.",
+    "hero": {
+     "label": "QUEEN Fashion Group",
+     "title": "Sette brand sposa, una sola maison",
+     "text": "Abiti da sposa fatti a mano, direttamente dal produttore, forniti all'ingrosso ad atelier sposa in 18 Paesi.",
+     "button": "Diventa partner",
+     "link": "Scopri i nostri brand"
+    },
+    "about": {
+     "label": "Il gruppo",
+     "title": "Un atelier con una storia",
+     "texts": [
+      "QUEEN Fashion Group riunisce sette brand di abiti da sposa sotto lo stesso tetto — dalla linea firma QUEEN a marchi più giovani, ciascuno con una propria cifra stilistica.",
+      "Ogni abito è realizzato a mano nella nostra produzione, dove ogni fase è controllata, dalla scelta del tessuto alla decorazione finale. Riforniamo atelier, boutique e showroom in tutta Europa e presentiamo le nostre collezioni a Barcelona Bridal Fashion Week, Bridal Fashion Warsaw e Fiera Milano."
+     ],
+     "stats": [
+      {
+       "label": "brand sposa"
+      },
+      {
+       "label": "Paesi"
+      },
+      {
+       "label": "abiti ordine minimo"
+      },
+      {
+       "label": "settimane di produzione"
+      }
+     ]
+    },
+    "brands": {
+     "label": "I nostri brand",
+     "title": "Sette nomi, un solo standard",
+     "text": "Ogni brand ha il proprio carattere e la propria sposa. Scelga quelli più adatti al Suo atelier, o ne combini diversi in un unico ordine.",
+     "ctaTitle": "Un fornitore, sette brand",
+     "ctaText": "Un manager, un ordine e una consegna per tutti i brand scelti."
+    },
+    "benefits": {
+     "label": "Per i partner all'ingrosso",
+     "title": "Perché gli atelier scelgono noi",
+     "items": [
+      {
+       "title": "Qualità artigianale",
+       "text": "Ogni fase della produzione è controllata, dal tessuto alla decorazione finale."
+      },
+      {
+       "title": "Sette brand, un fornitore",
+       "text": "Spose e fasce di prezzo diverse con un solo partner e una sola consegna."
+      },
+      {
+       "title": "Prezzi da produttore",
+       "text": "Prezzi vantaggiosi, pagamenti comodi e un approccio flessibile per i partner abituali."
+      },
+      {
+       "title": "Novità ogni stagione",
+       "text": "Collezioni in linea con le tendenze e consigli su ciò che vende di più in stagione."
+      },
+      {
+       "title": "Ordini di ogni volume",
+       "text": "Grandi forniture e piccoli ordini, con consegna rapida in tutto il mondo."
+      },
+      {
+       "title": "Supporto marketing",
+       "text": "Foto e materiali delle collezioni per il Suo atelier e per il web."
+      }
+     ]
+    },
+    "collections": {
+     "label": "Collezioni dei brand",
+     "title": "Scopra le collezioni",
+     "tabs": {
+      "queen": [
+       {
+        "alt": "Queen 2027 modello 2752 — abito principessa in raso con maniche in pizzo",
+        "caption": "Queen 2027 · 2752"
+       },
+       {
+        "alt": "QUEEN — abito a sirena in pizzo con maniche lunghe e strascico cattedrale",
+        "caption": "Queen"
+       },
+       {
+        "alt": "QUEEN — abito scintillante linea ad A con spalle scoperte",
+        "caption": "Queen"
+       },
+       {
+        "alt": "QUEEN — abito in pizzo linea ad A con spacco alto e maniche in pizzo",
+        "caption": "Queen"
+       }
+      ],
+      "elle": [
+       {
+        "alt": "Elle 765 — abito in pizzo con spacco alto e maniche",
+        "caption": "Elle · 765"
+       },
+       {
+        "alt": "Elle 818 — abito aderente con inserti in pizzo trasparente",
+        "caption": "Elle · 818"
+       },
+       {
+        "alt": "Elle 808 — abito in raso con spalle scoperte",
+        "caption": "Elle · 808"
+       }
+      ],
+      "eleonora": [
+       {
+        "alt": "Eleonora P-51 — abito a sirena con maniche in pizzo",
+        "caption": "Eleonora · P-51"
+       },
+       {
+        "alt": "Eleonora P-87 — abito principessa in raso con corpetto ricamato",
+        "caption": "Eleonora · P-87"
+       },
+       {
+        "alt": "Eleonora P-78 — abito principessa in tulle con maniche a spalle scoperte",
+        "caption": "Eleonora · P-78"
+       }
+      ]
+     }
+    },
+    "services": {
+     "label": "Servizi esclusivi",
+     "title": "Oltre il catalogo",
+     "text": "Per i partner che desiderano più delle collezioni pronte — abiti e servizi pensati per il Suo atelier.",
+     "items": [
+      {
+       "title": "Sartoria su misura",
+       "text": "I nostri designer creano abiti di qualsiasi complessità su richiesta della Sua cliente."
+      },
+      {
+       "title": "Modifiche su ordinazione",
+       "text": "Maniche, lunghezza, strascico o colore dei modelli a catalogo, adattati alla taglia richiesta."
+      },
+      {
+       "title": "Un manager nella Sua lingua",
+       "text": "Manager dedicati per i mercati polacco, tedesco e italiano offrono consulenza su assortimento, pagamento e consegna."
+      },
+      {
+       "title": "Area partner",
+       "text": "Listini, lookbook e materiali delle collezioni in un unico spazio per gli atelier partner."
+      }
+     ]
+    },
+    "banner": {
+     "label": "Partnership all'ingrosso",
+     "title": "I nostri brand nel Suo atelier",
+     "text": "Richieda il listino all'ingrosso e i cataloghi. Un manager risponderà entro un giorno lavorativo.",
+     "button": "Richiedi il listino"
+    }
+   },
+   "cta": {
+    "title": "I nostri brand nel Suo atelier",
+    "text": "Richieda il listino all'ingrosso e il lookbook. Un manager risponderà entro un giorno lavorativo.",
+    "button": "Richiedi il listino",
+    "brandTitle": "{brand} nel Suo atelier"
+   },
+   "brandsPage": {
+    "title": "I nostri brand",
+    "text": "Sette brand di abiti da sposa da un unico produttore — ognuno con il proprio carattere, tutti realizzati a mano con lo stesso standard.",
+    "nextTitle": "Prossimamente",
+    "nextText": "Nuovi brand del gruppo. Il servizio fotografico delle collezioni è in corso — nel frattempo può richiedere il lookbook a un manager.",
+    "ctaTitle": "Un fornitore, sette brand",
+    "ctaText": "Un manager, un ordine e una consegna per tutti i brand scelti. Più brand si possono combinare in un unico ordine."
+   },
+   "about": {
+    "hero": {
+     "label": "Chi è QUEEN Fashion Group",
+     "title": "Un atelier con una storia",
+     "text": "Abiti da sposa fatti a mano, direttamente dal produttore, per atelier sposa in 18 Paesi."
+    },
+    "story": {
+     "title": "Sette brand sposa sotto lo stesso tetto, realizzati nella nostra produzione",
+     "texts": [
+      "QUEEN Fashion Group nasce da QUEEN — un brand di abiti da sposa noto per i corpetti strutturati a corsetto, i pizzi pregiati e gli strascichi lunghi. Oggi il gruppo riunisce sette brand, dalla linea firma QUEEN a marchi più giovani, ciascuno con una propria cifra stilistica.",
+      "Lavoriamo con titolari di atelier sposa, boutique e showroom. I partner ordinano dai nostri cataloghi o richiedono una sartoria esclusiva su misura; accettiamo sia grandi forniture sia piccoli ordini.",
+      "I nostri manager aiutano ogni atelier a orientarsi nell'assortimento: quali modelli e colori sono richiesti in stagione, e quale modalità di pagamento e consegna è più adatta."
+     ]
+    },
+    "craft": {
+     "title": "Fatti a mano, controllati in ogni fase",
+     "text": "Ogni abito è cucito nella nostra produzione. Ogni modello è adattato alla taglia richiesta, per una vestibilità impeccabile — che provenga dal catalogo o sia realizzato su ordinazione.",
+     "items": [
+      {
+       "title": "Produzione propria",
+       "text": "Dal tessuto alla decorazione finale, ogni fase resta nelle nostre mani."
+      },
+      {
+       "title": "Modifiche su ordinazione",
+       "text": "Maniche, lunghezza, strascico e colore modificabili su richiesta."
+      },
+      {
+       "title": "Taglie EU e UA",
+       "text": "Tabelle taglie europee e ucraine."
+      }
+     ]
+    },
+    "values": {
+     "title": "I nostri valori",
+     "items": [
+      {
+       "title": "Alta qualità",
+       "text": "Ogni fase della produzione è rigorosamente controllata, dalla scelta del tessuto alla cucitura e decorazione di ogni abito."
+      },
+      {
+       "title": "Design unico",
+       "text": "Una linea di abiti esclusivi fatti a mano, creati in sintonia con le tendenze della moda."
+      },
+      {
+       "title": "Approccio personalizzato",
+       "text": "I nostri designer curano ogni dettaglio e possono creare abiti di qualsiasi complessità per la Sua cliente."
+      },
+      {
+       "title": "Prezzi corretti",
+       "text": "Prezzi da produttore e pagamenti comodi. Sconti e offerte speciali per i partner abituali."
+      },
+      {
+       "title": "Servizio attento",
+       "text": "I manager rispondono a ogni domanda in modo esauriente e concordano ogni consegna con cura."
+      },
+      {
+       "title": "Puntualità",
+       "text": "Produzione rapida per ordini di qualsiasi volume e consegna veloce in tutto il mondo."
+      }
+     ]
+    },
+    "groupTitle": "I brand del gruppo",
+    "eventsTitle": "Dove incontrarci",
+    "eventsText": "Presentiamo le nostre collezioni alle principali fiere sposa in Europa."
+   },
+   "partners": {
+    "title": "Partnership all'ingrosso",
+    "text": "Aiutiamo titolari di atelier sposa, boutique e showroom a costruire il proprio assortimento con abiti fatti a mano di sette brand.",
+    "stepsTitle": "Come funziona la collaborazione",
+    "steps": [
+     {
+      "title": "Invii una richiesta",
+      "text": "Lasci i Suoi dati nel modulo o chiami il manager del Suo mercato."
+     },
+     {
+      "title": "Riceva il listino",
+      "text": "Inviamo il listino all'ingrosso e i lookbook dei brand scelti."
+     },
+     {
+      "title": "Effettui l'ordine",
+      "text": "Da 5 abiti di una nuova collezione, con un acconto del 30%."
+     },
+     {
+      "title": "Produzione",
+      "text": "6–8 settimane dall'acconto, 8–12 settimane da maggio a settembre."
+     },
+     {
+      "title": "Consegna",
+      "text": "Saldo del 70% prima della spedizione. DPD consegna al Suo atelier."
+     }
+    ],
+    "benefitsTitle": "I vantaggi della collaborazione",
+    "benefitsPhoto": {
+     "alt": "Una sposa in abito Eleonora in tulle nel giardino di un palazzo"
+    },
+    "benefits": [
+     {
+      "title": "Fornitura efficiente",
+      "text": "Un manager e una consegna per tutti i brand del Suo ordine."
+     },
+     {
+      "title": "Prezzi vantaggiosi",
+      "text": "Prezzi da produttore e un sistema flessibile di sconti per i partner abituali."
+     },
+     {
+      "title": "Alta qualità del prodotto",
+      "text": "Abiti fatti a mano, controllati in ogni fase della produzione."
+     },
+     {
+      "title": "Aggiornamenti costanti",
+      "text": "Nuove collezioni ogni stagione, con consigli su ciò che vende di più."
+     },
+     {
+      "title": "Supporto marketing",
+      "text": "Foto, video e materiali delle collezioni per il Suo atelier e i social media."
+     },
+     {
+      "title": "Pagamenti comodi",
+      "text": "Prezzi in EUR, con possibilità di pagamento anche in PLN o USD."
+     }
+    ],
+    "servicesTitle": "Servizi esclusivi",
+    "servicesText": "Per i partner che desiderano più delle collezioni pronte — abiti e servizi pensati per il Suo atelier.",
+    "servicesPhoto": {
+     "alt": "QUEEN modello 2750 — tubino in pizzo con sovragonna in tulle"
+    },
+    "services": [
+     {
+      "title": "Sartoria su misura",
+      "text": "I nostri designer creano abiti di qualsiasi complessità su richiesta della Sua cliente."
+     },
+     {
+      "title": "Modifiche su ordinazione",
+      "text": "Maniche, lunghezza, strascico o colore dei modelli a catalogo, adattati alla taglia richiesta."
+     },
+     {
+      "title": "Un manager nella Sua lingua",
+      "text": "Manager dedicati per i mercati polacco, tedesco e italiano offrono consulenza su assortimento, pagamento e consegna."
+     },
+     {
+      "title": "Area partner",
+      "text": "Listini, lookbook e materiali delle collezioni in un unico spazio per gli atelier partner."
+     }
+    ],
+    "faqTitle": "Domande dagli atelier",
+    "faq": [
+     {
+      "q": "Qual è l'ordine minimo?",
+      "a": "Cinque abiti di una nuova collezione. Modelli e brand si possono combinare in un unico ordine."
+     },
+     {
+      "q": "Quanto dura la produzione?",
+      "a": "6–8 settimane dall'acconto. In alta stagione, dal 1° maggio al 30 settembre, servono 8–12 settimane."
+     },
+     {
+      "q": "Come funziona il pagamento?",
+      "a": "Acconto del 30% all'ordine e saldo del 70% prima della spedizione. I prezzi sono in EUR; è possibile pagare anche in PLN o USD."
+     },
+     {
+      "q": "Come vengono consegnati gli abiti?",
+      "a": "Spediamo con DPD, porta a porta fino al Suo atelier."
+     },
+     {
+      "q": "È possibile modificare un modello per la mia cliente?",
+      "a": "Sì. Maniche, lunghezza, strascico e colore sono modificabili, e i nostri designer possono creare un abito su richiesta individuale."
+     },
+     {
+      "q": "Quali tabelle taglie utilizzate?",
+      "a": "Lavoriamo con tabelle taglie europee e ucraine."
+     },
+     {
+      "q": "Come posso vedere i prezzi?",
+      "a": "I prezzi sono disponibili su richiesta. Invii il modulo e un manager Le invierà il listino entro un giorno lavorativo."
+     }
+    ],
+    "ctaTitle": "Inizi a collaborare con noi",
+    "ctaText": "Lasci una richiesta: un manager Le invierà listino e lookbook entro un giorno lavorativo."
+   },
+   "contactPage": {
+    "title": "Contatti",
+    "text": "Lasci una richiesta o chiami il manager del Suo mercato. Rispondiamo entro un giorno lavorativo.",
+    "formTitle": "Richiesta ingrosso",
+    "formText": "Listino e lookbook su richiesta. I campi contrassegnati da * sono obbligatori."
+   },
+   "blogPage": {
+    "title": "Blog",
+    "text": "Notizie dal gruppo — settimane della moda, fiere e nuove collezioni."
+   },
+   "privacy": {
+    "updated": "Ultimo aggiornamento: 7 novembre 2026",
+    "sections": [
+     {
+      "title": "Chi siamo",
+      "text": "Il titolare del trattamento dei Suoi dati personali è QUEEN_WED Sp. z o.o., Czyżówka 14/2.11, 30-526 Cracovia, Polonia. Per qualsiasi domanda sui Suoi dati, scriva a {email}."
+     },
+     {
+      "title": "Quali dati raccogliamo",
+      "text": "Quando invia una richiesta all'ingrosso riceviamo i dati inseriti nel modulo: nome, nome dell'atelier o dell'azienda, indirizzo e-mail, numero di telefono, Paese, brand di interesse e messaggio. Quando chiama o scrive a un manager riceviamo i dati condivisi nel corso della conversazione."
+     },
+     {
+      "title": "Perché li utilizziamo",
+      "text": "Utilizziamo questi dati esclusivamente per rispondere alla Sua richiesta, inviare listini e cataloghi, preparare ed eseguire gli ordini e mantenere i contatti in qualità di partner commerciale. La base giuridica è costituita dalle misure adottate su Sua richiesta prima della conclusione di un contratto e dal nostro legittimo interesse a rispondere alle richieste commerciali (art. 6, par. 1, lett. b) e f) del GDPR), oppure dal Suo consenso, ove richiesto."
+     },
+     {
+      "title": "Chi li riceve",
+      "text": "I Suoi dati sono accessibili ai nostri manager. Possiamo condividerli con fornitori che ci supportano nella gestione dell'attività — servizi di posta elettronica e hosting, un sistema di gestione delle relazioni con i clienti e corrieri come DPD per la spedizione degli ordini. Non vendiamo i Suoi dati."
+     },
+     {
+      "title": "Per quanto tempo li conserviamo",
+      "text": "Conserviamo i dati delle richieste per il tempo necessario a rispondere e a proseguire la conversazione, e i dati relativi agli ordini per il periodo previsto dalla normativa contabile e fiscale."
+     },
+     {
+      "title": "I Suoi diritti",
+      "text": "Ha il diritto di accedere ai Suoi dati, rettificarli, ottenerne la cancellazione, limitarne il trattamento od opporvisi, e riceverli in un formato portabile. Se il trattamento si basa sul consenso, può revocarlo in qualsiasi momento. Può inoltre proporre reclamo al Presidente dell'Ufficio per la protezione dei dati personali (UODO) in Polonia."
+     },
+     {
+      "title": "Cookie",
+      "text": "Questo sito non utilizza cookie pubblicitari o analitici. In caso di modifiche, aggiorneremo la presente informativa e chiederemo il Suo consenso ove necessario."
+     }
+    ]
+   }
+  },
+  "brands": {
+   "queen": {
+    "tagline": "Eleganza senza tempo e raffinatezza femminile",
+    "intro": "Il brand firma di QUEEN Fashion Group — corpetti a corsetto, pizzo e lunghi strascichi, realizzati a mano nella nostra produzione.",
+    "about": [
+     "QUEEN è la linea con cui il gruppo è nato, e ancora oggi definisce lo standard per tutti gli altri brand. Ogni abito è costruito attorno a un corpetto strutturato a corsetto che mantiene la forma, rifinito con applicazioni in pizzo, ricami di perline o raso essenziale.",
+     "Nuove collezioni ogni stagione. Queen 2027 è la più recente, mentre Paradise e Floria restano in linea come best-seller collaudati per gli atelier partner."
+    ],
+    "coverAlt": "QUEEN — modello 2744, abito a sirena in pizzo con maniche staccabili"
+   },
+   "elle": {
+    "tagline": "Stile moderno e dettagli delicati",
+    "intro": "Linee pulite, raso scolpito e pizzo pregiato — per la sposa che desidera un abito attuale e leggero.",
+    "about": [
+     "Elle unisce stile moderno e dettagli delicati. La linea spazia da silhouette minimali in raso a corpetti a corsetto trasparenti rivestiti di pizzo morbido.",
+     "Molti modelli prevedono maniche o sovragonne staccabili, così un solo abito si presta a più look — un punto di forza per gli atelier con una clientela varia."
+    ],
+    "coverAlt": "Elle — due abiti in pizzo con maniche staccabili"
+   },
+   "eleonora": {
+    "tagline": "Design romantici, silhouette aggraziate",
+    "intro": "Gonne ampie in tulle, corsetti scolpiti e volumi morbidi — una linea romantica per un look femminile.",
+    "about": [
+     "Eleonora propone design romantici e silhouette aggraziate. Abiti principessa in tulle leggero, modelli a sirena aderenti in pizzo e creazioni in raso con maniche a sbuffo o staccabili.",
+     "La collezione è fotografata tra strade storiche e giardini di palazzi, e molti modelli sono accompagnati da un breve video che gli atelier possono usare nel proprio marketing."
+    ],
+    "coverAlt": "Eleonora — modello P-87, abito principessa in raso con corpetto ricamato di perle"
+   },
+   "ricci": {
+    "tagline": "Design raffinato, lavorazione impeccabile",
+    "intro": "Finiture di livello couture e design raffinato per atelier di fascia alta.",
+    "about": [
+     "Atelier Lorenzo Ricci esprime un design raffinato e una lavorazione impeccabile."
+    ],
+    "coverAlt": "Atelier Lorenzo Ricci — abito principessa in pizzo con maniche a sbuffo trasparenti"
+   },
+   "velina": {
+    "tagline": "Un tocco morbido e arioso alla moda sposa",
+    "intro": "Tessuti leggeri e linee naturali.",
+    "about": [
+     "Velina porta un tocco morbido e arioso alla moda sposa."
+    ]
+   },
+   "nivera": {
+    "tagline": "Linee pulite e dettagli discreti",
+    "intro": "Eleganza moderna — essenziale, precisa, contemporanea.",
+    "about": [
+     "Nivera unisce eleganza moderna, linee pulite e dettagli discreti."
+    ],
+    "coverAlt": "Nivera — abito senza spalline in raso linea ad A con corpetto drappeggiato"
+   },
+   "tvoya": {
+    "tagline": "Stili audaci e distintivi",
+    "intro": "Per le spose che vogliono distinguersi.",
+    "about": [
+     "TVOYA celebra l'individualità con stili audaci e distintivi."
+    ]
+   }
+  },
+  "posts": {
+   "barcelona-bridal-fashion-week-2025": {
+    "title": "Il nostro debutto a Barcelona Bridal Fashion Week",
+    "date": "2025",
+    "tag": "Fashion week",
+    "lead": "Queen Wedding Dresses ha debuttato alla prestigiosa Barcelona Bridal Fashion Week 2025, acquisendo nuovi clienti in Spagna e ampliando la propria rete a 18 Paesi nel mondo.",
+    "body": [
+     "Barcelona Bridal Fashion Week è uno degli appuntamenti più importanti del calendario sposa. Buyer di atelier da tutta Europa e non solo vi partecipano per vedere in anteprima la nuova stagione e incontrare i produttori.",
+     "Per QUEEN è stata la prima volta su questo palcoscenico. Il nostro team ha presentato le ultime collezioni allo stand, dove i buyer hanno potuto osservare da vicino gli abiti — la costruzione del corsetto, il pizzo e le finiture che contraddistinguono la nostra produzione artigianale.",
+     "La settimana ci ha portato nuovi partner in Spagna, e con loro i nostri abiti sono ora venduti in 18 Paesi. Ringraziamo tutti gli atelier che hanno visitato il nostro stand e attendiamo con piacere di collaborare insieme."
+    ]
+   },
+   "bridal-fashion-warsaw-2025": {
+    "title": "Bridal Fashion Warsaw 2025",
+    "date": "17–18 maggio 2025",
+    "tag": "Fiera",
+    "lead": "Il 17 e 18 maggio Queen Wedding Dresses ha partecipato a Bridal Fashion Warsaw 2025. Il nostro stand è stato affollato di clienti polacchi in entrambe le giornate.",
+    "body": [
+     "La Polonia è uno dei nostri mercati principali, e Bridal Fashion Warsaw è l'occasione per incontrare di persona molti dei nostri partner. Per due giorni lo stand è stato animato dall'apertura alla chiusura.",
+     "La collezione 2026 ha attirato la maggiore attenzione. I titolari di atelier sono venuti a vedere le nuove silhouette, discutere l'assortimento per la prossima stagione e concordare i primi ordini.",
+     "Durante la fiera sono state confermate decine di nuove collaborazioni — un chiaro segno della nostra solida posizione sul mercato polacco. I nostri manager di lingua polacca proseguono il dialogo con ogni atelier incontrato."
+    ]
+   },
+   "fiera-milano": {
+    "title": "Il nostro stand a Fiera Milano",
+    "date": "2025",
+    "tag": "Fiera",
+    "lead": "Il team QUEEN ha presentato le collezioni nel proprio stand a Fiera Milano, incontrando buyer dall'Italia e da tutta Europa.",
+    "body": [
+     "Milano è il luogo naturale in cui un brand sposa incontra il mercato: la città detta il tono della moda e le sue fiere riuniscono buyer in cerca di qualità e design.",
+     "Allo stand abbiamo presentato abiti delle collezioni attuali e parlato con gli atelier delle loro clienti, degli stili più richiesti e delle condizioni di collaborazione.",
+     "Per i nostri partner italiani è disponibile un manager dedicato che offre consulenza in italiano su assortimento, pagamento e consegna. Se non ci ha incontrato a Milano, ci contatti: Le invieremo lookbook e listino."
+    ]
+   }
+  }
+ },
+ "el": {
+  "ui": {
+   "nav": {
+    "brands": "Brands",
+    "catalogue": "Κατάλογος",
+    "aboutUs": "Σχετικά με εμάς",
+    "blog": "Blog",
+    "contacts": "Επικοινωνία",
+    "home": "Αρχική",
+    "ourBrands": "Τα brands μας",
+    "allBrands": "Όλα τα brands",
+    "fullCatalogue": "Πλήρης κατάλογος",
+    "company": "Εταιρεία",
+    "partners": "Συνεργάτες",
+    "wholesaleEnquiry": "Αίτημα χονδρικής",
+    "termsOfCooperation": "Όροι συνεργασίας",
+    "exclusiveServices": "Αποκλειστικές υπηρεσίες",
+    "privacyPolicy": "Πολιτική απορρήτου",
+    "becomePartner": "Γίνετε συνεργάτης",
+    "email": "E-mail",
+    "allMarkets": "Όλες οι αγορές",
+    "office": "Γραφείο",
+    "officeCountry": "Πολωνία",
+    "backToTop": "Επιστροφή επάνω",
+    "skip": "Μετάβαση στο περιεχόμενο",
+    "openMenu": "Άνοιγμα μενού",
+    "homeAria": "QUEEN Fashion Group — αρχική",
+    "topAria": "QUEEN Fashion Group — επιστροφή επάνω",
+    "language": "Γλώσσα",
+    "call": "Κλήση στο {phone}"
+   },
+   "common": {
+    "new": "Νέο",
+    "video": "Βίντεο",
+    "photoSoon": "Φωτογραφία σύντομα",
+    "comingSoon": "Σύντομα",
+    "moreAboutUs": "Περισσότερα για εμάς",
+    "viewBrandCatalogue": "Δείτε τον κατάλογο {brand}",
+    "termsAria": "Οι όροι με μια ματιά",
+    "introAria": "Εισαγωγή",
+    "heroVideoAria": "Νυφικά Eleonora σε γυρίσματα στην Κρακοβία"
+   },
+   "brand": {
+    "nModels": {
+     "one": "{n} μοντέλο",
+     "other": "{n} μοντέλα"
+    },
+    "nSilhouettes": {
+     "one": "{n} γραμμή",
+     "other": "{n} γραμμές"
+    },
+    "collectionSoon": "Η συλλογή έρχεται σύντομα",
+    "viewCatalogue": "Δείτε τον κατάλογο",
+    "heroAlt": "Νυφικό {brand}",
+    "modelsAria": "Μοντέλα {brand}",
+    "keyModels": "Βασικά μοντέλα",
+    "silhouettes": "Γραμμές",
+    "fabrics": "Υφάσματα",
+    "production": "Παραγωγή",
+    "productionValue": "Χειροποίητα, στη δική μας παραγωγή",
+    "minOrder": "Ελάχιστη παραγγελία",
+    "minOrderValue": "5 νυφικά από νέα συλλογή",
+    "sizes": "Μεγέθη",
+    "sizesValue": "Πίνακες μεγεθών EU και UA",
+    "detailAlt": "{brand} — λεπτομέρεια",
+    "collections": "Συλλογές",
+    "theCollection": "Η συλλογή",
+    "bySilhouette": "Η τρέχουσα σειρά {brand}, ανά γραμμή.",
+    "collectionsSoon": "Οι συλλογές έρχονται σύντομα",
+    "selectedModels": "Επιλεγμένα μοντέλα",
+    "viewAll": {
+     "one": "Δείτε {n} μοντέλο",
+     "other": "Δείτε και τα {n} μοντέλα"
+    },
+    "modelsSoon": "Τα μοντέλα έρχονται σύντομα",
+    "seoTitle": "{brand} — νυφικά χονδρική | QUEEN Fashion Group",
+    "seoDesc": "{brand}: {tagline}. Νυφικά χονδρικής για νυφικά καταστήματα από την QUEEN Fashion Group."
+   },
+   "catalogue": {
+    "title": "Όλα τα μοντέλα",
+    "intro": "Όλα τα μοντέλα όλων των brands σε ένα σημείο. Επιλέξτε brand και φιλτράρετε κατά γραμμή, μανίκια ή ύφασμα.",
+    "brandIntro": "Ο κατάλογος {brand}. Αλλάξτε brand επάνω όποτε θέλετε ή φιλτράρετε κατά γραμμή, μανίκια ή ύφασμα.",
+    "all": "Όλα",
+    "filters": "Φίλτρα",
+    "sort": "Ταξινόμηση",
+    "featured": "Προτεινόμενα",
+    "newFirst": "Πρώτα τα νέα",
+    "byArticle": "Κατά κωδικό",
+    "view": "Προβολή",
+    "grid": "Προβολή πλέγματος",
+    "gallery": "Προβολή γκαλερί",
+    "showMore": "Περισσότερα",
+    "closeFilters": "Κλείσιμο φίλτρων",
+    "clear": "Καθαρισμός",
+    "clearAll": "Καθαρισμός όλων",
+    "clearFilters": "Καθαρισμός φίλτρων",
+    "remove": "Αφαίρεση",
+    "showN": {
+     "one": "Εμφάνιση {n} μοντέλου",
+     "other": "Εμφάνιση {n} μοντέλων"
+    },
+    "brandAria": "Brand",
+    "modelsAria": "Μοντέλα",
+    "gCollection": "Συλλογή",
+    "gSilhouette": "Γραμμή",
+    "gSleeves": "Μανίκια & λαιμόκοψη",
+    "gFabric": "Ύφασμα",
+    "gDetails": "Λεπτομέρειες",
+    "newModels": "Νέα μοντέλα",
+    "withVideo": "Με βίντεο",
+    "soonTitle": "{brand} — σύντομα",
+    "soonText": "Η συλλογή φωτογραφίζεται. Βασικά μοντέλα: {keys}.",
+    "askManager": "Ρωτήστε έναν manager",
+    "noMatch": "Κανένα μοντέλο δεν ταιριάζει με αυτά τα φίλτρα",
+    "docTitle": "Κατάλογος — όλα τα μοντέλα νυφικών | QUEEN Fashion Group",
+    "docTitleBrand": "Κατάλογος {brand} | QUEEN Fashion Group",
+    "seoDesc": "Κατάλογος χονδρικής με {n} μοντέλα νυφικών. Φιλτράρετε κατά brand, συλλογή, γραμμή, μανίκια και ύφασμα."
+   },
+   "model": {
+    "front": "{name} — μπροστά",
+    "view": "{name} — λήψη {k}",
+    "videoAlt": "{name} — βίντεο",
+    "openPhoto": "Άνοιγμα φωτογραφίας {k} από {total} σε πλήρη οθόνη",
+    "photos": "Φωτογραφίες",
+    "photo": "Φωτογραφία {k}",
+    "silhouette": "Γραμμή",
+    "fabric": "Ύφασμα",
+    "sleeves": "Μανίκια",
+    "details": "Λεπτομέρειες",
+    "colour": "Χρώμα",
+    "sizeCharts": "Πίνακες μεγεθών",
+    "sizeChartsValue": "Ευρωπαϊκοί και ουκρανικοί",
+    "madeToOrder": "Κατά παραγγελία",
+    "madeToOrderValue": "Μανίκια, μήκος, ουρά και χρώμα προσαρμόζονται για την πελάτισσά σας",
+    "minOrder": "Ελάχιστη παραγγελία",
+    "minOrderValue": "5 νυφικά από νέα συλλογή — μοντέλα και brands συνδυάζονται",
+    "production": "Παραγωγή",
+    "productionValue": "6–8 εβδομάδες μετά την προκαταβολή, 8–12 εβδομάδες από Μάιο έως Σεπτέμβριο",
+    "payment": "Πληρωμή",
+    "paymentValue": "30% προκαταβολή, 70% πριν από την αποστολή. EUR, PLN ή USD",
+    "delivery": "Παράδοση",
+    "deliveryValue": "DPD, από πόρτα σε πόρτα στο κατάστημά σας",
+    "requestPrice": "Ζητήστε τιμή",
+    "askManager": "Ρωτήστε έναν manager",
+    "sizesTerms": "Μεγέθη & όροι χονδρικής",
+    "switchModel": "Αλλαγή μοντέλου",
+    "previous": "Προηγούμενο",
+    "next": "Επόμενο",
+    "close": "Κλείσιμο",
+    "prevPhoto": "Προηγούμενη φωτογραφία",
+    "nextPhoto": "Επόμενη φωτογραφία",
+    "moreFrom": "Περισσότερα από {brand}",
+    "allBrandModels": "Όλα τα μοντέλα {brand}",
+    "moreModels": "Περισσότερα μοντέλα",
+    "seoTitle": "{name} — νυφικό {brand} | QUEEN Fashion Group",
+    "seoDesc": "{name}. {desc} Χονδρική από την QUEEN Fashion Group, τιμή κατόπιν αιτήματος.",
+    "weddingDress": "νυφικό"
+   },
+   "brandsPage": {
+    "models": "Μοντέλα",
+    "silhouettes": "Γραμμές",
+    "collection": "Συλλογή",
+    "keyModels": "Βασικά μοντέλα",
+    "keyModelsLine": "Βασικά μοντέλα · {keys}",
+    "discover": "Ανακαλύψτε το {brand}",
+    "catalogue": "Κατάλογος",
+    "seoTitle": "Τα brands μας — QUEEN Fashion Group",
+    "seoDesc": "Επτά brands νυφικών από έναν κατασκευαστή: {list}."
+   },
+   "about": {
+    "heroAlt": "Νύφη με νυφικό Eleonora σε κήπο ανακτόρου",
+    "allBrands": "Όλα τα brands",
+    "seoTitle": "Σχετικά με εμάς — QUEEN Fashion Group",
+    "seoDesc": "QUEEN Fashion Group: επτά brands νυφικών, χειροποίητα στη δική μας παραγωγή, με χονδρική διάθεση σε νυφικά καταστήματα σε 18 χώρες."
+   },
+   "partners": {
+    "becomePartner": "Γίνετε συνεργάτης",
+    "termsLink": "Όροι συνεργασίας",
+    "seoTitle": "Συνεργασία χονδρικής — QUEEN Fashion Group",
+    "seoDesc": "Όροι συνεργασίας για νυφικά καταστήματα: ελάχιστη παραγγελία 5 νυφικά, παραγωγή 6–8 εβδομάδες, πληρωμή 30/70 σε EUR, PLN ή USD, παράδοση με DPD."
+   },
+   "contact": {
+    "seoTitle": "Επικοινωνία — QUEEN Fashion Group",
+    "seoDesc": "Επικοινωνήστε με την QUEEN Fashion Group: αιτήματα χονδρικής, managers για την πολωνική, τη γερμανική και την ιταλική αγορά, γραφείο στην Κρακοβία.",
+    "name": "Όνομα *",
+    "salon": "Κατάστημα ή εταιρεία *",
+    "email": "E-mail *",
+    "phone": "Τηλέφωνο",
+    "country": "Χώρα *",
+    "brandsLegend": "Brands που σας ενδιαφέρουν",
+    "message": "Μήνυμα",
+    "consent": "Συναινώ στην επεξεργασία των προσωπικών μου δεδομένων για την απάντηση σε αυτό το αίτημα, όπως περιγράφεται στην {link}. *",
+    "consentLink": "πολιτική απορρήτου",
+    "send": "Αποστολή αιτήματος",
+    "thanks": "Σας ευχαριστούμε",
+    "thanksText": "Η εφαρμογή e-mail άνοιξε με το αίτημα έτοιμο προς αποστολή. Αν δεν άνοιξε, γράψτε μας στο {email} ή καλέστε στο {phone}.",
+    "browse": "Δείτε τον κατάλογο",
+    "stripAria": "Νυφικά από τα brands μας",
+    "errName": "Παρακαλούμε εισαγάγετε το όνομά σας.",
+    "errSalon": "Παρακαλούμε εισαγάγετε το κατάστημα ή την εταιρεία σας.",
+    "errEmail": "Παρακαλούμε εισαγάγετε το e-mail σας.",
+    "errEmailBad": "Παρακαλούμε ελέγξτε τη διεύθυνση e-mail σας.",
+    "errCountry": "Παρακαλούμε εισαγάγετε τη χώρα σας.",
+    "errConsent": "Παρακαλούμε συναινέστε στην επεξεργασία των δεδομένων σας.",
+    "mailSubject": "Αίτημα χονδρικής — {company}",
+    "mailName": "Όνομα",
+    "mailSalon": "Κατάστημα / εταιρεία",
+    "mailCountry": "Χώρα",
+    "mailEmail": "E-mail",
+    "mailPhone": "Τηλέφωνο",
+    "mailBrands": "Brands",
+    "priceRequest": "Αίτημα τιμής: {model}"
+   },
+   "blog": {
+    "seoTitle": "Blog — QUEEN Fashion Group",
+    "seoDesc": "Νέα από την QUEEN Fashion Group: εβδομάδες νυφικής μόδας, εκθέσεις και νέες συλλογές.",
+    "readStory": "Διαβάστε περισσότερα",
+    "allNews": "Όλα τα νέα",
+    "moreNews": "Περισσότερα νέα"
+   },
+   "privacy": {
+    "title": "Πολιτική απορρήτου",
+    "seoTitle": "Πολιτική απορρήτου — QUEEN Fashion Group",
+    "seoDesc": "Πώς η QUEEN Fashion Group διαχειρίζεται τα προσωπικά δεδομένα συνεργατών και επισκεπτών του ιστότοπου."
+   },
+   "notFound": {
+    "seoTitle": "Η σελίδα δεν βρέθηκε — QUEEN Fashion Group",
+    "seoDesc": "Αυτή η σελίδα δεν υπάρχει.",
+    "title": "Η σελίδα δεν βρέθηκε",
+    "text": "Ο σύνδεσμος μπορεί να είναι παλιός ή η σελίδα να έχει μετακινηθεί.",
+    "home": "Επιστροφή στην αρχική",
+    "catalogue": "Δείτε τον κατάλογο"
+   },
+   "colours": {
+    "Ivory": "Ιβουάρ",
+    "Cappuccino": "Καπουτσίνο",
+    "White": "Λευκό",
+    "Champagne": "Σαμπανιζέ"
+   }
+  },
+  "labels": {
+   "sil": {
+    "aline": "Γραμμή Α",
+    "ball": "Πριγκιπικό",
+    "mermaid": "Γοργονέ",
+    "sheath": "Ίσια γραμμή",
+    "short": "Κοντό"
+   },
+   "sleeves": {
+    "long": "Μακριά μανίκια",
+    "detachable": "Αποσπώμενα μανίκια",
+    "offshoulder": "Έξω ώμοι",
+    "straps": "Τιράντες",
+    "strapless": "Στράπλες"
+   },
+   "fabric": {
+    "lace": "Δαντέλα",
+    "tulle": "Τούλι",
+    "satin": "Σατέν",
+    "glitter": "Τούλι με γκλίτερ"
+   },
+   "details": {
+    "slit": "Ψηλό σκίσιμο",
+    "overskirt": "Αποσπώμενη υπερφούστα",
+    "cape": "Κάπα"
+   }
+  },
+  "site": {
+   "contact": {
+    "managers": [
+     {
+      "market": "Πολωνική αγορά",
+      "country": "Πολωνία"
+     },
+     {
+      "market": "Πολωνική αγορά",
+      "country": "Πολωνία"
+     },
+     {
+      "market": "Γερμανική αγορά",
+      "country": "Γερμανία"
+     },
+     {
+      "market": "Ιταλική αγορά",
+      "country": "Ιταλία"
+     }
+    ]
+   },
+   "terms": [
+    {
+     "label": "Ελάχιστη παραγγελία",
+     "value": "5 νυφικά",
+     "note": "από νέα συλλογή"
+    },
+    {
+     "label": "Παραγωγή",
+     "value": "6–8 εβδομάδες",
+     "note": "8–12 εβδομάδες σε περίοδο αιχμής, Μάιος – Σεπτέμβριος"
+    },
+    {
+     "label": "Πληρωμή",
+     "note": "προκαταβολή, έπειτα πριν από την αποστολή. EUR, PLN ή USD"
+    },
+    {
+     "label": "Παράδοση",
+     "value": "DPD",
+     "note": "από πόρτα σε πόρτα στο κατάστημά σας"
+    }
+   ],
+   "nav": {
+    "megaText": "Επτά brands νυφικών από έναν κατασκευαστή — το καθένα με τον δικό του χαρακτήρα, όλα με το ίδιο πρότυπο ποιότητας.",
+    "featureTitle": "Νέα συλλογή — Queen 2027",
+    "footerTagline": "Χειροποίητα νυφικά απευθείας από τον κατασκευαστή, για νυφικά καταστήματα σε όλο τον κόσμο."
+   },
+   "home": {
+    "seoTitle": "QUEEN Fashion Group — Διεθνής προμηθευτής νυφικών",
+    "seoDescription": "Η QUEEN Fashion Group ενώνει επτά brands νυφικών — QUEEN, Elle, Eleonora, Atelier Lorenzo Ricci, Velina, Nivera και TVOYA. Χονδρική διάθεση σε νυφικά καταστήματα σε 18 χώρες.",
+    "hero": {
+     "label": "QUEEN Fashion Group",
+     "title": "Επτά brands νυφικών, ένας οίκος μόδας",
+     "text": "Χειροποίητα νυφικά απευθείας από τον κατασκευαστή, με χονδρική διάθεση σε νυφικά καταστήματα σε 18 χώρες.",
+     "button": "Γίνετε συνεργάτης",
+     "link": "Ανακαλύψτε τα brands μας"
+    },
+    "about": {
+     "label": "Ο όμιλος",
+     "title": "Ένα ατελιέ με ιστορία",
+     "texts": [
+      "Η QUEEN Fashion Group φέρνει κάτω από την ίδια στέγη επτά brands νυφικών — από τη χαρακτηριστική σειρά QUEEN έως νεότερες ετικέτες με το δικό τους ύφος.",
+      "Κάθε νυφικό κατασκευάζεται στο χέρι στη δική μας παραγωγή, όπου κάθε στάδιο ελέγχεται, από την επιλογή του υφάσματος έως την τελική διακόσμηση. Προμηθεύουμε νυφικά καταστήματα, μπουτίκ και showrooms σε όλη την Ευρώπη και παρουσιάζουμε τις συλλογές μας στις Barcelona Bridal Fashion Week, Bridal Fashion Warsaw και Fiera Milano."
+     ],
+     "stats": [
+      {
+       "label": "brands νυφικών"
+      },
+      {
+       "label": "χώρες"
+      },
+      {
+       "label": "νυφικά ελάχιστη παραγγελία"
+      },
+      {
+       "label": "εβδομάδες παραγωγής"
+      }
+     ]
+    },
+    "brands": {
+     "label": "Τα brands μας",
+     "title": "Επτά ονόματα, ένα πρότυπο",
+     "text": "Κάθε brand έχει τον δικό του χαρακτήρα και τη δική του νύφη. Επιλέξτε όσα ταιριάζουν στο κατάστημά σας ή συνδυάστε περισσότερα σε μία παραγγελία.",
+     "ctaTitle": "Ένας προμηθευτής, επτά brands",
+     "ctaText": "Ένας manager, μία παραγγελία και μία αποστολή για όλα τα brands που επιλέγετε."
+    },
+    "benefits": {
+     "label": "Για συνεργάτες χονδρικής",
+     "title": "Γιατί τα καταστήματα συνεργάζονται μαζί μας",
+     "items": [
+      {
+       "title": "Χειροποίητη ποιότητα",
+       "text": "Κάθε στάδιο παραγωγής ελέγχεται, από το ύφασμα έως την τελική διακόσμηση."
+      },
+      {
+       "title": "Επτά brands, ένας προμηθευτής",
+       "text": "Διαφορετικές νύφες και κατηγορίες τιμών με έναν συνεργάτη και μία αποστολή."
+      },
+      {
+       "title": "Τιμές κατασκευαστή",
+       "text": "Ευνοϊκές τιμές, βολική πληρωμή και ευέλικτη προσέγγιση για τακτικούς συνεργάτες."
+      },
+      {
+       "title": "Νέα κάθε σεζόν",
+       "text": "Συλλογές σύμφωνες με τις τάσεις και συμβουλές για το τι πουλά καλύτερα κάθε σεζόν."
+      },
+      {
+       "title": "Παραγγελίες κάθε μεγέθους",
+       "text": "Μεγάλες χονδρικές και μικρές παραγγελίες, με γρήγορη αποστολή παγκοσμίως."
+      },
+      {
+       "title": "Υποστήριξη marketing",
+       "text": "Φωτογραφίες και υλικό συλλογών για το κατάστημά σας και το διαδίκτυο."
+      }
+     ]
+    },
+    "collections": {
+     "label": "Συλλογές των brands",
+     "title": "Ανακαλύψτε τις συλλογές",
+     "tabs": {
+      "queen": [
+       {
+        "alt": "Queen 2027, μοντέλο 2752 — σατέν πριγκιπικό νυφικό με δαντελένια μανίκια",
+        "caption": "Queen 2027 · 2752"
+       },
+       {
+        "alt": "QUEEN — δαντελένιο γοργονέ νυφικό με μακριά μανίκια και ουρά cathedral",
+        "caption": "Queen"
+       },
+       {
+        "alt": "QUEEN — λαμπερό νυφικό σε γραμμή Α με έξω ώμους",
+        "caption": "Queen"
+       },
+       {
+        "alt": "QUEEN — δαντελένιο νυφικό σε γραμμή Α με ψηλό σκίσιμο και δαντελένια μανίκια",
+        "caption": "Queen"
+       }
+      ],
+      "elle": [
+       {
+        "alt": "Elle 765 — δαντελένιο νυφικό με ψηλό σκίσιμο και μανίκια",
+        "caption": "Elle · 765"
+       },
+       {
+        "alt": "Elle 818 — εφαρμοστό νυφικό με διάφανα δαντελένια πάνελ",
+        "caption": "Elle · 818"
+       },
+       {
+        "alt": "Elle 808 — σατέν νυφικό με έξω ώμους",
+        "caption": "Elle · 808"
+       }
+      ],
+      "eleonora": [
+       {
+        "alt": "Eleonora P-51 — γοργονέ νυφικό με δαντελένια μανίκια",
+        "caption": "Eleonora · P-51"
+       },
+       {
+        "alt": "Eleonora P-87 — σατέν πριγκιπικό νυφικό με κεντημένο μπούστο",
+        "caption": "Eleonora · P-87"
+       },
+       {
+        "alt": "Eleonora P-78 — πριγκιπικό νυφικό από τούλι με μανίκια έξω από τους ώμους",
+        "caption": "Eleonora · P-78"
+       }
+      ]
+     }
+    },
+    "services": {
+     "label": "Αποκλειστικές υπηρεσίες",
+     "title": "Πέρα από τον κατάλογο",
+     "text": "Για συνεργάτες που θέλουν περισσότερα από έτοιμες συλλογές — νυφικά και εξυπηρέτηση στα μέτρα του καταστήματός σας.",
+     "items": [
+      {
+       "title": "Ατομική ραφή",
+       "text": "Οι σχεδιαστές μας δημιουργούν νυφικό οποιασδήποτε δυσκολίας σύμφωνα με το αίτημα της πελάτισσάς σας."
+      },
+      {
+       "title": "Αλλαγές κατά παραγγελία",
+       "text": "Προσαρμόστε μανίκια, μήκος, ουρά ή χρώμα των μοντέλων του καταλόγου, με επεξεργασία για το απαιτούμενο μέγεθος."
+      },
+      {
+       "title": "Manager στη γλώσσα σας",
+       "text": "Προσωπικοί managers για την πολωνική, τη γερμανική και την ιταλική αγορά σας συμβουλεύουν για γκάμα, πληρωμή και παράδοση."
+      },
+      {
+       "title": "Χώρος συνεργατών",
+       "text": "Τιμοκατάλογοι, lookbooks και υλικό συλλογών σε ένα σημείο για τα συνεργαζόμενα καταστήματα."
+      }
+     ]
+    },
+    "banner": {
+     "label": "Συνεργασία χονδρικής",
+     "title": "Φέρτε τα brands μας στο κατάστημά σας",
+     "text": "Ζητήστε τον τιμοκατάλογο χονδρικής και τους καταλόγους. Ένας manager θα σας απαντήσει εντός μίας εργάσιμης ημέρας.",
+     "button": "Ζητήστε τιμοκατάλογο"
+    }
+   },
+   "cta": {
+    "title": "Φέρτε τα brands μας στο κατάστημά σας",
+    "text": "Ζητήστε τον τιμοκατάλογο χονδρικής και το lookbook. Ένας manager θα σας απαντήσει εντός μίας εργάσιμης ημέρας.",
+    "button": "Ζητήστε τιμοκατάλογο",
+    "brandTitle": "Φέρτε το {brand} στο κατάστημά σας"
+   },
+   "brandsPage": {
+    "title": "Τα brands μας",
+    "text": "Επτά brands νυφικών από έναν κατασκευαστή — το καθένα με τον δικό του χαρακτήρα, όλα χειροποίητα με το ίδιο πρότυπο ποιότητας.",
+    "nextTitle": "Έρχονται σύντομα",
+    "nextText": "Νέα brands του ομίλου. Οι συλλογές φωτογραφίζονται — στο μεταξύ, ζητήστε το lookbook από έναν manager.",
+    "ctaTitle": "Ένας προμηθευτής, επτά brands",
+    "ctaText": "Ένας manager, μία παραγγελία και μία αποστολή για όλα τα brands που επιλέγετε. Συνδυάστε περισσότερα brands σε μία παραγγελία."
+   },
+   "about": {
+    "hero": {
+     "label": "Σχετικά με την QUEEN Fashion Group",
+     "title": "Ένα ατελιέ με ιστορία",
+     "text": "Χειροποίητα νυφικά απευθείας από τον κατασκευαστή, για νυφικά καταστήματα σε 18 χώρες."
+    },
+    "story": {
+     "title": "Επτά brands νυφικών κάτω από την ίδια στέγη, στη δική μας παραγωγή",
+     "texts": [
+      "Η QUEEN Fashion Group γεννήθηκε από το QUEEN — ένα brand νυφικών γνωστό για τα δομημένα κορσέ μπούστα, τη λεπτή δαντέλα και τις μακριές ουρές. Σήμερα ο όμιλος ενώνει επτά brands, από τη χαρακτηριστική σειρά QUEEN έως νεότερες ετικέτες με το δικό τους ύφος.",
+      "Συνεργαζόμαστε με ιδιοκτήτες νυφικών καταστημάτων, μπουτίκ και showrooms. Οι συνεργάτες παραγγέλνουν από τους καταλόγους μας ή ζητούν αποκλειστική ατομική ραφή, και αναλαμβάνουμε τόσο μεγάλες χονδρικές όσο και μικρές παραγγελίες.",
+      "Οι managers μας βοηθούν κάθε κατάστημα να προσανατολιστεί στη γκάμα: ποια μοντέλα και χρώματα έχουν ζήτηση αυτή τη σεζόν και ποιος τρόπος πληρωμής και παράδοσης του ταιριάζει καλύτερα."
+     ]
+    },
+    "craft": {
+     "title": "Χειροποίητα, με έλεγχο σε κάθε στάδιο",
+     "text": "Κάθε νυφικό ράβεται στη δική μας παραγωγή. Κάθε μοντέλο προσαρμόζεται στο απαιτούμενο μέγεθος, ώστε να εφαρμόζει σωστά — είτε προέρχεται από τον κατάλογο είτε κατασκευάζεται κατά παραγγελία.",
+     "items": [
+      {
+       "title": "Δική μας παραγωγή",
+       "text": "Από το ύφασμα έως την τελική διακόσμηση, κάθε στάδιο μένει στα χέρια μας."
+      },
+      {
+       "title": "Αλλαγές κατά παραγγελία",
+       "text": "Μανίκια, μήκος, ουρά και χρώμα προσαρμόζονται κατόπιν αιτήματος."
+      },
+      {
+       "title": "Μεγέθη EU και UA",
+       "text": "Πίνακες για ευρωπαϊκά και ουκρανικά μεγέθη."
+      }
+     ]
+    },
+    "values": {
+     "title": "Οι αξίες μας",
+     "items": [
+      {
+       "title": "Υψηλή ποιότητα",
+       "text": "Κάθε στάδιο παραγωγής ελέγχεται αυστηρά, από την επιλογή του υφάσματος έως τη ραφή και τη διακόσμηση κάθε νυφικού."
+      },
+      {
+       "title": "Μοναδικός σχεδιασμός",
+       "text": "Μια σειρά αποκλειστικών χειροποίητων νυφικών σχεδιαστή, σε αρμονία με τις τάσεις της μόδας."
+      },
+      {
+       "title": "Ατομική προσέγγιση",
+       "text": "Οι σχεδιαστές μας λαμβάνουν υπόψη κάθε λεπτομέρεια και δημιουργούν νυφικό οποιασδήποτε δυσκολίας για την πελάτισσά σας."
+      },
+      {
+       "title": "Δίκαιες τιμές",
+       "text": "Τιμές κατασκευαστή και βολική πληρωμή. Οι τακτικοί συνεργάτες απολαμβάνουν εκπτώσεις και ειδικές προσφορές."
+      },
+      {
+       "title": "Προσεγμένη εξυπηρέτηση",
+       "text": "Οι managers απαντούν αναλυτικά σε κάθε ερώτηση και συντονίζουν προσεκτικά κάθε αποστολή."
+      },
+      {
+       "title": "Στην ώρα του",
+       "text": "Γρήγορη παραγωγή για παραγγελίες κάθε όγκου και ταχεία αποστολή σε όλο τον κόσμο."
+      }
+     ]
+    },
+    "groupTitle": "Τα brands του ομίλου",
+    "eventsTitle": "Πού θα μας βρείτε",
+    "eventsText": "Παρουσιάζουμε τις συλλογές μας στις κορυφαίες εκθέσεις νυφικών της Ευρώπης."
+   },
+   "partners": {
+    "title": "Συνεργασία χονδρικής",
+    "text": "Βοηθούμε τους ιδιοκτήτες νυφικών καταστημάτων, μπουτίκ και showrooms να διαμορφώσουν τη γκάμα τους με χειροποίητα νυφικά από επτά brands.",
+    "stepsTitle": "Πώς λειτουργεί η συνεργασία",
+    "steps": [
+     {
+      "title": "Στείλτε αίτημα",
+      "text": "Αφήστε τα στοιχεία σας στη φόρμα ή καλέστε τον manager της αγοράς σας."
+     },
+     {
+      "title": "Λάβετε τον τιμοκατάλογο",
+      "text": "Σας στέλνουμε τον τιμοκατάλογο χονδρικής και τα lookbooks των brands που επιλέγετε."
+     },
+     {
+      "title": "Κάντε την παραγγελία",
+      "text": "Από 5 νυφικά από νέα συλλογή, με προκαταβολή 30%."
+     },
+     {
+      "title": "Παραγωγή",
+      "text": "6–8 εβδομάδες μετά την προκαταβολή, 8–12 εβδομάδες από Μάιο έως Σεπτέμβριο."
+     },
+     {
+      "title": "Παράδοση",
+      "text": "Εξοφλείτε το υπόλοιπο 70% πριν από την αποστολή. Η DPD παραδίδει στο κατάστημά σας."
+     }
+    ],
+    "benefitsTitle": "Πλεονεκτήματα συνεργασίας",
+    "benefitsPhoto": {
+     "alt": "Νύφη με νυφικό Eleonora από τούλι σε κήπο ανακτόρου"
+    },
+    "benefits": [
+     {
+      "title": "Αποδοτική εφοδιαστική αλυσίδα",
+      "text": "Ένας manager και μία αποστολή για όλα τα brands της παραγγελίας σας."
+     },
+     {
+      "title": "Ευνοϊκές τιμές",
+      "text": "Τιμές κατασκευαστή και ευέλικτο σύστημα εκπτώσεων για τακτικούς συνεργάτες."
+     },
+     {
+      "title": "Υψηλή ποιότητα προϊόντων",
+      "text": "Χειροποίητα νυφικά, με έλεγχο σε κάθε στάδιο παραγωγής."
+     },
+     {
+      "title": "Τακτική ανανέωση",
+      "text": "Νέες συλλογές κάθε σεζόν, με συμβουλές για το τι πουλά καλύτερα."
+     },
+     {
+      "title": "Υποστήριξη marketing",
+      "text": "Φωτογραφίες, βίντεο και υλικό συλλογών για το κατάστημά σας και τα social media."
+     },
+     {
+      "title": "Βολική πληρωμή",
+      "text": "Τιμές σε EUR, με δυνατότητα πληρωμής και σε PLN ή USD."
+     }
+    ],
+    "servicesTitle": "Αποκλειστικές υπηρεσίες",
+    "servicesText": "Για συνεργάτες που θέλουν περισσότερα από έτοιμες συλλογές — νυφικά και εξυπηρέτηση στα μέτρα του καταστήματός σας.",
+    "servicesPhoto": {
+     "alt": "QUEEN, μοντέλο 2750 — δαντελένιο νυφικό σε ίσια γραμμή με υπερφούστα από τούλι"
+    },
+    "services": [
+     {
+      "title": "Ατομική ραφή",
+      "text": "Οι σχεδιαστές μας δημιουργούν νυφικό οποιασδήποτε δυσκολίας σύμφωνα με το αίτημα της πελάτισσάς σας."
+     },
+     {
+      "title": "Αλλαγές κατά παραγγελία",
+      "text": "Προσαρμόστε μανίκια, μήκος, ουρά ή χρώμα των μοντέλων του καταλόγου, με επεξεργασία για το απαιτούμενο μέγεθος."
+     },
+     {
+      "title": "Manager στη γλώσσα σας",
+      "text": "Προσωπικοί managers για την πολωνική, τη γερμανική και την ιταλική αγορά σας συμβουλεύουν για γκάμα, πληρωμή και παράδοση."
+     },
+     {
+      "title": "Χώρος συνεργατών",
+      "text": "Τιμοκατάλογοι, lookbooks και υλικό συλλογών σε ένα σημείο για τα συνεργαζόμενα καταστήματα."
+     }
+    ],
+    "faqTitle": "Ερωτήσεις καταστημάτων",
+    "faq": [
+     {
+      "q": "Ποια είναι η ελάχιστη παραγγελία;",
+      "a": "Πέντε νυφικά από νέα συλλογή. Μπορείτε να συνδυάσετε μοντέλα και brands σε μία παραγγελία."
+     },
+     {
+      "q": "Πόσο διαρκεί η παραγωγή;",
+      "a": "6–8 εβδομάδες μετά την προκαταβολή. Στην περίοδο αιχμής, από 1 Μαΐου έως 30 Σεπτεμβρίου, διαρκεί 8–12 εβδομάδες."
+     },
+     {
+      "q": "Πώς γίνεται η πληρωμή;",
+      "a": "Προκαταβολή 30% με την παραγγελία και το υπόλοιπο 70% πριν από την αποστολή. Οι τιμές είναι σε EUR· μπορείτε να πληρώσετε και σε PLN ή USD."
+     },
+     {
+      "q": "Πώς παραδίδονται τα νυφικά;",
+      "a": "Αποστέλλουμε με DPD, από πόρτα σε πόρτα στο κατάστημά σας."
+     },
+     {
+      "q": "Μπορεί να αλλάξει ένα μοντέλο για την πελάτισσά μου;",
+      "a": "Ναι. Μανίκια, μήκος, ουρά και χρώμα προσαρμόζονται, και οι σχεδιαστές μας μπορούν να δημιουργήσουν νυφικό κατόπιν ατομικού αιτήματος."
+     },
+     {
+      "q": "Ποιους πίνακες μεγεθών χρησιμοποιείτε;",
+      "a": "Εργαζόμαστε με ευρωπαϊκούς και ουκρανικούς πίνακες μεγεθών."
+     },
+     {
+      "q": "Πώς μπορώ να δω τις τιμές;",
+      "a": "Οι τιμές δίνονται κατόπιν αιτήματος. Στείλτε τη φόρμα και ένας manager θα σας στείλει τον τιμοκατάλογο εντός μίας εργάσιμης ημέρας."
+     }
+    ],
+    "ctaTitle": "Ξεκινήστε τη συνεργασία μαζί μας",
+    "ctaText": "Αφήστε ένα αίτημα και ένας manager θα σας στείλει τον τιμοκατάλογο και τα lookbooks εντός μίας εργάσιμης ημέρας."
+   },
+   "contactPage": {
+    "title": "Επικοινωνία",
+    "text": "Αφήστε ένα αίτημα ή καλέστε τον manager της αγοράς σας. Απαντάμε εντός μίας εργάσιμης ημέρας.",
+    "formTitle": "Αίτημα χονδρικής",
+    "formText": "Τιμοκατάλογος και lookbooks κατόπιν αιτήματος. Τα πεδία με * είναι υποχρεωτικά."
+   },
+   "blogPage": {
+    "title": "Blog",
+    "text": "Νέα από τον όμιλο — εβδομάδες μόδας, εκθέσεις και νέες συλλογές."
+   },
+   "privacy": {
+    "updated": "Τελευταία ενημέρωση: 7 Νοεμβρίου 2026",
+    "sections": [
+     {
+      "title": "Ποιοι είμαστε",
+      "text": "Υπεύθυνος επεξεργασίας των προσωπικών σας δεδομένων είναι η QUEEN_WED Sp. z o.o., Czyżówka 14/2.11, 30-526 Kraków, Πολωνία. Για οποιαδήποτε ερώτηση σχετικά με τα δεδομένα σας, γράψτε στο {email}."
+     },
+     {
+      "title": "Ποια δεδομένα συλλέγουμε",
+      "text": "Όταν στέλνετε αίτημα χονδρικής, λαμβάνουμε τα δεδομένα που εισάγετε στη φόρμα: το όνομά σας, την επωνυμία του καταστήματος ή της εταιρείας σας, τη διεύθυνση e-mail, τον αριθμό τηλεφώνου, τη χώρα, τα brands που σας ενδιαφέρουν και το μήνυμά σας. Όταν καλείτε ή γράφετε σε έναν manager, λαμβάνουμε τα δεδομένα που μοιράζεστε σε αυτή την επικοινωνία."
+     },
+     {
+      "title": "Για ποιο σκοπό τα χρησιμοποιούμε",
+      "text": "Χρησιμοποιούμε αυτά τα δεδομένα αποκλειστικά για να απαντήσουμε στο αίτημά σας, να σας στείλουμε τιμοκαταλόγους και καταλόγους, να προετοιμάσουμε και να εκτελέσουμε παραγγελίες και να διατηρήσουμε την επικοινωνία μαζί σας ως επιχειρηματικό συνεργάτη. Νομική βάση αποτελούν τα μέτρα που λαμβάνονται κατόπιν αιτήματός σας πριν από τη σύναψη σύμβασης και το έννομο συμφέρον μας να απαντάμε σε επιχειρηματικά αιτήματα (άρθρο 6 παρ. 1 στοιχ. β΄ και στ΄ ΓΚΠΔ) ή η συγκατάθεσή σας, όπου τη ζητάμε."
+     },
+     {
+      "title": "Ποιοι τα λαμβάνουν",
+      "text": "Τα δεδομένα σας είναι διαθέσιμα στους managers μας. Ενδέχεται να τα κοινοποιήσουμε σε παρόχους που μας βοηθούν στη λειτουργία της επιχείρησής μας — υπηρεσίες e-mail και φιλοξενίας, σύστημα διαχείρισης πελατειακών σχέσεων και εταιρείες μεταφορών, όπως η DPD, για την αποστολή παραγγελιών. Δεν πωλούμε τα δεδομένα σας."
+     },
+     {
+      "title": "Πόσο καιρό τα διατηρούμε",
+      "text": "Διατηρούμε τα δεδομένα των αιτημάτων για όσο χρόνο απαιτείται για την απάντηση και τη συνέχιση της επικοινωνίας, και τα δεδομένα που σχετίζονται με παραγγελίες για το διάστημα που ορίζει η λογιστική και φορολογική νομοθεσία."
+     },
+     {
+      "title": "Τα δικαιώματά σας",
+      "text": "Έχετε δικαίωμα πρόσβασης στα δεδομένα σας, διόρθωσης, διαγραφής, περιορισμού της επεξεργασίας ή εναντίωσης σε αυτήν, καθώς και λήψης τους σε φορητή μορφή. Όπου η επεξεργασία βασίζεται στη συγκατάθεση, μπορείτε να την ανακαλέσετε ανά πάσα στιγμή. Μπορείτε επίσης να υποβάλετε καταγγελία στον Πρόεδρο της Υπηρεσίας Προστασίας Προσωπικών Δεδομένων (UODO) στην Πολωνία."
+     },
+     {
+      "title": "Cookies",
+      "text": "Αυτός ο ιστότοπος δεν χρησιμοποιεί cookies διαφήμισης ή ανάλυσης. Αν αυτό αλλάξει, θα ενημερώσουμε την παρούσα πολιτική και θα ζητήσουμε τη συγκατάθεσή σας όπου απαιτείται."
+     }
+    ]
+   }
+  },
+  "brands": {
+   "queen": {
+    "tagline": "Διαχρονική κομψότητα και θηλυκή φινέτσα",
+    "intro": "Το χαρακτηριστικό brand της QUEEN Fashion Group — κορσέ μπούστα, δαντέλα και μακριές ουρές, χειροποίητα στη δική μας παραγωγή.",
+    "about": [
+     "Το QUEEN είναι η σειρά με την οποία ξεκίνησε ο όμιλος και εξακολουθεί να θέτει το πρότυπο για κάθε άλλο brand. Κάθε νυφικό χτίζεται γύρω από ένα δομημένο κορσέ μπούστο που κρατά το σχήμα του, με φινίρισμα από δαντελένιες απλικέ, κέντημα με χάντρες ή καθαρό σατέν.",
+     "Νέες συλλογές κυκλοφορούν κάθε σεζόν. Η Queen 2027 είναι η πιο πρόσφατη, ενώ οι Paradise και Floria παραμένουν στη σειρά ως δοκιμασμένα best-sellers για τα συνεργαζόμενα καταστήματα."
+    ],
+    "coverAlt": "QUEEN — μοντέλο 2744, δαντελένιο γοργονέ νυφικό με αποσπώμενα μανίκια"
+   },
+   "elle": {
+    "tagline": "Σύγχρονο στιλ με λεπτές λεπτομέρειες",
+    "intro": "Καθαρές γραμμές, σμιλεμένο σατέν και λεπτή δαντέλα — για τη νύφη που θέλει ένα νυφικό σύγχρονο και ανάλαφρο.",
+    "about": [
+     "Το Elle συνδυάζει σύγχρονο στιλ με λεπτές λεπτομέρειες. Η σειρά κινείται ανάμεσα σε μίνιμαλ σατέν γραμμές και διάφανα κορσέ μπούστα ντυμένα με απαλή δαντέλα.",
+     "Πολλά μοντέλα συνοδεύονται από αποσπώμενα μανίκια ή υπερφούστες, ώστε ένα νυφικό να φοριέται με περισσότερους από έναν τρόπους — μεγάλο πλεονέκτημα για καταστήματα με ποικίλη πελατεία."
+    ],
+    "coverAlt": "Elle — δύο δαντελένια νυφικά με αποσπώμενα μανίκια"
+   },
+   "eleonora": {
+    "tagline": "Ρομαντικά σχέδια, κομψές γραμμές",
+    "intro": "Πλούσιες φούστες από τούλι, σμιλεμένοι κορσέδες και απαλός όγκος — μια ρομαντική σειρά για θηλυκή εμφάνιση.",
+    "about": [
+     "Το Eleonora ξεχωρίζει για τα ρομαντικά σχέδια και τις κομψές γραμμές του. Αέρινα πριγκιπικά νυφικά από τούλι, εφαρμοστά γοργονέ με δαντέλα και σατέν κομμάτια με φουσκωτά ή αποσπώμενα μανίκια.",
+     "Η συλλογή φωτογραφίζεται σε ιστορικούς δρόμους και κήπους ανακτόρων, και πολλά μοντέλα συνοδεύονται από σύντομο βίντεο που τα καταστήματα μπορούν να αξιοποιήσουν στο δικό τους marketing."
+    ],
+    "coverAlt": "Eleonora — μοντέλο P-87, σατέν πριγκιπικό νυφικό με μπούστο κεντημένο με πέρλες"
+   },
+   "ricci": {
+    "tagline": "Εκλεπτυσμένος σχεδιασμός, εξαιρετική δεξιοτεχνία",
+    "intro": "Φινίρισμα επιπέδου couture και εκλεπτυσμένος σχεδιασμός για premium καταστήματα.",
+    "about": [
+     "Το Atelier Lorenzo Ricci αναδεικνύει τον εκλεπτυσμένο σχεδιασμό και την εξαιρετική δεξιοτεχνία."
+    ],
+    "coverAlt": "Atelier Lorenzo Ricci — δαντελένιο πριγκιπικό νυφικό με διάφανα φουσκωτά μανίκια"
+   },
+   "velina": {
+    "tagline": "Μια απαλή, αέρινη πινελιά στη νυφική μόδα",
+    "intro": "Ελαφριά υφάσματα και αβίαστες γραμμές.",
+    "about": [
+     "Το Velina φέρνει μια απαλή, αέρινη πινελιά στη νυφική μόδα."
+    ]
+   },
+   "nivera": {
+    "tagline": "Καθαρές γραμμές και διακριτικές λεπτομέρειες",
+    "intro": "Σύγχρονη κομψότητα — μίνιμαλ, ακριβής, σύγχρονη.",
+    "about": [
+     "Το Nivera συνδυάζει τη σύγχρονη κομψότητα με καθαρές γραμμές και διακριτικές λεπτομέρειες."
+    ],
+    "coverAlt": "Nivera — στράπλες σατέν νυφικό σε γραμμή Α με ντραπέ μπούστο"
+   },
+   "tvoya": {
+    "tagline": "Τολμηρά, ξεχωριστά στιλ",
+    "intro": "Για νύφες που θέλουν να ξεχωρίσουν.",
+    "about": [
+     "Το TVOYA τιμά την ατομικότητα με τολμηρά, ξεχωριστά στιλ."
+    ]
+   }
+  },
+  "posts": {
+   "barcelona-bridal-fashion-week-2025": {
+    "title": "Το ντεμπούτο μας στην Barcelona Bridal Fashion Week",
+    "date": "2025",
+    "tag": "Εβδομάδα μόδας",
+    "lead": "Η Queen Wedding Dresses έκανε το ντεμπούτο της στην κορυφαία Barcelona Bridal Fashion Week 2025, απέκτησε νέους πελάτες στην Ισπανία και διεύρυνε το δίκτυό της σε 18 χώρες παγκοσμίως.",
+    "body": [
+     "Η Barcelona Bridal Fashion Week είναι από τα σημαντικότερα ραντεβού του νυφικού ημερολογίου. Αγοραστές από καταστήματα της Ευρώπης και όχι μόνο έρχονται εδώ για να δουν πρώτοι τη νέα σεζόν και να γνωρίσουν τους κατασκευαστές πίσω από αυτήν.",
+     "Για το QUEEN ήταν η πρώτη φορά σε αυτή τη σκηνή. Η ομάδα μας παρουσίασε τις νεότερες συλλογές στο περίπτερο, και οι αγοραστές είδαν τα νυφικά από κοντά — την κατασκευή του κορσέ, τη δαντέλα και το φινίρισμα που χαρακτηρίζουν τη χειροποίητη παραγωγή μας.",
+     "Η εβδομάδα έφερε νέους συνεργάτες στην Ισπανία, και μαζί τους τα νυφικά μας πωλούνται πλέον σε 18 χώρες. Ευχαριστούμε κάθε κατάστημα που επισκέφθηκε το περίπτερό μας και προσβλέπουμε στη συνεργασία μας."
+    ]
+   },
+   "bridal-fashion-warsaw-2025": {
+    "title": "Bridal Fashion Warsaw 2025",
+    "date": "17–18 Μαΐου 2025",
+    "tag": "Έκθεση",
+    "lead": "Στις 17–18 Μαΐου η Queen Wedding Dresses συμμετείχε στην Bridal Fashion Warsaw 2025. Το περίπτερό μας ήταν γεμάτο Πολωνούς πελάτες και τις δύο ημέρες.",
+    "body": [
+     "Η Πολωνία είναι μία από τις βασικές μας αγορές, και η Bridal Fashion Warsaw είναι το σημείο όπου συναντάμε από κοντά πολλούς από τους συνεργάτες μας. Επί δύο ημέρες το περίπτερο είχε κίνηση από το άνοιγμα έως το κλείσιμο.",
+     "Τη μεγαλύτερη προσοχή συγκέντρωσε η συλλογή 2026. Ιδιοκτήτες καταστημάτων ήρθαν να δουν τις νέες γραμμές, να συζητήσουν τη γκάμα για την επόμενη σεζόν και να συμφωνήσουν τις πρώτες παραγγελίες.",
+     "Δεκάδες νέες συνεργασίες επιβεβαιώθηκαν κατά τη διάρκεια της έκθεσης — σαφής ένδειξη της ισχυρής μας θέσης στην πολωνική αγορά. Οι πολωνόφωνοι managers μας συνεχίζουν την επικοινωνία με κάθε κατάστημα που γνωρίσαμε."
+    ]
+   },
+   "fiera-milano": {
+    "title": "Το περίπτερό μας στη Fiera Milano",
+    "date": "2025",
+    "tag": "Έκθεση",
+    "lead": "Η ομάδα του QUEEN παρουσίασε τις συλλογές στο δικό μας περίπτερο στη Fiera Milano, συναντώντας αγοραστές από την Ιταλία και όλη την Ευρώπη.",
+    "body": [
+     "Το Μιλάνο είναι το φυσικό σημείο συνάντησης ενός brand νυφικών με την αγορά: η πόλη δίνει τον τόνο στη μόδα, και οι εκθέσεις της συγκεντρώνουν αγοραστές που αναζητούν ποιότητα και σχεδιασμό.",
+     "Στο περίπτερο παρουσιάσαμε νυφικά από τις τρέχουσες συλλογές μας και συζητήσαμε με καταστήματα για τις πελάτισσές τους, τα στιλ που έχουν ζήτηση και τους όρους συνεργασίας.",
+     "Για τους Ιταλούς συνεργάτες μας διαθέτουμε αποκλειστικό manager που παρέχει συμβουλές στα ιταλικά για τη γκάμα, την πληρωμή και την παράδοση. Αν δεν μας συναντήσατε στο Μιλάνο, επικοινωνήστε μαζί μας και θα σας στείλουμε το lookbook και τον τιμοκατάλογο."
+    ]
+   }
+  }
+ }
+}

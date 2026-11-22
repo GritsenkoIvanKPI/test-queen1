@@ -1,7 +1,9 @@
 # Site structure — QUEEN Fashion Group
 
-Every page exists in 6 languages under a language prefix: `en` (default), `pl`, `de`, `ru`, `it`, `el` (Greek).
+Every page exists in 6 languages. English is at the site root (`/brands/queen/`), the others under a prefix: `/pl/`, `/de/`, `/ru/`, `/it/`, `/el/` (Greek).
 Each page links its translations with `<link rel="alternate" hreflang="…">`. The language switcher keeps the user on the same page.
+Translations live in `data/translations.json` (interface strings, filter labels, page texts, brand texts, blog posts); anything missing falls back to English.
+Product names, articles and collection names are the same in every language.
 
 | # | Page | URL (EN example) |
 |---|---|---|

@@ -2,13 +2,20 @@
    narrow it down. State lives in the URL, so /catalogue/?brand=elle works as "the Elle catalogue". */
 (function () {
   var D = window.CATALOG, M = D.models, META = D.meta, L = META.labels;
+  var T = META.t || {}, BASE = META.base || '', PR = new Intl.PluralRules(META.lang || 'en');
+  // tr('showN', { n: 3 }) — plural objects pick the right form for the language
+  function tr(key, vars) {
+    var v = T[key]; vars = vars || {};
+    if (v && typeof v === 'object') v = v[PR.select(Number(vars.n || 0))] || v.other;
+    return String(v == null ? key : v).replace(/\{(\w+)\}/g, function (m, k) { return k in vars ? vars[k] : m; });
+  }
   var PAGE = 24;
   var GROUPS = [
-    { key: 'c', param: 'collection', title: 'Collection', options: META.collections.map(function (c) { return [c.slug, c.name]; }), when: function (s) { return META.collections.some(function (c) { return !s.brand || c.brand === s.brand; }); } },
-    { key: 's', param: 'sil', title: 'Silhouette', options: pairs(L.sil) },
-    { key: 'sl', param: 'sleeves', title: 'Sleeves & neckline', options: pairs(L.sleeves) },
-    { key: 'f', param: 'fabric', title: 'Fabric', options: pairs(L.fabric) },
-    { key: 'd', param: 'details', title: 'Details', options: pairs(L.details).concat([['new', 'New models'], ['video', 'With video']]) }
+    { key: 'c', param: 'collection', title: tr('gCollection'), options: META.collections.map(function (c) { return [c.slug, c.name]; }), when: function (s) { return META.collections.some(function (c) { return !s.brand || c.brand === s.brand; }); } },
+    { key: 's', param: 'sil', title: tr('gSilhouette'), options: pairs(L.sil) },
+    { key: 'sl', param: 'sleeves', title: tr('gSleeves'), options: pairs(L.sleeves) },
+    { key: 'f', param: 'fabric', title: tr('gFabric'), options: pairs(L.fabric) },
+    { key: 'd', param: 'details', title: tr('gDetails'), options: pairs(L.details).concat([['new', tr('newModels')], ['video', tr('withVideo')]]) }
   ];
   function pairs(o) { return Object.keys(o).map(function (k) { return [k, o[k]]; }); }
   var brandName = {}; META.brands.forEach(function (b) { brandName[b.slug] = b.name; });
@@ -57,7 +64,7 @@
 
   function renderBrands() {
     var counts = {}; M.forEach(function (m) { counts[m.b] = (counts[m.b] || 0) + 1; });
-    var html = '<button class="tab" type="button" data-brand="" aria-pressed="' + (!state.brand) + '">All<sup>' + M.length + '</sup></button>';
+    var html = '<button class="tab" type="button" data-brand="" aria-pressed="' + (!state.brand) + '">' + esc(tr('all')) + '<sup>' + M.length + '</sup></button>';
     META.brands.forEach(function (b) {
       html += '<button class="tab" type="button" data-brand="' + b.slug + '" aria-pressed="' + (state.brand === b.slug) + '">' + esc(b.name) + '<sup>' + (counts[b.slug] || 0) + '</sup></button>';
     });
@@ -86,26 +93,26 @@
   function card(m, i) {
     // Model pages hidden for now: cards are plain tiles, not links
     var tag = META.modelPages ? 'a' : 'div';
-    return '<' + tag + ' class="mcard' + (META.modelPages ? '' : ' mcard--static') + '"' + (META.modelPages ? ' href="/catalogue/' + m.id + '/"' : '') + '>' +
+    return '<' + tag + ' class="mcard' + (META.modelPages ? '' : ' mcard--static') + '"' + (META.modelPages ? ' href="' + BASE + '/catalogue/' + m.id + '/"' : '') + '>' +
       '<span class="photo"><img src="' + m.p[0] + '" alt="' + esc(m.n) + '" width="900" height="1350"' + (i < 6 ? '' : ' loading="lazy"') + '>' +
       (m.p[1] ? '<img src="' + m.p[1] + '" alt="" width="900" height="1350" loading="lazy" aria-hidden="true">' : '') + '</span>' +
-      (m.nw ? '<span class="mcard__badge">New</span>' : '') +
-      '<span class="mcard__cap"><span class="h3">' + esc(m.n) + '</span><span class="mcard__meta">' + L.sil[m.s] + ' · ' + L.fabric[m.f] + (m.v ? ' · Video' : '') + '</span></span></' + tag + '>';
+      (m.nw ? '<span class="mcard__badge">' + esc(META.newLabel || 'New') + '</span>' : '') +
+      '<span class="mcard__cap"><span class="h3">' + esc(m.n) + '</span><span class="mcard__meta">' + L.sil[m.s] + ' · ' + L.fabric[m.f] + (m.v ? ' · ' + esc(META.videoLabel || 'Video') : '') + '</span></span></' + tag + '>';
   }
 
   function selectedCount() { return GROUPS.reduce(function (n, g) { return n + (active(g) ? state.sel[g.key].length : 0); }, 0); }
 
   function render() {
     var list = sorted(filtered(null));
-    var title = state.brand ? brandName[state.brand] : 'All models';
+    var title = state.brand ? brandName[state.brand] : tr('title');
     $('catTitle').textContent = title;
     $('catIntro').textContent = state.brand
-      ? 'The ' + brandName[state.brand] + ' catalogue. Switch brand above at any time, or narrow down by silhouette, sleeves or fabric.'
-      : 'Every model from every brand in one place. Choose a brand, then narrow down by silhouette, sleeves or fabric.';
-    document.title = (state.brand ? brandName[state.brand] + ' catalogue' : 'Catalogue — all wedding dress models') + ' | QUEEN Fashion Group';
-    $('catCount').textContent = list.length + (list.length === 1 ? ' model' : ' models');
-    $('sheetApplyLabel').textContent = 'Show ' + list.length + ' models';
-    $('sheetApply').setAttribute('data-label', 'Show ' + list.length + ' models');
+      ? tr('brandIntro', { brand: brandName[state.brand] })
+      : tr('intro');
+    document.title = state.brand ? tr('docTitleBrand', { brand: brandName[state.brand] }) : tr('docTitle');
+    $('catCount').textContent = tr('countN', { n: list.length });
+    $('sheetApplyLabel').textContent = tr('showN', { n: list.length });
+    $('sheetApply').setAttribute('data-label', tr('showN', { n: list.length }));
 
     renderBrands();
     renderFilters($('filtersSide'));
@@ -119,10 +126,10 @@
       if (!active(g)) return;
       state.sel[g.key].forEach(function (v) {
         var o = g.options.filter(function (x) { return x[0] === v; })[0];
-        if (o) chips += '<button class="achip" type="button" data-g="' + g.key + '" data-v="' + v + '">' + esc(o[1]) + '<svg viewBox="0 0 10 10" fill="none" stroke="currentColor" aria-hidden="true"><path d="M1 1l8 8M9 1 1 9"/></svg><span class="sr-only">Remove</span></button>';
+        if (o) chips += '<button class="achip" type="button" data-g="' + g.key + '" data-v="' + v + '">' + esc(o[1]) + '<svg viewBox="0 0 10 10" fill="none" stroke="currentColor" aria-hidden="true"><path d="M1 1l8 8M9 1 1 9"/></svg><span class="sr-only">' + esc(tr('remove')) + '</span></button>';
       });
     });
-    if (chips) chips += '<button class="achip achip--clear" type="button" data-clear>Clear all</button>';
+    if (chips) chips += '<button class="achip achip--clear" type="button" data-clear>' + esc(tr('clearAll')) + '</button>';
     $('activeChips').innerHTML = chips;
 
     var res = $('results');
@@ -135,8 +142,8 @@
       var b = META.brands.filter(function (x) { return x.slug === state.brand; })[0];
       var brandEmpty = b && !M.some(function (m) { return m.b === b.slug; });
       empty.innerHTML = brandEmpty
-        ? '<span class="h3">' + esc(b.name) + ' — coming soon</span><p class="text">The collection is being photographed. Key models: ' + b.keys.map(esc).join(' · ') + '.</p><a class="btn" href="/contact/" data-label="Ask a manager"><span>Ask a manager</span></a>'
-        : '<span class="h3">No models match these filters</span><button class="link" type="button" data-clear>Clear filters</button>';
+        ? '<span class="h3">' + esc(tr('soonTitle', { brand: b.name })) + '</span><p class="text">' + esc(tr('soonText', { keys: b.keys.join(' · ') })) + '</p><a class="btn" href="' + BASE + '/contact/" data-label="' + esc(tr('askManager')) + '"><span>' + esc(tr('askManager')) + '</span></a>'
+        : '<span class="h3">' + esc(tr('noMatch')) + '</span><button class="link" type="button" data-clear>' + esc(tr('clearFilters')) + '</button>';
       empty.hidden = false;
     } else empty.hidden = true;
 

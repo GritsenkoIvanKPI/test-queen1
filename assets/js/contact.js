@@ -7,6 +7,8 @@
   var error = document.getElementById('formError');
   var done = document.getElementById('formDone');
   var TO = 'managerqueen1@gmail.com';
+  var T = window.CONTACT_T || {};
+  var tr = function (k, d, vars) { return String(T[k] || d).replace(/\{(\w+)\}/g, function (m, x) { return vars && x in vars ? vars[x] : m; }); };
 
   function fail(field, msg) {
     error.textContent = msg;
@@ -17,7 +19,7 @@
   // Coming from a model page: "Request price" passes the model and brand
   var q = new URLSearchParams(location.search);
   if (q.get('model')) {
-    form.elements.message.value = 'Price request: ' + q.get('model');
+    form.elements.message.value = tr('priceRequest', 'Price request: {model}', { model: q.get('model') });
     [].forEach.call(form.querySelectorAll('input[name="brands"]'), function (c) { if (c.value === q.get('brand')) c.checked = true; });
   }
 
@@ -28,17 +30,17 @@
 
   function send(data) {
     var lines = [
-      'Name: ' + data.name,
-      'Salon / company: ' + data.company,
-      'Country: ' + data.country,
-      'E-mail: ' + data.email,
-      data.phone ? 'Phone: ' + data.phone : '',
-      data.brands ? 'Brands: ' + data.brands : '',
+      tr('mailName', 'Name') + ': ' + data.name,
+      tr('mailSalon', 'Salon / company') + ': ' + data.company,
+      tr('mailCountry', 'Country') + ': ' + data.country,
+      tr('mailEmail', 'E-mail') + ': ' + data.email,
+      data.phone ? tr('mailPhone', 'Phone') + ': ' + data.phone : '',
+      data.brands ? tr('mailBrands', 'Brands') + ': ' + data.brands : '',
       '',
       data.message
     ].filter(function (l, i, a) { return l !== '' || (i && a[i - 1] !== ''); });
     var href = 'mailto:' + TO +
-      '?subject=' + encodeURIComponent('Wholesale enquiry — ' + data.company) +
+      '?subject=' + encodeURIComponent(tr('mailSubject', 'Wholesale enquiry — {company}', { company: data.company })) +
       '&body=' + encodeURIComponent(lines.join('\n'));
     window.location.href = href;
   }
@@ -46,12 +48,12 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var f = form.elements;
-    var required = [['name', 'Please enter your name.'], ['company', 'Please enter your salon or company.'], ['email', 'Please enter your e-mail.'], ['country', 'Please enter your country.']];
+    var required = [['name', tr('errName', 'Please enter your name.')], ['company', tr('errSalon', 'Please enter your salon or company.')], ['email', tr('errEmail', 'Please enter your e-mail.')], ['country', tr('errCountry', 'Please enter your country.')]];
     for (var i = 0; i < required.length; i++) {
       if (!f[required[i][0]].value.trim()) return fail(f[required[i][0]], required[i][1]);
     }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim())) return fail(f.email, 'Please check your e-mail address.');
-    if (!f.consent.checked) return fail(f.consent, 'Please agree to the processing of your data.');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim())) return fail(f.email, tr('errEmailBad', 'Please check your e-mail address.'));
+    if (!f.consent.checked) return fail(f.consent, tr('errConsent', 'Please agree to the processing of your data.'));
 
     var brands = [].slice.call(form.querySelectorAll('input[name="brands"]:checked')).map(function (c) { return c.value; }).join(', ');
     send({
