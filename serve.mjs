@@ -3,6 +3,7 @@ import { createServer } from 'node:http';
 import { createReadStream, statSync } from 'node:fs';
 import { extname, join, normalize, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { handle } from './lib/admin-api.mjs';
 
 const ROOT = resolve(fileURLToPath(new URL('.', import.meta.url)));
 const PORT = Number(process.env.PORT) || 3000;
@@ -23,7 +24,20 @@ const TYPES = {
   '.woff2': 'font/woff2',
 };
 
+// Admin API (local mode: reads and writes this folder; see lib/admin-api.mjs)
+async function api(req, res, action) {
+  let raw = '';
+  for await (const chunk of req) { raw += chunk; if (raw.length > 12e6) break; }
+  let body = {};
+  try { body = raw ? JSON.parse(raw) : {}; } catch { /* empty */ }
+  const r = await handle(action, { method: req.method, body, headers: req.headers });
+  res.writeHead(r.status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }).end(JSON.stringify(r.json));
+}
+
 createServer((req, res) => {
+  const apiMatch = /^\/api\/(login|content|upload|publish)\/?$/.exec(req.url.split('?')[0]);
+  if (apiMatch) { api(req, res, apiMatch[1]); return; }
+
   let pathname;
   try {
     pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);

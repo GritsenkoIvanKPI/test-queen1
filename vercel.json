@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/publish.mjs": { "maxDuration": 60 },
+    "api/upload.mjs": { "maxDuration": 30 }
+  },
+  "headers": [
+    { "source": "/admin/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
+    { "source": "/admin", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
+  ]
+}

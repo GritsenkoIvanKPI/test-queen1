@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "queen-2027",
+    "name": "Queen 2027",
+    "brand": "queen",
+    "isNew": true,
+    "description": "The newest QUEEN collection."
+  },
+  {
+    "slug": "paradise",
+    "name": "Paradise",
+    "brand": "queen",
+    "isNew": false,
+    "description": ""
+  },
+  {
+    "slug": "floria",
+    "name": "Floria",
+    "brand": "queen",
+    "isNew": false,
+    "description": ""
+  }
+]

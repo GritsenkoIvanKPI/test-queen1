@@ -4,7 +4,7 @@
   var D = window.CATALOG, M = D.models, META = D.meta, L = META.labels;
   var PAGE = 24;
   var GROUPS = [
-    { key: 'c', param: 'collection', title: 'Collection', options: META.collections.map(function (c) { return [c.slug, c.name]; }), when: function (s) { return !s.brand || s.brand === 'queen'; } },
+    { key: 'c', param: 'collection', title: 'Collection', options: META.collections.map(function (c) { return [c.slug, c.name]; }), when: function (s) { return META.collections.some(function (c) { return !s.brand || c.brand === s.brand; }); } },
     { key: 's', param: 'sil', title: 'Silhouette', options: pairs(L.sil) },
     { key: 'sl', param: 'sleeves', title: 'Sleeves & neckline', options: pairs(L.sleeves) },
     { key: 'f', param: 'fabric', title: 'Fabric', options: pairs(L.fabric) },
@@ -151,7 +151,7 @@
   $('catBrands').addEventListener('click', function (e) {
     var t = e.target.closest('[data-brand]'); if (!t) return;
     state.brand = t.getAttribute('data-brand');
-    if (state.brand && state.brand !== 'queen') state.sel.c = [];
+    if (state.brand && !META.collections.some(function (c) { return c.brand === state.brand; })) state.sel.c = [];
     state.shown = PAGE; render();
   });
   document.addEventListener('change', function (e) {

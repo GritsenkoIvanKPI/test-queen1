@@ -1,0 +1,251 @@
+{
+  "contact": {
+    "phone": "+48 514 732 941",
+    "email": "managerqueen1@gmail.com",
+    "company": "QUEEN_WED Sp. z o.o.",
+    "address": "Czyżówka 14/2.11, 30-526 Kraków, Polska",
+    "addressShort": "Czyżówka 14/2.11, 30-526 Kraków",
+    "managers": [
+      { "name": "Viktoria", "market": "Polish market", "country": "Poland", "phone": "+48 531 472 415" },
+      { "name": "Daria", "market": "Polish market", "country": "Poland", "phone": "+380 68 774 8003" },
+      { "name": "Polina", "market": "German market", "country": "Germany", "phone": "+48 514 732 941" },
+      { "name": "Anastasia", "market": "Italian market", "country": "Italy", "phone": "+39 393 866 7667" }
+    ]
+  },
+  "terms": [
+    { "label": "Minimum order", "value": "5 dresses", "note": "from a new collection" },
+    { "label": "Production", "value": "6–8 weeks", "note": "8–12 weeks in season, May – September" },
+    { "label": "Payment", "value": "30% / 70%", "note": "deposit, then before shipping. EUR, PLN or USD" },
+    { "label": "Delivery", "value": "DPD", "note": "door-to-door to your salon" }
+  ],
+  "nav": {
+    "megaText": "Seven wedding dress brands from one manufacturer — each with its own character, all made to the same standard.",
+    "featureTitle": "New collection — Queen 2027",
+    "featurePhoto": "/assets/img/models/queen-2027-2760-veil.jpg",
+    "featureLink": "/catalogue/?brand=queen&collection=queen-2027",
+    "footerTagline": "Handmade wedding dresses from the manufacturer, for bridal salons worldwide."
+  },
+  "home": {
+    "seoTitle": "QUEEN Fashion Group — International wedding dress supplier",
+    "seoDescription": "QUEEN Fashion Group unites seven wedding dress brands — QUEEN, Elle, Eleonora, Atelier Lorenzo Ricci, Velina, Nivera and TVOYA. Wholesale supply for bridal salons in 18 countries.",
+    "hero": {
+      "label": "QUEEN Fashion Group",
+      "title": "Seven bridal brands, one fashion house",
+      "text": "Handmade wedding dresses from the manufacturer, supplied wholesale to bridal salons in 18 countries.",
+      "button": "Become a partner",
+      "link": "Explore our brands"
+    },
+    "about": {
+      "label": "About the group",
+      "title": "An atelier with a history",
+      "texts": [
+        "QUEEN Fashion Group brings together seven wedding dress brands under one roof — from the signature QUEEN line to younger labels with their own handwriting.",
+        "Every dress is made by hand in our own production, where each stage is controlled, from the choice of fabric to the final decoration. We supply salons, boutiques and showrooms across Europe and present our collections at Barcelona Bridal Fashion Week, Bridal Fashion Warsaw and Fiera Milano."
+      ],
+      "photos": [
+        { "src": "/assets/img/models/queen-2747.jpg", "alt": "QUEEN model 2747 — lace ball gown with a sheer high-neck bolero" },
+        { "src": "/assets/img/models/queen-2747-detail.jpg", "alt": "QUEEN model 2747 — corset bodice and lace sleeves close up" }
+      ],
+      "stats": [
+        { "value": "7", "label": "bridal brands" },
+        { "value": "18", "label": "countries" },
+        { "value": "5", "label": "dresses minimum order" },
+        { "value": "6–8", "label": "weeks production" }
+      ]
+    },
+    "brands": {
+      "label": "Our brands",
+      "title": "Seven names, one standard",
+      "text": "Each brand has its own character and its own bride. Choose the ones that fit your salon, or combine several in one order.",
+      "ctaTitle": "One supplier, seven brands",
+      "ctaText": "One manager, one order and one delivery for every brand you choose."
+    },
+    "benefits": {
+      "label": "For wholesale partners",
+      "title": "Why salons work with us",
+      "photo": { "src": "/assets/img/models/queen-2717.jpg", "alt": "QUEEN model 2717 — satin ball gown with a lace bolero in a palace garden" },
+      "items": [
+        { "title": "Handmade quality", "text": "Every stage of production is controlled, from fabric to the final decoration." },
+        { "title": "Seven brands, one supplier", "text": "Different brides and price points with one partner and one delivery." },
+        { "title": "Manufacturer prices", "text": "Favorable prices, convenient payment and a flexible approach for regular partners." },
+        { "title": "New every season", "text": "Collections in line with trends, and advice on what sells best this season." },
+        { "title": "Orders of any size", "text": "Large wholesale and small orders, with fast delivery worldwide." },
+        { "title": "Marketing support", "text": "Photos and collection materials for your salon and online." }
+      ]
+    },
+    "collections": {
+      "label": "Brand collections",
+      "title": "Discover the collections",
+      "tabs": {
+        "queen": [
+          { "photo": "/assets/img/models/queen-2027-2752.jpg", "alt": "Queen 2027 model 2752 — satin ball gown with lace sleeves", "caption": "Queen 2027 · 2752", "product": "queen-2752", "isNew": true },
+          { "photo": "/assets/img/models/queen-tab-2.jpg", "alt": "QUEEN — lace mermaid gown with long sleeves and a cathedral train", "caption": "Queen", "product": "", "isNew": false },
+          { "photo": "/assets/img/models/queen-tab-3.jpg", "alt": "QUEEN — off-shoulder sparkling A-line gown", "caption": "Queen", "product": "", "isNew": false },
+          { "photo": "/assets/img/models/queen-tab-4.jpg", "alt": "QUEEN — lace A-line gown with a high slit and lace sleeves", "caption": "Queen", "product": "", "isNew": false }
+        ],
+        "elle": [
+          { "photo": "/assets/img/brands/elle-765.jpg", "alt": "Elle 765 — lace gown with a high slit and sleeves", "caption": "Elle · 765", "product": "elle-765", "isNew": false },
+          { "photo": "/assets/img/brands/elle-818.jpg", "alt": "Elle 818 — fitted gown with sheer lace panels", "caption": "Elle · 818", "product": "elle-818", "isNew": false },
+          { "photo": "/assets/img/brands/elle-808.jpg", "alt": "Elle 808 — off-shoulder satin gown", "caption": "Elle · 808", "product": "elle-808", "isNew": false }
+        ],
+        "eleonora": [
+          { "photo": "/assets/img/brands/eleonora-p-51.jpg", "alt": "Eleonora P-51 — mermaid gown with lace sleeves", "caption": "Eleonora · P-51", "product": "eleonora-p-51", "isNew": false },
+          { "photo": "/assets/img/brands/eleonora-p-87.jpg", "alt": "Eleonora P-87 — satin ball gown with a beaded bodice", "caption": "Eleonora · P-87", "product": "eleonora-p-87", "isNew": false },
+          { "photo": "/assets/img/brands/eleonora-p-78.jpg", "alt": "Eleonora P-78 — tulle ball gown with off-shoulder sleeves", "caption": "Eleonora · P-78", "product": "eleonora-p-78", "isNew": false }
+        ]
+      }
+    },
+    "services": {
+      "label": "Exclusive services",
+      "title": "Beyond the catalogue",
+      "text": "For partners who want more than ready collections — dresses and service shaped around your salon.",
+      "photo": { "src": "/assets/img/models/queen-2750.jpg", "alt": "QUEEN model 2750 — lace sheath gown with a tulle overskirt and detachable sleeves" },
+      "items": [
+        { "title": "Individual tailoring", "text": "Our designers create a dress of any complexity to your client's request." },
+        { "title": "Made-to-order changes", "text": "Adjust sleeves, length, train or colour of catalogue models, worked out for the required size." },
+        { "title": "A manager in your language", "text": "Personal managers for the Polish, German and Italian markets advise on assortment, payment and delivery." },
+        { "title": "Partner area", "text": "Price lists, lookbooks and collection materials in one place for partner salons." }
+      ]
+    },
+    "banner": {
+      "label": "Wholesale partnership",
+      "title": "Bring our brands to your salon",
+      "text": "Request the wholesale price list and catalogues. A manager will reply within one business day.",
+      "button": "Request price list"
+    }
+  },
+  "cta": {
+    "title": "Bring our brands to your salon",
+    "text": "Request the wholesale price list and lookbook. A manager will reply within one business day.",
+    "button": "Request price list",
+    "photos": ["/assets/img/models/queen-2717.jpg", "/assets/img/models/queen-2750.jpg"],
+    "brandTitle": "Bring {brand} to your salon"
+  },
+  "brandsPage": {
+    "title": "Our brands",
+    "text": "Seven wedding dress brands from one manufacturer — each with its own character, all made by hand to the same standard.",
+    "nextTitle": "Coming next",
+    "nextText": "New brands in the group. Collections are being photographed — ask a manager for the lookbook in the meantime.",
+    "ctaTitle": "One supplier, seven brands",
+    "ctaText": "One manager, one order and one delivery for every brand you choose. Combine several brands in a single order."
+  },
+  "about": {
+    "hero": {
+      "label": "About QUEEN Fashion Group",
+      "title": "An atelier with a history",
+      "text": "Handmade wedding dresses from the manufacturer, for bridal salons in 18 countries.",
+      "photo": "/assets/img/hero/about-2560.jpg"
+    },
+    "story": {
+      "title": "Seven bridal brands under one roof, made in our own production",
+      "texts": [
+        "QUEEN Fashion Group grew out of QUEEN — a wedding dress brand known for structured corset bodices, fine lace and long trains. Today the group brings together seven brands, from the signature QUEEN line to younger labels with their own handwriting.",
+        "We work with the owners of wedding salons, boutiques and showrooms. Partners order from our catalogues or ask for exclusive individual tailoring, and we take both large wholesale and small orders.",
+        "Our managers help each salon find its way through the assortment: which models and colours are in demand this season, and which payment and delivery method suits them best."
+      ]
+    },
+    "craft": {
+      "title": "Made by hand, checked at every stage",
+      "text": "Every dress is sewn in our own production. Each model is worked out for the required size, so it fits as it should — whether it comes from the catalogue or is made to order.",
+      "photos": [
+        { "src": "/assets/img/models/queen-2747.jpg", "alt": "QUEEN model 2747 — lace ball gown" },
+        { "src": "/assets/img/models/queen-2747-detail.jpg", "alt": "Corset bodice and lace sleeves close up" }
+      ],
+      "items": [
+        { "title": "Our own production", "text": "From fabric to final decoration, every stage stays in our hands." },
+        { "title": "Made-to-order changes", "text": "Sleeves, length, train and colour can be adjusted on request." },
+        { "title": "EU and UA sizes", "text": "Size charts for European and Ukrainian sizing." }
+      ]
+    },
+    "values": {
+      "title": "What we stand for",
+      "items": [
+        { "title": "High quality", "text": "Each stage of production is strictly controlled, from the choice of fabric to the sewing and decoration of every dress." },
+        { "title": "Unique design", "text": "A line of exclusive handmade designer dresses, created in step with the trends of the fashion industry." },
+        { "title": "Individual approach", "text": "Our designers take every nuance into account and can create a dress of any complexity for your client." },
+        { "title": "Fair pricing", "text": "Manufacturer prices and convenient payment. Regular partners receive discounts and special offers." },
+        { "title": "Attentive service", "text": "Managers answer every question in detail and agree each delivery with care." },
+        { "title": "On time", "text": "Fast production for orders of any volume and quick delivery anywhere in the world." }
+      ]
+    },
+    "groupTitle": "The brands of the group",
+    "eventsTitle": "Where to meet us",
+    "eventsText": "We present our collections at the leading bridal fairs in Europe."
+  },
+  "partners": {
+    "title": "Wholesale partnership",
+    "text": "We help the owners of wedding salons, boutiques and showrooms build their assortment with handmade dresses from seven brands.",
+    "stepsTitle": "How cooperation works",
+    "steps": [
+      { "title": "Send a request", "text": "Leave your details in the form or call a manager for your market." },
+      { "title": "Get the price list", "text": "We send the wholesale price list and lookbooks for the brands you choose." },
+      { "title": "Place an order", "text": "From 5 dresses from a new collection, with a 30% deposit." },
+      { "title": "Production", "text": "6–8 weeks after prepayment, 8–12 weeks from May to September." },
+      { "title": "Delivery", "text": "Pay the remaining 70% before shipping. DPD delivers to your salon." }
+    ],
+    "benefitsTitle": "Benefits of working with us",
+    "benefitsPhoto": { "src": "/assets/img/pages/partners-1600.jpg", "alt": "A bride in an Eleonora tulle gown in a palace garden" },
+    "benefits": [
+      { "title": "Efficient supply chain", "text": "One manager and one delivery for every brand in your order." },
+      { "title": "Favorable prices", "text": "Manufacturer prices and a flexible system of discounts for regular partners." },
+      { "title": "High product quality", "text": "Handmade dresses, checked at every stage of production." },
+      { "title": "Regular updates", "text": "New collections every season, with advice on what sells best." },
+      { "title": "Marketing support", "text": "Photos, videos and collection materials for your salon and social media." },
+      { "title": "Convenient payment", "text": "Prices in EUR, with payment also possible in PLN or USD." }
+    ],
+    "servicesTitle": "Exclusive services",
+    "servicesText": "For partners who want more than ready collections — dresses and service shaped around your salon.",
+    "servicesPhoto": { "src": "/assets/img/models/queen-2750.jpg", "alt": "QUEEN model 2750 — lace sheath gown with a tulle overskirt" },
+    "services": [
+      { "title": "Individual tailoring", "text": "Our designers create a dress of any complexity to your client's request." },
+      { "title": "Made-to-order changes", "text": "Adjust sleeves, length, train or colour of catalogue models, worked out for the required size." },
+      { "title": "A manager in your language", "text": "Personal managers for the Polish, German and Italian markets advise on assortment, payment and delivery." },
+      { "title": "Partner area", "text": "Price lists, lookbooks and collection materials in one place for partner salons." }
+    ],
+    "faqTitle": "Questions from salons",
+    "faq": [
+      { "q": "What is the minimum order?", "a": "Five dresses from a new collection. You can combine models and brands in one order." },
+      { "q": "How long does production take?", "a": "6–8 weeks after prepayment. In the high season, from 1 May to 30 September, it takes 8–12 weeks." },
+      { "q": "How does payment work?", "a": "A 30% deposit when you place the order and the remaining 70% before shipping. Prices are in EUR; you can also pay in PLN or USD." },
+      { "q": "How are dresses delivered?", "a": "We ship with DPD, door-to-door to your salon." },
+      { "q": "Can a model be changed for my client?", "a": "Yes. Sleeves, length, train and colour can be adjusted, and our designers can create a dress to an individual request." },
+      { "q": "Which size charts do you use?", "a": "We work with European and Ukrainian size charts." },
+      { "q": "How do I see prices?", "a": "Prices are shared on request. Send the form and a manager will reply with the price list within one business day." }
+    ],
+    "ctaTitle": "Start working with us",
+    "ctaText": "Leave a request and a manager will send the price list and lookbooks within one business day."
+  },
+  "contactPage": {
+    "title": "Contacts",
+    "text": "Leave a request or call the manager for your market. We reply within one business day.",
+    "formTitle": "Wholesale enquiry",
+    "formText": "Price list and lookbooks on request. Fields marked * are required.",
+    "photos": [
+      "/assets/img/pages/contact-1600.jpg",
+      "/assets/catalog/queen-2752/1-lg.jpg",
+      "/assets/catalog/elle-765/1-lg.jpg",
+      "/assets/catalog/eleonora-p-51/1-lg.jpg",
+      "/assets/img/models/queen-2744.jpg",
+      "/assets/img/hero/elle-1200.jpg",
+      "/assets/catalog/eleonora-p-78/1-lg.jpg",
+      "/assets/catalog/queen-2401/1-lg.jpg",
+      "/assets/catalog/elle-818/1-lg.jpg"
+    ]
+  },
+  "blogPage": {
+    "title": "Blog",
+    "text": "News from the group — fashion weeks, trade fairs and new collections."
+  },
+  "privacy": {
+    "updated": "Last updated 7 November 2026",
+    "sections": [
+      { "title": "Who we are", "text": "The controller of your personal data is QUEEN_WED Sp. z o.o., Czyżówka 14/2.11, 30-526 Kraków, Poland. For any question about your data, write to {email}." },
+      { "title": "What data we collect", "text": "When you send a wholesale enquiry we receive the data you enter in the form: your name, the name of your salon or company, e-mail address, phone number, country, the brands you are interested in and your message. When you call or write to a manager we receive the data you share in that conversation." },
+      { "title": "Why we use it", "text": "We use this data only to answer your enquiry, send price lists and catalogues, prepare and carry out orders, and keep in touch as a business partner. The legal basis is the steps taken at your request before entering into a contract and our legitimate interest in answering business enquiries (Art. 6(1)(b) and (f) GDPR), or your consent where we ask for it." },
+      { "title": "Who receives it", "text": "Your data is available to our managers. We may share it with providers who help us run our business — e-mail and hosting services, a customer relationship management system, and delivery companies such as DPD for shipping orders. We do not sell your data." },
+      { "title": "How long we keep it", "text": "We keep enquiry data for as long as needed to answer it and continue the conversation, and data related to orders for the period required by accounting and tax law." },
+      { "title": "Your rights", "text": "You have the right to access your data, correct it, have it deleted, restrict or object to its processing, and receive it in a portable format. Where processing is based on consent, you can withdraw it at any time. You can also lodge a complaint with the President of the Personal Data Protection Office (UODO) in Poland." },
+      { "title": "Cookies", "text": "This website does not use advertising or analytics cookies. If that changes, we will update this policy and ask for your consent where required." }
+    ]
+  }
+}
