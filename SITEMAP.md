@@ -35,11 +35,12 @@ Edit products, collections and every page with a live preview, then press **Publ
 **Switch it on (once), in Vercel → Project → Settings → Environment Variables:**
 | Name | Value |
 |---|---|
-| `ADMIN_PASSWORD` | the password for /admin |
-| `GITHUB_TOKEN` | GitHub fine-grained token, repository `test-queen1`, permission **Contents: Read and write** |
-| `GITHUB_REPO` | `GritsenkoIvanKPI/test-queen1` |
+| `GITHUB_TOKEN` | GitHub fine-grained token, repository `test-queen1`, permission **Contents: Read and write** (required) |
+| `ADMIN_PASSWORD` | optional — replaces the temporary password (do this before the real launch) |
+| `GITHUB_REPO` | optional — defaults to `GritsenkoIvanKPI/test-queen1` |
 
 Then redeploy. Publishing commits the changes to GitHub, and Vercel rebuilds the site in about a minute.
+Until `ADMIN_PASSWORD` is set, a temporary password works (only its fingerprint is stored in `lib/admin-api.mjs`).
 
 **Locally:** `node serve.mjs` → http://localhost:3000/admin, password `queen` (works only locally; edits files in this folder).
 
