@@ -152,7 +152,7 @@ function updateStatus() {
   const n = changes().length;
   const st = $('#status');
   st.classList.toggle('is-dirty', n > 0);
-  st.textContent = n ? `${n} unpublished change${n > 1 ? 's' : ''}` : 'Everything is published';
+  st.textContent = (state.mode === 'demo' ? 'Demo · ' : '') + (n ? `${n} unpublished change${n > 1 ? 's' : ''}` : state.mode === 'demo' ? 'nothing changed' : 'Everything is published');
   $('#publishBtn').disabled = !n;
 }
 
@@ -809,6 +809,10 @@ function settingsEditor(key) {
 async function publishDialog() {
   const c = changes();
   if (!c.length) return;
+  if (state.mode === 'demo') {
+    await dialog({ title: 'Demo mode', text: `This is a preview of the admin panel. Your ${c.length} change${c.length > 1 ? 's are' : ' is'} kept in this browser, but publishing to the site is switched off until the admin is connected to GitHub.`, ok: 'OK', cancel: '' });
+    return;
+  }
   const incomplete = D().models.filter((m) => !m.article || !m.photos.length || !m.sil || !m.fabric || !m.sleeves);
   const r = await dialog({
     title: 'Publish to the site',

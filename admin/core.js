@@ -40,11 +40,24 @@ export const ICON = {
 
 /* ───────── API ───────── */
 const TOKEN_KEY = 'queen-admin-token';
+// Demo mode (site not connected to GitHub): content is read from the public /data files,
+// photos stay in the browser and publishing is switched off.
+const DEMO_FILES = ['brands', 'models', 'collections', 'posts', 'site', 'translations'];
+async function demoApi(action, body) {
+  if (action === 'content') {
+    const data = {};
+    await Promise.all(DEMO_FILES.map(async (f) => { const r = await fetch(`/data/${f}.json`, { cache: 'no-store' }); data[f] = await r.json(); }));
+    return { data, mode: 'demo', head: null };
+  }
+  if (action === 'upload') return { path: body.path, sha: null };
+  throw new Error('Publishing is switched off in demo mode.');
+}
 export const auth = {
   get token() { try { return localStorage.getItem(TOKEN_KEY) || ''; } catch { return ''; } },
   set token(v) { try { v ? localStorage.setItem(TOKEN_KEY, v) : localStorage.removeItem(TOKEN_KEY); } catch { /* private mode */ } },
 };
 export async function api(action, body) {
+  if (auth.token === 'demo' && action !== 'login') return demoApi(action, body);
   const res = await fetch(`/api/${action}`, {
     method: body ? 'POST' : 'GET',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${auth.token}` },
