@@ -334,7 +334,7 @@ export function list(arr, fields, { add = 'Add', make = () => ({}), min = 0 } = 
   const r = ref(arr);
   makers.set(r, make);
   return `<div class="list" data-list-ref="${r}">${arr.map((item, i) => `<div class="list__item" draggable="true" data-drag-list="${r}" data-i="${i}">
-      <span class="list__grip" title="Drag to reorder">${ICON.grip}</span>
+      <span class="list__grip" title="Drag to reorder"><b>${i + 1}</b>${ICON.grip}</span>
       <div class="list__fields">${fields(item, i)}</div>
       <div class="list__tools">
         <button type="button" class="icon-btn" title="Move up" data-move="${r}" data-i="${i}" data-d="-1"${i ? '' : ' disabled'}>${ICON.up}</button>

@@ -665,7 +665,8 @@ function brandEditor(slug) {
 }
 
 /* ═════════ Content pages (built from a short description of each section) ═════════ */
-const item2 = (x) => `<div class="grid2">${text(x, 'title', 'Title')}${area(x, 'text', 'Text', { rows: 2 })}</div>`;
+// Title above its text, full width — easy to read and edit
+const item2 = (x) => `${text(x, 'title', 'Title')}${area(x, 'text', 'Text', { rows: 2 })}`;
 const photoObj = (o, label) => image(o, 'src', label, { alt: 'alt', removable: false });
 
 const PAGES = {
@@ -674,7 +675,7 @@ const PAGES = {
     return {
       title: 'Home', url: '/', sections: [
         ['First screen', '.hero', () => `${text(H.hero, 'label', 'Small label')}${text(H.hero, 'title', 'Heading')}${area(H.hero, 'text', 'Text', { rows: 2 })}<div class="grid2">${text(H.hero, 'button', 'Button')}${text(H.hero, 'link', 'Link under the button')}</div><p class="card__note">The background video is changed by the developer.</p>`],
-        ['About the group', '#about', () => `<div class="grid2">${text(H.about, 'label', 'Small label')}${text(H.about, 'title', 'Heading')}</div>${paragraphs(H.about.texts, 'Text')}<div class="grid2">${photoObj(H.about.photos[0], 'Photo 1')}${photoObj(H.about.photos[1], 'Photo 2')}</div>${fieldWrap('Numbers', listOf(H.about.stats, (x) => `<div class="grid2">${text(x, 'value', 'Number')}${text(x, 'label', 'Caption')}</div>`, { add: 'Add number', make: () => ({ value: '', label: '' }) }), 'Also shown on the About us page.')}`],
+        ['About the group', '#about', () => `<div class="grid2">${text(H.about, 'label', 'Small label')}${text(H.about, 'title', 'Heading')}</div>${paragraphs(H.about.texts, 'Text')}<div class="grid2">${photoObj(H.about.photos[0], 'Photo 1')}${photoObj(H.about.photos[1], 'Photo 2')}</div>${fieldWrap('Numbers', listOf(H.about.stats, (x) => `<div class="grid2 grid2--short">${text(x, 'value', 'Number')}${text(x, 'label', 'Caption')}</div>`, { add: 'Add number', make: () => ({ value: '', label: '' }) }), 'Also shown on the About us page.')}`],
         ['Our brands', '#brands', () => `<div class="grid2">${text(H.brands, 'label', 'Small label')}${text(H.brands, 'title', 'Heading')}</div>${area(H.brands, 'text', 'Text', { rows: 2 })}<div class="grid2">${text(H.brands, 'ctaTitle', 'Last tile: title')}${area(H.brands, 'ctaText', 'Last tile: text', { rows: 2 })}</div><p class="card__note">Brand photos and taglines are edited on each brand page: ${D().brands.map((b) => `<a href="#/pages/brand/${b.slug}">${esc(b.name)}</a>`).join(', ')}.</p>`],
         ['Why salons work with us', '#benefits', () => `<div class="grid2">${text(H.benefits, 'label', 'Small label')}${text(H.benefits, 'title', 'Heading')}</div>${photoObj(H.benefits.photo, 'Photo')}${fieldWrap('Benefits', listOf(H.benefits.items, item2, { add: 'Add benefit', make: () => ({ title: '', text: '' }) }))}<p class="card__note">The strip of terms below it is edited in <a href="#/settings/terms">Wholesale terms</a>.</p>`],
         ['Collections tabs', '#collections', () => `<div class="grid2">${text(H.collections, 'label', 'Small label')}${text(H.collections, 'title', 'Heading')}</div>
@@ -787,7 +788,7 @@ function settingsEditor(key) {
     url: '/contact/',
     html: `<div class="head"><div><h1>Contacts &amp; phones</h1><p>Used in the header, footer, contact page and every “call” button.</p></div></div>
     ${section({ n: 1, title: 'Main contacts', anchor: '.cpage__info', body: `<div class="grid2">${text(S.contact, 'phone', 'Main phone', { hint: 'In the header, banners and “Ask a manager”.' })}${text(S.contact, 'email', 'E-mail')}</div>${text(S.contact, 'company', 'Company name')}<div class="grid2">${text(S.contact, 'address', 'Address (contact page)')}${text(S.contact, 'addressShort', 'Address (footer)')}</div>` })}
-    ${section({ n: 2, title: 'Managers', anchor: '.clist', body: listOf(S.contact.managers, (m) => `<div class="grid2">${text(m, 'name', 'Name')}${text(m, 'phone', 'Phone')}${text(m, 'market', 'Market (contact page)')}${text(m, 'country', 'Country (footer)')}</div>`, { add: 'Add manager', make: () => ({ name: '', market: '', country: '', phone: '' }) }) })}`,
+    ${section({ n: 2, title: 'Managers', anchor: '.clist', body: listOf(S.contact.managers, (m) => `<div class="grid2 grid2--short">${text(m, 'name', 'Name')}${text(m, 'phone', 'Phone')}${text(m, 'market', 'Market (contact page)')}${text(m, 'country', 'Country (footer)')}</div>`, { add: 'Add manager', make: () => ({ name: '', market: '', country: '', phone: '' }) }) })}`,
   };
   if (key === 'terms') return {
     url: '/partners/', anchor: '#terms',
