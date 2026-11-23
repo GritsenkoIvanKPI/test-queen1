@@ -177,12 +177,31 @@ function wireShell() {
   });
   $('#previewOpen').onclick = () => window.open(preview.url, '_blank');
 
-  // Resize preview
-  const rz = $('#resizer');
+  // Resize: the editing column stays 460–720px, snaps to comfortable widths, double-click resets
+  const rz = $('#resizer'), work = $('#work');
+  const MIN = 460, MAX = 720, SNAPS = [520, 600, 680];
+  rz.insertAdjacentHTML('beforeend', '<span class="resizer__tip"></span>');
+  const tip = rz.querySelector('.resizer__tip');
+  const setEdit = (w, save) => {
+    if (w == null) { work.style.removeProperty('--edit-w'); try { localStorage.removeItem('queen-admin-edit-w'); } catch { /* ignore */ } }
+    else { work.style.setProperty('--edit-w', w + 'px'); if (save) try { localStorage.setItem('queen-admin-edit-w', w); } catch { /* ignore */ } }
+    setTimeout(() => preview.fit(), 0);
+  };
+  try { const w = +localStorage.getItem('queen-admin-edit-w'); if (w >= MIN && w <= MAX) setEdit(w); } catch { /* ignore */ }
+  rz.title = 'Drag to resize · double-click to reset';
+  rz.addEventListener('dblclick', () => { setEdit(null); toast('Default layout restored.'); });
   rz.addEventListener('pointerdown', (e) => {
-    rz.setPointerCapture(e.pointerId); rz.classList.add('is-drag');
-    const move = (ev) => { const w = Math.max(320, Math.min(window.innerWidth - 640, window.innerWidth - ev.clientX)); $('#work').style.setProperty('--preview-w', w + 'px'); preview.fit(); };
-    const up = () => { rz.classList.remove('is-drag'); rz.removeEventListener('pointermove', move); rz.removeEventListener('pointerup', up); };
+    rz.setPointerCapture(e.pointerId); rz.classList.add('is-drag'); document.body.classList.add('is-resizing');
+    const left = $('#main').getBoundingClientRect().left;
+    let w = 0;
+    const move = (ev) => {
+      const max = Math.max(MIN, Math.min(MAX, work.clientWidth - 400)); // keep at least 400px for the preview
+      w = Math.round(Math.max(MIN, Math.min(max, ev.clientX - left)));
+      const snap = SNAPS.find((s) => Math.abs(s - w) < 14); if (snap) w = snap;
+      tip.textContent = w <= MIN ? 'Narrowest editor' : w >= max ? 'Widest editor' : 'Editor ' + w + 'px';
+      setEdit(w);
+    };
+    const up = () => { rz.classList.remove('is-drag'); document.body.classList.remove('is-resizing'); if (w) setEdit(w, true); rz.removeEventListener('pointermove', move); rz.removeEventListener('pointerup', up); };
     rz.addEventListener('pointermove', move); rz.addEventListener('pointerup', up);
   });
 
