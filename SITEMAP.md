@@ -44,3 +44,15 @@ Until `ADMIN_PASSWORD` is set, a temporary password works (only its fingerprint 
 
 **Locally:** `node serve.mjs` → http://localhost:3000/admin, password `queen` (works only locally; edits files in this folder).
 
+
+## SEO
+
+Generated automatically by `node build.mjs` and by every publish from the admin:
+
+- **Every page:** title, description, canonical, hreflang for all 6 languages, Open Graph and Twitter cards (share photo per brand, model and post; `assets/img/og-default.jpg` otherwise), `robots` with large image previews.
+- **Structured data (JSON-LD):** Organization (home, about, contact), WebSite (home), BreadcrumbList (all inner pages), BlogPosting (posts).
+- **`sitemap.xml`:** all indexable pages with language alternates and photos. `robots.txt` points to it.
+- **Catalogue:** the first 24 models are in the HTML, so search engines can follow them without JavaScript.
+- **Favicons:** `favicon.ico`, `assets/icons/favicon.svg`, `apple-touch-icon.png`, `site.webmanifest` (icons drawn from the logo's Q).
+- **Preview domain:** `*.vercel.app` is sent `noindex`, so only the real domain gets indexed. `SITE_URL` in `lib/render.mjs` must match the final domain.
+- **Base CSS:** `assets/css/base.css` is the reset Tailwind generated, saved as a file; the Tailwind CDN script is no longer loaded (faster first paint).

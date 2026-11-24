@@ -39,7 +39,8 @@
     "viewBrandCatalogue": "Zobacz katalog {brand}",
     "termsAria": "Warunki w skrócie",
     "introAria": "Wprowadzenie",
-    "heroVideoAria": "Suknie Eleonora sfilmowane w Krakowie"
+    "heroVideoAria": "Suknie Eleonora sfilmowane w Krakowie",
+    "dressAlt": "{name}, suknia ślubna {style}"
    },
    "brand": {
     "nModels": {
@@ -121,7 +122,7 @@
     "soonText": "Trwa sesja zdjęciowa kolekcji. Kluczowe modele: {keys}.",
     "askManager": "Zapytaj menedżera",
     "noMatch": "Brak modeli spełniających te kryteria",
-    "docTitle": "Katalog — wszystkie modele sukien ślubnych | QUEEN Fashion Group",
+    "docTitle": "Katalog sukien ślubnych hurtowo | QUEEN Fashion Group",
     "docTitleBrand": "Katalog {brand} | QUEEN Fashion Group",
     "seoDesc": "Katalog hurtowy sukien ślubnych — modele: {n}. Filtruj według marki, kolekcji, sylwetki, rękawów i tkaniny."
    },
@@ -161,7 +162,7 @@
     "moreFrom": "Więcej od {brand}",
     "allBrandModels": "Wszystkie modele {brand}",
     "moreModels": "Więcej modeli",
-    "seoTitle": "{name} — suknia ślubna {brand} | QUEEN Fashion Group",
+    "seoTitle": "{name} — suknia ślubna {style} | QUEEN Fashion Group",
     "seoDesc": "{name}. {desc} Hurtowo od QUEEN Fashion Group, cena na zapytanie.",
     "weddingDress": "suknia ślubna"
    },
@@ -173,23 +174,23 @@
     "keyModelsLine": "Kluczowe modele · {keys}",
     "discover": "Poznaj {brand}",
     "catalogue": "Katalog",
-    "seoTitle": "Nasze marki — QUEEN Fashion Group",
-    "seoDesc": "Siedem marek sukien ślubnych od jednego producenta: {list}."
+    "seoTitle": "Nasze marki — {n} marek sukien ślubnych | QUEEN Fashion Group",
+    "seoDesc": "Siedem marek sukien ślubnych od jednego producenta, hurtowo dla salonów ślubnych: {list}."
    },
    "about": {
     "heroAlt": "Panna młoda w sukni Eleonora w pałacowym ogrodzie",
     "allBrands": "Wszystkie marki",
-    "seoTitle": "O nas — QUEEN Fashion Group",
+    "seoTitle": "O nas — producent sukien ślubnych | QUEEN Fashion Group",
     "seoDesc": "QUEEN Fashion Group: siedem marek sukien ślubnych szytych ręcznie we własnej produkcji i dostarczanych hurtowo do salonów w 18 krajach."
    },
    "partners": {
     "becomePartner": "Zostań partnerem",
     "termsLink": "Warunki współpracy",
-    "seoTitle": "Współpraca hurtowa — QUEEN Fashion Group",
+    "seoTitle": "Współpraca hurtowa dla salonów ślubnych | QUEEN Fashion Group",
     "seoDesc": "Warunki współpracy dla salonów ślubnych: minimalne zamówienie 5 sukien, produkcja 6–8 tygodni, płatność 30/70 w EUR, PLN lub USD, dostawa DPD."
    },
    "contact": {
-    "seoTitle": "Kontakt — QUEEN Fashion Group",
+    "seoTitle": "Kontakt — hurtowe zamówienia sukien ślubnych | QUEEN Fashion Group",
     "seoDesc": "Kontakt z QUEEN Fashion Group: zapytania hurtowe, menedżerowie rynku polskiego, niemieckiego i włoskiego, biuro w Krakowie.",
     "name": "Imię i nazwisko *",
     "salon": "Salon lub firma *",
@@ -221,7 +222,7 @@
     "priceRequest": "Zapytanie o cenę: {model}"
    },
    "blog": {
-    "seoTitle": "Blog — QUEEN Fashion Group",
+    "seoTitle": "Blog — nowości mody ślubnej | QUEEN Fashion Group",
     "seoDesc": "Aktualności QUEEN Fashion Group: tygodnie mody ślubnej, targi i nowe kolekcje.",
     "readStory": "Czytaj dalej",
     "allNews": "Wszystkie aktualności",
@@ -322,8 +323,8 @@
     "footerTagline": "Ręcznie szyte suknie ślubne od producenta dla salonów na całym świecie."
    },
    "home": {
-    "seoTitle": "QUEEN Fashion Group — międzynarodowy dostawca sukien ślubnych",
-    "seoDescription": "QUEEN Fashion Group łączy siedem marek sukien ślubnych — QUEEN, Elle, Eleonora, Atelier Lorenzo Ricci, Velina, Nivera i TVOYA. Dostawy hurtowe dla salonów ślubnych w 18 krajach.",
+    "seoTitle": "QUEEN Fashion Group — suknie ślubne hurtowo od producenta",
+    "seoDescription": "Suknie ślubne hurtowo od producenta: siedem marek, szytych ręcznie we własnej produkcji, dla salonów ślubnych w 18 krajach.",
     "hero": {
      "label": "QUEEN Fashion Group",
      "title": "Siedem marek ślubnych, jeden dom mody",
@@ -843,7 +844,8 @@
     "viewBrandCatalogue": "Zum {brand}-Katalog",
     "termsAria": "Konditionen im Überblick",
     "introAria": "Einführung",
-    "heroVideoAria": "Eleonora-Kleider, gefilmt in Kraków"
+    "heroVideoAria": "Eleonora-Kleider, gefilmt in Kraków",
+    "dressAlt": "{name}, Brautkleid {style}"
    },
    "brand": {
     "nModels": {
@@ -917,7 +919,7 @@
     "soonText": "Die Kollektion wird gerade fotografiert. Schlüsselmodelle: {keys}.",
     "askManager": "Manager fragen",
     "noMatch": "Keine Modelle entsprechen diesen Filtern",
-    "docTitle": "Katalog — alle Brautkleid-Modelle | QUEEN Fashion Group",
+    "docTitle": "Brautkleider-Katalog für den Großhandel | QUEEN Fashion Group",
     "docTitleBrand": "{brand}-Katalog | QUEEN Fashion Group",
     "seoDesc": "Großhandelskatalog mit {n} Brautkleid-Modellen. Filter nach Marke, Kollektion, Silhouette, Ärmeln und Stoff."
    },
@@ -957,7 +959,7 @@
     "moreFrom": "Mehr von {brand}",
     "allBrandModels": "Alle {brand}-Modelle",
     "moreModels": "Weitere Modelle",
-    "seoTitle": "{name} — {brand} Brautkleid | QUEEN Fashion Group",
+    "seoTitle": "{name} — Brautkleid {style} | QUEEN Fashion Group",
     "seoDesc": "{name}. {desc} Im Großhandel von QUEEN Fashion Group, Preis auf Anfrage.",
     "weddingDress": "Brautkleid"
    },
@@ -969,23 +971,23 @@
     "keyModelsLine": "Schlüsselmodelle · {keys}",
     "discover": "{brand} entdecken",
     "catalogue": "Katalog",
-    "seoTitle": "Unsere Marken — QUEEN Fashion Group",
-    "seoDesc": "Sieben Brautmodenmarken aus einer Hand: {list}."
+    "seoTitle": "Unsere Marken — {n} Brautmodenmarken | QUEEN Fashion Group",
+    "seoDesc": "Sieben Brautmodenmarken von einem Hersteller, im Großhandel für Brautmodengeschäfte: {list}."
    },
    "about": {
     "heroAlt": "Eine Braut in einem Eleonora-Kleid in einem Schlossgarten",
     "allBrands": "Alle Marken",
-    "seoTitle": "Über uns — QUEEN Fashion Group",
+    "seoTitle": "Über uns — Brautkleid-Hersteller | QUEEN Fashion Group",
     "seoDesc": "QUEEN Fashion Group: sieben Brautmodenmarken, handgefertigt in eigener Produktion und im Großhandel an Brautmodengeschäfte in 18 Ländern geliefert."
    },
    "partners": {
     "becomePartner": "Partner werden",
     "termsLink": "Konditionen",
-    "seoTitle": "Großhandelspartnerschaft — QUEEN Fashion Group",
+    "seoTitle": "Großhandelspartnerschaft für Brautmodengeschäfte | QUEEN Fashion Group",
     "seoDesc": "Konditionen für Brautmodengeschäfte: Mindestbestellung 5 Kleider, Fertigung in 6–8 Wochen, Zahlung 30/70 in EUR, PLN oder USD, Lieferung per DPD."
    },
    "contact": {
-    "seoTitle": "Kontakt — QUEEN Fashion Group",
+    "seoTitle": "Kontakt — Großhandelsanfragen für Brautkleider | QUEEN Fashion Group",
     "seoDesc": "Kontakt zur QUEEN Fashion Group: Großhandelsanfragen, Ansprechpartner für den polnischen, deutschen und italienischen Markt, Büro in Kraków.",
     "name": "Name *",
     "salon": "Salon oder Firma *",
@@ -1017,7 +1019,7 @@
     "priceRequest": "Preisanfrage: {model}"
    },
    "blog": {
-    "seoTitle": "Blog — QUEEN Fashion Group",
+    "seoTitle": "Blog — Neuigkeiten aus der Brautmode | QUEEN Fashion Group",
     "seoDesc": "Neuigkeiten der QUEEN Fashion Group: Bridal Fashion Weeks, Fachmessen und neue Kollektionen.",
     "readStory": "Weiterlesen",
     "allNews": "Alle News",
@@ -1118,8 +1120,8 @@
     "footerTagline": "Handgefertigte Brautkleider direkt vom Hersteller, für Brautmodengeschäfte weltweit."
    },
    "home": {
-    "seoTitle": "QUEEN Fashion Group — Internationaler Brautkleid-Lieferant",
-    "seoDescription": "Die QUEEN Fashion Group vereint sieben Brautmodenmarken — QUEEN, Elle, Eleonora, Atelier Lorenzo Ricci, Velina, Nivera und TVOYA. Großhandel für Brautmodengeschäfte in 18 Ländern.",
+    "seoTitle": "QUEEN Fashion Group — Brautkleider im Großhandel vom Hersteller",
+    "seoDescription": "Brautkleider im Großhandel direkt vom Hersteller: sieben Marken, handgefertigt in eigener Produktion, für Brautmodengeschäfte in 18 Ländern.",
     "hero": {
      "label": "QUEEN Fashion Group",
      "title": "Sieben Brautmarken, ein Modehaus",
@@ -1639,7 +1641,8 @@
     "viewBrandCatalogue": "Каталог {brand}",
     "termsAria": "Условия вкратце",
     "introAria": "Введение",
-    "heroVideoAria": "Платья Eleonora, снятые в Кракове"
+    "heroVideoAria": "Платья Eleonora, снятые в Кракове",
+    "dressAlt": "{name}, свадебное платье: {style}"
    },
    "brand": {
     "nModels": {
@@ -1721,7 +1724,7 @@
     "soonText": "Коллекция на фотосъёмке. Ключевые модели: {keys}.",
     "askManager": "Спросить менеджера",
     "noMatch": "Нет моделей по выбранным фильтрам",
-    "docTitle": "Каталог — все модели свадебных платьев | QUEEN Fashion Group",
+    "docTitle": "Каталог свадебных платьев оптом | QUEEN Fashion Group",
     "docTitleBrand": "Каталог {brand} | QUEEN Fashion Group",
     "seoDesc": "Оптовый каталог свадебных платьев, моделей: {n}. Фильтры по бренду, коллекции, силуэту, рукавам и ткани."
    },
@@ -1761,7 +1764,7 @@
     "moreFrom": "Ещё модели {brand}",
     "allBrandModels": "Все модели {brand}",
     "moreModels": "Другие модели",
-    "seoTitle": "{name} — свадебное платье {brand} | QUEEN Fashion Group",
+    "seoTitle": "{name} — свадебное платье: {style} | QUEEN Fashion Group",
     "seoDesc": "{name}. {desc} Оптом от QUEEN Fashion Group, цена по запросу.",
     "weddingDress": "свадебное платье"
    },
@@ -1773,23 +1776,23 @@
     "keyModelsLine": "Ключевые модели · {keys}",
     "discover": "Открыть {brand}",
     "catalogue": "Каталог",
-    "seoTitle": "Наши бренды — QUEEN Fashion Group",
-    "seoDesc": "Семь брендов свадебных платьев от одного производителя: {list}."
+    "seoTitle": "Наши бренды — {n} брендов свадебных платьев | QUEEN Fashion Group",
+    "seoDesc": "Семь брендов свадебных платьев от одного производителя, оптом для свадебных салонов: {list}."
    },
    "about": {
     "heroAlt": "Невеста в платье Eleonora в дворцовом саду",
     "allBrands": "Все бренды",
-    "seoTitle": "О нас — QUEEN Fashion Group",
+    "seoTitle": "О нас — производитель свадебных платьев | QUEEN Fashion Group",
     "seoDesc": "QUEEN Fashion Group: семь брендов свадебных платьев ручной работы собственного производства, оптовые поставки салонам в 18 странах."
    },
    "partners": {
     "becomePartner": "Стать партнёром",
     "termsLink": "Условия сотрудничества",
-    "seoTitle": "Оптовое партнёрство — QUEEN Fashion Group",
+    "seoTitle": "Оптовое сотрудничество для свадебных салонов | QUEEN Fashion Group",
     "seoDesc": "Условия сотрудничества для свадебных салонов: минимальный заказ от 5 платьев, производство 6–8 недель, оплата 30/70 в EUR, PLN или USD, доставка DPD."
    },
    "contact": {
-    "seoTitle": "Контакты — QUEEN Fashion Group",
+    "seoTitle": "Контакты — оптовые заказы свадебных платьев | QUEEN Fashion Group",
     "seoDesc": "Контакты QUEEN Fashion Group: оптовые запросы, менеджеры для рынков Польши, Германии и Италии, офис в Кракове.",
     "name": "Имя *",
     "salon": "Салон или компания *",
@@ -1821,7 +1824,7 @@
     "priceRequest": "Запрос цены: {model}"
    },
    "blog": {
-    "seoTitle": "Блог — QUEEN Fashion Group",
+    "seoTitle": "Блог — новости свадебной моды | QUEEN Fashion Group",
     "seoDesc": "Новости QUEEN Fashion Group: недели свадебной моды, выставки и новые коллекции.",
     "readStory": "Читать",
     "allNews": "Все новости",
@@ -1922,8 +1925,8 @@
     "footerTagline": "Свадебные платья ручной работы от производителя для салонов по всему миру."
    },
    "home": {
-    "seoTitle": "QUEEN Fashion Group — международный поставщик свадебных платьев",
-    "seoDescription": "QUEEN Fashion Group объединяет семь брендов свадебных платьев — QUEEN, Elle, Eleonora, Atelier Lorenzo Ricci, Velina, Nivera и TVOYA. Оптовые поставки для свадебных салонов в 18 странах.",
+    "seoTitle": "QUEEN Fashion Group — свадебные платья оптом от производителя",
+    "seoDescription": "Свадебные платья оптом от производителя: семь брендов, ручная работа на собственном производстве, поставки в свадебные салоны 18 стран.",
     "hero": {
      "label": "QUEEN Fashion Group",
      "title": "Семь свадебных брендов, один модный дом",
@@ -2443,7 +2446,8 @@
     "viewBrandCatalogue": "Vedi il catalogo {brand}",
     "termsAria": "Condizioni in sintesi",
     "introAria": "Introduzione",
-    "heroVideoAria": "Abiti Eleonora filmati a Cracovia"
+    "heroVideoAria": "Abiti Eleonora filmati a Cracovia",
+    "dressAlt": "{name}, abito da sposa {style}"
    },
    "brand": {
     "nModels": {
@@ -2521,7 +2525,7 @@
     "soonText": "Il servizio fotografico della collezione è in corso. Modelli chiave: {keys}.",
     "askManager": "Chieda a un manager",
     "noMatch": "Nessun modello corrisponde ai filtri",
-    "docTitle": "Catalogo — tutti i modelli di abiti da sposa | QUEEN Fashion Group",
+    "docTitle": "Catalogo abiti da sposa all'ingrosso | QUEEN Fashion Group",
     "docTitleBrand": "Catalogo {brand} | QUEEN Fashion Group",
     "seoDesc": "Catalogo all'ingrosso di {n} modelli di abiti da sposa. Filtri per brand, collezione, silhouette, maniche e tessuto."
    },
@@ -2561,7 +2565,7 @@
     "moreFrom": "Altro da {brand}",
     "allBrandModels": "Tutti i modelli {brand}",
     "moreModels": "Altri modelli",
-    "seoTitle": "{name} — abito da sposa {brand} | QUEEN Fashion Group",
+    "seoTitle": "{name} — abito da sposa {style} | QUEEN Fashion Group",
     "seoDesc": "{name}. {desc} All'ingrosso da QUEEN Fashion Group, prezzo su richiesta.",
     "weddingDress": "abito da sposa"
    },
@@ -2573,23 +2577,23 @@
     "keyModelsLine": "Modelli chiave · {keys}",
     "discover": "Scopri {brand}",
     "catalogue": "Catalogo",
-    "seoTitle": "I nostri brand — QUEEN Fashion Group",
-    "seoDesc": "Sette brand di abiti da sposa da un unico produttore: {list}."
+    "seoTitle": "I nostri brand — {n} brand di abiti da sposa | QUEEN Fashion Group",
+    "seoDesc": "Sette brand di abiti da sposa da un unico produttore, all'ingrosso per atelier sposa: {list}."
    },
    "about": {
     "heroAlt": "Una sposa in abito Eleonora nel giardino di un palazzo",
     "allBrands": "Tutti i brand",
-    "seoTitle": "Chi siamo — QUEEN Fashion Group",
+    "seoTitle": "Chi siamo — produttore di abiti da sposa | QUEEN Fashion Group",
     "seoDesc": "QUEEN Fashion Group: sette brand di abiti da sposa, fatti a mano nella nostra produzione e forniti all'ingrosso ad atelier sposa in 18 Paesi."
    },
    "partners": {
     "becomePartner": "Diventa partner",
     "termsLink": "Condizioni di collaborazione",
-    "seoTitle": "Partnership all'ingrosso — QUEEN Fashion Group",
+    "seoTitle": "Partnership all'ingrosso per atelier sposa | QUEEN Fashion Group",
     "seoDesc": "Condizioni per atelier sposa: ordine minimo di 5 abiti, produzione in 6–8 settimane, pagamento 30/70 in EUR, PLN o USD, consegna DPD."
    },
    "contact": {
-    "seoTitle": "Contatti — QUEEN Fashion Group",
+    "seoTitle": "Contatti — richieste all'ingrosso di abiti da sposa | QUEEN Fashion Group",
     "seoDesc": "Contatti QUEEN Fashion Group: richieste all'ingrosso, manager per i mercati polacco, tedesco e italiano, sede a Cracovia.",
     "name": "Nome *",
     "salon": "Atelier o azienda *",
@@ -2621,7 +2625,7 @@
     "priceRequest": "Richiesta prezzo: {model}"
    },
    "blog": {
-    "seoTitle": "Blog — QUEEN Fashion Group",
+    "seoTitle": "Blog — novità della moda sposa | QUEEN Fashion Group",
     "seoDesc": "Notizie da QUEEN Fashion Group: settimane della moda sposa, fiere e nuove collezioni.",
     "readStory": "Leggi l'articolo",
     "allNews": "Tutte le notizie",
@@ -2629,7 +2633,7 @@
    },
    "privacy": {
     "title": "Privacy policy",
-    "seoTitle": "Privacy policy — QUEEN Fashion Group",
+    "seoTitle": "Informativa sulla privacy — QUEEN Fashion Group",
     "seoDesc": "Come QUEEN Fashion Group tratta i dati personali di partner e visitatori del sito."
    },
    "notFound": {
@@ -2722,8 +2726,8 @@
     "footerTagline": "Abiti da sposa fatti a mano, direttamente dal produttore, per atelier sposa in tutto il mondo."
    },
    "home": {
-    "seoTitle": "QUEEN Fashion Group — Fornitore internazionale di abiti da sposa",
-    "seoDescription": "QUEEN Fashion Group riunisce sette brand di abiti da sposa — QUEEN, Elle, Eleonora, Atelier Lorenzo Ricci, Velina, Nivera e TVOYA. Fornitura all'ingrosso per atelier sposa in 18 Paesi.",
+    "seoTitle": "QUEEN Fashion Group — Abiti da sposa all'ingrosso dal produttore",
+    "seoDescription": "Abiti da sposa all'ingrosso direttamente dal produttore: sette brand, realizzati a mano nella nostra produzione, per atelier sposa in 18 Paesi.",
     "hero": {
      "label": "QUEEN Fashion Group",
      "title": "Sette brand sposa, una sola maison",
@@ -3243,7 +3247,8 @@
     "viewBrandCatalogue": "Δείτε τον κατάλογο {brand}",
     "termsAria": "Οι όροι με μια ματιά",
     "introAria": "Εισαγωγή",
-    "heroVideoAria": "Νυφικά Eleonora σε γυρίσματα στην Κρακοβία"
+    "heroVideoAria": "Νυφικά Eleonora σε γυρίσματα στην Κρακοβία",
+    "dressAlt": "{name}, νυφικό {style}"
    },
    "brand": {
     "nModels": {
@@ -3317,7 +3322,7 @@
     "soonText": "Η συλλογή φωτογραφίζεται. Βασικά μοντέλα: {keys}.",
     "askManager": "Ρωτήστε έναν manager",
     "noMatch": "Κανένα μοντέλο δεν ταιριάζει με αυτά τα φίλτρα",
-    "docTitle": "Κατάλογος — όλα τα μοντέλα νυφικών | QUEEN Fashion Group",
+    "docTitle": "Κατάλογος νυφικών χονδρικής | QUEEN Fashion Group",
     "docTitleBrand": "Κατάλογος {brand} | QUEEN Fashion Group",
     "seoDesc": "Κατάλογος χονδρικής με {n} μοντέλα νυφικών. Φιλτράρετε κατά brand, συλλογή, γραμμή, μανίκια και ύφασμα."
    },
@@ -3357,7 +3362,7 @@
     "moreFrom": "Περισσότερα από {brand}",
     "allBrandModels": "Όλα τα μοντέλα {brand}",
     "moreModels": "Περισσότερα μοντέλα",
-    "seoTitle": "{name} — νυφικό {brand} | QUEEN Fashion Group",
+    "seoTitle": "{name} — νυφικό {style} | QUEEN Fashion Group",
     "seoDesc": "{name}. {desc} Χονδρική από την QUEEN Fashion Group, τιμή κατόπιν αιτήματος.",
     "weddingDress": "νυφικό"
    },
@@ -3369,23 +3374,23 @@
     "keyModelsLine": "Βασικά μοντέλα · {keys}",
     "discover": "Ανακαλύψτε το {brand}",
     "catalogue": "Κατάλογος",
-    "seoTitle": "Τα brands μας — QUEEN Fashion Group",
-    "seoDesc": "Επτά brands νυφικών από έναν κατασκευαστή: {list}."
+    "seoTitle": "Τα brands μας — {n} brands νυφικών | QUEEN Fashion Group",
+    "seoDesc": "Επτά brands νυφικών από έναν κατασκευαστή, χονδρική για νυφικά καταστήματα: {list}."
    },
    "about": {
     "heroAlt": "Νύφη με νυφικό Eleonora σε κήπο ανακτόρου",
     "allBrands": "Όλα τα brands",
-    "seoTitle": "Σχετικά με εμάς — QUEEN Fashion Group",
+    "seoTitle": "Σχετικά με εμάς — κατασκευαστής νυφικών | QUEEN Fashion Group",
     "seoDesc": "QUEEN Fashion Group: επτά brands νυφικών, χειροποίητα στη δική μας παραγωγή, με χονδρική διάθεση σε νυφικά καταστήματα σε 18 χώρες."
    },
    "partners": {
     "becomePartner": "Γίνετε συνεργάτης",
     "termsLink": "Όροι συνεργασίας",
-    "seoTitle": "Συνεργασία χονδρικής — QUEEN Fashion Group",
+    "seoTitle": "Συνεργασία χονδρικής για νυφικά καταστήματα | QUEEN Fashion Group",
     "seoDesc": "Όροι συνεργασίας για νυφικά καταστήματα: ελάχιστη παραγγελία 5 νυφικά, παραγωγή 6–8 εβδομάδες, πληρωμή 30/70 σε EUR, PLN ή USD, παράδοση με DPD."
    },
    "contact": {
-    "seoTitle": "Επικοινωνία — QUEEN Fashion Group",
+    "seoTitle": "Επικοινωνία — χονδρική νυφικών | QUEEN Fashion Group",
     "seoDesc": "Επικοινωνήστε με την QUEEN Fashion Group: αιτήματα χονδρικής, managers για την πολωνική, τη γερμανική και την ιταλική αγορά, γραφείο στην Κρακοβία.",
     "name": "Όνομα *",
     "salon": "Κατάστημα ή εταιρεία *",
@@ -3417,7 +3422,7 @@
     "priceRequest": "Αίτημα τιμής: {model}"
    },
    "blog": {
-    "seoTitle": "Blog — QUEEN Fashion Group",
+    "seoTitle": "Blog — νέα της νυφικής μόδας | QUEEN Fashion Group",
     "seoDesc": "Νέα από την QUEEN Fashion Group: εβδομάδες νυφικής μόδας, εκθέσεις και νέες συλλογές.",
     "readStory": "Διαβάστε περισσότερα",
     "allNews": "Όλα τα νέα",
@@ -3518,8 +3523,8 @@
     "footerTagline": "Χειροποίητα νυφικά απευθείας από τον κατασκευαστή, για νυφικά καταστήματα σε όλο τον κόσμο."
    },
    "home": {
-    "seoTitle": "QUEEN Fashion Group — Διεθνής προμηθευτής νυφικών",
-    "seoDescription": "Η QUEEN Fashion Group ενώνει επτά brands νυφικών — QUEEN, Elle, Eleonora, Atelier Lorenzo Ricci, Velina, Nivera και TVOYA. Χονδρική διάθεση σε νυφικά καταστήματα σε 18 χώρες.",
+    "seoTitle": "QUEEN Fashion Group — Νυφικά χονδρική από τον κατασκευαστή",
+    "seoDescription": "Νυφικά χονδρική απευθείας από τον κατασκευαστή: επτά brands, χειροποίητα στη δική μας παραγωγή, για νυφικά καταστήματα σε 18 χώρες.",
     "hero": {
      "label": "QUEEN Fashion Group",
      "title": "Επτά brands νυφικών, ένας οίκος μόδας",
